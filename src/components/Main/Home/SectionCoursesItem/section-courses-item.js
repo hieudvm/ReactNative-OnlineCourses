@@ -18,10 +18,12 @@ export default SectionCoursesItem
 
 const styles = StyleSheet.create({
     item: {
-        margin: 5,
-        width: 200,
-        height: 200,
-        backgroundColor: 'lightgray'
+        margin: 10,
+        height: 121,
+        backgroundColor: 'white',
+        flexDirection: 'row',
+        borderBottomColor: 'gray',
+        borderBottomWidth: 1
 
     },
     image: {
