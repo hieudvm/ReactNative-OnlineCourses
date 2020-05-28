@@ -21,7 +21,7 @@ const SectionSkills = (props) => {
     return (
         <View>
             <View>
-                <Text>
+                <Text style={{margin: 5}}>
                     {props.title}
                 </Text>
             </View>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'gray',
         borderRadius: 2,
         color: 'white',
-        margin: 4
+        margin: 4,
+        fontSize: 20
     }
 })

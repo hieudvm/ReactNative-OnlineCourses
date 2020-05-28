@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     button: {
         height: 100,
         width: 250,
-        margin: 5
+        margin: 5,
+        borderRadius: 50
     },
     touch: {
         flex: 1,
@@ -32,9 +33,11 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        fontSize: 24,
+        fontSize: 20,
         color: 'white',
         fontWeight: 'bold',
-        textAlign: 'center'
+        textAlign: 'center',
+        justifyContent: 'center',
+        alignContent: 'center',
     }
 })
