@@ -5,11 +5,12 @@ import SectionCoursesItem from './src/components/Main/Home/SectionCoursesItem/se
 import SectionCourses from './src/components/Main/Home/SectionCourses/section-courses';
 import ListCourses from './src/components/Courses/ListCourses/list-courses';
 import ListCoursesItem from './src/components/Courses/ListCoursesItem/list-courses-item';
+import Browse from './src/components/Main/Browse/browse';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ListCourses/>
+      <Browse/>
     </View>
   );
 }
