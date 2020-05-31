@@ -1,16 +1,20 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 
 const ListCoursesItem = (props) => {
     return (
-        <View style={styles.item}>
+        <TouchableOpacity style={styles.item}
+            onPress={() =>{
+                props.navigation.navigate("CourseDetail")
+            }}
+        >
             <Image source = {require('../../../../assets/Android.jpg')} style={styles.image} />
             <View style = {{margin: 10}}>
                 <Text>{props.item.title}</Text>
                 <Text>{props.item.author}</Text>
                 <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 
