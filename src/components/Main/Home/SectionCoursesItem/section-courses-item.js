@@ -18,7 +18,7 @@ export default SectionCoursesItem
 
 const styles = StyleSheet.create({
     item: {
-        margin: 10,
+        margin: 6,
         height: 121,
         backgroundColor: 'white',
         flexDirection: 'row',
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
         height: 120
     },
     darkText: {
-        color: 'darkgray'
+        color: 'gray'
     }
 })

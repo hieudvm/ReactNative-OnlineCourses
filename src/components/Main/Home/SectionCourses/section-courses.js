@@ -37,7 +37,7 @@ const SectionCourses = (props) => {
     return (
         <View>
             <View>
-                <Text>
+                <Text style={{ backgroundColor: 'lightgray', margin: 6, borderRadius: 5}}>
                     {props.title}
                 </Text>
             </View>

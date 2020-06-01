@@ -1,25 +1,27 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native'
+import { Icon } from 'react-native-elements'
 
 const VideoPlayer = (props) => {
     return (
-        <View style={{flex: 1}}>
+        <View style={{ flex: 1 }}>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
-            <Text style={{fontSize: 20, margin: 6}}>{props.title}</Text>
-            <View style={{ margin: 6, flex : -3, flexDirection: 'row'}}>
-                <ImageBackground style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')}>
-                    <TouchableOpacity
-                        style={styles.touch}
-                        onPress={props.onPress}
-                    >
-                    </TouchableOpacity>
-                </ImageBackground>
-                <View>
-                    <Text style={styles.text}>
-                        {props.author}
-                    </Text>
-                </View>
-                
+            <Text style={{ fontSize: 20, margin: 6 }}>{props.title}</Text>
+            <View style={{ flex: -3}}>
+                <TouchableOpacity
+                    style={styles.touch}
+                    onPress={props.onPress}
+                >
+                    <ImageBackground style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')}>
+                    </ImageBackground>
+                    <View style={{justifyContent: 'center'}}>
+                        <Text style={styles.text}>
+                            {props.author}
+                        </Text>
+                    </View>
+                </TouchableOpacity>
+
+
             </View>
             <Text style={styles.darkText}>{`${props.level} . ${props.released} . ${props.duration}`}</Text>
         </View>
@@ -48,13 +50,14 @@ const styles = StyleSheet.create({
         margin: 6
     },
     button: {
-        height: 30,
-        width: 30,
+        height: 20,
+        width: 20,
         margin: 5
     },
     touch: {
-        justifyContent: 'center',
         alignContent: 'center',
+        flexDirection: 'row',
+        marginBottom: 10 
 
     },
     text: {

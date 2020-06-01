@@ -1,23 +1,99 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, View, ScrollView, TouchableOpacity, ImageBackground } from 'react-native'
 import SectionCourses from './SectionCourses/section-courses'
 import ImageButton from '../../Common/image-button';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Text } from 'react-native-elements'
 
 const Home = (props) => {
-    
-    return (
-        <ScrollView>
-          <ImageButton title = 'NEW RELEASE' />
-          <SectionCourses title ='Countinue learning' />
-          <SectionCourses title ='Path' />
-          <SectionCourses title ='Chanel' />
-          <SectionCourses title ='Bookmarks' />
-        </ScrollView>
-    )
+
+  return (
+    <ScrollView>
+
+      <View style={{ margin: 6, backgroundColor: 'lightgray', borderRadius: 5 }}>
+        <ImageBackground style={styles.button} source={require('../../../../assets/code.jpeg')}>
+          <TouchableOpacity
+            style={styles.touch}
+            onPress={props.onPress}
+          >
+            <Text h3 style={{ marginBottom: 10, textAlign: 'center', color: 'white' }}>
+              Welcome to E-Learning.io
+          </Text>
+            <Text h5 style={{ marginBottom: 10, textAlign: 'center', color: 'white' }}>
+              With e-learning.io you can build and apply skills in top technologies.
+          </Text>
+          </TouchableOpacity>
+
+        </ImageBackground>
+      </View>
+      <SectionCourses title='Countinue learning' />
+      <SectionCourses title='Software development' />
+      <SectionCourses title='IT operations' />
+      <SectionCourses title='Data professional' />
+      <View style={styles.icon}>
+        <View>
+          <Text>My paths</Text>
+          <View style={styles.iconItem}>
+            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+              <Icon
+                name='sitemap' size={30} />
+            </View>
+            <Text style={{ textAlign: 'center' }}>Paths will guide you learning a specific skill or  technology.</Text>
+          </View>
+        </View>
+        <View>
+          <Text>My chanel</Text>
+          <View style={styles.iconItem}>
+            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+              <Icon
+                name='podcast' size={30} />
+            </View>
+            <Text style={{ textAlign: 'center' }}>Use chanel to save, organize, and share content to accomplish your learning objectives.</Text>
+          </View>
+        </View>
+        <View>
+          <Text>Bookmarks</Text>
+          <View style={styles.iconItem}>
+            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+              <Icon
+                name='bookmark' size={30} />
+            </View>
+            <Text style={{ textAlign: 'center' }}>Use bookmarks to quickly save courses for later.</Text>
+          </View>
+        </View>
+      </View>
+    </ScrollView>
+  )
 };
 
 export default Home
 
 const styles = StyleSheet.create({
+  icon: {
+    flex: -2,
+    margin: 6,
+  },
+  iconItem: {
+    alignItems: 'center',
+    alignContent: 'center',
+    backgroundColor: 'gray',
+    paddingHorizontal: 10,
+    height: 100,
+    borderRadius: 5
+  },
+  button: {
+    height: 150,
+  },
+  touch: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    alignContent: 'center',
 
+  },
+  text: {
+    fontSize: 24,
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center'
+  }
 })

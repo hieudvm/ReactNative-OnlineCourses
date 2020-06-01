@@ -22,7 +22,7 @@ export default ImageButton
 const styles = StyleSheet.create({
     button: {
         height: 100,
-        margin: 5
+        margin: 6
     },
     touch: {
         flex: 1,
