@@ -1,6 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, View, ScrollView } from 'react-native'
 import SectionAuthorsItem from '../SectionAuthorsItem/section-authors-item'
+import { Text } from 'react-native-elements'
+
 
 const SectionAuthors = (props) => {
 

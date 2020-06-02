@@ -1,21 +1,22 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
+import { Text } from 'react-native-elements'
+
 
 const SectionAuthorsItem = (props) => {
     return (
         <View>
-            <ImageBackground style={styles.button} source={require('../../../../../assets/senior-woman-avatar.jpg')}>
-            <TouchableOpacity 
-            style={styles.touch}
-            onPress={props.onPress}
+            <TouchableOpacity
+                style={styles.touch}
+                onPress={props.onPress}
             >
-            </TouchableOpacity>
-        </ImageBackground>
-        <View>
-        <Text style={styles.text}>
+                <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
+                <View style={styles.text}>
+                <Text h5>
                     {props.title}
                 </Text>
-        </View>
+                </View>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -23,10 +24,11 @@ const SectionAuthorsItem = (props) => {
 export default SectionAuthorsItem
 
 const styles = StyleSheet.create({
-    button: {
-        height: 100,
-        width: 100,
-        margin: 5
+    image: {
+        height: 90,
+        width: 90,
+        margin: 5,
+        flex: 2
     },
     touch: {
         flex: 1,
@@ -35,11 +37,11 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        fontSize: 20,
-        fontFamily: 'Roboto',
+        flex: 2,
         color: 'black',
         textAlign: 'center',
-        justifyContent: 'center',
-        alignContent: 'center',
+        margin: 6,
+        marginTop: 0,
+        paddingHorizontal: 10
     }
 })

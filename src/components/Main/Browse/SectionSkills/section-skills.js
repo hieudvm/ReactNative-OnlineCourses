@@ -1,6 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, View, ScrollView } from 'react-native'
 import ImageButtonItem from '../../../Common/image-button-item'
+import { Text } from 'react-native-elements'
 
 const SectionSkills = (props) => {
 
@@ -15,7 +16,7 @@ const SectionSkills = (props) => {
     }
 
     const renderListSkill = (skills) => {
-        return skills.map(item => <Text style={styles.text}>{item}</Text>);
+        return skills.map(item => <Text h5 style={styles.text}>{item}</Text>);
     }
 
     return (
@@ -25,7 +26,7 @@ const SectionSkills = (props) => {
                     {props.title}
                 </Text>
             </View>
-            <ScrollView horizontal={true} style={{margin:10,}}>
+            <ScrollView horizontal={true}>
                 {renderListSkill(listSkills)}
             </ScrollView>
             <ScrollView horizontal={true}>
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'gray',
         borderRadius: 2,
         color: 'white',
-        margin: 4,
-        fontSize: 20
+        margin: 6,
+        paddingHorizontal: 6
     }
 })

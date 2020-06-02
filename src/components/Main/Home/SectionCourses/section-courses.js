@@ -31,7 +31,7 @@ const SectionCourses = (props) => {
     ]
 
     const renderListItem = (courses) => {
-        return courses.map(item => <SectionCoursesItem item={item}/>);
+        return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item}/>);
     }
 
     return (

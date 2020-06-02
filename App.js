@@ -13,9 +13,9 @@ import CourseDetail from './src/components/CoursesDetail/course-detail';
 import ListLessons from './src/components/CoursesDetail/ListLessons/list-lessons';
 import Download from './src/components/Main/Download/download';
 import Search from './src/components/Main/Search/search';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
-const Stack = createStackNavigator();
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();;
 const DownloadStack = createStackNavigator();
@@ -24,8 +24,9 @@ const SearchStack = createStackNavigator();
 
 const HomeStackScreen = () => {
   return (
-    <HomeStack.Navigator>
+    <HomeStack.Navigator initialRouteName="Home">
       <HomeStack.Screen name="Home" component={Home} />
+      <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{title: "Course Detail"}} />
     </HomeStack.Navigator>
   )
 };
@@ -50,20 +51,39 @@ const SearchStackScreen = () => {
   return (
     <SearchStack.Navigator>
       <SearchStack.Screen name="Search" component={Search} />
+      <SearchStack.Screen name="CourseDetail" component={CourseDetail} options={{title: "Course Detail"}} />
     </SearchStack.Navigator>
   )
 };
-
-
 
 export default function App() {
   return (
     <NavigationContainer>
       <Tabs.Navigator>
-        <Tabs.Screen name="Home" component={HomeStackScreen} />
-        <Tabs.Screen name="Download" component={DownloadStackScreen} />
-        <Tabs.Screen name="Browse" component={BrowseStackScreen} />
-        <Tabs.Screen name="Search" component={SearchStackScreen} />
+        <Tabs.Screen name="Home" component={HomeStackScreen} options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="home" color={color} size={size} />
+          ),
+        }}/>
+        <Tabs.Screen name="Download" component={DownloadStackScreen} options={{
+          tabBarLabel: 'Download',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="download" color={color} size={size} />
+          ),
+        }}/>
+        <Tabs.Screen name="Browse" component={BrowseStackScreen} options={{
+          tabBarLabel: 'Browse',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="window-restore" color={color} size={size} />
+          ),
+        }}/>
+        <Tabs.Screen name="Search" component={SearchStackScreen} options={{
+          tabBarLabel: 'Search',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="search" color={color} size={size} />
+          ),
+        }}/>
       </Tabs.Navigator>
     </NavigationContainer>
   );

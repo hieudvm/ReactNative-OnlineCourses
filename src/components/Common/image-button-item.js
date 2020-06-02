@@ -1,14 +1,15 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { Text } from 'react-native-elements'
 
 const ImageButtonItem = (props) => {
     return (
-        <ImageBackground style={styles.button} source={require('../../../assets/background1.jpg')}>
+        <ImageBackground style={styles.button} source={require('../../../assets/codingBackground3.jpg')}>
             <TouchableOpacity 
             style={styles.touch}
             onPress={props.onPress}
             >
-                <Text style={styles.text}>
+                <Text h5 style={styles.text}>
                     {props.title}
                 </Text>
             </TouchableOpacity>
@@ -33,7 +34,6 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        fontSize: 20,
         color: 'white',
         fontWeight: 'bold',
         textAlign: 'center',

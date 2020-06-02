@@ -1,29 +1,26 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { Icon } from 'react-native-elements'
 
 const VideoPlayer = (props) => {
     return (
-        <View style={{ flex: 1 }}>
+        <View>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
-            <Text style={{ fontSize: 20, margin: 6 }}>{props.title}</Text>
-            <View style={{ flex: -3}}>
+            <View>
+                <Text style={{ fontSize: 20, marginLeft: 6 }}>{props.title}</Text>
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={props.onPress}
                 >
-                    <ImageBackground style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')}>
-                    </ImageBackground>
-                    <View style={{justifyContent: 'center'}}>
-                        <Text style={styles.text}>
+                    <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
+                    <View style={styles.text}>
+                        <Text>
                             {props.author}
                         </Text>
                     </View>
                 </TouchableOpacity>
-
-
+                <Text style={styles.darkText}>{`${props.level} . ${props.released} . ${props.duration}`}</Text>
             </View>
-            <Text style={styles.darkText}>{`${props.level} . ${props.released} . ${props.duration}`}</Text>
         </View>
     )
 }
@@ -42,28 +39,30 @@ const styles = StyleSheet.create({
     image: {
         width: 'auto',
         height: 250,
-        flex: -1,
         borderRadius: 5,
-    },
-    darkText: {
-        color: 'gray',
-        margin: 6
     },
     button: {
         height: 20,
         width: 20,
-        margin: 5
+        marginLeft: 6,
+        marginTop: 6
     },
     touch: {
         alignContent: 'center',
-        flexDirection: 'row',
-        marginBottom: 10 
+        flexDirection: 'row'
 
     },
     text: {
         fontSize: 13,
         fontFamily: 'Roboto',
         color: 'black',
-        paddingHorizontal: 'auto'
+        paddingHorizontal: 'auto',
+        marginLeft: 6,
+        marginTop: 6
+    },
+    darkText: {
+        marginLeft: 6,
+        paddingLeft: 28,
+        color: 'darkgray'
     }
 })

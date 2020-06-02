@@ -26,15 +26,15 @@ const Home = (props) => {
 
         </ImageBackground>
       </View>
-      <SectionCourses title='Countinue learning' />
-      <SectionCourses title='Software development' />
-      <SectionCourses title='IT operations' />
-      <SectionCourses title='Data professional' />
+      <SectionCourses navigation={props.navigation} title='Countinue learning' />
+      <SectionCourses navigation={props.navigation} title='Software development' />
+      <SectionCourses navigation={props.navigation} title='IT operations' />
+      <SectionCourses navigation={props.navigation} title='Data professional' />
       <View style={styles.icon}>
         <View>
           <Text>My paths</Text>
           <View style={styles.iconItem}>
-            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+            <View style={{alignItems: 'center', justifyContent: 'center'}}>
               <Icon
                 name='sitemap' size={30} />
             </View>
@@ -44,7 +44,7 @@ const Home = (props) => {
         <View>
           <Text>My chanel</Text>
           <View style={styles.iconItem}>
-            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+            <View style={{alignItems: 'center', justifyContent: 'center'}}>
               <Icon
                 name='podcast' size={30} />
             </View>
@@ -54,7 +54,7 @@ const Home = (props) => {
         <View>
           <Text>Bookmarks</Text>
           <View style={styles.iconItem}>
-            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+            <View style={{alignItems: 'center', justifyContent: 'center'}}>
               <Icon
                 name='bookmark' size={30} />
             </View>
@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
   iconItem: {
     alignItems: 'center',
     alignContent: 'center',
-    backgroundColor: 'gray',
+    backgroundColor: 'lightgray',
+    paddingTop: 15,
     paddingHorizontal: 10,
     height: 100,
     borderRadius: 5

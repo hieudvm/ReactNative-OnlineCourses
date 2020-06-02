@@ -1,24 +1,23 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
+import { Text } from 'react-native-elements'
+
 
 const SectionPathsItem = (props) => {
     return (
         <View>
-            <ImageBackground style={styles.button} source={require('../../../../../assets/background2.jpg')}>
-            <TouchableOpacity 
-            style={styles.touch}
-            onPress={props.onPress}
+            <TouchableOpacity
+                style={styles.touch}
+                onPress={props.onPress}
             >
-            </TouchableOpacity>
-        </ImageBackground>
-            <TouchableOpacity 
-            style={styles.button}
-            onPress={props.onPress}
-            >
-                <Text style={styles.text}>
+                <Image style={styles.image} source={require('../../../../../assets/background2.jpg')} />
+                <View style={styles.text}>
+                <Text h5>
                     {props.title}
                 </Text>
+                </View>
             </TouchableOpacity>
+
         </View>
     )
 }
@@ -26,12 +25,12 @@ const SectionPathsItem = (props) => {
 export default SectionPathsItem
 
 const styles = StyleSheet.create({
-    button: {
+    image: {
         height: 100,
         width: 250,
-        marginLeft: 5,
-        marginRight: 5,
-        flex: 2
+        margin: 6,
+        marginBottom: 0,
+        flex: -3
     },
     touch: {
         flex: 1,
@@ -40,15 +39,16 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        height: 200,
-        width: 250,
-        fontSize: 15,
+        flex: 3,
         color: 'white',
         fontWeight: 'bold',
         textAlign: 'center',
         backgroundColor: 'gray',
-        flex: 2,
         justifyContent: 'center',
         alignContent: 'center',
+        margin: 6,
+        marginTop: 0,
+        padding: 10,
+        paddingHorizontal: 40
     }
 })

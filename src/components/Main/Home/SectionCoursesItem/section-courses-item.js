@@ -1,16 +1,23 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const SectionCoursesItem = (props) => {
     return (
-        <View style = {styles.item}>
-            <Image source={require('../../../../../assets/reactNative.png')} style={styles.image} />
-            <View style = {{margin: 5}}>
-                <Text>{props.item.title}</Text>
-                <Text>{props.item.author}</Text>
-                <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
+        <TouchableOpacity
+            onPress={() => {
+                props.navigation.navigate("CourseDetail")
+            }}
+        >
+            <View style={styles.item}>
+                <Image source={require('../../../../../assets/reactNative.png')} style={styles.image} />
+                <View style={{ margin: 5 }}>
+                    <Text>{props.item.title}</Text>
+                    <Text>{props.item.author}</Text>
+                    <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
+                </View>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 
