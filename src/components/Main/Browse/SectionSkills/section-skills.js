@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, View, ScrollView } from 'react-native'
 import ImageButtonItem from '../../../Common/image-button-item'
 import { Text } from 'react-native-elements'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 const SectionSkills = (props) => {
 
@@ -16,13 +17,13 @@ const SectionSkills = (props) => {
     }
 
     const renderListSkill = (skills) => {
-        return skills.map(item => <Text h5 style={styles.text}>{item}</Text>);
+        return skills.map(item => <TouchableOpacity onPress={props.onPress}><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
     }
 
     return (
         <View>
             <View>
-                <Text style={{margin: 5}}>
+                <Text style={{ margin: 5 }}>
                     {props.title}
                 </Text>
             </View>

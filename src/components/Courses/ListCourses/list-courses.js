@@ -64,13 +64,6 @@ const ListCourses = (props) => {
         }
     ]
 
-    const searchView = () => {
-        return <View style={{ flexDirection: 'row', margin: 10 }}>
-            <TextInput style={{ flex: 1, borderColor: 'gray', borderWidth: 1, padding: 5 }} placeholder='Search text' />
-            <Button onPress={() => { console.log('Search') }} title='Search' style={{ width: 60, height: 40 }} />
-        </View>
-    }
-
     return (
         <View style={{ flex: -3 }}>
             <SectionList
