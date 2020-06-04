@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheet, View, ScrollView, ImageBackground, TouchableOpacity } from 'react-native'
 import SectionSkills from './SectionSkills/section-skills'
-import ImageButton from '../../Common/image-button'
 import SectionPaths from './SectionPaths/section-paths'
 import SectionAuthors from './SectionAuthors/section-authors'
 import { Text } from 'react-native-elements'
