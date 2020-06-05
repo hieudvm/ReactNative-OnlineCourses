@@ -7,7 +7,9 @@ const ImageButtonItem = (props) => {
         <ImageBackground style={styles.button} source={require('../../../assets/codingBackground3.jpg')}>
             <TouchableOpacity 
             style={styles.touch}
-            onPress={props.onPress}
+            onPress={() =>{
+                props.navigation.navigate("BrowseDetail")
+            }}
             >
                 <Text h5 style={styles.text}>
                     {props.title}

@@ -13,11 +13,15 @@ const SectionSkills = (props) => {
     const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
 
     const renderListItem = (skills) => {
-        return skills.map(item => <ImageButtonItem title={item} />);
+        return skills.map(item => <ImageButtonItem navigation={props.navigation} title={item} />);
     }
 
     const renderListSkill = (skills) => {
-        return skills.map(item => <TouchableOpacity onPress={props.onPress}><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
+        return skills.map(item => <TouchableOpacity 
+            onPress={() =>{
+                props.navigation.navigate("SkillDetail")
+            }}
+            ><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
     }
 
     return (

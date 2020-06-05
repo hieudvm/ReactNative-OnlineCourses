@@ -11,7 +11,9 @@ const Browse = (props) => {
       <ImageBackground style={styles.button} source={require('../../../../assets/codingBackground.jpg')}>
         <TouchableOpacity
           style={styles.touch}
-          onPress={props.onPress}
+          onPress={() =>{
+            props.navigation.navigate("AllCourses")
+        }}
         >
           <Text h4 style={{textAlign: 'center', color: 'white', marginHorizontal: 65}}>
             NEW RELEASES
@@ -21,16 +23,18 @@ const Browse = (props) => {
       <ImageBackground style={styles.button} source={require('../../../../assets/codingBackground.jpg')}>
         <TouchableOpacity
           style={styles.touch}
-          onPress={props.onPress}
+          onPress={() =>{
+            props.navigation.navigate("AllCourses")
+        }}
         >
           <Text h4 style={{textAlign: 'center', color: 'white', marginHorizontal: 65}}>
             RECOMMEND FOR YOU
           </Text>
         </TouchableOpacity>
       </ImageBackground>
-      <SectionSkills title='Popular skills' />
-      <SectionPaths title='Paths' />
-      <SectionAuthors title='Top Author' />
+      <SectionSkills navigation={props.navigation} title='Popular skills' />
+      <SectionPaths navigation={props.navigation} title='Paths' />
+      <SectionAuthors navigation={props.navigation} title='Top Author' />
     </ScrollView>
   )
 }

@@ -27,10 +27,10 @@ const BrowseDetail = (props) => {
                 <ScrollView horizontal={true}>
                     {renderListSkill(listSkills)}
                 </ScrollView>
-                <SectionPaths title='Paths' />
-                <SectionPaths title='New' />
-                <SectionPaths title='Trending' />
-                <SectionAuthors title='Top Author' />
+                <SectionPaths navigation={props.navigation} title='Paths' />
+                <SectionPaths navigation={props.navigation} title='New' />
+                <SectionPaths navigation={props.navigation} title='Trending' />
+                <SectionAuthors navigation={props.navigation} title='Top Author' />
             </ScrollView>
         </View>
     )

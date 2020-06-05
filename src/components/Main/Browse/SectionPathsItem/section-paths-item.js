@@ -8,7 +8,9 @@ const SectionPathsItem = (props) => {
         <View>
             <TouchableOpacity
                 style={styles.touch}
-                onPress={props.onPress}
+                onPress={() => {
+                    props.navigation.navigate("PathDetail")
+                }}
             >
                 <Image style={styles.image} source={require('../../../../../assets/background2.jpg')} />
                 <View style={styles.text}>

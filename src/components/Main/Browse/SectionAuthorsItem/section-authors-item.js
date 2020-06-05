@@ -8,7 +8,9 @@ const SectionAuthorsItem = (props) => {
         <View>
             <TouchableOpacity
                 style={styles.touch}
-                onPress={props.onPress}
+                onPress={() =>{
+                    props.navigation.navigate("AuthorDetail")
+                }}
             >
                 <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
                 <View style={styles.text}>

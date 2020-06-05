@@ -1,6 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
 import SectionCoursesItem from '../SectionCoursesItem/section-courses-item'
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const SectionCourses = (props) => {
     const courses = [
@@ -37,9 +38,20 @@ const SectionCourses = (props) => {
     return (
         <View>
             <View>
-                <Text style={{ backgroundColor: 'lightgray', margin: 6, borderRadius: 5}}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch'}}>
+                <Text style={{ margin: 6, flex: 1}}>
                     {props.title}
                 </Text>
+                <View style={{backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10   }}>
+                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center'}}
+                    >
+                        <Text style={{ marginRight: 6 }}>
+                            See all
+                    </Text>
+                        <Icon name="angle-right" />
+                    </TouchableOpacity>
+                </View>
+            </View>
             </View>
             <ScrollView horizontal={true}>
                 {renderListItem(courses)}

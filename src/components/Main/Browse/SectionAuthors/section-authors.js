@@ -9,7 +9,7 @@ const SectionAuthors = (props) => {
     const listAuthors = ["Hieu Duong", "Hai Pham", "Tuan Mai", "Vu Nguyen", "Tuyen Pham", "Loc Truong", "Huy Nguyen", "Anh Tran"]
 
     const renderListItem = (skills) => {
-        return skills.map(item => <SectionAuthorsItem title={item} />);
+        return skills.map(item => <SectionAuthorsItem navigation={props.navigation} title={item} />);
     }
     
     return (

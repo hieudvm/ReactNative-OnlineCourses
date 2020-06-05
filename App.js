@@ -14,6 +14,13 @@ import ListLessons from './src/components/CoursesDetail/ListLessons/list-lessons
 import Download from './src/components/Main/Download/download';
 import Search from './src/components/Main/Search/search';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import ListPaths from './src/components/Main/Browse/Paths/ListPaths/list-paths';
+import AllPathsItem from './src/components/Main/Browse/Paths/AllPathsItem/all-paths-item';
+import AllCourses from './src/components/Courses/AllCourses/all-courses';
+import BrowseDetail from './src/components/Main/Browse/BrowseDetail/browse-detail';
+import SkillDetail from './src/components/Main/Browse/SkillDetail/skill-detail';
+import AuthorDetail from './src/components/Main/Browse/AuthorDetail/author-detail';
+import PathDetail from './src/components/Main/Browse/Paths/PathsDetail/path-detail';
 
 
 const Tabs = createBottomTabNavigator();
@@ -43,6 +50,13 @@ const BrowseStackScreen = () => {
   return (
     <BrowseStack.Navigator>
       <BrowseStack.Screen name="Browse" component={Browse} />
+      <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{title: "All Courses"}} />
+      <BrowseStack.Screen name="BrowseDetail" component={BrowseDetail} options={{title: "Browse"}} />
+      <BrowseStack.Screen name="SkillDetail" component={SkillDetail} options={{title: "Browse"}} />
+      <BrowseStack.Screen name="Paths" component={ListPaths} options={{title: "Paths"}} />
+      <BrowseStack.Screen name="AllPaths" component={AllPathsItem} options={{title: "Paths"}} />
+      <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{title: "Browse"}} />
+      <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{title: "Author"}} />
     </BrowseStack.Navigator>
   )
 };
@@ -86,6 +100,9 @@ export default function App() {
         }}/>
       </Tabs.Navigator>
     </NavigationContainer>
+    // <View style={styles.container}>
+    //   <AuthorDetail />
+    // </View>
   );
 }
 

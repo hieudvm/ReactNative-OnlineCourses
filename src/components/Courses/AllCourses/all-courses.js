@@ -84,7 +84,7 @@ const AllCourses = (props) => {
             <View>
                 <FlatList
                     data={data}
-                    renderItem={({ item }) => <ListCoursesItem item={item} />}
+                    renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
                 />
             </View>
         </View>

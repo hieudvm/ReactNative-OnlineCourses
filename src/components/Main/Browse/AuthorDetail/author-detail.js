@@ -55,7 +55,7 @@ const AuthorDetail = (props) => {
                         </View>
                     </TouchableOpacity>
                 </View>
-                <AllCourses />
+                <AllCourses navigation={props.navigation} />
             </ScrollView>
         </View>
     )
