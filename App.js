@@ -21,6 +21,8 @@ import BrowseDetail from './src/components/Main/Browse/BrowseDetail/browse-detai
 import SkillDetail from './src/components/Main/Browse/SkillDetail/skill-detail';
 import AuthorDetail from './src/components/Main/Browse/AuthorDetail/author-detail';
 import PathDetail from './src/components/Main/Browse/Paths/PathsDetail/path-detail';
+import SplashScreen from './src/components/SplashScreen/splash-screen';
+import Login from './src/components/Authentication/Login/login';
 
 
 const Tabs = createBottomTabNavigator();
@@ -73,37 +75,37 @@ const SearchStackScreen = () => {
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tabs.Navigator>
-        <Tabs.Screen name="Home" component={HomeStackScreen} options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="home" color={color} size={size} />
-          ),
-        }}/>
-        <Tabs.Screen name="Download" component={DownloadStackScreen} options={{
-          tabBarLabel: 'Download',
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="download" color={color} size={size} />
-          ),
-        }}/>
-        <Tabs.Screen name="Browse" component={BrowseStackScreen} options={{
-          tabBarLabel: 'Browse',
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="window-restore" color={color} size={size} />
-          ),
-        }}/>
-        <Tabs.Screen name="Search" component={SearchStackScreen} options={{
-          tabBarLabel: 'Search',
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="search" color={color} size={size} />
-          ),
-        }}/>
-      </Tabs.Navigator>
-    </NavigationContainer>
-    // <View style={styles.container}>
-    //   <AuthorDetail />
-    // </View>
+    // <NavigationContainer>
+    //   <Tabs.Navigator>
+    //     <Tabs.Screen name="Home" component={HomeStackScreen} options={{
+    //       tabBarLabel: 'Home',
+    //       tabBarIcon: ({ color, size }) => (
+    //         <Icon name="home" color={color} size={size} />
+    //       ),
+    //     }}/>
+    //     <Tabs.Screen name="Download" component={DownloadStackScreen} options={{
+    //       tabBarLabel: 'Download',
+    //       tabBarIcon: ({ color, size }) => (
+    //         <Icon name="download" color={color} size={size} />
+    //       ),
+    //     }}/>
+    //     <Tabs.Screen name="Browse" component={BrowseStackScreen} options={{
+    //       tabBarLabel: 'Browse',
+    //       tabBarIcon: ({ color, size }) => (
+    //         <Icon name="window-restore" color={color} size={size} />
+    //       ),
+    //     }}/>
+    //     <Tabs.Screen name="Search" component={SearchStackScreen} options={{
+    //       tabBarLabel: 'Search',
+    //       tabBarIcon: ({ color, size }) => (
+    //         <Icon name="search" color={color} size={size} />
+    //       ),
+    //     }}/>
+    //   </Tabs.Navigator>
+    // </NavigationContainer>
+    <View style={styles.container}>
+      <Login />
+    </View>
   );
 }
 
@@ -111,6 +113,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: 24
   },
 });
