@@ -34,6 +34,7 @@ const HomeStackScreen = () => {
     <HomeStack.Navigator initialRouteName="Home">
       <HomeStack.Screen name="Home" component={Home} />
       <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{title: "Course Detail"}} />
+      <HomeStack.Screen name="AllCourses" component={AllCourses} options={{title: "All Courses"}} />
     </HomeStack.Navigator>
   )
 };

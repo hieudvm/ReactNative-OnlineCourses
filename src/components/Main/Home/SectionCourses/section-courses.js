@@ -32,26 +32,30 @@ const SectionCourses = (props) => {
     ]
 
     const renderListItem = (courses) => {
-        return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item}/>);
+        return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
     }
 
     return (
         <View>
             <View>
-            <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch'}}>
-                <Text style={{ margin: 6, flex: 1}}>
-                    {props.title}
-                </Text>
-                <View style={{backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10   }}>
-                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center'}}
-                    >
-                        <Text style={{ marginRight: 6 }}>
-                            See all
+                <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
+                    <Text style={{ margin: 6, flex: 1 }}>
+                        {props.title}
                     </Text>
-                        <Icon name="angle-right" />
-                    </TouchableOpacity>
+                    <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
+                        <TouchableOpacity
+                            onPress={() => {
+                                props.navigation.navigate("AllCourses")
+                            }}
+                            style={{ flexDirection: 'row', alignItems: 'center' }}
+                        >
+                            <Text style={{ marginRight: 6 }}>
+                                See all
+                    </Text>
+                            <Icon name="angle-right" />
+                        </TouchableOpacity>
+                    </View>
                 </View>
-            </View>
             </View>
             <ScrollView horizontal={true}>
                 {renderListItem(courses)}
