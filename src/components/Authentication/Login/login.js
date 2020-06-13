@@ -1,22 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
+import { login } from '../../../core/service/authentication-service'
+import { useEffect } from 'react'
+import App from '../../../../App'
 
-const Login = () => {
+const Login = (props) => {
+    const [userName, setUserName] = useState('')
+    const [password, setPassword] = useState('')
+    const [status, setStatus] = useState(0)
+
+    useEffect(() => {
+        if (status && status.status === 200) {
+            props.navigation.navigate("MainTab")
+            setStatus(0)
+        }
+    })
+
+    const renderLoginStatus = (status) => {
+        console.log('status', status)
+        if (!status) {
+            return <View />
+        } else if (status.status === 200) {
+            return (<Text>Login successed!</Text>)
+        } else {
+            return (<Text>{status.errorString}</Text>)
+        }
+    }
+
     return (
         <View style={styles.container}>
             <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
             <TextInput
                 style={styles.textInput}
+                onChangeText={text => setUserName(text)}
                 placeholder='username'
+                defaultValue={userName}
             />
             <TextInput
                 style={styles.textInput}
-                placeholder= 'password'
+                onChangeText={text => setPassword(text)}
+                placeholder='password'
                 secureTextEntry
+                defaultValue={password}
             />
+            <View>
+                {renderLoginStatus(status)}
+            </View>
             <TouchableOpacity
-                style={styles.button}    
+                style={styles.button}
+                onPress={() => {
+                    setStatus(login(userName, password))
+                }}
             >
                 <Text style={styles.text}>Login</Text>
             </TouchableOpacity>
