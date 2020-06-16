@@ -456,3 +456,7 @@ export const courses = {
         isTrending: 0
     }]
 }
+
+export const paths = {
+    
+}
