@@ -1,3 +1,5 @@
+ReactNative-OnlineCourses
+Final Project - Mobile Development
 ======================================================================
 Dương Văn Minh Hiếu
 1512158
