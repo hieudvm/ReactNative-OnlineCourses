@@ -2386,6 +2386,1843 @@ const paths = {
 
 const authors = [
     {
-        
+        name: 'Hieu Duong',
+        title: 'Elearning.io Author',
+        description: 'Hieu Duong is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        name: 'Huy Nguyen',
+        title: 'Elearning.io Author',
+        description: 'Huy Nguyen is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        name: 'Hai Pham',
+        title: 'Elearning.io Author',
+        description: 'Hai Pham is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        name: 'Bryan',
+        title: 'Elearning.io Author',
+        description: 'Bryan is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        name: 'Shawn',
+        title: 'Elearning.io Author',
+        description: 'Shawn is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        name: 'Barry',
+        title: 'Elearning.io Author',
+        description: 'Barry is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        name: 'Josh',
+        title: 'Elearning.io Author',
+        description: 'Josh is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
+        course: [
+            {
+                title: 'Angular Denver 2019: Keynote talk',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '40m 42s',
+                content: [
+                    {
+                        detail: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 24m 28s',
+                content: [
+                    {
+                        detail: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 48s',
+                content: [
+                    {
+                        detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: What you do not know about Zone.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 47s',
+                content: [
+                    {
+                        detail: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Intro to Bazel',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 10m 6s',
+                content: [
+                    {
+                        detail: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 20m 36s',
+                content: [
+                    {
+                        detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: ' 22m 4s',
+                content: [
+                    {
+                        detail: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    ,
+    {
+        name: 'Scott Allen',
+        title: 'Elearning.io Author',
+        description: 'Scott Allen has worked on every thing from 8-bit embedded devices to large scale web sites. During his 15+ years in commercial sofware development. Since 2001, Scott has focused on server-side and web technologies, like ASP.NET, ASP.NET AJAX, Windows Workflow, Silverlight, and LNQ.',
+        course: [
+            {
+                title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
+                level: 'Intermediate',
+                released: 'Dec 10, 2019',
+                duration: '59m 27s',
+                content: [
+                    {
+                        detail: 'The State of .NET and Looking Ahead to 2020: DEVintersection 2019',
+                        time: '59m 27s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+                level: 'Intermediate',
+                released: 'Dec 10, 2019',
+                duration: '52m 16s',
+                content: [
+                    {
+                        detail: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+                        time: '52m 16s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+                level: 'Intermediate',
+                released: 'Dec 10, 2019',
+                duration: '48m 56s',
+                content: [
+                    {
+                        detail: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+                        time: '48m 56s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'What You Need to Know About .NET Core: DEVintersection 2019',
+                level: 'Intermediate',
+                released: 'Dec 10, 2019',
+                duration: '1h 2m',
+                content: [
+                    {
+                        detail: 'What You Need to Know About .NET Core: DEVintersection 2019',
+                        time: '1h 2m'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+                level: 'Intermediate',
+                released: 'Dec 10, 2019',
+                duration: '38m 6s',
+                content: [
+                    {
+                        detail: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+                        time: '38m 6s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+                level: 'Intermediate',
+                released: 'Dec 10, 2019',
+                duration: ' 50m 11s',
+                content: [
+                    {
+                        detail: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+                        time: '50m 11s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'C# Fundamentals',
+                level: 'Beginner',
+                released: 'Apr 16, 2019',
+                duration: '6h 5m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    },
+                    {
+                        detail: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Testing Your Code',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    },
+                    {
+                        detail: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    },
+                    {
+                        detail: 'Building Type',
+                        time: '35m 24s'
+                    },
+                    {
+                        detail: 'OOP with C#',
+                        time: '55m 20s'
+                    },
+                    {
+                        detail: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    },
+                    {
+                        detail: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Beginning C# Collections',
+                level: 'Beginner',
+                released: 'Mar 29, 2019',
+                duration: '3h 26m',
+                content: [
+                    {
+                        detail: 'Course Overview',
+                        time: '1m 36s'
+                    },
+                    {
+                        detail: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    },
+                    {
+                        detail: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    },
+                    {
+                        detail: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    },
+                    {
+                        detail: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    },
+                    {
+                        detail: 'Manipulating List Data',
+                        time: '26m 22s'
+                    },
+                    {
+                        detail: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    },
+                    {
+                        detail: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    },
+                    {
+                        detail: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
     }
 ]
