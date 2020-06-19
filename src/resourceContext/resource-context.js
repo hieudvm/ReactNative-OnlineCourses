@@ -6,6 +6,7 @@ const courses = {
         level: 'Advance',
         released: 'May 12, 2020',
         duration: '38 hours',
+        image: '../../assets/reactNative.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -19,6 +20,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '30 hours',
+        image: '../../assets/Android.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -32,6 +34,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '30 hours',
+        image: '../../assets/Ios.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -44,6 +47,7 @@ const courses = {
         author: 'Hai Pham',
         level: 'Advance',
         released: 'May 12, 2020',
+        image: '../../assets/react.png',
         duration: '38 hours',
         star: 5,
         islearning: 0,
@@ -58,6 +62,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '30 hours',
+        image: '../../assets/vuejs-logo.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -72,6 +77,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '30 hours',
+        image: '../../assets/Nuxtjs.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -85,6 +91,7 @@ const courses = {
         level: 'Advance',
         released: 'May 12, 2020',
         duration: '38 hours',
+        image: '../../assets/Javadev.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -98,6 +105,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '30 hours',
+        image: '../../assets/Python.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -111,6 +119,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '30 hours',
+        image: '../../assets/Angular.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -124,6 +133,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 15, 2019',
         duration: '23 hours',
+        image: '../../assets/SpringMVC.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -137,6 +147,7 @@ const courses = {
         level: 'Beginner',
         released: 'Feb 27, 2019',
         duration: '12 hours',
+        image: '../../assets/restfulAPI.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -150,6 +161,7 @@ const courses = {
         level: 'Beginner',
         released: 'Jun 3, 2019',
         duration: '5 hours',
+        image: '../../assets/Nodejs.svg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -163,6 +175,7 @@ const courses = {
         level: 'Beginner',
         released: 'Jan 16, 2019',
         duration: '4 hours',
+        image: '../../assets/javascript.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -176,6 +189,7 @@ const courses = {
         Level: 'Beginner',
         released: 'Jan 20, 2019',
         duration: '1 hours',
+        image: '../../assets/html-css-js.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -189,6 +203,7 @@ const courses = {
         level: 'Beginner',
         released: 'Feb 2, 2020',
         duration: '10 hours',
+        image: '../../assets/Cplus.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -202,6 +217,7 @@ const courses = {
         level: 'Advance',
         released: 'May 12, 2020',
         duration: '8 hours',
+        image: '../../assets/aws.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -215,6 +231,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/AWS-Security.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -228,6 +245,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/dockerdeepdive.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -241,6 +259,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/microsoft-azure-main.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -254,6 +273,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '2 hours',
+        image: '../../assets/windowsPowershell.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -267,6 +287,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/computerHardware.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -280,6 +301,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '1 hours 30m',
+        image: '../../assets/cisco-security1.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -293,6 +315,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '5 hours 20m',
+        image: '../../assets/networkSecurity.jpeg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -306,6 +329,7 @@ const courses = {
         level: 'Advance',
         released: 'May 12, 2020',
         duration: '1 hours 55m',
+        image: '../../assets/AzureSecurity.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -319,6 +343,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/malwareAnalysis.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -332,6 +357,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/pMalwareAnalysis.webp',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -345,6 +371,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/ethicalHacking.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -358,6 +385,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '2 hours',
+        image: '../../assets/green-security-logo.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -371,6 +399,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/incident-detection-investigation.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -384,6 +413,7 @@ const courses = {
         level: 'Advance',
         released: 'May 12, 2020',
         duration: '1 hours 55m',
+        image: '../../assets/Python.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -397,6 +427,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/google-cloud.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -410,6 +441,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/r-programming.jpg',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -423,6 +455,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/Power_bi.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -436,6 +469,7 @@ const courses = {
         level: 'Intermediate',
         released: 'May 12, 2020',
         duration: '2 hours',
+        image: '../../assets/microsoft-sql-server.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -449,6 +483,7 @@ const courses = {
         level: 'Beginner',
         released: 'May 12, 2020',
         duration: '3 hours',
+        image: '../../assets/tensor.png',
         star: 5,
         islearning: 0,
         isFavorite: 0,
@@ -463,6 +498,7 @@ const paths = {
         countCourses: '44 Courses',
         duration: '15 hours',
         description: 'Angular Denver is the coolest Angular conference east of the Continental Dide! Angular developers come from all over to spend two days learning, connecting, and having fun.',
+        image: '../../assets/angular-pwa-course.png',
         listCourses: [
             {
                 title: 'Angular Denver 2019: Keynote talk',
@@ -615,6 +651,7 @@ const paths = {
         countCourses: '101 Courses',
         duration: '42 hours',
         description: 'Big Data LDN (London) is a free to attend conference and exhibition, hosting leading data and analytics experts who are ready to equip you with the tools you need to deliver your most effective data-driven strategy.',
+        image: '../../assets/Big-Data.jpg',
         listCourses: [
             {
                 title: 'The Database Is Only Half Done',
@@ -767,6 +804,7 @@ const paths = {
         countCourses: '8 Courses',
         duration: '6 hours',
         description: 'BSides Huntsville is the conference for those that work in the trenches of cybersecurity for you to engage in fierce discussions about the next big ideas or the worst product you have ever seen in a friendly and informal setting.',
+        image: '../../assets/bsides-huntsville.png',
         listCourses: [
             {
                 title: 'Sercurity 2030: The Next Decade',
@@ -901,6 +939,7 @@ const paths = {
         countCourses: '94 Courses',
         duration: '76 hours',
         description: 'CodeMash is a unique event that educates developers on current practices, methodologies and technology trends in variety of platforms and development languages such as Java, .Net, Ruby and PHP.',
+        image: '../../assets/CodeMash.jpg',
         listCourses: [
             {
                 title: 'Event Processing without Breaking Production: CodeMash',
@@ -1035,6 +1074,7 @@ const paths = {
         countCourses: '20 Courses',
         duration: '18 hours',
         description: 'It is a challenge to stay on top of everything new while mastering the fundamentals. This exciting event, now in its eighth year, brings your favorite Microsoft leaders,, engineers and industry experts together to educate, network and share their expertise with you. ',
+        image: '../../assets/devintersection.png',
         listCourses: [
             {
                 title: 'The History of .Net: DEVintersection 2019',
@@ -1169,6 +1209,7 @@ const paths = {
         countCourses: '12 Courses',
         duration: '15 hours',
         description: 'In this path, you will learn how to develop application using primarily Amazon Web Service. We will cover the various tools of AWS development, how to continuously deliver and automate deployments.',
+        image: '../../assets/aws.png',
         listCourses: [
             {
                 title: 'Coding in AWS Cloud9 IDE',
@@ -1421,6 +1462,7 @@ const paths = {
         countCourses: '14 Courses',
         duration: '42 hours',
         description: 'C# is the most commonly used language for leveraging the .NET  Framework. Such as, learning C# is springboard to creating enterprise systems, desktop application, websites and mobile applications.',
+        image: '../../assets/C#.jpeg',
         listCourses: [
             {
                 title: 'C# Fundamentals',
@@ -1537,6 +1579,7 @@ const paths = {
         countCourses: '6 Courses',
         duration: '15 hours',
         description: 'While you can write Java code using a simple text editor and compile your code using te java command, you will be much more productive if you take advantage of and master the rich tooling available to you.',
+        image: '../../assets/Javadev.jpg',
         listCourses: [
             {
                 title: 'Setting up Java Development Enviroment',
@@ -1651,6 +1694,7 @@ const paths = {
         countCourses: '7 Courses',
         duration: '19 hours',
         description: 'APIs are at the heart of today s connected applications. ASP .NET Core offers a multitude of choices for developing APIs. This path will help you learn about al of the choices, from REST to GraphQL, and how to implement each one.',
+        image: '../../assets/asp-net-core.png',
         listCourses: [
             {
                 title: 'Designing RESTful Web APIs',
@@ -1839,6 +1883,7 @@ const paths = {
         countCourses: '12 Courses',
         duration: '31 hours',
         description: 'Learn to build IOS app for iPhone and iPad. You will begin with the Swift programming language, explore Apple s xcode IDE and cover all the essential concepts, architectural patterns and techniques to build IOS apps.',
+        image: '../../assets/Ios.jpg',
         listCourses: [
             {
                 title: 'Swift Fundamentals',
@@ -2049,6 +2094,7 @@ const paths = {
         countCourses: '20 Courses',
         duration: '40 hours',
         description: 'This is collection of courses provides newcomers with the first step they need to start a career in IT. After completing this path, learners should be prepared to begin a entry-level IT job, such as Help Desk Technician or Desktop Support Technician, that provides additional hands-on experience.',
+        image: '../../assets/ITOP.png',
         listCourses: [
             {
                 title: 'Computer Fundamentals: Hardware',
@@ -2165,6 +2211,7 @@ const paths = {
         countCourses: '4 Courses',
         duration: '5 hours',
         description: 'Moving to the cloud provides countless benefits to you and your organization, but properly securing and maintaining security in the cloud presents a never-ending challenge.',
+        image: '../../assets/microsoft-azure-main.png',
         listCourses: [
             {
                 title: 'Managing and Responding to Microsoft Azure Security Alerts',
@@ -2227,6 +2274,7 @@ const paths = {
         countCourses: '4 Courses',
         duration: '5 hours',
         description: 'Microsoft Azure Stack is a extension of Microsoft Azure Cloud Platform Service to your on-premises implementations. This path will teach you the basics of planing for, setting up, and managing the operations of this hybrid integration.',
+        image: '../../assets/microsoft-azure-main.png',
         listCourses: [
             {
                 title: 'Microsoft Azure Stack Hub Development: Getting Started',
@@ -2307,6 +2355,7 @@ const paths = {
         countCourses: '4 Courses',
         duration: '12 hours',
         description: 'System Center Operations Manager, also known as SCOM or OpsMgr, is an enterprise monitoring tool that deeply instruments servers ad services in the datacenter.',
+        image: '../../assets/SCOM_Logo.jpg',
         listCourses: [
             {
                 title: 'Introduction System Center 2016 - Operations Manager SCOM',
@@ -2395,6 +2444,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -2412,6 +2462,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -2429,6 +2480,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -2446,6 +2498,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -2463,6 +2516,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -2480,6 +2534,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -2497,6 +2552,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -2514,6 +2570,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -2571,6 +2628,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -2627,6 +2685,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -2644,6 +2703,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -2661,6 +2721,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -2678,6 +2739,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -2695,6 +2757,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -2712,6 +2775,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -2729,6 +2793,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -2746,6 +2811,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -2803,6 +2869,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -2859,6 +2926,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -2876,6 +2944,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -2893,6 +2962,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -2910,6 +2980,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -2927,6 +2998,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -2944,6 +3016,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -2961,6 +3034,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -2978,6 +3052,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3035,6 +3110,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3091,6 +3167,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -3108,6 +3185,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -3125,6 +3203,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -3142,6 +3221,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -3159,6 +3239,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -3176,6 +3257,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -3193,6 +3275,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -3210,6 +3293,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3267,6 +3351,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3323,6 +3408,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -3340,6 +3426,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -3357,6 +3444,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -3374,6 +3462,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -3391,6 +3480,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -3408,6 +3498,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -3425,6 +3516,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -3442,6 +3534,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3499,6 +3592,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3555,6 +3649,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -3572,6 +3667,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -3589,6 +3685,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -3606,6 +3703,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -3623,6 +3721,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -3640,6 +3739,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -3657,6 +3757,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -3674,6 +3775,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3731,6 +3833,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3787,6 +3890,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -3804,6 +3908,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -3821,6 +3926,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -3838,6 +3944,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -3855,6 +3962,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -3872,6 +3980,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -3889,6 +3998,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -3906,6 +4016,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -3963,6 +4074,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -4019,6 +4131,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '59m 27s',
+                image: '../../assets/asp-net-core.png',
                 content: [
                     {
                         detail: 'The State of .NET and Looking Ahead to 2020: DEVintersection 2019',
@@ -4036,6 +4149,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '52m 16s',
+                image: '../../assets/netcore.png',
                 content: [
                     {
                         detail: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
@@ -4053,6 +4167,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '48m 56s',
+                image: '../../assets/asp-net-core.png',
                 content: [
                     {
                         detail: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
@@ -4070,6 +4185,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '1h 2m',
+                image: '../../assets/devintersection.png',
                 content: [
                     {
                         detail: 'What You Need to Know About .NET Core: DEVintersection 2019',
@@ -4087,6 +4203,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '38m 6s',
+                image: '../../assets/devintersection.png',
                 content: [
                     {
                         detail: 'Blazor for the Web Forms Developer: DEVintersection 2019',
@@ -4104,6 +4221,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: ' 50m 11s',
+                image: '../../assets/devintersection.png',
                 content: [
                     {
                         detail: 'SignalR: Real-time for All the Things: DEVintersection 2019',
@@ -4121,6 +4239,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -4178,6 +4297,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -4234,6 +4354,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Keynote talk',
@@ -4251,6 +4372,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Simplifying Front end State Management with Observable Store',
@@ -4268,6 +4390,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
@@ -4285,6 +4408,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'What you do not know about Zone.js',
@@ -4302,6 +4426,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Intro to Bazel',
@@ -4319,6 +4444,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                image: '../../assets/Angular.png',
                 content: [
                     {
                         detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
@@ -4336,6 +4462,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
                         detail: 'Machine Learning in Angular with TensorFlow.js',
@@ -4353,6 +4480,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
@@ -4410,6 +4538,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                image: '../../assets/C#.jpeg',
                 content: [
                     {
                         detail: 'Course Overview',
