@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Home from './src/components/Main/Home/home';
 import SectionCoursesItem from './src/components/Main/Home/SectionCoursesItem/section-courses-item';
@@ -37,7 +37,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Wishlist from './src/components/Main/Wishlist/wishlist';
 import User from './src/components/Others/User/user';
 import { login } from './src/core/service/authentication-service';
-
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -89,7 +88,7 @@ const HomeStackScreen = (props) => {
       <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
       <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Home" }} />
       <HomeStack.Screen name="User" component={User} options={{ title: "Home" }} />
-      <HomeStack.Screen name="UserThread" component={UserThread}/>
+      <HomeStack.Screen name="UserThread" component={UserThread} />
     </HomeStack.Navigator>
   )
 };
@@ -137,32 +136,32 @@ const SearchStackScreen = () => {
 const MainTab = () => {
   return (
     <Tabs.Navigator initialRouteName="Home">
-    <Tabs.Screen name="Home" component={HomeDrawerScreen} options={{
-      tabBarLabel: 'Home',
+      <Tabs.Screen name="Home" component={HomeDrawerScreen} options={{
+        tabBarLabel: 'Home',
 
-      tabBarIcon: ({ color, size }) => (
-        <Icon name="home" color={color} size={size} />
-      ),
-    }} />
-    <Tabs.Screen name="Download" component={DownloadStackScreen} options={{
-      tabBarLabel: 'Download',
-      tabBarIcon: ({ color, size }) => (
-        <Icon name="download" color={color} size={size} />
-      ),
-    }} />
-    <Tabs.Screen name="Browse" component={BrowseStackScreen} options={{
-      tabBarLabel: 'Browse',
-      tabBarIcon: ({ color, size }) => (
-        <Icon name="window-restore" color={color} size={size} />
-      ),
-    }} />
-    <Tabs.Screen name="Search" component={SearchStackScreen} options={{
-      tabBarLabel: 'Search',
-      tabBarIcon: ({ color, size }) => (
-        <Icon name="search" color={color} size={size} />
-      ),
-    }} />
-  </Tabs.Navigator>
+        tabBarIcon: ({ color, size }) => (
+          <Icon name="home" color={color} size={size} />
+        ),
+      }} />
+      <Tabs.Screen name="Download" component={DownloadStackScreen} options={{
+        tabBarLabel: 'Download',
+        tabBarIcon: ({ color, size }) => (
+          <Icon name="download" color={color} size={size} />
+        ),
+      }} />
+      <Tabs.Screen name="Browse" component={BrowseStackScreen} options={{
+        tabBarLabel: 'Browse',
+        tabBarIcon: ({ color, size }) => (
+          <Icon name="window-restore" color={color} size={size} />
+        ),
+      }} />
+      <Tabs.Screen name="Search" component={SearchStackScreen} options={{
+        tabBarLabel: 'Search',
+        tabBarIcon: ({ color, size }) => (
+          <Icon name="search" color={color} size={size} />
+        ),
+      }} />
+    </Tabs.Navigator>
   )
 };
 
@@ -174,14 +173,31 @@ const Authen = () => {
   )
 }
 
+export const themes = {
+  light: {
+    foreground: '#000000',
+    background: '#eeeeee',
+  },
+  dark: {
+    foreground: '#ffffff',
+    background: '#222222',
+  }
+}
+
+export const ThemeContext = React.createContext()
+
 export default function App() {
+
+  const [theme, setTheme] = useState(themes.light)
   return (
-    <NavigationContainer>
-      <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-        <Stack.Screen name="MainTab" component={MainTab} />
-        <Stack.Screen name="AuthenStack" component={Authen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <ThemeContext.Provider value={{theme,setTheme}}>
+      <NavigationContainer>
+        <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+          <Stack.Screen name="MainTab" component={MainTab} />
+          <Stack.Screen name="AuthenStack" component={Authen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ThemeContext.Provider>
   );
 }
 
