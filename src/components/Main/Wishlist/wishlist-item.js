@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import ThemedText from '../../Common/themed-text';
 
 const WishlistItem = (props) => {
     return (
@@ -12,9 +13,9 @@ const WishlistItem = (props) => {
                     }}
                     style={{ flexDirection: 'row', alignItems: 'center' }}
                 >
-                    <Text style={{ margin: 6, flex: 1 }}>
+                    <ThemedText style={{ margin: 6, flex: 1 }}>
                         {props.item.title}
-                    </Text>
+                    </ThemedText>
                     <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
 
                         <Icon name="angle-right" />

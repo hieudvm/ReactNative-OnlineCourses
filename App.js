@@ -6,6 +6,7 @@ import SectionCourses from './src/components/Main/Home/SectionCourses/section-co
 import ListCourses from './src/components/Courses/ListCourses/list-courses';
 import ListCoursesItem from './src/components/Courses/ListCoursesItem/list-courses-item';
 import Browse from './src/components/Main/Browse/browse';
+import AppProvider from './src/provider/app-provider'
 import {
   NavigationProp,
   ParamListBase,
@@ -174,26 +175,13 @@ const Authen = () => {
   )
 }
 
-export const themes = {
-  light: {
-    foreground: '#000000',
-    background: '#eeeeee',
-  },
-  dark: {
-    foreground: '#ffffff',
-    background: '#222222',
-  }
-}
-
-export const ThemeContext = React.createContext()
 export const HomeContext = React.createContext(courses);
 
 export default function App() {
 
-  const [theme, setTheme] = useState(themes.light)
   const [course, setCourse] = useState()
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <AppProvider>
       {/* <HomeContext.Provider value={{ course, setCourse }}> */}
         <NavigationContainer>
           <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
@@ -202,7 +190,7 @@ export default function App() {
           </Stack.Navigator>
         </NavigationContainer>
       {/* </HomeContext.Provider> */}
-    </ThemeContext.Provider>
+    </AppProvider>
   );
 }
 

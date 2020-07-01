@@ -1,21 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, View, ScrollView, TouchableOpacity, ImageBackground } from 'react-native'
 import SectionCourses from './SectionCourses/section-courses'
 import ImageButton from '../../Common/image-button';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Text } from 'react-native-elements'
-import { ThemeContext, HomeContext } from '../../../../App';
-import CourseDetail from '../../CoursesDetail/course-detail';
+import ScreenContainer from '../../Common/screen-container';
 
 const Home = (props) => {
 
+
   return (
-    <ThemeContext.Consumer>{
-      ({ theme, setTheme }) => {
-        // return (<HomeContext.Consumer> {
-        //   ({ course, setCourse }) => {
-            return (
-              <View style={{ backgroundColor: theme.background }}>
+              <ScreenContainer >
+
                 <ScrollView>
                   <View style={{ margin: 6, backgroundColor: 'lightgray', borderRadius: 5 }}>
                     <ImageBackground style={styles.button} source={require('../../../../assets/code.jpeg')}>
@@ -69,15 +65,7 @@ const Home = (props) => {
                     </View>
                   </View>
                 </ScrollView>
-              </View>
-            )
-        //   }
-        // }
-        // </HomeContext.Consumer>)
-      }
-    }
-    </ThemeContext.Consumer>
-
+              </ScreenContainer>
   )
 };
 

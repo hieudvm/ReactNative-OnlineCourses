@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import { login } from '../../../core/service/authentication-service'
 import { useEffect } from 'react'
-import App from '../../../../App'
+import { AuthenticationContext } from '../../../provider/authentication-provider'
 
 const Login = (props) => {
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
-    const [status, setStatus] = useState(0)
+
+    const authContext = useContext(AuthenticationContext)
+
+    const auth = authContext.authentication
 
     useEffect(() => {
-        if (status && status.status === 200) {
+        if (auth.status && auth.status === 200) {
             props.navigation.navigate("MainTab")
-            setStatus(0)
         }
-    })
+    }, [authContext])
 
     const renderLoginStatus = (status) => {
         console.log('status', status)
@@ -45,12 +47,12 @@ const Login = (props) => {
                 defaultValue={password}
             />
             <View>
-                {renderLoginStatus(status)}
+                {renderLoginStatus(authContext.authentication)}
             </View>
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
-                    setStatus(login(userName, password))
+                    authContext.login1(userName, password)
                 }}
             >
                 <Text style={styles.text}>Login</Text>

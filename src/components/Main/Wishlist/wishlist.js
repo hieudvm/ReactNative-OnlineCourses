@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, FlatList, Text, View, TouchableOpacity } from 'react-native'
 import WishlistItem from './wishlist-item'
-import { ScrollView } from 'react-native-gesture-handler'
+import { ScrollView, Switch } from 'react-native-gesture-handler'
+import { ThemeContext, themes } from '../../../provider/themes-provider'
+import ScreenContainer from '../../Common/screen-container'
 
 const Wishlist = (props) => {
 
@@ -27,10 +29,16 @@ const Wishlist = (props) => {
             title: 'App Version',
         }
     ]
-
+const themeContext = useContext(ThemeContext)
     return (
-        <View>
+        <ScreenContainer>
             <ScrollView>
+                <View>
+                    <Text>Darktheme</Text>
+                    <Switch
+                    value={themeContext.theme == themes.dark}
+                    onValueChange={(switched) => themeContext.setTheme(switched ? themes.dark : themes.light)}></Switch>
+                </View>
                 <View>
                     <FlatList
                         data={data}
@@ -48,7 +56,7 @@ const Wishlist = (props) => {
                     </TouchableOpacity>
                 </View>
             </ScrollView>
-        </View>
+        </ScreenContainer>
     )
 }
 
