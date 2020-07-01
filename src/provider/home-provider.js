@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import courses from '../resourceContext/resource-context'
 
-const homeContext = React.createContext();    
+const HomeContext = React.createContext(courses);    
 
-const homeProvider = (props) => {
-    const [courses, setCourses] = useState()
-    return <homeProvider.Provider value = {{courses, setCourses}} >
-
-    </homeProvider.Provider>
+const HomeProvider = (props) => {
+    const [course, setCourse] = useState()
+    return <HomeContext.Provider value = {{course, setCourse}} >
+        {props.children}
+    </HomeContext.Provider>
 }
 
-export default {homeProvider, homeContext}
+export default {HomeProvider, HomeContext}

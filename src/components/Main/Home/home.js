@@ -4,71 +4,76 @@ import SectionCourses from './SectionCourses/section-courses'
 import ImageButton from '../../Common/image-button';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Text } from 'react-native-elements'
-import { ThemeContext } from '../../../../App';
+import { ThemeContext, HomeContext } from '../../../../App';
+import CourseDetail from '../../CoursesDetail/course-detail';
 
 const Home = (props) => {
 
   return (
     <ThemeContext.Consumer>{
       ({ theme, setTheme }) => {
-        console.log('Home theme', theme)
-        return (
-          <View style={{ backgroundColor: theme.background }}>
-            <ScrollView>
-              <View style={{ margin: 6, backgroundColor: 'lightgray', borderRadius: 5 }}>
-                <ImageBackground style={styles.button} source={require('../../../../assets/code.jpeg')}>
-                  <TouchableOpacity
-                    style={styles.touch}
-                    onPress={props.onPress}
-                  >
-                    <Text h3 style={{ marginBottom: 10, textAlign: 'center', color: 'white' }}>
-                      Welcome to E-Learning.io
-              </Text>
-                    <Text h5 style={{ marginBottom: 10, textAlign: 'center', color: 'white' }}>
-                      With e-learning.io you can build and apply skills in top technologies.
-              </Text>
-                  </TouchableOpacity>
-                </ImageBackground>
+        // return (<HomeContext.Consumer> {
+        //   ({ course, setCourse }) => {
+            return (
+              <View style={{ backgroundColor: theme.background }}>
+                <ScrollView>
+                  <View style={{ margin: 6, backgroundColor: 'lightgray', borderRadius: 5 }}>
+                    <ImageBackground style={styles.button} source={require('../../../../assets/code.jpeg')}>
+                      <TouchableOpacity
+                        style={styles.touch}
+                        onPress={props.onPress}
+                      >
+                        <Text h3 style={{ marginBottom: 10, textAlign: 'center', color: 'white' }}>
+                          Welcome to E-Learning.io
+                  </Text>
+                        <Text h5 style={{ marginBottom: 10, textAlign: 'center', color: 'white' }}>
+                          With e-learning.io you can build and apply skills in top technologies.
+                  </Text>
+                      </TouchableOpacity>
+                    </ImageBackground>
+                  </View>
+                  <SectionCourses navigation={props.navigation} title='Countinue learning' />
+                  <SectionCourses navigation={props.navigation} title='Software development' />
+                  <SectionCourses navigation={props.navigation} title='IT operations' />
+                  <SectionCourses navigation={props.navigation} title='Data professional' />
+                  <View style={styles.icon}>
+                    <View>
+                      <Text>My paths</Text>
+                      <View style={styles.iconItem}>
+                        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                          <Icon
+                            name='sitemap' size={30} />
+                        </View>
+                        <Text style={{ textAlign: 'center' }}>Paths will guide you learning a specific skill or  technology.</Text>
+                      </View>
+                    </View>
+                    <View>
+                      <Text>My chanel</Text>
+                      <View style={styles.iconItem}>
+                        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                          <Icon
+                            name='podcast' size={30} />
+                        </View>
+                        <Text style={{ textAlign: 'center' }}>Use chanel to save, organize, and share content to accomplish your learning objectives.</Text>
+                      </View>
+                    </View>
+                    <View>
+                      <Text>Bookmarks</Text>
+                      <View style={styles.iconItem}>
+                        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                          <Icon
+                            name='bookmark' size={30} />
+                        </View>
+                        <Text style={{ textAlign: 'center' }}>Use bookmarks to quickly save courses for later.</Text>
+                      </View>
+                    </View>
+                  </View>
+                </ScrollView>
               </View>
-              <SectionCourses navigation={props.navigation} title='Countinue learning' />
-              <SectionCourses navigation={props.navigation} title='Software development' />
-              <SectionCourses navigation={props.navigation} title='IT operations' />
-              <SectionCourses navigation={props.navigation} title='Data professional' />
-              <View style={styles.icon}>
-                <View>
-                  <Text>My paths</Text>
-                  <View style={styles.iconItem}>
-                    <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                      <Icon
-                        name='sitemap' size={30} />
-                    </View>
-                    <Text style={{ textAlign: 'center' }}>Paths will guide you learning a specific skill or  technology.</Text>
-                  </View>
-                </View>
-                <View>
-                  <Text>My chanel</Text>
-                  <View style={styles.iconItem}>
-                    <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                      <Icon
-                        name='podcast' size={30} />
-                    </View>
-                    <Text style={{ textAlign: 'center' }}>Use chanel to save, organize, and share content to accomplish your learning objectives.</Text>
-                  </View>
-                </View>
-                <View>
-                  <Text>Bookmarks</Text>
-                  <View style={styles.iconItem}>
-                    <View style={{ alignItems: 'center', justifyContent: 'center' }}>
-                      <Icon
-                        name='bookmark' size={30} />
-                    </View>
-                    <Text style={{ textAlign: 'center' }}>Use bookmarks to quickly save courses for later.</Text>
-                  </View>
-                </View>
-              </View>
-            </ScrollView>
-          </View>
-        )
+            )
+        //   }
+        // }
+        // </HomeContext.Consumer>)
       }
     }
     </ThemeContext.Consumer>

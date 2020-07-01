@@ -5,9 +5,9 @@ const AuthenticationContext = React.createContext();
 
 const AuthenticationProvider = (props) => {
     const [authentication, setAuthentication] = useState()
-    return <AuthenticationProvider.Provider value = {{authentication, setAuthentication}} >
+    return <AuthenticationContext.Provider value = {{authentication, setAuthentication}} >
 
-    </AuthenticationProvider.Provider>
+    </AuthenticationContext.Provider>
 }
 
 export default {AuthenticationProvider, AuthenticationContext}
