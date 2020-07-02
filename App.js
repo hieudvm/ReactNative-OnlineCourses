@@ -1,22 +1,9 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Home from './src/components/Main/Home/home';
-import SectionCoursesItem from './src/components/Main/Home/SectionCoursesItem/section-courses-item';
-import SectionCourses from './src/components/Main/Home/SectionCourses/section-courses';
-import ListCourses from './src/components/Courses/ListCourses/list-courses';
-import ListCoursesItem from './src/components/Courses/ListCoursesItem/list-courses-item';
 import Browse from './src/components/Main/Browse/browse';
 import AppProvider from './src/provider/app-provider'
-import {
-  NavigationProp,
-  ParamListBase,
-  Descriptor,
-  Route,
-  NavigationHelpers,
-  StackNavigationState,
-  StackActionHelpers,
-  RouteProp, NavigationContainer
-} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, HeaderStyleInterpolators } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import CourseDetail from './src/components/CoursesDetail/course-detail';
@@ -37,7 +24,6 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Wishlist from './src/components/Main/Wishlist/wishlist';
 import User from './src/components/Others/User/user';
-import { login } from './src/core/service/authentication-service';
 import courses from './src/resourceContext/resource-context'
 
 const Tabs = createBottomTabNavigator();
@@ -178,18 +164,14 @@ const Authen = () => {
 export const HomeContext = React.createContext(courses);
 
 export default function App() {
-
-  const [course, setCourse] = useState()
   return (
     <AppProvider>
-      {/* <HomeContext.Provider value={{ course, setCourse }}> */}
-        <NavigationContainer>
-          <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-            <Stack.Screen name="MainTab" component={MainTab} />
-            <Stack.Screen name="AuthenStack" component={Authen} />
-          </Stack.Navigator>
-        </NavigationContainer>
-      {/* </HomeContext.Provider> */}
+      <NavigationContainer>
+        <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+          <Stack.Screen name="MainTab" component={MainTab} />
+          <Stack.Screen name="AuthenStack" component={Authen} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </AppProvider>
   );
 }

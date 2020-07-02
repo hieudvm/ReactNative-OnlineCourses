@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { coursesData, newCourses, recommendedCourses } from '../data/mock/courses-mock-data'
 
 const CoursesContext = React.createContext()
 

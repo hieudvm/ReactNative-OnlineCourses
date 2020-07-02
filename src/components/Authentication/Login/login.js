@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
-import { login } from '../../../core/service/authentication-service'
 import { useEffect } from 'react'
 import { AuthenticationContext } from '../../../provider/authentication-provider'
 
