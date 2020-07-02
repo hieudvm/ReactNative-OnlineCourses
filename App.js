@@ -25,6 +25,10 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Wishlist from './src/components/Main/Wishlist/wishlist';
 import User from './src/components/Others/User/user';
 import courses from './src/resourceContext/resource-context'
+import { ThemeProvider } from 'react-native-elements';
+import { AuthenticationProvider, AuthenticationContext } from './src/provider/authentication-provider';
+import { ThemeContext, themes } from './src/provider/themes-provider';
+import { login } from './src/core/service/authentication-service';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -161,18 +165,33 @@ const Authen = () => {
   )
 }
 
-export const HomeContext = React.createContext(courses);
-
 export default function App() {
+  const [theme, setTheme] = useState(themes.light);
+
+  const login1 = (username, password) => {
+    setAuthentication(login(username, password))
+  }
+
+  const [authentication, setAuthentication] = useState({
+    status: 0,
+    data: {}
+  })
+
   return (
-    <AppProvider>
-      <NavigationContainer>
-        <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-          <Stack.Screen name="MainTab" component={MainTab} />
-          <Stack.Screen name="AuthenStack" component={Authen} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </AppProvider>
+    <ThemeContext.Provider
+      value={{ theme, setTheme }}
+    >
+      <AuthenticationContext.Provider
+        value={{ login1, authentication, setAuthentication }}
+      >
+        <NavigationContainer>
+          <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+            <Stack.Screen name="MainTab" component={MainTab} />
+            <Stack.Screen name="AuthenStack" component={Authen} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </AuthenticationContext.Provider>
+    </ThemeContext.Provider>
   );
 }
 

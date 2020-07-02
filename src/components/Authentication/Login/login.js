@@ -7,6 +7,7 @@ import { AuthenticationContext } from '../../../provider/authentication-provider
 const Login = (props) => {
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
+    const [loginText, setLoginText] = useState('')
 
     const authContext = useContext(AuthenticationContext)
 
@@ -14,7 +15,11 @@ const Login = (props) => {
 
     useEffect(() => {
         if (auth.status && auth.status === 200) {
+            setLoginText('Login successed!')
             props.navigation.navigate("MainTab")
+            setUserName('')
+            setPassword('')
+            setLoginText('')
         }
     }, [authContext])
 
@@ -23,7 +28,7 @@ const Login = (props) => {
         if (!status) {
             return <View />
         } else if (status.status === 200) {
-            return (<Text>Login successed!</Text>)
+            return (<Text>{loginText}</Text>)
         } else {
             return (<Text>{status.errorString}</Text>)
         }

@@ -4,7 +4,7 @@ import { login } from '../core/service/authentication-service';
 
 const AuthenticationContext = React.createContext();
 
-const AuthenticationProvider = ({ children }) => {
+const AuthenticationProvider = (props) => {
     const [user, setUser] = useContext();
 
     const login1 = (username, password) => {
@@ -19,7 +19,7 @@ const AuthenticationProvider = ({ children }) => {
         <AuthenticationContext.Provider
             value={{ login1, authentication, setAuthentication }}
         >
-            {children}
+            {props.children}
         </AuthenticationContext.Provider>
     )
 }

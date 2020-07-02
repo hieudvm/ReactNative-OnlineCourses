@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 
-import {ThemeProvider} from './themes-provider'
-import {AuthenticationProvider} from './authentication-provider'
+import { ThemeProvider } from './themes-provider'
+import { AuthenticationProvider } from './authentication-provider'
+
+const AppContext = React.createContext();
 
 
-export default AppProvider = ({children}) => {
+export default AppProvider = ({ children }) => {
     return (
-        <ThemeProvider>
-            <AuthenticationProvider>
-    {children}
-            </AuthenticationProvider>
-        </ThemeProvider>
+        <AppContext.Provider>
+            <ThemeProvider>
+                <AuthenticationProvider>
+                    {children}
+                </AuthenticationProvider>
+            </ThemeProvider>
+        </AppContext.Provider>
     );
 }
