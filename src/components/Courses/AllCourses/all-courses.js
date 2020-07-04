@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import ListCoursesItem from '../ListCoursesItem/list-courses-item'
+import ScreenContainer from '../../Common/screen-container'
 
 const AllCourses = (props) => {
 
@@ -80,14 +81,14 @@ const AllCourses = (props) => {
     ]
 
     return (
-        <View>
+        <ScreenContainer>
             <View>
                 <FlatList
                     data={data}
                     renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
                 />
             </View>
-        </View>
+        </ScreenContainer>
     )
 }
 

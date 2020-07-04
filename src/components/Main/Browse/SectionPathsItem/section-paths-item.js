@@ -1,11 +1,13 @@
 import React from 'react'
 import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
 import { Text } from 'react-native-elements'
+import ScreenContainer from '../../../Common/screen-container'
+import ThemedText from '../../../Common/themed-text'
 
 
 const SectionPathsItem = (props) => {
     return (
-        <View>
+        <ScreenContainer>
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() => {
@@ -14,13 +16,13 @@ const SectionPathsItem = (props) => {
             >
                 <Image style={styles.image} source={require('../../../../../assets/background2.jpg')} />
                 <View style={styles.text}>
-                <Text h5>
+                <ThemedText h5>
                     {props.title}
-                </Text>
+                </ThemedText>
                 </View>
             </TouchableOpacity>
 
-        </View>
+        </ScreenContainer>
     )
 }
 

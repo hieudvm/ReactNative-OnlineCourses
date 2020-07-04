@@ -1,20 +1,26 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
+import ScreenContainer from '../../Common/screen-container'
+import ThemedText from '../../Common/themed-text'
 
 const ListCoursesItem = (props) => {
     return (
-        <TouchableOpacity style={styles.item}
-            onPress={() =>{
-                props.navigation.navigate("CourseDetail")
-            }}
-        >
-            <Image source = {require('../../../../assets/Android.jpg')} style={styles.image} />
-            <View style = {{margin: 10}}>
-                <Text>{props.item.title}</Text>
-                <Text>{props.item.author}</Text>
-                <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
-            </View>
-        </TouchableOpacity>
+        <ScreenContainer>
+            <TouchableOpacity style={styles.item}
+                onPress={() => {
+                    props.navigation.navigate("CourseDetail")
+                }}
+            >
+                <Image source={require('../../../../assets/Android.jpg')} style={styles.image} />
+                <ScreenContainer>
+                    <View style={{margin: 6}}>
+                        <ThemedText>{props.item.title}</ThemedText>
+                        <ThemedText>{props.item.author}</ThemedText>
+                        <ThemedText style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</ThemedText>
+                    </View>
+                </ScreenContainer>
+            </TouchableOpacity>
+        </ScreenContainer>
     )
 }
 
@@ -23,16 +29,15 @@ export default ListCoursesItem
 const styles = StyleSheet.create({
     item: {
         margin: 6,
-        height: 120,
         backgroundColor: 'white',
         flexDirection: 'row',
         borderBottomColor: 'gray',
-        borderBottomWidth: 1
+        borderBottomWidth: 1,
     },
     image: {
         width: 100,
         height: 100,
-        borderRadius: 5,
+        marginRight: 0
     },
     darkText: {
         color: 'darkgray'

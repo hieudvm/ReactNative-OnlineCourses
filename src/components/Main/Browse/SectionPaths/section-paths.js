@@ -3,6 +3,8 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native'
 import SectionPathsItem from '../SectionPathsItem/section-paths-item'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import ScreenContainer from '../../../Common/screen-container';
+import ThemedText from '../../../Common/themed-text';
 
 const SectionPaths = (props) => {
 
@@ -12,11 +14,11 @@ const SectionPaths = (props) => {
         return skills.map(item => <SectionPathsItem navigation={props.navigation} title={item} />);
     }
     return (
-        <View>
+        <ScreenContainer>
             <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
-                <Text style={{ margin: 6, flex: 1 }}>
+                <ThemedText style={{ margin: 6, flex: 1 }}>
                     {props.title}
-                </Text>
+                </ThemedText>
                 <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}
                         onPress={() => {
@@ -33,7 +35,7 @@ const SectionPaths = (props) => {
             <ScrollView horizontal={true}>
                 {renderListItem(listPaths)}
             </ScrollView>
-        </View>
+        </ScreenContainer>
     )
 }
 

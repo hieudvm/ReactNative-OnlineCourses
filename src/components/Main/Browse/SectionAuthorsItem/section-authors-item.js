@@ -1,11 +1,13 @@
 import React from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { Text } from 'react-native-elements'
+import ScreenContainer from '../../../Common/screen-container'
+import ThemedText from '../../../Common/themed-text'
 
 
 const SectionAuthorsItem = (props) => {
     return (
-        <View>
+        <ScreenContainer>
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() =>{
@@ -14,12 +16,12 @@ const SectionAuthorsItem = (props) => {
             >
                 <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
                 <View style={styles.text}>
-                <Text h5>
+                <ThemedText h5>
                     {props.title}
-                </Text>
+                </ThemedText>
                 </View>
             </TouchableOpacity>
-        </View>
+        </ScreenContainer>
     )
 }
 
@@ -30,7 +32,8 @@ const styles = StyleSheet.create({
         height: 90,
         width: 90,
         margin: 5,
-        flex: 2
+        flex: 2,
+        borderRadius: 50
     },
     touch: {
         flex: 1,

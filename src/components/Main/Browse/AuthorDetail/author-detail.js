@@ -3,20 +3,22 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import AllCourses from '../../../Courses/AllCourses/all-courses';
+import ScreenContainer from '../../../Common/screen-container';
+import ThemedText from '../../../Common/themed-text';
 
 const AuthorDetail = (props) => {
     return (
-        <View>
+        <ScreenContainer>
             <ScrollView>
                 <View style={styles.touch}>
                     <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
-                        <Text h5>
+                        <ThemedText h5>
                             {props.title}
-                        </Text>
-                        <Text>
+                        </ThemedText>
+                        <ThemedText>
                             E-Learning.io Author
-                        </Text>
+                        </ThemedText>
                     </View>
                 </View>
                 <View style={{ marginHorizontal: 50 }}>
@@ -28,13 +30,13 @@ const AuthorDetail = (props) => {
                     />
                 </View>
                 <View style={{alignItems: 'center'}}>
-                    <Text style={{ margin: 6 }}>
+                    <ThemedText style={{ margin: 6 }}>
                         Follow to be notified when new courses are published.
-                    </Text>
+                    </ThemedText>
                 </View>
-                <Text style={{ margin: 6 }}>
+                <ThemedText style={{ margin: 6 }}>
                     {props.title} is a software developer, consultant, conference speaker, and E-learning.io author.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </Text>
+                    </ThemedText>
                 <View style={styles.icon}>
                     <TouchableOpacity>
                         <View style={styles.iconItem}>
@@ -57,7 +59,7 @@ const AuthorDetail = (props) => {
                 </View>
                 <AllCourses navigation={props.navigation} />
             </ScrollView>
-        </View>
+        </ScreenContainer>
     )
 }
 

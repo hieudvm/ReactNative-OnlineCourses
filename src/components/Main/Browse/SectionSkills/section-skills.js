@@ -3,6 +3,8 @@ import { StyleSheet, View, ScrollView } from 'react-native'
 import ImageButtonItem from '../../../Common/image-button-item'
 import { Text } from 'react-native-elements'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import ScreenContainer from '../../../Common/screen-container'
+import ThemedText from '../../../Common/themed-text'
 
 const SectionSkills = (props) => {
 
@@ -21,11 +23,11 @@ const SectionSkills = (props) => {
             onPress={() =>{
                 props.navigation.navigate("SkillDetail")
             }}
-            ><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
+            ><ThemedText h5 style={styles.text}>{item}</ThemedText></TouchableOpacity>);
     }
 
     return (
-        <View>
+        <ScreenContainer>
             <View>
                 <Text style={{ margin: 5 }}>
                     {props.title}
@@ -40,7 +42,7 @@ const SectionSkills = (props) => {
             <ScrollView horizontal={true}>
                 {renderListItem(skills2)}
             </ScrollView>
-        </View>
+        </ScreenContainer>
     )
 }
 

@@ -4,6 +4,8 @@ import SectionSkills from '../SectionSkills/section-skills'
 import SectionPaths from '../SectionPaths/section-paths'
 import SectionAuthors from '../SectionAuthors/section-authors'
 import { Text } from 'react-native-elements'
+import ScreenContainer from '../../../Common/screen-container'
+import ThemedText from '../../../Common/themed-text'
 
 const BrowseDetail = (props) => {
     const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
@@ -12,17 +14,17 @@ const BrowseDetail = (props) => {
         return skills.map(item => <TouchableOpacity onPress={props.onPress}><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
     }
     return (
-        <View>
+        <ScreenContainer>
             <ScrollView>
                 <ImageBackground style={styles.button} source={require('../../../../../assets/white.jpg')}>
-                    <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
+                    <ThemedText h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
                         {props.title}
-          </Text>
+                    </ThemedText>
                 </ImageBackground>
                 <View>
-                    <Text style={{ margin: 5 }}>
+                    <ThemedText style={{ margin: 5 }}>
                         Popular skills
-                    </Text>
+                    </ThemedText>
                 </View>
                 <ScrollView horizontal={true}>
                     {renderListSkill(listSkills)}
@@ -32,7 +34,7 @@ const BrowseDetail = (props) => {
                 <SectionPaths navigation={props.navigation} title='Trending' />
                 <SectionAuthors navigation={props.navigation} title='Top Author' />
             </ScrollView>
-        </View>
+        </ScreenContainer>
     )
 }
 

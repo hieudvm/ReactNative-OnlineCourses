@@ -96,7 +96,7 @@ const UserThread = () => {
 const DownloadStackScreen = () => {
   return (
     <DownloadStack.Navigator>
-      <DownloadStack.Screen name="Download" component={Download} />
+      <DownloadStack.Screen name="Favorite" component={Download} />
     </DownloadStack.Navigator>
   )
 };
@@ -135,10 +135,10 @@ const MainTab = () => {
           <Icon name="home" color={color} size={size} />
         ),
       }} />
-      <Tabs.Screen name="Download" component={DownloadStackScreen} options={{
-        tabBarLabel: 'Download',
+      <Tabs.Screen name="Favorite" component={DownloadStackScreen} options={{
+        tabBarLabel: 'Favorite',
         tabBarIcon: ({ color, size }) => (
-          <Icon name="download" color={color} size={size} />
+          <Icon name="bookmark" color={color} size={size} />
         ),
       }} />
       <Tabs.Screen name="Browse" component={BrowseStackScreen} options={{

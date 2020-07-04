@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import { useEffect } from 'react'
 import { AuthenticationContext } from '../../../provider/authentication-provider'
+import ScreenContainer from '../../Common/screen-container'
 
 const Login = (props) => {
     const [userName, setUserName] = useState('')
@@ -35,33 +36,35 @@ const Login = (props) => {
     }
 
     return (
-        <View style={styles.container}>
-            <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={text => setUserName(text)}
-                placeholder='username'
-                defaultValue={userName}
-            />
-            <TextInput
-                style={styles.textInput}
-                onChangeText={text => setPassword(text)}
-                placeholder='password'
-                secureTextEntry
-                defaultValue={password}
-            />
-            <View>
-                {renderLoginStatus(authContext.authentication)}
+        <ScreenContainer>
+            <View style={styles.container}>
+                <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={text => setUserName(text)}
+                    placeholder='username'
+                    defaultValue={userName}
+                />
+                <TextInput
+                    style={styles.textInput}
+                    onChangeText={text => setPassword(text)}
+                    placeholder='password'
+                    secureTextEntry
+                    defaultValue={password}
+                />
+                <View>
+                    {renderLoginStatus(authContext.authentication)}
+                </View>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        authContext.login1(userName, password)
+                    }}
+                >
+                    <Text style={styles.text}>Login</Text>
+                </TouchableOpacity>
             </View>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => {
-                    authContext.login1(userName, password)
-                }}
-            >
-                <Text style={styles.text}>Login</Text>
-            </TouchableOpacity>
-        </View>
+        </ScreenContainer>
     )
 }
 

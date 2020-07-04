@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { FlatList } from 'react-native-gesture-handler'
 import PathsItem from '../PathsItem/paths-item'
+import ScreenContainer from '../../../../Common/screen-container'
 
 const AllPathsItem = (props) => {
     const data = [
@@ -67,12 +68,12 @@ const AllPathsItem = (props) => {
         }
     ]
     return (
-        <View>
+        <ScreenContainer>
             <FlatList 
                 data = {data}
                 renderItem={({item}) => <PathsItem item={item} />}
             />
-        </View>
+        </ScreenContainer>
     )
 }
 

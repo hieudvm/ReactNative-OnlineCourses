@@ -9,7 +9,7 @@ export default function ScreenContainer({children, style}) {
     const theme = themeContext.theme
 
     return (
-        <View style={{...style, backgroundColor: theme.backgroundColor}}>
+        <View style={{...style, backgroundColor: theme.backgroundColor, flex: 1}}>
             {children}
         </View>
     )

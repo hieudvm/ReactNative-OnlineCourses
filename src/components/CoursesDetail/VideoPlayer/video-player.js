@@ -1,27 +1,29 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { Icon } from 'react-native-elements'
+import ScreenContainer from '../../Common/screen-container'
+import ThemedText from '../../Common/themed-text'
 
 const VideoPlayer = (props) => {
     return (
-        <View>
+        <ScreenContainer>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
             <View>
-                <Text style={{ fontSize: 20, marginLeft: 6 }}>{props.title}</Text>
+                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.title}</ThemedText>
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={props.onPress}
                 >
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
-                        <Text>
+                        <ThemedText>
                             {props.author}
-                        </Text>
+                        </ThemedText>
                     </View>
                 </TouchableOpacity>
                 <Text style={styles.darkText}>{`${props.level} . ${props.released} . ${props.duration}`}</Text>
             </View>
-        </View>
+        </ScreenContainer>
     )
 }
 
@@ -39,13 +41,13 @@ const styles = StyleSheet.create({
     image: {
         width: 'auto',
         height: 250,
-        borderRadius: 5,
     },
     button: {
         height: 20,
         width: 20,
         marginLeft: 6,
-        marginTop: 6
+        marginTop: 6,
+        borderRadius: 10
     },
     touch: {
         alignContent: 'center',

@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
 import SectionCoursesItem from '../SectionCoursesItem/section-courses-item'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import ThemedText from '../../../Common/themed-text';
 
 const SectionCourses = (props) => {
     const courses = [
@@ -39,9 +40,9 @@ const SectionCourses = (props) => {
         <View>
             <View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
-                    <Text style={{ margin: 6, flex: 1 }}>
+                    <ThemedText style={{ margin: 6, flex: 1 }}>
                         {props.title}
-                    </Text>
+                    </ThemedText>
                     <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
                         <TouchableOpacity
                             onPress={() => {

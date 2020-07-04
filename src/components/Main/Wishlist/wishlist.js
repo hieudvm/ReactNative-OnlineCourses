@@ -4,6 +4,7 @@ import WishlistItem from './wishlist-item'
 import { ScrollView, Switch } from 'react-native-gesture-handler'
 import { ThemeContext, themes } from '../../../provider/themes-provider'
 import ScreenContainer from '../../Common/screen-container'
+import ThemedText from '../../Common/themed-text'
 
 const Wishlist = (props) => {
 
@@ -11,10 +12,6 @@ const Wishlist = (props) => {
         {
             id: 1,
             title: 'Account',
-        },
-        {
-            id: 2,
-            title: 'Theme',
         },
         {
             id: 3,
@@ -33,8 +30,8 @@ const themeContext = useContext(ThemeContext)
     return (
         <ScreenContainer>
             <ScrollView>
-                <View>
-                    <Text>Darktheme</Text>
+                <View style={{flexDirection: 'row',  alignItems: 'center', alignSelf: 'stretch' }}>
+                    <ThemedText style={{ margin: 6, flex: 1 }}>Darktheme</ThemedText>
                     <Switch
                     value={themeContext.theme == themes.dark}
                     onValueChange={(switched) => themeContext.setTheme(switched ? themes.dark : themes.light)}></Switch>

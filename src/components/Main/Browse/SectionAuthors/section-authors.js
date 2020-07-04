@@ -2,6 +2,8 @@ import React from 'react'
 import { StyleSheet, View, ScrollView } from 'react-native'
 import SectionAuthorsItem from '../SectionAuthorsItem/section-authors-item'
 import { Text } from 'react-native-elements'
+import ScreenContainer from '../../../Common/screen-container'
+import ThemedText from '../../../Common/themed-text'
 
 
 const SectionAuthors = (props) => {
@@ -13,16 +15,16 @@ const SectionAuthors = (props) => {
     }
     
     return (
-        <View>
+        <ScreenContainer>
             <View>
-                <Text style={{margin: 5}}>
+                <ThemedText style={{margin: 5}}>
                     {props.title}
-                </Text>
+                </ThemedText>
             </View>
            <ScrollView horizontal={true}>
                 {renderListItem(listAuthors)}
             </ScrollView>
-        </View>
+        </ScreenContainer>
     )
 }
 

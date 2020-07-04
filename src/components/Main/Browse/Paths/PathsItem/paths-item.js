@@ -1,20 +1,22 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
+import ScreenContainer from '../../../../Common/screen-container'
+import ThemedText from '../../../../Common/themed-text'
 
 const PathsItem = (props) => {
     return (
-        <View>
-            <TouchableOpacity style={styles.item}
+        <ScreenContainer style={styles.item}>
+            <TouchableOpacity style ={{flexDirection: 'row'}}
             onPress={() =>{
             }}
         >
             <Image source = {require('../../../../../../assets/Ios.jpg')} style={styles.image} />
             <View style = {{margin: 10}}>
-                <Text>{props.item.title}</Text>
-                <Text style={styles.darkText}>{`${props.item.numOfCourses} . ${props.item.duration}`}</Text>
+                <ThemedText>{props.item.title}</ThemedText>
+                <ThemedText style={styles.darkText}>{`${props.item.numOfCourses} . ${props.item.duration}`}</ThemedText>
             </View>
         </TouchableOpacity>
-        </View>
+        </ScreenContainer>
     )
 }
 
@@ -23,9 +25,6 @@ export default PathsItem
 const styles = StyleSheet.create({
     item: {
         margin: 6,
-        height: 120,
-        backgroundColor: 'white',
-        flexDirection: 'row',
         borderBottomColor: 'gray',
         borderBottomWidth: 1
     },

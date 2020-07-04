@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import ScreenContainer from '../../../Common/screen-container'
+import ThemedText from '../../../Common/themed-text'
 
 const SectionCoursesItem = (props) => {
     return (
@@ -9,14 +11,14 @@ const SectionCoursesItem = (props) => {
                 props.navigation.navigate("CourseDetail")
             }}
         >
-            <View style={styles.item}>
+            <ScreenContainer style={styles.item}>
                 <Image source={require('../../../../../assets/reactNative.png')} style={styles.image} />
                 <View style={{ margin: 5 }}>
-                    <Text>{props.item.title}</Text>
-                    <Text>{props.item.author}</Text>
+                    <ThemedText>{props.item.title}</ThemedText>
+                    <ThemedText>{props.item.author}</ThemedText>
                     <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
                 </View>
-            </View>
+            </ScreenContainer>
         </TouchableOpacity>
     )
 }

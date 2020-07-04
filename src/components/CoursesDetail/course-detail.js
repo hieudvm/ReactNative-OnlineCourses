@@ -4,11 +4,13 @@ import VideoPlayer from './VideoPlayer/video-player'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import ListLessons from './ListLessons/list-lessons';
+import ScreenContainer from '../Common/screen-container';
+import ThemedText from '../Common/themed-text';
 
 const CourseDetail = (props) => {
     return (
-        <View style={{ flex: 1 }}>
-            <View style={{ flex: 1.5}}>
+        <ScreenContainer>
+            <View style={{ flex: 2.5}}>
                 <VideoPlayer author="Hai Pham" title="React Native" level="Beginner" released="Apr 16, 2020" duration="30h 5m" />
             </View>
             <ScrollView style={{ flex: 2}}>
@@ -19,7 +21,7 @@ const CourseDetail = (props) => {
                                 <Icon
                                     name='bookmark' size={30} />
                             </View>
-                            <Text>Bookmark</Text>
+                            <ThemedText>Bookmark</ThemedText>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity>
@@ -28,7 +30,7 @@ const CourseDetail = (props) => {
                                 <Icon
                                     name='podcast' size={30} />
                             </View>
-                            <Text>Add to chanel</Text>
+                            <ThemedText>Add to chanel</ThemedText>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity>
@@ -37,7 +39,7 @@ const CourseDetail = (props) => {
                                 <Icon
                                     name='download' size={30} />
                             </View>
-                            <Text>Download</Text>
+                            <ThemedText>Download</ThemedText>
                         </View>
                     </TouchableOpacity>
                 </View>
@@ -45,7 +47,7 @@ const CourseDetail = (props) => {
                     <ListLessons />
                 </View>
             </ScrollView>
-        </View>
+        </ScreenContainer>
 
     )
 }

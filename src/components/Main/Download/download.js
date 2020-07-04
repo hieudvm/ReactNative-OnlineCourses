@@ -1,16 +1,18 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import ThemedText from '../../Common/themed-text';
+import ScreenContainer from '../../Common/screen-container';
 
 const Download = () => {
     return (
-        <View style={styles.iconItem}>
-            <View style={{alignItems: 'center', justifyContent: 'center' }}>
-                <Icon
-                    name='download' size={60} color='darkgray' />
-            </View>
-            <Text style={{ textAlign: 'center', color: 'darkgray' }}>Courses you download will appear here</Text>
-        </View>
+        <ScreenContainer style={styles.iconItem}>
+                <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                    <Icon
+                        name='bookmark' size={60} color='darkgray' />
+                </View>
+                <ThemedText style={{ textAlign: 'center', color: 'darkgray' }}>Courses you favorite will appear here</ThemedText>
+        </ScreenContainer>
     )
 }
 
