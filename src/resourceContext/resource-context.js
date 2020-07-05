@@ -1,5 +1,5 @@
-const courses = {
-    softwareDevelopment: [{
+const coursesData = [
+    {
         id: 1,
         title: 'React Native',
         author: 'Hai Pham',
@@ -88,664 +88,585 @@ const courses = {
                     {
                         title: 'React Lifecycle, React Hook and React Context - Part 2',
                         time: '1:40:09'
-                    }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                    }]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 2,
+        title: 'Android',
+        author: 'Huy Nguyen',
+        level: 'Beginner',
+        released: 'May 12, 2020',
+        duration: '30 hours',
+        image: '../../assets/Android.jpg',
+        content: [
             {
-                id: 2,
-                title: 'Android',
-                author: 'Huy Nguyen',
-                level: 'Beginner',
-                released: 'May 12, 2020',
-                duration: '30 hours',
-                image: '../../assets/Android.jpg',
-                content: [
+                detail: 'Android developer',
+                time: '3 hours 50m',
+                data: [
                     {
-                        detail: 'Android developer',
-                        time: '3 hours 50m',
-                        data: [
-                            {
-                                title: 'Android developer',
-                                time: '3 hours 50m'
-                            }
-                        ]
+                        title: 'Android developer',
+                        time: '3 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 3,
+        title: 'IOS',
+        author: 'Huy Nguyen',
+        level: 'Beginner',
+        released: 'May 12, 2020',
+        duration: '30 hours',
+        content: [
             {
-                id: 3,
-                title: 'IOS',
-                author: 'Huy Nguyen',
-                level: 'Beginner',
-                released: 'May 12, 2020',
-                duration: '30 hours',
-                content: [
+                detail: 'Ios developer',
+                time: '3 hours 50m',
+                data: [
                     {
-                        detail: 'Ios developer',
-                        time: '3 hours 50m',
-                        data: [
-                            {
-                                title: 'Ios developer',
-                                time: '3 hours 50m'
-                            }
-                        ]
+                        title: 'Ios developer',
+                        time: '3 hours 50m'
                     }
-                ],
-                image: '../../assets/Ios.jpg',
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        image: '../../assets/Ios.jpg',
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 4,
+        title: 'ReactJs',
+        author: 'Hai Pham',
+        level: 'Advance',
+        released: 'May 12, 2020',
+        image: '../../assets/react.png',
+        duration: '38 hours',
+        content: [
             {
-                id: 4,
-                title: 'ReactJs',
-                author: 'Hai Pham',
-                level: 'Advance',
-                released: 'May 12, 2020',
-                image: '../../assets/react.png',
-                duration: '38 hours',
-                content: [
+                detail: 'ReactJs developer',
+                time: '4 hours 50m',
+                data: [
                     {
-                        detail: 'ReactJs developer',
-                        time: '4 hours 50m',
-                        data: [
-                            {
-                                title: 'ReactJs developer',
-                                time: '4 hours 50m'
-                            }
-                        ]
+                        title: 'ReactJs developer',
+                        time: '4 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 5,
+        title: 'VueJs',
+        author: 'Huy Nguyen',
+        level: 'Beginner',
+        released: 'May 12, 2020',
+        image: '../../assets/vuejs-logo.jpg',
+        duration: '30 hours',
+        content: [
             {
-                id: 5,
-                title: 'VueJs',
-                author: 'Huy Nguyen',
-                level: 'Beginner',
-                released: 'May 12, 2020',
-                image: '../../assets/vuejs-logo.jpg',
-                duration: '30 hours',
-                content: [
+                detail: 'VueJs developer',
+                time: '5 hours 50m',
+                data: [
                     {
-                        detail: 'VueJs developer',
-                        time: '5 hours 50m',
-                        data: [
-                            {
-                                title: 'VueJs developer',
-                                time: '5 hours 50m'
-                            }
-                        ]
+                        title: 'VueJs developer',
+                        time: '5 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isPaths: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isPaths: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 6,
+        title: 'NuxtJs',
+        author: 'Huy Nguyen',
+        level: 'Beginner',
+        released: 'May 12, 2020',
+        duration: '30 hours',
+        image: '../../assets/Nuxtjs.png',
+        content: [
             {
-                id: 6,
-                title: 'NuxtJs',
-                author: 'Huy Nguyen',
-                level: 'Beginner',
-                released: 'May 12, 2020',
-                duration: '30 hours',
-                image: '../../assets/Nuxtjs.png',
-                content: [
+                detail: 'NuxtJs developer',
+                time: '3 hours 20m',
+                data: [
                     {
-                        detail: 'NuxtJs developer',
-                        time: '3 hours 20m',
-                        data: [
-                            {
-                                title: 'NuxtJs developer',
-                                time: '3 hours 20m'
-                            }
-                        ]
+                        title: 'NuxtJs developer',
+                        time: '3 hours 20m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 7,
+        title: 'Java Developer',
+        author: 'Hai Pham',
+        level: 'Advance',
+        released: 'May 12, 2020',
+        duration: '38 hours',
+        image: '../../assets/Javadev.jpg',
+        content: [
             {
-                id: 7,
-                title: 'Java Developer',
-                author: 'Hai Pham',
-                level: 'Advance',
-                released: 'May 12, 2020',
-                duration: '38 hours',
-                image: '../../assets/Javadev.jpg',
-                content: [
+                detail: 'Java developer: The Big Picture',
+                time: '6 hours 50m',
+                data: [
                     {
-                        detail: 'Java developer: The Big Picture',
-                        time: '6 hours 50m',
-                        data: [
-                            {
-                                title: 'Java developer: The Big Picture',
-                                time: '6 hours 50m'
-                            }
-                        ]
+                        title: 'Java developer: The Big Picture',
+                        time: '6 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 8,
+        title: 'Python',
+        author: 'Huy Nguyen',
+        level: 'Beginner',
+        released: 'May 12, 2020',
+        duration: '30 hours',
+        image: '../../assets/Python.jpg',
+        content: [
             {
-                id: 8,
-                title: 'Python',
-                author: 'Huy Nguyen',
-                level: 'Beginner',
-                released: 'May 12, 2020',
-                duration: '30 hours',
-                image: '../../assets/Python.jpg',
-                content: [
+                detail: 'Python developer',
+                time: '4 hours 30m',
+                data: [
                     {
-                        detail: 'Python developer',
-                        time: '4 hours 30m',
-                        data: [
-                            {
-                                title: 'Python developer',
-                                time: '4 hours 30m'
-                            }
-                        ]
+                        title: 'Python developer',
+                        time: '4 hours 30m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 9,
+        title: 'Angular',
+        author: 'Huy Nguyen',
+        level: 'Intermediate',
+        released: 'May 12, 2020',
+        duration: '30 hours',
+        image: '../../assets/Angular.png',
+        content: [
             {
-                id: 9,
-                title: 'Angular',
-                author: 'Huy Nguyen',
-                level: 'Intermediate',
-                released: 'May 12, 2020',
-                duration: '30 hours',
-                image: '../../assets/Angular.png',
-                content: [
+                detail: 'Angular developer',
+                time: '3 hours 50m',
+                data: [
                     {
-                        detail: 'Angular developer',
-                        time: '3 hours 50m',
-                        data: [
-                            {
-                                title: 'Angular developer',
-                                time: '3 hours 50m'
-                            }
-                        ]
+                        title: 'Angular developer',
+                        time: '3 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 10,
+        title: 'Spring Framework: Spring MVC',
+        author: 'Bryan',
+        level: 'Beginner',
+        released: 'May 15, 2019',
+        duration: '23 hours',
+        image: '../../assets/SpringMVC.png',
+        content: [
             {
-                id: 10,
-                title: 'Spring Framework: Spring MVC',
-                author: 'Bryan',
-                level: 'Beginner',
-                released: 'May 15, 2019',
-                duration: '23 hours',
-                image: '../../assets/SpringMVC.png',
-                content: [
+                detail: 'Spring Framework: Spring MVC',
+                time: '3 hours 50m',
+                data: [
                     {
-                        detail: 'Spring Framework: Spring MVC',
-                        time: '3 hours 50m',
-                        data: [
-                            {
-                                title: 'Spring Framework: Spring MVC',
-                                time: '3 hours 50m'
-                            }
-                        ]
+                        title: 'Spring Framework: Spring MVC',
+                        time: '3 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 11,
+        title: 'Restful API webservice',
+        author: 'Shawn',
+        level: 'Beginner',
+        released: 'Feb 27, 2019',
+        duration: '12 hours',
+        image: '../../assets/restfulAPI.jpg',
+        content: [
             {
-                id: 11,
-                title: 'Restful API webservice',
-                author: 'Shawn',
-                level: 'Beginner',
-                released: 'Feb 27, 2019',
-                duration: '12 hours',
-                image: '../../assets/restfulAPI.jpg',
-                content: [
+                detail: 'Restful API webservice',
+                time: '5 hours 50m',
+                data: [
                     {
-                        detail: 'Restful API webservice',
-                        time: '5 hours 50m',
-                        data: [
-                            {
-                                title: 'Restful API webservice',
-                                time: '5 hours 50m'
-                            }
-                        ]
+                        title: 'Restful API webservice',
+                        time: '5 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 12,
+        title: 'NodeJs: The Big Picture',
+        author: 'Fallon',
+        level: 'Beginner',
+        released: 'Jun 3, 2019',
+        duration: '5 hours',
+        image: '../../assets/Nodejs.svg',
+        content: [
             {
-                id: 12,
-                title: 'NodeJs: The Big Picture',
-                author: 'Fallon',
-                level: 'Beginner',
-                released: 'Jun 3, 2019',
-                duration: '5 hours',
-                image: '../../assets/Nodejs.svg',
-                content: [
+                detail: 'NodeJs: The Big Picture',
+                time: '5 hours 50m',
+                data: [
                     {
-                        detail: 'NodeJs: The Big Picture',
-                        time: '5 hours 50m',
-                        data: [
-                            {
-                                title: 'NodeJs: The Big Picture',
-                                time: '5 hours 50m'
-                            }
-                        ]
+                        title: 'NodeJs: The Big Picture',
+                        time: '5 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 13,
+        title: 'Javascript: Getting Started',
+        author: 'Barry',
+        level: 'Beginner',
+        released: 'Jan 16, 2019',
+        duration: '4 hours',
+        image: '../../assets/javascript.png',
+        content: [
             {
-                id: 13,
-                title: 'Javascript: Getting Started',
-                author: 'Barry',
-                level: 'Beginner',
-                released: 'Jan 16, 2019',
-                duration: '4 hours',
-                image: '../../assets/javascript.png',
-                content: [
+                detail: 'Javascript: Getting Started',
+                time: '4 hours 50m',
+                data: [
                     {
-                        detail: 'Javascript: Getting Started',
-                        time: '4 hours 50m',
-                        data: [
-                            {
-                                title: 'Javascript: Getting Started',
-                                time: '4 hours 50m'
-                            }
-                        ]
+                        title: 'Javascript: Getting Started',
+                        time: '4 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 14,
+        title: 'HTML, CSS, Javascript: The Big Picture',
+        author: 'Hieu Duong',
+        Level: 'Beginner',
+        released: 'Jan 20, 2019',
+        duration: '1 hours',
+        image: '../../assets/html-css-js.jpg',
+        star: 5,
+        content: [
             {
-                id: 14,
-                title: 'HTML, CSS, Javascript: The Big Picture',
-                author: 'Hieu Duong',
-                Level: 'Beginner',
-                released: 'Jan 20, 2019',
-                duration: '1 hours',
-                image: '../../assets/html-css-js.jpg',
-                star: 5,
-                content: [
+                detail: 'HTML, CSS, Javascript: Getting Started',
+                time: '4 hours 50m',
+                data: [
                     {
-                        detail: 'HTML, CSS, Javascript: Getting Started',
-                        time: '4 hours 50m',
-                        data: [
-                            {
-                                title: 'HTML, CSS, Javascript: Getting Started',
-                                time: '4 hours 50m'
-                            }
-                        ]
+                        title: 'HTML, CSS, Javascript: Getting Started',
+                        time: '4 hours 50m'
                     }
-                ],
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            },
+                ]
+            }
+        ],
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 15,
+        title: 'C++: The Big Picture',
+        author: 'Mike',
+        level: 'Beginner',
+        released: 'Feb 2, 2020',
+        duration: '10 hours',
+        image: '../../assets/Cplus.jpg',
+        content: [
             {
-                id: 15,
-                title: 'C++: The Big Picture',
-                author: 'Mike',
-                level: 'Beginner',
-                released: 'Feb 2, 2020',
-                duration: '10 hours',
-                image: '../../assets/Cplus.jpg',
-                content: [
+                detail: 'C++: The Big Picture',
+                time: '4 hours 50m',
+                data: [
                     {
-                        detail: 'C++: The Big Picture',
-                        time: '4 hours 50m',
-                        data: [
-                            {
-                                title: 'C++: The Big Picture',
-                                time: '4 hours 50m'
-                            }
-                        ]
+                        title: 'C++: The Big Picture',
+                        time: '4 hours 50m'
                     }
-                ],
-                star: 5,
-                islearning: 0,
-                isFavorite: 0,
-                isNew: 0,
-                isTrending: 0
-            }],
-        itOperations: [{
-            id: 1,
-            title: 'Architecting for Reliability on AWS',
-            author: 'Hai Pham',
-            level: 'Advance',
-            released: 'May 12, 2020',
-            duration: '8 hours',
-            image: '../../assets/aws.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 2,
-            title: 'Architecting for Security on AWS',
-            author: 'Huy Nguyen',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/AWS-Security.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 3,
-            title: 'Docker Deep Dive',
-            author: 'Huy Nguyen',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/dockerdeepdive.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 4,
-            title: 'Managing Microsoft Azure Subcriptions',
-            author: 'Hai Pham',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/microsoft-azure-main.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 5,
-            title: 'Windows PowerShell Toolmaking Fundamentals',
-            author: 'Adam Bertram',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '2 hours',
-            image: '../../assets/windowsPowershell.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 6,
-            title: 'Computer Fundamentals: Hardware',
-            author: 'Daniel Lachance',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/computerHardware.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 7,
-            title: 'Basic Security Concepts for Cisco Network',
-            author: 'Ross Bagurdes',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '1 hours 30m',
-            image: '../../assets/cisco-security1.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 8,
-            title: 'Networking Concepts and Protocols',
-            author: 'Ross Bagurdes',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '5 hours 20m',
-            image: '../../assets/networkSecurity.jpeg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        }],
-        securityProfessional: [{
-            id: 1,
-            title: 'Creating Security Baselines in Microsoft Azure',
-            author: 'Neil Morrissey',
-            level: 'Advance',
-            released: 'May 12, 2020',
-            duration: '1 hours 55m',
-            image: '../../assets/AzureSecurity.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 2,
-            title: 'Malware Analysis: Indentifying and Defeating Code Obfuscation',
-            author: 'Josh Stroschein',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/malwareAnalysis.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 3,
-            title: 'Performing Malware Analysis on Malicious Documents',
-            author: 'Tyler Hudak',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/pMalwareAnalysis.webp',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 4,
-            title: 'EthicalHacking: Social Engineering',
-            author: 'Kevin Henry',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/ethicalHacking.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 5,
-            title: 'Security Management',
-            author: 'Kevin Henry',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '2 hours',
-            image: '../../assets/green-security-logo.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 6,
-            title: 'Investigations and Incident Management',
-            author: 'Kevin Henry',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/incident-detection-investigation.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        }],
-        dataProofessional: [{
-            id: 1,
-            title: 'Python: The Big Picture',
-            author: 'Jason Olson',
-            level: 'Advance',
-            released: 'May 12, 2020',
-            duration: '1 hours 55m',
-            image: '../../assets/Python.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 2,
-            title: 'Google Cloud Platform Big Data and Machine Learning Fundamentals',
-            author: 'Google Cloud',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/google-cloud.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 3,
-            title: 'Programming with R',
-            author: 'Tyler Hudak',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/r-programming.jpg',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 4,
-            title: 'Building Your First Power BI Report',
-            author: 'Kevin Henry',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/Power_bi.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 5,
-            title: 'Getting Started with Your First SQL Server Instance',
-            author: 'Kevin Hill',
-            level: 'Intermediate',
-            released: 'May 12, 2020',
-            duration: '2 hours',
-            image: '../../assets/microsoft-sql-server.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        },
-        {
-            id: 6,
-            title: 'Introduction to TensorFlow',
-            author: 'Google Cloud',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '3 hours',
-            image: '../../assets/tensor.png',
-            star: 5,
-            islearning: 0,
-            isFavorite: 0,
-            isNew: 0,
-            isTrending: 0
-        }]
-    }]
-}
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 16,
+        title: 'Angular Denver 2019: Keynote talk',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 17,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 18,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 19,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 20,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 21,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 22,
+        title: 'Angular Denver 2019: Rendering Angular Applications in Terminal, Angular Platform',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 24s',
+        content: [
+            {
+                detail: 'Rendering Angular Applications in Terminal, Angular Platform',
+                time: '20m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 23,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    }
+]
 
-const paths = {
-    conference: [{
+const paths = [
+    {
+        id: 1,
         title: 'Angular Denver 2019',
         countCourses: '44 Courses',
         duration: '15 hours',
@@ -947,6 +868,7 @@ const paths = {
         ]
     },
     {
+        id: 2,
         title: 'Big Data LDN 2019',
         countCourses: '101 Courses',
         duration: '42 hours',
@@ -1148,6 +1070,7 @@ const paths = {
         ]
     },
     {
+        id: 3,
         title: 'BSides Huntsville 2020',
         countCourses: '8 Courses',
         duration: '6 hours',
@@ -1325,6 +1248,7 @@ const paths = {
         ]
     },
     {
+        id: 4,
         title: 'CodeMash Conference 2020',
         countCourses: '94 Courses',
         duration: '76 hours',
@@ -1502,6 +1426,7 @@ const paths = {
         ]
     },
     {
+        id: 5,
         title: 'DEVintersection 2019',
         countCourses: '20 Courses',
         duration: '18 hours',
@@ -1677,8 +1602,9 @@ const paths = {
                 isTrending: 0
             }
         ]
-    }],
-    softwareDevelopment: [{
+    },
+    {
+        id: 6,
         title: 'AWS Application Development',
         countCourses: '12 Courses',
         duration: '15 hours',
@@ -2130,6 +2056,7 @@ const paths = {
         ]
     },
     {
+        id: 7,
         title: 'C# Development Fundamentals',
         countCourses: '14 Courses',
         duration: '42 hours',
@@ -2367,6 +2294,7 @@ const paths = {
         ]
     },
     {
+        id: 8,
         title: 'Java Development Enviroments and Tooling',
         countCourses: '6 Courses',
         duration: '15 hours',
@@ -2578,6 +2506,7 @@ const paths = {
         ]
     },
     {
+        id: 9,
         title: 'API Development in ASP .NET Core',
         countCourses: '7 Courses',
         duration: '19 hours',
@@ -2953,6 +2882,7 @@ const paths = {
         ]
     },
     {
+        id: 10,
         title: 'IOS App Development - Fundamentals',
         countCourses: '12 Courses',
         duration: '31 hours',
@@ -3360,8 +3290,9 @@ const paths = {
                 isTrending: 0
             }
         ]
-    }],
-    iTOps: [{
+    },
+    {
+        id: 11,
         title: 'Fundamentals of IP Operations',
         countCourses: '20 Courses',
         duration: '40 hours',
@@ -3515,6 +3446,161 @@ const paths = {
         ]
     },
     {
+        id: 12,
+        title: 'Fundamentals of IP Operations',
+        countCourses: '20 Courses',
+        duration: '40 hours',
+        description: 'This is collection of courses provides newcomers with the first step they need to start a career in IT. After completing this path, learners should be prepared to begin a entry-level IT job, such as Help Desk Technician or Desktop Support Technician, that provides additional hands-on experience.',
+        image: '../../assets/ITOP.png',
+        listCourses: [
+            {
+                title: 'Computer Fundamentals: Hardware',
+                author: 'Daniel',
+                level: 'Intermediate',
+                released: 'Jan 14, 2019',
+                duration: '2h 43m',
+                content: [
+                    {
+                        detail: 'Computer Fundamentals: Hardware',
+                        time: '2h 43m',
+                        data: [
+                            {
+                                title: '',
+                                time: ''
+                            }
+                        ]
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Computer Fundamentals: Mobile Devices',
+                author: 'Glenn',
+                level: 'Intermediate',
+                released: 'Jan 14, 2019',
+                duration: '2h 33m',
+                content: [
+                    {
+                        detail: 'Computer Fundamentals: Mobile Devices',
+                        time: '2h 33m',
+                        data: [
+                            {
+                                title: '',
+                                time: ''
+                            }
+                        ]
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Computer Fundamentals: Operating Systems',
+                author: 'Glenn',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '3h 55m',
+                content: [
+                    {
+                        detail: 'Computer Fundamentals: Operating Systems',
+                        time: '3h 55m',
+                        data: [
+                            {
+                                title: '',
+                                time: ''
+                            }
+                        ]
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Computer Fundamentals: Operational Procedures',
+                author: 'Denial',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '1h 55m',
+                content: [
+                    {
+                        detail: 'Computer Fundamentals: Operational Procedures',
+                        time: '1h 55m',
+                        data: [
+                            {
+                                title: '',
+                                time: ''
+                            }
+                        ]
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Computer Fundamentals: Networking',
+                author: 'Vlad',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '2h 12m',
+                content: [
+                    {
+                        detail: 'Computer Fundamentals: Networking',
+                        time: '2h 12m',
+                        data: [
+                            {
+                                title: '',
+                                time: ''
+                            }
+                        ]
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            },
+            {
+                title: 'Practical Networking',
+                author: 'Ben Piper',
+                level: 'Intermediate',
+                released: 'Sep 11, 2019',
+                duration: '3h 27m',
+                content: [
+                    {
+                        detail: 'Practical Networking',
+                        time: '3h 27m',
+                        data: [
+                            {
+                                title: '',
+                                time: ''
+                            }
+                        ]
+                    }
+                ],
+                star: 5,
+                islearning: 0,
+                isFavorite: 0,
+                isNew: 0,
+                isTrending: 0
+            }
+        ]
+    },
+    {
+        id: 13,
         title: 'Managing Security Operations in Microsoft Azure',
         countCourses: '4 Courses',
         duration: '5 hours',
@@ -3596,6 +3682,7 @@ const paths = {
         ]
     },
     {
+        id: 14,
         title: 'Microsoft Azure Stack Planning and Operations',
         countCourses: '4 Courses',
         duration: '5 hours',
@@ -3701,6 +3788,7 @@ const paths = {
         ]
     },
     {
+        id: 15,
         title: 'Monitoring Microsoft Resources with System Center 2016 (SCOM)',
         countCourses: '4 Courses',
         duration: '12 hours',
@@ -3804,11 +3892,12 @@ const paths = {
                 isTrending: 0
             }
         ]
-    }]
-}
+    }
+]
 
 const authors = [
     {
+        id: 1,
         name: 'Hieu Duong',
         title: 'Elearning.io Author',
         description: 'Hieu Duong is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -4212,6 +4301,7 @@ const authors = [
         ]
     },
     {
+        id: 2,
         name: 'Huy Nguyen',
         title: 'Elearning.io Author',
         description: 'Huy Nguyen is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -4615,6 +4705,7 @@ const authors = [
         ]
     },
     {
+        id: 3,
         name: 'Hai Pham',
         title: 'Elearning.io Author',
         description: 'Hai Pham is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -5018,6 +5109,7 @@ const authors = [
         ]
     },
     {
+        id: 4,
         name: 'Bryan',
         title: 'Elearning.io Author',
         description: 'Bryan is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -5421,6 +5513,7 @@ const authors = [
         ]
     },
     {
+        id: 5,
         name: 'Shawn',
         title: 'Elearning.io Author',
         description: 'Shawn is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -5824,6 +5917,7 @@ const authors = [
         ]
     },
     {
+        id: 6,
         name: 'Barry',
         title: 'Elearning.io Author',
         description: 'Barry is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -6227,6 +6321,7 @@ const authors = [
         ]
     },
     {
+        id: 7,
         name: 'Josh',
         title: 'Elearning.io Author',
         description: 'Josh is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
@@ -6630,6 +6725,7 @@ const authors = [
         ]
     },
     {
+        id: 8,
         name: 'Scott Allen',
         title: 'Elearning.io Author',
         description: 'Scott Allen has worked on every thing from 8-bit embedded devices to large scale web sites. During his 15+ years in commercial sofware development. Since 2001, Scott has focused on server-side and web technologies, like ASP.NET, ASP.NET AJAX, Windows Workflow, Silverlight, and LNQ.',
@@ -7009,6 +7105,7 @@ const authors = [
         ]
     },
     {
+        id: 9,
         name: 'Joe Eames',
         title: 'Elearning.io Author',
         description: 'Joe began hos love of programming on an Apple III in BASIC. Although his preferred language is JavaScript, he was worked professionally with just about every major Microsoft language. He is currently a consultant and full time author for Elearning.io. Joe has always had a strong interest in education, had worked both full and part time as a technical teacher for over ten years.',
@@ -7413,4 +7510,4 @@ const authors = [
     }
 ]
 
-export default {courses, paths, authors};
+export default { coursesData, paths, authors };

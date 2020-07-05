@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import coursesData from '../resourceContext/resource-context'
 
 const CoursesContext = React.createContext()
 
@@ -6,7 +7,7 @@ const CoursesProvider = (props) => {
 
     const [courses, setCourses] = useState(coursesData)
 
-    const [courseIds, setCourseIds] = useState(Array.from(courses.keys()))
+    const [courseIds, setCourseIds] = useState(courses.id)
 
     const [learningCourseIds, setLearningCourseIds] = useState(new Set())
 
