@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import coursesData from '../resourceContext/resource-context'
+import {coursesData, newCourses, recommendedCourses} from '../resourceContext/resource-context'
 
 const CoursesContext = React.createContext()
 

@@ -1,39 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native'
 import SectionCoursesItem from '../SectionCoursesItem/section-courses-item'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../../Common/themed-text';
+import { CoursesContext } from '../../../../provider/courses-provider';
 
 const SectionCourses = (props) => {
-    const courses = [
-        {
-            id: 1,
-            title: 'React Native',
-            author: 'Hai Pham',
-            level: 'Advance',
-            released: 'May 12, 2020',
-            duration: '38 hours'
-        },
-        {
-            id: 2,
-            title: 'Android',
-            author: 'Huy Nguyen',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '30 hours'
-        },
-        {
-            id: 3,
-            title: 'IOS',
-            author: 'Huy Nguyen',
-            level: 'Beginner',
-            released: 'May 12, 2020',
-            duration: '30 hours'
-        }
-    ]
+    const courseContext = useContext(CoursesContext)
 
     const renderListItem = (courses) => {
         return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
+    }
+
+    const renderListItemCondition = () => {
+        if (props.title === 'Software development') {
+            const courses1 = courseContext.courses.slice(0,7)
+            return renderListItem(courses1)
+        } else if (props.title === 'IT operations') {
+            const course2 = courseContext.courses.slice(7,14)
+            return renderListItem(course2)
+        } else if (props.title === 'Data professional') {
+            const course3 = courseContext.courses.slice(14,22)
+            return renderListItem(course3)
+        }
     }
 
     return (
@@ -46,7 +35,7 @@ const SectionCourses = (props) => {
                     <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
                         <TouchableOpacity
                             onPress={() => {
-                                props.navigation.navigate("AllCourses")
+                                props.navigation.navigate("AllCourses", {item: courseContext.courses})
                             }}
                             style={{ flexDirection: 'row', alignItems: 'center' }}
                         >
@@ -59,7 +48,7 @@ const SectionCourses = (props) => {
                 </View>
             </View>
             <ScrollView horizontal={true}>
-                {renderListItem(courses)}
+                {renderListItemCondition()}
             </ScrollView>
         </View>
     )

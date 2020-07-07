@@ -4,14 +4,16 @@ import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 
 const ListCoursesItem = (props) => {
+    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
+    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
     return (
         <ScreenContainer>
             <TouchableOpacity style={styles.item}
                 onPress={() => {
-                    props.navigation.navigate("CourseDetail")
+                    props.navigation.navigate("CourseDetail", {item: props.item})
                 }}
             >
-                <Image source={require('../../../../assets/Android.jpg')} style={styles.image} />
+                <Image source={Image_Http_URL} style={styles.image} />
                 <ScreenContainer>
                     <View style={{margin: 6}}>
                         <ThemedText>{props.item.title}</ThemedText>

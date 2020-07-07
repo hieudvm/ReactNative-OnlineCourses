@@ -475,8 +475,8 @@ const coursesData = [
                 time: '40m 42s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Keynote talk',
+                        time: '40m 42s'
                     }
                 ]
             }
@@ -500,8 +500,8 @@ const coursesData = [
                 time: '24m 28s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
                     }
                 ]
             }
@@ -525,8 +525,8 @@ const coursesData = [
                 time: '22m 48s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
                     }
                 ]
             }
@@ -550,8 +550,8 @@ const coursesData = [
                 time: '10m 47s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'What you do not know about Zone.js',
+                        time: '10m 47s'
                     }
                 ]
             }
@@ -575,8 +575,8 @@ const coursesData = [
                 time: '20m 36s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
                     }
                 ]
             }
@@ -600,8 +600,8 @@ const coursesData = [
                 time: '22m 4s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
                     }
                 ]
             }
@@ -625,8 +625,8 @@ const coursesData = [
                 time: '20m 24s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Rendering Angular Applications in Terminal, Angular Platform',
+                        time: '20m 24s'
                     }
                 ]
             }
@@ -650,8 +650,8 @@ const coursesData = [
                 time: '10m 6s',
                 data: [
                     {
-                        title: '',
-                        time: ''
+                        title: 'Intro to Bazel',
+                        time: '10m 6s'
                     }
                 ]
             }
@@ -663,6 +663,10 @@ const coursesData = [
         isTrending: 0
     }
 ]
+
+const newCourses = coursesData.slice(0,12)
+
+const recommendedCourses = coursesData.slice(12,23)
 
 const paths = [
     {
@@ -7510,4 +7514,4 @@ const authors = [
     }
 ]
 
-export default { coursesData, paths, authors };
+export {newCourses, recommendedCourses ,coursesData, paths, authors };

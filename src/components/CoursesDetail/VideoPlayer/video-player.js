@@ -5,11 +5,12 @@ import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 
 const VideoPlayer = (props) => {
+    // console.log(props)
     return (
         <ScreenContainer>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
             <View>
-                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.title}</ThemedText>
+                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.item.title}</ThemedText>
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={props.onPress}
@@ -17,11 +18,11 @@ const VideoPlayer = (props) => {
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
                         <ThemedText>
-                            {props.author}
+                            {props.item.author}
                         </ThemedText>
                     </View>
                 </TouchableOpacity>
-                <Text style={styles.darkText}>{`${props.level} . ${props.released} . ${props.duration}`}</Text>
+                <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
             </View>
         </ScreenContainer>
     )

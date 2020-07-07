@@ -8,12 +8,14 @@ import ScreenContainer from '../Common/screen-container';
 import ThemedText from '../Common/themed-text';
 
 const CourseDetail = (props) => {
+    const item = props.route.params.item
+    // console.log(item)
     return (
         <ScreenContainer>
-            <View style={{ flex: 2.5}}>
-                <VideoPlayer author="Hai Pham" title="React Native" level="Beginner" released="Apr 16, 2020" duration="30h 5m" />
+            <View style={{ flex: 2.5 }}>
+                <VideoPlayer item={item} />
             </View>
-            <ScrollView style={{ flex: 2}}>
+            <ScrollView style={{ flex: 2 }}>
                 <View style={styles.icon}>
                     <TouchableOpacity>
                         <View style={styles.iconItem}>
@@ -21,7 +23,7 @@ const CourseDetail = (props) => {
                                 <Icon
                                     name='bookmark' size={30} />
                             </View>
-                            <ThemedText>Bookmark</ThemedText>
+                            <ThemedText>Favorite</ThemedText>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity>
@@ -44,7 +46,7 @@ const CourseDetail = (props) => {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 1 }}>
-                    <ListLessons />
+                    <ListLessons item={item}/>
                 </View>
             </ScrollView>
         </ScreenContainer>

@@ -29,6 +29,7 @@ import { ThemeProvider } from 'react-native-elements';
 import { AuthenticationProvider, AuthenticationContext } from './src/provider/authentication-provider';
 import { ThemeContext, themes } from './src/provider/themes-provider';
 import { login } from './src/core/service/authentication-service';
+import { CoursesProvider } from './src/provider/courses-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -184,12 +185,14 @@ export default function App() {
       <AuthenticationContext.Provider
         value={{ login1, authentication, setAuthentication }}
       >
-        <NavigationContainer>
-          <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-            <Stack.Screen name="MainTab" component={MainTab} />
-            <Stack.Screen name="AuthenStack" component={Authen} />
-          </Stack.Navigator>
-        </NavigationContainer>
+        <CoursesProvider>
+          <NavigationContainer>
+            <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+              <Stack.Screen name="MainTab" component={MainTab} />
+              <Stack.Screen name="AuthenStack" component={Authen} />
+            </Stack.Navigator>
+          </NavigationContainer>
+        </CoursesProvider>
       </AuthenticationContext.Provider>
     </ThemeContext.Provider>
   );

@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, View, ScrollView, ImageBackground, TouchableOpacity } from 'react-native'
 import SectionSkills from './SectionSkills/section-skills'
 import SectionPaths from './SectionPaths/section-paths'
 import SectionAuthors from './SectionAuthors/section-authors'
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container'
+import { CoursesContext } from '../../../provider/courses-provider'
 
 const Browse = (props) => {
+  const courseContext = useContext(CoursesContext)
+
   return (
     <ScreenContainer>
       <ScrollView>
@@ -14,7 +17,7 @@ const Browse = (props) => {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              props.navigation.navigate("AllCourses")
+              props.navigation.navigate("AllCourses", {item: courseContext.newReleaseCourseIds})
             }}
           >
             <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
@@ -26,7 +29,7 @@ const Browse = (props) => {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              props.navigation.navigate("AllCourses")
+              props.navigation.navigate("AllCourses", {item: courseContext.recommendedCourseIds})
             }}
           >
             <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
