@@ -11,13 +11,13 @@ const SectionAuthorsItem = (props) => {
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() =>{
-                    props.navigation.navigate("AuthorDetail")
+                    props.navigation.navigate("AuthorDetail", {item: props.item})
                 }}
             >
                 <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
                 <View style={styles.text}>
                 <ThemedText h5>
-                    {props.title}
+                    {props.item.name}
                 </ThemedText>
                 </View>
             </TouchableOpacity>

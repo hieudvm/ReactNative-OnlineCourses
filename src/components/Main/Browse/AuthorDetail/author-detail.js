@@ -1,12 +1,16 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
+import { TouchableOpacity, ScrollView, FlatList } from 'react-native-gesture-handler';
 import AllCourses from '../../../Courses/AllCourses/all-courses';
 import ScreenContainer from '../../../Common/screen-container';
 import ThemedText from '../../../Common/themed-text';
+import ListCoursesItem from '../../../Courses/ListCoursesItem/list-courses-item';
 
 const AuthorDetail = (props) => {
+
+    const item = props.route.params.item
+
     return (
         <ScreenContainer>
             <ScrollView>
@@ -14,7 +18,7 @@ const AuthorDetail = (props) => {
                     <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
                         <ThemedText h5>
-                            {props.title}
+                            {item.name}
                         </ThemedText>
                         <ThemedText>
                             E-Learning.io Author
@@ -35,7 +39,7 @@ const AuthorDetail = (props) => {
                     </ThemedText>
                 </View>
                 <ThemedText style={{ margin: 6 }}>
-                    {props.title} is a software developer, consultant, conference speaker, and E-learning.io author.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    {item.description}
                     </ThemedText>
                 <View style={styles.icon}>
                     <TouchableOpacity>
@@ -57,7 +61,14 @@ const AuthorDetail = (props) => {
                         </View>
                     </TouchableOpacity>
                 </View>
-                <AllCourses navigation={props.navigation} />
+                <ScreenContainer>
+            <View>
+                <FlatList
+                    data={item.course}
+                    renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
+                />
+            </View>
+        </ScreenContainer>
             </ScrollView>
         </ScreenContainer>
     )
@@ -78,7 +89,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'black',
-        textAlign: 'center',
+        alignItems: 'center',
         margin: 6,
         marginTop: 0,
         paddingHorizontal: 10

@@ -3899,6 +3899,10 @@ const paths = [
     }
 ]
 
+const newPaths = paths.slice(0, 7)
+
+const trendingPaths = paths.slice(7, 15)
+
 const authors = [
     {
         id: 1,
@@ -3911,6 +3915,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Hieu Duong',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -3935,6 +3940,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Hieu Duong',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -3959,6 +3965,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Hieu Duong',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -3983,6 +3990,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Hieu Duong',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4007,6 +4015,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Hieu Duong',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4031,6 +4040,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Hieu Duong',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4055,6 +4065,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Hieu Duong',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4079,6 +4090,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Hieu Duong',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -4203,6 +4215,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Hieu Duong',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -4315,6 +4328,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Huy Nguyen',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4339,6 +4353,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Huy Nguyen',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4363,6 +4378,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Huy Nguyen',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4387,6 +4403,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Huy Nguyen',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4411,6 +4428,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Huy Nguyen',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -4435,6 +4453,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Huy Nguyen',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -4459,6 +4478,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Huy Nguyen',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -4483,6 +4503,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Huy Nguyen',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -4607,6 +4628,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Huy Nguyen',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -4719,6 +4741,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Hai Pham',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4743,6 +4766,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Hai Pham',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4767,6 +4791,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Hai Pham',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4791,6 +4816,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Hai Pham',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -4815,6 +4841,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Hai Pham',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4839,6 +4866,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Hai Pham',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -4863,6 +4891,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Hai Pham',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -4887,6 +4916,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Hai Pham',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -5011,6 +5041,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Hai Pham',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -5123,6 +5154,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Bryan',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5147,6 +5179,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Bryan',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5171,6 +5204,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Bryan',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5195,6 +5229,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Bryan',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5219,6 +5254,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Bryan',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -5243,6 +5279,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Bryan',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -5267,6 +5304,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Bryan',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5291,6 +5329,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Bryan',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -5415,6 +5454,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Bryan',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -5527,6 +5567,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Shawn',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5551,6 +5592,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Shawn',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5575,6 +5617,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Shawn',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5599,6 +5642,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Shawn',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5623,6 +5667,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Shawn',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5647,6 +5692,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Shawn',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -5671,6 +5717,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Shawn',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -5695,6 +5742,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Shawn',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -5819,6 +5867,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Shawn',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -5931,6 +5980,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5955,6 +6005,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -5979,6 +6030,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6003,6 +6055,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6027,6 +6080,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6051,6 +6105,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6075,6 +6130,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Barry',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6099,6 +6155,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Barry',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -6223,6 +6280,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Barry',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -6335,6 +6393,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Josh',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6359,6 +6418,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Josh',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6407,6 +6467,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Josh',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6431,6 +6492,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Josh',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6455,6 +6517,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Josh',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6479,6 +6542,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Josh',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -6503,6 +6567,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Josh',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -6627,6 +6692,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Josh',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -6739,6 +6805,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '59m 27s',
+                author: 'Scott Allen',
                 image: '../../assets/asp-net-core.png',
                 content: [
                     {
@@ -6763,6 +6830,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '52m 16s',
+                author: 'Scott Allen',
                 image: '../../assets/netcore.png',
                 content: [
                     {
@@ -6787,6 +6855,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '48m 56s',
+                author: 'Scott Allen',
                 image: '../../assets/asp-net-core.png',
                 content: [
                     {
@@ -6811,6 +6880,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '1h 2m',
+                author: 'Scott Allen',
                 image: '../../assets/devintersection.png',
                 content: [
                     {
@@ -6835,6 +6905,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: '38m 6s',
+                author: 'Scott Allen',
                 image: '../../assets/devintersection.png',
                 content: [
                     {
@@ -6859,6 +6930,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
                 duration: ' 50m 11s',
+                author: 'Scott Allen',
                 image: '../../assets/devintersection.png',
                 content: [
                     {
@@ -6883,6 +6955,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Scott Allen',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -7007,6 +7080,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Scott Allen',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -7119,6 +7193,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: '40m 42s',
+                author: 'Joe Eames',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -7143,6 +7218,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 24m 28s',
+                author: 'Joe Eames',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -7167,6 +7243,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 48s',
+                author: 'Joe Eames',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -7191,6 +7268,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 47s',
+                author: 'Joe Eames',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -7215,6 +7293,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 10m 6s',
+                author: 'Joe Eames',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -7239,6 +7318,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 20m 36s',
+                author: 'Joe Eames',
                 image: '../../assets/Angular.png',
                 content: [
                     {
@@ -7263,6 +7343,7 @@ const authors = [
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
                 duration: ' 22m 4s',
+                author: 'Joe Eames',
                 image: '../../assets/angular-pwa-course.png',
                 content: [
                     {
@@ -7287,6 +7368,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
                 duration: '6h 5m',
+                author: 'Joe Eames',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -7411,6 +7493,7 @@ const authors = [
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
                 duration: '3h 26m',
+                author: 'Joe Eames',
                 image: '../../assets/C#.jpeg',
                 content: [
                     {
@@ -7514,4 +7597,4 @@ const authors = [
     }
 ]
 
-export {newCourses, recommendedCourses ,coursesData, paths, authors };
+export {newCourses, recommendedCourses ,coursesData, paths, authors, newPaths, trendingPaths };

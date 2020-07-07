@@ -6,6 +6,8 @@ import ThemedText from '../../../Common/themed-text'
 
 
 const SectionPathsItem = (props) => {
+    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
+    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
     return (
         <ScreenContainer>
             <TouchableOpacity
@@ -14,7 +16,7 @@ const SectionPathsItem = (props) => {
                     props.navigation.navigate("PathDetail")
                 }}
             >
-                <Image style={styles.image} source={require('../../../../../assets/background2.jpg')} />
+                <Image style={styles.image} source={Image_Http_URL} />
                 <View style={styles.text}>
                 <ThemedText h5>
                     {props.title}

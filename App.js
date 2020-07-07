@@ -30,6 +30,8 @@ import { AuthenticationProvider, AuthenticationContext } from './src/provider/au
 import { ThemeContext, themes } from './src/provider/themes-provider';
 import { login } from './src/core/service/authentication-service';
 import { CoursesProvider } from './src/provider/courses-provider';
+import { AuthorProvider } from './src/provider/author-provider';
+import { PathsProvider } from './src/provider/paths-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -186,12 +188,16 @@ export default function App() {
         value={{ login1, authentication, setAuthentication }}
       >
         <CoursesProvider>
-          <NavigationContainer>
-            <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-              <Stack.Screen name="MainTab" component={MainTab} />
-              <Stack.Screen name="AuthenStack" component={Authen} />
-            </Stack.Navigator>
-          </NavigationContainer>
+          <AuthorProvider>
+            <PathsProvider>
+              <NavigationContainer>
+                <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                  <Stack.Screen name="MainTab" component={MainTab} />
+                  <Stack.Screen name="AuthenStack" component={Authen} />
+                </Stack.Navigator>
+              </NavigationContainer>
+            </PathsProvider>
+          </AuthorProvider>
         </CoursesProvider>
       </AuthenticationContext.Provider>
     </ThemeContext.Provider>

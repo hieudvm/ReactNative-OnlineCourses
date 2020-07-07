@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, View, ScrollView } from 'react-native'
 import SectionAuthorsItem from '../SectionAuthorsItem/section-authors-item'
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
+import { AuthorContext } from '../../../../provider/author-provider'
 
 
 const SectionAuthors = (props) => {
 
-    const listAuthors = ["Hieu Duong", "Hai Pham", "Tuan Mai", "Vu Nguyen", "Tuyen Pham", "Loc Truong", "Huy Nguyen", "Anh Tran"]
+    const authorContext = useContext(AuthorContext)
 
     const renderListItem = (skills) => {
-        return skills.map(item => <SectionAuthorsItem navigation={props.navigation} title={item} />);
+        return skills.map(item => <SectionAuthorsItem navigation={props.navigation} item={item} />);
     }
     
     return (
@@ -22,7 +23,7 @@ const SectionAuthors = (props) => {
                 </ThemedText>
             </View>
            <ScrollView horizontal={true}>
-                {renderListItem(listAuthors)}
+                {renderListItem(authorContext.author)}
             </ScrollView>
         </ScreenContainer>
     )

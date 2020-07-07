@@ -13,13 +13,16 @@ const BrowseDetail = (props) => {
     const renderListSkill = (skills) => {
         return skills.map(item => <TouchableOpacity onPress={props.onPress}><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
     }
+
+    const item = props.route.params.item
+
     return (
         <ScreenContainer>
             <ScrollView>
                 <ImageBackground style={styles.button} source={require('../../../../../assets/white.jpg')}>
-                    <ThemedText h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
-                        {props.title}
-                    </ThemedText>
+                    <Text h4 style={{ textAlign: 'center', color: 'black', marginHorizontal: 65 }}>
+                        {item}
+                    </Text>
                 </ImageBackground>
                 <View>
                     <ThemedText style={{ margin: 5 }}>
@@ -43,7 +46,9 @@ export default BrowseDetail
 const styles = StyleSheet.create({
     button: {
         height: 230,
-        marginBottom: 0
+        marginBottom: 0,
+        justifyContent: 'center',
+        alignContent: 'center'
     },
     touch: {
         flex: 1,

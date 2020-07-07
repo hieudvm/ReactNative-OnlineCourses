@@ -15,7 +15,7 @@ const SectionSkills = (props) => {
     const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
 
     const renderListItem = (skills) => {
-        return skills.map(item => <ImageButtonItem navigation={props.navigation} title={item} />);
+        return skills.map(item => <ImageButtonItem navigation={props.navigation} item={item} />);
     }
 
     const renderListSkill = (skills) => {
