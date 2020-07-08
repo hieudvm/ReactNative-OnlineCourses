@@ -108,13 +108,13 @@ const BrowseStackScreen = () => {
   return (
     <BrowseStack.Navigator>
       <BrowseStack.Screen name="Browse" component={Browse} />
-      <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
       <BrowseStack.Screen name="BrowseDetail" component={BrowseDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="SkillDetail" component={SkillDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="Paths" component={ListPaths} options={{ title: "Paths" }} />
       <BrowseStack.Screen name="AllPaths" component={AllPathsItem} options={{ title: "Paths" }} />
       <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
+      <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{ title: "Courses" }} />
     </BrowseStack.Navigator>
   )
 };

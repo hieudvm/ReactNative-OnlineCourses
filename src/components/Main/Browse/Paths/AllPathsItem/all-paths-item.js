@@ -10,7 +10,7 @@ const AllPathsItem = (props) => {
         <ScreenContainer>
             <FlatList 
                 data = {item}
-                renderItem={({item}) => <PathsItem item={item} />}
+                renderItem={({item}) => <PathsItem navigation={props.navigation} item={item} />}
             />
         </ScreenContainer>
     )

@@ -10,6 +10,7 @@ const PathsItem = (props) => {
         <ScreenContainer style={styles.item}>
             <TouchableOpacity style ={{flexDirection: 'row'}}
             onPress={() =>{
+                props.navigation.navigate("AllCourses", {item: props.item.listCourses})
             }}
         >
             <Image source = {Image_Http_URL} style={styles.image} />
