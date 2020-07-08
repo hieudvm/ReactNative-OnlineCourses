@@ -53,7 +53,7 @@ const Home = (props) => {
             </View>
           </View>
           <View>
-            <Text>Bookmarks</Text>
+            <Text>Favorite</Text>
             <View style={styles.iconItem}>
               <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                 <Icon

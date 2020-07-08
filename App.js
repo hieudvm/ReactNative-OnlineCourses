@@ -132,7 +132,7 @@ const SearchStackScreen = () => {
 const MainTab = () => {
   return (
     <Tabs.Navigator initialRouteName="Home">
-      <Tabs.Screen name="Home" component={HomeDrawerScreen} options={{
+      <Tabs.Screen name="Home" component={HomeStackScreen} options={{
         tabBarLabel: 'Home',
 
         tabBarIcon: ({ color, size }) => (
