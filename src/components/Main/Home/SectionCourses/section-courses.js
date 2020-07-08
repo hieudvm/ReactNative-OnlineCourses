@@ -22,6 +22,17 @@ const SectionCourses = (props) => {
         } else if (props.title === 'Data professional') {
             const course3 = courseContext.courses.slice(14,22)
             return renderListItem(course3)
+        }  else if (props.title === 'Countinue learning') {
+            const courseTemp = []
+            const course4 = Array.from(courseContext.learningCourseIds)
+            for(const x of courseContext.learningCourseIds) {
+                courseTemp.push(courseContext.courses[x-1])
+            }
+            if (course4.length === 0) {
+                return
+            } else {
+                return renderListItem(courseTemp)
+            }
         }
     }
 

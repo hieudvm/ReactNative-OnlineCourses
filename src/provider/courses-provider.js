@@ -18,6 +18,7 @@ const CoursesProvider = (props) => {
     function addLearningCourse(courseId) {
         console.log('addLearningCourse', courseId, learningCourseIds)
         var newData = new Set(learningCourseIds.add(courseId))
+        console.log('newData', newData)
         setLearningCourseIds(newData)
     }
 

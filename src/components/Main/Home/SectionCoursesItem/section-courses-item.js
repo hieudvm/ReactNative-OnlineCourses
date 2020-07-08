@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
+import { CoursesContext } from '../../../../provider/courses-provider'
 
 const SectionCoursesItem = (props) => {
+    const courseContext = useContext(CoursesContext)
     const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
     Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
 
     return (
         <TouchableOpacity
             onPress={() => {
+                courseContext.addLearningCourse(props.item.id)
                 props.navigation.push("CourseDetail", {item: props.item})
             }}
         >
