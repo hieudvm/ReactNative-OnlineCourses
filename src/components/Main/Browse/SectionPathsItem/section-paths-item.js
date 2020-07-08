@@ -13,13 +13,13 @@ const SectionPathsItem = (props) => {
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() => {
-                    props.navigation.navigate("PathDetail")
+                    props.navigation.navigate("PathDetail", {item: props.item})
                 }}
             >
                 <Image style={styles.image} source={Image_Http_URL} />
                 <View style={styles.text}>
                 <ThemedText h5>
-                    {props.title}
+                    {props.item.title}
                 </ThemedText>
                 </View>
             </TouchableOpacity>

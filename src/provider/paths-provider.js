@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import { paths } from '../resourceContext/resource-context'
+import { paths, newPaths, trendingPaths } from '../resourceContext/resource-context'
 
 const PathsContext = React.createContext()
 
 const PathsProvider = (props) => {
-    const [paths, setPaths] = useState(paths)
+    const [path, setPaths] = useState(paths)
 
-    const [newPaths, setNewPaths] = useState(newPaths)
+    const [newPath, setNewPaths] = useState(newPaths)
 
-    const [trendingPaths, setTrendingPaths] = useState(trendingPaths)
+    const [trendingPath, setTrendingPaths] = useState(trendingPaths)
     return (
-        <PathsProvider value={{ paths, setPaths, newPaths, setNewPaths, trendingPaths, setTrendingPaths }}>
+        <PathsContext.Provider value={{ path, setPaths, newPath, setNewPaths, trendingPath, setTrendingPaths }}>
             {props.children}
-        </PathsProvider>
+        </PathsContext.Provider>
     )
 }
 
