@@ -115,6 +115,7 @@ const BrowseStackScreen = () => {
       <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{ title: "Courses" }} />
+      <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
     </BrowseStack.Navigator>
   )
 };

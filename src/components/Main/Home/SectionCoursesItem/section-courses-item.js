@@ -11,7 +11,7 @@ const SectionCoursesItem = (props) => {
     return (
         <TouchableOpacity
             onPress={() => {
-                props.navigation.navigate("CourseDetail", {item: props.item})
+                props.navigation.push("CourseDetail", {item: props.item})
             }}
         >
             <ScreenContainer style={styles.item}>
