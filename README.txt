@@ -18,7 +18,7 @@ Deadline 1: Mock-up UI/UX cho toàn bộ ứng dụng
 
 ======================================================================
 Deadline 2: Xây dựng ứng dụng offline cho toàn bộ ứng dụng
-  - Commit ID: 
+  - Commit ID: 60b798e
   - Video demo: 
 
 ======================================================================
