@@ -45,16 +45,16 @@ const styles = StyleSheet.create({
 
     },
     text: {
+        width: 250,
         flex: 3,
         color: 'white',
         fontWeight: 'bold',
-        textAlign: 'center',
         backgroundColor: 'gray',
         justifyContent: 'center',
         alignContent: 'center',
         margin: 6,
         marginTop: 0,
         padding: 10,
-        paddingHorizontal: 40
+        paddingHorizontal: 20
     }
 })

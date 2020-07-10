@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import VideoPlayer from './VideoPlayer/video-player'
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -6,8 +6,14 @@ import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import ListLessons from './ListLessons/list-lessons';
 import ScreenContainer from '../Common/screen-container';
 import ThemedText from '../Common/themed-text';
+import { FavouritesContext } from '../../provider/favourites-provider';
 
 const CourseDetail = (props) => {
+
+    const favoriteContext = useContext(FavouritesContext)
+
+    const [favorite, setFavorite] = useState('Favorite')
+
     const item = props.route.params.item
     // console.log(item)
     return (
@@ -17,13 +23,23 @@ const CourseDetail = (props) => {
             </View>
             <ScrollView style={{ flex: 2 }}>
                 <View style={styles.icon}>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            if (favoriteContext.favouriteCourses.has(item.id)) {
+                                setFavorite('Favorite')
+                                favoriteContext.removeFavouriteCourse(item.id)
+                            } else {
+                                setFavorite('Not Favorite')
+                                favoriteContext.addFavouriteCourse(item.id)
+                            }
+                        }}
+                    >
                         <View style={styles.iconItem}>
                             <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
                                 <Icon
                                     name='bookmark' size={30} />
                             </View>
-                            <ThemedText>Favorite</ThemedText>
+                            <ThemedText>{favorite}</ThemedText>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity>
@@ -46,7 +62,7 @@ const CourseDetail = (props) => {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 1 }}>
-                    <ListLessons item={item}/>
+                    <ListLessons item={item} />
                 </View>
             </ScrollView>
         </ScreenContainer>

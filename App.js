@@ -32,6 +32,7 @@ import { login } from './src/core/service/authentication-service';
 import { CoursesProvider } from './src/provider/courses-provider';
 import { AuthorProvider } from './src/provider/author-provider';
 import { PathsProvider } from './src/provider/paths-provider';
+import { FavouritesProvider } from './src/provider/favourites-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -100,6 +101,7 @@ const DownloadStackScreen = () => {
   return (
     <DownloadStack.Navigator>
       <DownloadStack.Screen name="Favorite" component={Download} />
+      <DownloadStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
     </DownloadStack.Navigator>
   )
 };
@@ -191,12 +193,14 @@ export default function App() {
         <CoursesProvider>
           <AuthorProvider>
             <PathsProvider>
-              <NavigationContainer>
-                <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-                  <Stack.Screen name="MainTab" component={MainTab} />
-                  <Stack.Screen name="AuthenStack" component={Authen} />
-                </Stack.Navigator>
-              </NavigationContainer>
+              <FavouritesProvider>
+                <NavigationContainer>
+                  <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                    <Stack.Screen name="MainTab" component={MainTab} />
+                    <Stack.Screen name="AuthenStack" component={Authen} />
+                  </Stack.Navigator>
+                </NavigationContainer>
+              </FavouritesProvider>
             </PathsProvider>
           </AuthorProvider>
         </CoursesProvider>

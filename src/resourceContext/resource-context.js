@@ -661,6 +661,6865 @@ const coursesData = [
         isFavorite: 0,
         isNew: 0,
         isTrending: 0
+    },
+    {
+        id: 24,
+        title: 'Angular Denver 2019: Keynote talk',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 25,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 26,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 27,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 28,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 29,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 30,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 31,
+        title: 'Angular Denver 2019: Rendering Angular Applications in Terminal, Angular Platform',
+        author: 'Angular Denver',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 24s',
+        content: [
+            {
+                detail: 'Rendering Angular Applications in Terminal, Angular Platform',
+                time: '20m 24s',
+                data: [
+                    {
+                        title: 'Rendering Angular Applications in Terminal, Angular Platform',
+                        time: '20m 24s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 32,
+        title: 'The Database Is Only Half Done',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: '30m 1s',
+        content: [
+            {
+                detail: 'The Database Is Only Half Done',
+                time: '30m 1s',
+                data: [
+                    {
+                        title: 'The Database Is Only Half Done',
+                        time: '30m 1s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 33,
+        title: 'Your AI Is Wrong! Lessons from Decision-making with Imperfect AI',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: '23m 8s',
+        content: [
+            {
+                detail: 'Your AI Is Wrong! Lessons from Decision-making with Imperfect AI',
+                time: '23m 8s',
+                data: [
+                    {
+                        title: 'Your AI Is Wrong! Lessons from Decision-making with Imperfect AI',
+                        time: '23m 8s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 34,
+        title: 'Multiparadigm Data Science: The Next Frontier in Decision Making',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: '24m 53s',
+        content: [
+            {
+                detail: 'Multiparadigm Data Science: The Next Frontier in Decision Making',
+                time: '24m 53s',
+                data: [
+                    {
+                        title: 'Multiparadigm Data Science: The Next Frontier in Decision Making',
+                        time: '24m 53s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 35,
+        title: 'Achieving 100% Adoption of Analytics in the Enterprise',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: ' 28m 33s',
+        content: [
+            {
+                detail: 'Achieving 100% Adoption of Analytics in the Enterprise',
+                time: '28m 33s',
+                data: [
+                    {
+                        title: 'Achieving 100% Adoption of Analytics in the Enterprise',
+                        time: '28m 33s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 36,
+        title: 'Data Skills: How Mondi Does Digital',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: ' 19m 49s',
+        content: [
+            {
+                detail: 'Data Skills: How Mondi Does Digital',
+                time: '19m 49s',
+                data: [
+                    {
+                        title: 'Data Skills: How Mondi Does Digital',
+                        time: '19m 49s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 37,
+        title: 'Building a Modern Data Architecture for the Data Driven Enterprise',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 15, 2019',
+        duration: ' 30m 25s',
+        content: [
+            {
+                detail: 'Building a Modern Data Architecture for the Data Driven Enterprise',
+                time: '30m 25s',
+                data: [
+                    {
+                        title: 'Building a Modern Data Architecture for the Data Driven Enterprise',
+                        time: '30m 25s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 38,
+        title: 'Harnessing the Power of Data to Improve Public Health',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: ' 23m 11s',
+        content: [
+            {
+                detail: 'Harnessing the Power of Data to Improve Public Health',
+                time: '23m 11s',
+                data: [
+                    {
+                        title: 'Harnessing the Power of Data to Improve Public Health',
+                        time: '23m 11s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 39,
+        title: 'Real-time Data Analytics at Scale Using Cloud Services',
+        author: 'Big Data LDN',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: ' 28m 23s',
+        content: [
+            {
+                detail: 'Real-time Data Analytics at Scale Using Cloud Services',
+                time: '28m 23s',
+                data: [
+                    {
+                        title: 'Real-time Data Analytics at Scale Using Cloud Services',
+                        time: '28m 23s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 40,
+        title: 'Sercurity 2030: The Next Decade',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '39m 11s',
+        content: [
+            {
+                detail: 'Sercurity 2030: The Next Decade',
+                time: '39m 11s',
+                data: [
+                    {
+                        title: 'Sercurity 2030: The Next Decade',
+                        time: '39m 11s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 41,
+        title: 'Training the IT Security Staff on a Shoestring Budget',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 28, 2020',
+        duration: '37m 20s',
+        content: [
+            {
+                detail: 'Training the IT Security Staff on a Shoestring Budget',
+                time: '37m 20s',
+                data: [
+                    {
+                        title: 'Training the IT Security Staff on a Shoestring Budget',
+                        time: '37m 20s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 42,
+        title: 'How to Secure America',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '1h 11m',
+        content: [
+            {
+                detail: 'How to Secure America',
+                time: '1h 11m',
+                data: [
+                    {
+                        title: 'How to Secure America',
+                        time: '1h 11m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 43,
+        title: 'Reversing the Gophe Spambot: Confronting COM Code and Surmouting STL Snags',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '40m 9s',
+        content: [
+            {
+                detail: 'Reversing the Gophe Spambot: Confronting COM Code and Surmouting STL Snags',
+                time: '40m 9s',
+                data: [
+                    {
+                        title: 'Reversing the Gophe Spambot: Confronting COM Code and Surmouting STL Snags',
+                        time: '40m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 44,
+        title: 'Closing the Cybersecurity Talent Gap',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '1h 4m',
+        content: [
+            {
+                detail: 'Closing the Cybersecurity Talent Gap',
+                time: '1h 4m',
+                data: [
+                    {
+                        title: 'Closing the Cybersecurity Talent Gap',
+                        time: '1h 4m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 45,
+        title: 'Cyber-Ninja Space Pirates',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '38m 6s',
+        content: [
+            {
+                detail: 'Cyber-Ninja Space Pirates',
+                time: '38m 6s',
+                data: [
+                    {
+                        title: 'Cyber-Ninja Space Pirates',
+                        time: '38m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 46,
+        title: 'Hacking the Human',
+        author: 'BSides Huntsville',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: ' 50m 11s',
+        content: [
+            {
+                detail: 'Hacking the Human',
+                time: '50m 11s',
+                data: [
+                    {
+                        title: 'Hacking the Human',
+                        time: '50m 11s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 47,
+        title: 'Event Processing without Breaking Production: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: '39m 11s',
+        content: [
+            {
+                detail: 'Event Processing without Breaking Production: CodeMash',
+                time: '39m 11s',
+                data: [
+                    {
+                        title: 'Event Processing without Breaking Production: CodeMash',
+                        time: '39m 11s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 48,
+        title: 'Bringing Order to Chaos: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: '37m 20s',
+        content: [
+            {
+                detail: 'Bringing Order to Chaos: CodeMash',
+                time: '37m 20s',
+                data: [
+                    {
+                        title: 'Bringing Order to Chaos: CodeMash',
+                        time: '37m 20s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 49,
+        title: 'Finding Service Boundaries: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: '1h 11m',
+        content: [
+            {
+                detail: 'Finding Service Boundaries: CodeMash',
+                time: '1h 11m',
+                data: [
+                    {
+                        title: 'Finding Service Boundaries: CodeMash',
+                        time: '1h 11m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 50,
+        title: 'API Gateways and Microservices: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: '40m 9s',
+        content: [
+            {
+                detail: 'API Gateways and Microservices: CodeMash',
+                time: '40m 9s',
+                data: [
+                    {
+                        title: 'API Gateways and Microservices: CodeMash',
+                        time: '40m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 51,
+        title: 'Vertical Slice Architecture: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: '1h 4m',
+        content: [
+            {
+                detail: 'Vertical Slice Architecture: CodeMash',
+                time: '1h 4m',
+                data: [
+                    {
+                        title: 'Vertical Slice Architecture: CodeMash',
+                        time: '1h 4m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 52,
+        title: 'Kiling REST and Adopting RPC: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: '38m 6s',
+        content: [
+            {
+                detail: 'Kiling REST and Adopting RPC: CodeMash',
+                time: '38m 6s',
+                data: [
+                    {
+                        title: 'Kiling REST and Adopting RPC: CodeMash',
+                        time: '38m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 53,
+        title: '5 Ideas For Writing Better Cloud Native Microservice: CodeMash',
+        author: 'CodeMash',
+        level: 'Intermediate',
+        released: 'Feb 7, 2020',
+        duration: ' 50m 11s',
+        content: [
+            {
+                detail: '5 Ideas For Writing Better Cloud Native Microservice: CodeMash',
+                time: '50m 11s',
+                data: [
+                    {
+                        title: '5 Ideas For Writing Better Cloud Native Microservice: CodeMash',
+                        time: '50m 11s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 54,
+        title: 'The History of .Net: DEVintersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '1h 5m',
+        content: [
+            {
+                detail: 'The History of .Net: DEVintersection 2019',
+                time: '1h 5m',
+                data: [
+                    {
+                        title: 'The History of .Net: DEVintersection 2019',
+                        time: '1h 5m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 55,
+        title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '59m 27s',
+        content: [
+            {
+                detail: 'The State of .NET and Looking Ahead to 2020: DEVintersection 2019',
+                time: '59m 27s',
+                data: [
+                    {
+                        title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
+                        time: '59m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id:56,
+        title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '52m 16s',
+        content: [
+            {
+                detail: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+                time: '52m 16s',
+                data: [
+                    {
+                        title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+                        time: '52m 16s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 57,
+        title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '48m 56s',
+        content: [
+            {
+                detail: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+                time: '48m 56s',
+                data: [
+                    {
+                        title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+                        time: '48m 56s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 58,
+        title: 'What You Need to Know About .NET Core: DEVintersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '1h 2m',
+        content: [
+            {
+                detail: 'What You Need to Know About .NET Core: DEVintersection 2019',
+                time: '1h 2m',
+                data: [
+                    {
+                        title: 'What You Need to Know About .NET Core: DEVintersection 2019',
+                        time: '1h 2m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 59,
+        title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '38m 6s',
+        content: [
+            {
+                detail: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+                time: '38m 6s',
+                data: [
+                    {
+                        title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+                        time: '38m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 60,
+        title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+        author: 'DEVintersection',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: ' 50m 11s',
+        content: [
+            {
+                detail: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+                time: '50m 11s',
+                data: [
+                    {
+                        title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+                        time: '50m 11s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 61,
+        title: 'Coding in AWS Cloud9 IDE',
+        author: 'Jordan Yankovich',
+        level: 'Intermediate',
+        released: 'Jun 11, 2020',
+        duration: '1h 16m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 27s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using AWS Cloud9',
+                time: '22m 52s',
+                data: [
+                    {
+                        title: 'Using AWS Cloud9',
+                        time: '22m 52s'
+                    }
+                ]
+            },
+            {
+                detail: 'Developing sofware with Cloud9',
+                time: '17m 46s',
+                data: [
+                    {
+                        title: 'Developing sofware with Cloud9',
+                        time: '17m 46s'
+                    }
+                ]
+            },
+            {
+                detail: 'Collaborating with Teams Using Cloud9',
+                time: '15m 16s',
+                data: [
+                    {
+                        title: 'Collaborating with Teams Using Cloud9',
+                        time: '15m 16s'
+                    }
+                ]
+            },
+            {
+                detail: 'Integrating Cloud9 and Other AWS Service',
+                time: '18m 29s',
+                data: [
+                    {
+                        title: 'Integrating Cloud9 and Other AWS Service',
+                        time: '18m 29s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 62,
+        title: 'Developing Applications with AWS Lightsail',
+        author: 'Tom Compagno',
+        level: 'Intermediate',
+        released: 'Mar 6, 2020',
+        duration: ' 1h 12m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 20s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'cretae and Connect to a Lightsail Server',
+                time: '16m',
+                data: [
+                    {
+                        title: 'cretae and Connect to a Lightsail Server',
+                        time: '16m'
+                    }
+                ]
+            },
+            {
+                detail: 'Create and Configure a Cloud9 Developmet Enviroment',
+                time: '12m 37s',
+                data: [
+                    {
+                        title: 'Create and Configure a Cloud9 Developmet Enviroment',
+                        time: '12m 37s'
+                    }
+                ]
+            },
+            {
+                detail: 'Prepare Your Lightsail for Production Scalability',
+                time: '9m 42s',
+                data: [
+                    {
+                        title: 'Prepare Your Lightsail for Production Scalability',
+                        time: '9m 42s'
+                    }
+                ]
+            },
+            {
+                detail: 'Scaling Lightsail to Hanle More Traffic',
+                time: '26m 29s',
+                data: [
+                    {
+                        title: 'Scaling Lightsail to Hanle More Traffic',
+                        time: '26m 29s'
+                    }
+                ]
+            },
+            {
+                detail: 'Exploring Additional Lightsail Capabilities',
+                time: '5m 6s',
+                data: [
+                    {
+                        title: 'Exploring Additional Lightsail Capabilities',
+                        time: '5m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 63,
+        title: 'Performing Continuous Delivery with AWS CodeStar',
+        author: 'Armen Avanesi',
+        level: 'Intermediate',
+        released: 'Mar 12, 2020',
+        duration: ' 54m 33s',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Your First Continuos Delivery Pipeline',
+                time: '23m 28s',
+                data: [
+                    {
+                        title: 'Creating Your First Continuos Delivery Pipeline',
+                        time: '23m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Monitoring and Managing a CodeStar Application',
+                time: '20m 17s',
+                data: [
+                    {
+                        title: 'Monitoring and Managing a CodeStar Application',
+                        time: '20m 17s'
+                    }
+                ]
+            },
+            {
+                detail: 'Team Management with CodeStar',
+                time: '9m 42s',
+                data: [
+                    {
+                        title: 'Team Management with CodeStar',
+                        time: '9m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 64,
+        title: 'Managing Source Control with AWS CodeCommit',
+        author: 'Saravanan',
+        level: 'Intermediate',
+        released: 'Feb 10, 2020',
+        duration: ' 1h 5m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '2m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '2m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Core Features of AWS CodeCommit',
+                time: '17m 28s',
+                data: [
+                    {
+                        title: 'Core Features of AWS CodeCommit',
+                        time: '17m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Integrate AWS CodeCommit with AWS Cloud9',
+                time: '15m 51s',
+                data: [
+                    {
+                        title: 'Integrate AWS CodeCommit with AWS Cloud9',
+                        time: '15m 51s'
+                    }
+                ]
+            },
+            {
+                detail: 'Monitor and Troubleshoot AWS CodeCommit',
+                time: '14m 8s',
+                data: [
+                    {
+                        title: 'Monitor and Troubleshoot AWS CodeCommit',
+                        time: '14m 8s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 65,
+        title: 'Deploying Code with AWS CodeDeploy',
+        author: 'Edwards',
+        level: 'Intermediate',
+        released: 'Apr 8, 2020',
+        duration: ' 1h 12m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Overview of AWS CodeDeploy',
+                time: '12m 28s',
+                data: [
+                    {
+                        title: 'Overview of AWS CodeDeploy',
+                        time: '12m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using CodeDeploy with EC2',
+                time: '20m 24s',
+                data: [
+                    {
+                        title: 'Using CodeDeploy with EC2',
+                        time: '20m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using CodeDeploy with ECS',
+                time: '18m 11s',
+                data: [
+                    {
+                        title: 'Using CodeDeploy with ECS',
+                        time: '18m 11s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using CodeDeploy with Lambda',
+                time: '18m 45s',
+                data: [
+                    {
+                        title: 'Using CodeDeploy with Lambda',
+                        time: '18m 45s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 66,
+        title: 'Practicing CI/CD with AWS CodePipeline',
+        author: 'Ryan Lewis',
+        level: 'Intermediate',
+        released: 'Mar 20, 2020',
+        duration: ' 1h 4m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 26s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 26s'
+                    }
+                ]
+            },
+            {
+                detail: 'Building and Deploying code win CodePipeline',
+                time: '40m 28s',
+                data: [
+                    {
+                        title: 'Building and Deploying code win CodePipeline',
+                        time: '40m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Advanced CodePipeline Practices',
+                time: '20m 24s',
+                data: [
+                    {
+                        title: 'Advanced CodePipeline Practices',
+                        time: '20m 24s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 67,
+        title: 'Implementing Pub/Sub Messageing with Amazon SNS',
+        author: 'Saravanan',
+        level: 'Beginner',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 26s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 26s'
+                    }
+                ]
+            },
+            {
+                detail: 'Getting started with Amazon SNS',
+                time: '40m 28s',
+                data: [
+                    {
+                        title: 'Getting started with Amazon SNS',
+                        time: '40m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Publishing Messages to SNS',
+                time: '20m 24s',
+                data: [
+                    {
+                        title: 'Publishing Messages to SNS',
+                        time: '20m 24s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 68,
+        title: 'Implementing Message Brokering with Amazon MQ',
+        author: 'Michael',
+        level: 'Beginner',
+        released: 'Apr 9, 2020',
+        duration: ' 1h 38m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Message with Amazon MQ',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: 'Message with Amazon MQ',
+                        time: '49m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Managing Amazon MQ',
+                time: '20m 24s',
+                data: [
+                    {
+                        title: 'Managing Amazon MQ',
+                        time: '20m 24s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 69,
+        title: 'C# Fundamentals',
+        author: 'Scott Allen',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Testing Your Code',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Building Type',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: 'OOP with C#',
+                        time: '55m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 70,
+        title: 'Beginning C# Collections',
+        author: 'Simon Robin',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: 'Manipulating List Data',
+                        time: '26m 22s'
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 71,
+        title: 'Setting up Java Development Enviroment',
+        author: 'Sander Mak',
+        level: 'Beginner',
+        released: 'Jan 3, 2020',
+        duration: '50m 11s',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Installing and Running Java',
+                time: '18m 59s',
+                data: [
+                    {
+                        title: 'Installing and Running Java',
+                        time: '18m 59s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using IntelliJ for Java Development',
+                time: '19m 24s',
+                data: [
+                    {
+                        title: 'Using IntelliJ for Java Development',
+                        time: '19m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Packaging Java Applications',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: 'Packaging Java Applications',
+                        time: '25m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 72,
+        title: 'Eclipse for Java Developers',
+        author: 'Jose Paumard',
+        level: 'Intermediate',
+        released: 'Apr 5, 2018',
+        duration: '3h 23m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Setting up a JavaSE Developent Enviroment with Eclipse',
+                time: '52m 57s',
+                data: [
+                    {
+                        title: 'Setting up a JavaSE Developent Enviroment with Eclipse',
+                        time: '52m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Setting up a Java Maven Development Enviroment with Eclipse',
+                time: '41m 24s',
+                data: [
+                    {
+                        title: 'Setting up a Java Maven Development Enviroment with Eclipse',
+                        time: '41m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using Git for Java Project in Eclipse',
+                time: '43m 27s',
+                data: [
+                    {
+                        title: 'Using Git for Java Project in Eclipse',
+                        time: '43m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Connecting Eclipse to a Database Server with MySQL',
+                time: '18m 24s',
+                data: [
+                    {
+                        title: 'Connecting Eclipse to a Database Server with MySQL',
+                        time: '18m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Setting up a JavaEE Project in Eclipse with Tomcat',
+                time: '43m 27s',
+                data: [
+                    {
+                        title: 'Setting up a JavaEE Project in Eclipse with Tomcat',
+                        time: '43m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 73,
+        title: 'Maven Fundamentals',
+        author: 'Bryan Hansen',
+        level: 'Intermediate',
+        released: 'Jun 28, 2019',
+        duration: '2h 25m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introduction to Maven',
+                time: '38m 57s',
+                data: [
+                    {
+                        title: 'Introduction to Maven',
+                        time: '38m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Structure',
+                time: '41m 24s',
+                data: [
+                    {
+                        title: 'Structure',
+                        time: '41m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Dependencies',
+                time: '20m 57s',
+                data: [
+                    {
+                        title: 'Dependencies',
+                        time: '20m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Repositories',
+                time: '17m 5s',
+                data: [
+                    {
+                        title: 'Repositories',
+                        time: '17m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Plugins',
+                time: '19m 27s',
+                data: [
+                    {
+                        title: 'Plugins',
+                        time: '19m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 74,
+        title: 'Designing RESTful Web APIs',
+        author: 'Shawn',
+        level: 'Beginner',
+        released: 'Aug 5, 2019',
+        duration: '2h 17m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'What is REST?',
+                time: '28m 57s',
+                data: [
+                    {
+                        title: 'What is REST?',
+                        time: '28m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Designing a RESTful API',
+                time: '41m 24s',
+                data: [
+                    {
+                        title: 'Designing a RESTful API',
+                        time: '41m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Handling More Complex Scenarios in Your API',
+                time: '20m 57s',
+                data: [
+                    {
+                        title: 'Handling More Complex Scenarios in Your API',
+                        time: '20m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Version Your API',
+                time: '10m 5s',
+                data: [
+                    {
+                        title: 'Version Your API',
+                        time: '10m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Locking Down Your API',
+                time: '19m 27s',
+                data: [
+                    {
+                        title: 'Locking Down Your API',
+                        time: '19m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 75,
+        title: 'Building a RESTful API with ASP.NET Core 3',
+        author: 'Kevin Dockx',
+        level: 'Beginner',
+        released: 'Oct 10, 2019',
+        duration: '5h 3m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Getting started with REST',
+                time: '43m 57s',
+                data: [
+                    {
+                        title: 'Getting started with REST',
+                        time: '43m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Structuring and Implementing the Outer Facing Contract',
+                time: '49m 24s',
+                data: [
+                    {
+                        title: 'Structuring and Implementing the Outer Facing Contract',
+                        time: '49m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Getting Resources',
+                time: '35m 57s',
+                data: [
+                    {
+                        title: 'Getting Resources',
+                        time: '35m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Filltering and Searching',
+                time: '20m 5s',
+                data: [
+                    {
+                        title: 'Filltering and Searching',
+                        time: '20m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Resources',
+                time: '49m 27s',
+                data: [
+                    {
+                        title: 'Creating Resources',
+                        time: '49m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Validating Data and Reporting validation Errors',
+                time: '26m 27s',
+                data: [
+                    {
+                        title: 'Validating Data and Reporting validation Errors',
+                        time: '26m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Updating Resources',
+                time: '1h 3m',
+                data: [
+                    {
+                        title: 'Updating Resources',
+                        time: '1h 3m'
+                    }
+                ]
+            },
+            {
+                detail: 'Deleting Resources',
+                time: '13m 27s',
+                data: [
+                    {
+                        title: 'Deleting Resources',
+                        time: '13m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 76,
+        title: 'Implementing Advanced RESTful API Concerns with ASP.NET Core 3',
+        author: 'Kevin Dockx',
+        level: 'Intermediate',
+        released: 'Oct 10, 2019',
+        duration: '3h 53m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Supporting Paging for Collection Resources',
+                time: '40m 57s',
+                data: [
+                    {
+                        title: 'Supporting Paging for Collection Resources',
+                        time: '40m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Sorting Resource Collections',
+                time: '30m 38s',
+                data: [
+                    {
+                        title: 'Sorting Resource Collections',
+                        time: '30m 38s'
+                    }
+                ]
+            },
+            {
+                detail: 'Shaping Data',
+                time: '20m 57s',
+                data: [
+                    {
+                        title: 'Shaping Data',
+                        time: '20m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Learning and Implementing HATEOAS',
+                time: '30m 5s',
+                data: [
+                    {
+                        title: 'Learning and Implementing HATEOAS',
+                        time: '30m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Improving Reliablitity with Advanced Content Negotiation',
+                time: '42m 27s',
+                data: [
+                    {
+                        title: 'Improving Reliablitity with Advanced Content Negotiation',
+                        time: '42m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Getting Started with Caching Resources',
+                time: '32m 27s',
+                data: [
+                    {
+                        title: 'Getting Started with Caching Resources',
+                        time: '32m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Supporting HTTP Cache for ASP.NET Core APIs ',
+                time: '25m 17s',
+                data: [
+                    {
+                        title: 'Supporting HTTP Cache for ASP.NET Core APIs',
+                        time: '25m 17s'
+                    }
+                ]
+            },
+            {
+                detail: 'Supporting Concurrency',
+                time: '8m 27s',
+                data: [
+                    {
+                        title: 'Supporting Concurrency',
+                        time: '8m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 77,
+        title: 'Documenting an ASP.Net Core API with OpenAPI/Swagger',
+        author: 'Kevin Dockx',
+        level: 'Intermediate',
+        released: 'Feb 27, 2019',
+        duration: '2h 51m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Getting Started with Open API/ Swagger',
+                time: '13m 57s',
+                data: [
+                    {
+                        title: 'Getting Started with Open API/ Swagger',
+                        time: '13m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Documenting Your First API with OpenAPI/ Swagger',
+                time: '22m 38s',
+                data: [
+                    {
+                        title: 'Documenting Your First API with OpenAPI/ Swagger',
+                        time: '22m 38s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using and Overriding Conventions for OpenAPI Generation',
+                time: '42m 57s',
+                data: [
+                    {
+                        title: 'Using and Overriding Conventions for OpenAPI Generation',
+                        time: '42m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Generating OpenAPI Specifications for Advenced input and Output Scenarios',
+                time: '30m 5s',
+                data: [
+                    {
+                        title: 'Generating OpenAPI Specifications for Advenced input and Output Scenarios',
+                        time: '30m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Dealing with Different Versions and Protecting the Documentation',
+                time: '34m 29s',
+                data: [
+                    {
+                        title: 'Dealing with Different Versions and Protecting the Documentation',
+                        time: '34m 29s'
+                    }
+                ]
+            },
+            {
+                detail: 'Improving Your Documentation with Advanced Customization',
+                time: '18m 27s',
+                data: [
+                    {
+                        title: 'Improving Your Documentation with Advanced Customization',
+                        time: '18m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 78,
+        title: 'Swift Fundamentals',
+        author: 'Simmon',
+        level: 'Beginner',
+        released: 'Jan 10, 2019',
+        duration: '3h 48m',
+        content: [
+            {
+                detail: 'A Few More Reasons to Learn Swift',
+                time: '27m 36s',
+                data: [
+                    {
+                        title: 'A Few More Reasons to Learn Swift',
+                        time: '27m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Piece by piece: What Your Data Means',
+                time: '48m 57s',
+                data: [
+                    {
+                        title: 'Piece by piece: What Your Data Means',
+                        time: '48m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Shaping the Path: Controlling the Flow of Your Code',
+                time: '27m 38s',
+                data: [
+                    {
+                        title: 'Shaping the Path: Controlling the Flow of Your Code',
+                        time: '27m 38s'
+                    }
+                ]
+            },
+            {
+                detail: 'Constructing Code: Who Does What? - Creating Functions',
+                time: '21m 57s',
+                data: [
+                    {
+                        title: 'Constructing Code: Who Does What? - Creating Functions',
+                        time: '21m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Data Types Further: when to Limit, Describe, and Collect',
+                time: '27m 5s',
+                data: [
+                    {
+                        title: 'Taking Data Types Further: when to Limit, Describe, and Collect',
+                        time: '27m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Making Sense of Closures',
+                time: '24m 29s',
+                data: [
+                    {
+                        title: 'Making Sense of Closures',
+                        time: '24m 29s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using Classes and Object in Swift',
+                time: '25m 27s',
+                data: [
+                    {
+                        title: 'Using Classes and Object in Swift',
+                        time: '25m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Protocols',
+                time: '25m 9s',
+                data: [
+                    {
+                        title: 'Introducing Protocols',
+                        time: '25m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 79,
+        title: 'IOS 11 Fundamentals',
+        author: 'Simon',
+        level: 'Beginner',
+        released: 'Jan 24, 2018',
+        duration: '4h 24m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Getting Started',
+                time: '48m 57s',
+                data: [
+                    {
+                        title: 'Getting Started',
+                        time: '48m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Building Single View Applications',
+                time: '45m 38s',
+                data: [
+                    {
+                        title: 'Building Single View Applications',
+                        time: '45m 38s'
+                    }
+                ]
+            },
+            {
+                detail: 'Constructing Code: Who Does What? - Creating Functions',
+                time: '21m 57s',
+                data: [
+                    {
+                        title: 'Constructing Code: Who Does What? - Creating Functions',
+                        time: '21m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Data Types Further: when to Limit, Describe, and Collect',
+                time: '27m 5s',
+                data: [
+                    {
+                        title: 'Taking Data Types Further: when to Limit, Describe, and Collect',
+                        time: '27m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Making Sense of Closures',
+                time: '24m 29s',
+                data: [
+                    {
+                        title: 'Making Sense of Closures',
+                        time: '24m 29s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using Classes and Object in Swift',
+                time: '25m 27s',
+                data: [
+                    {
+                        title: 'Using Classes and Object in Swift',
+                        time: '25m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Protocols',
+                time: '25m 9s',
+                data: [
+                    {
+                        title: 'Introducing Protocols',
+                        time: '25m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 80,
+        title: 'Becomming an Xcode Power User',
+        author: 'Jonathan Wong',
+        level: 'Beginner',
+        released: 'May 22, 2020',
+        duration: '2h 34m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Managing Projetc and Workspaces in Xcode',
+                time: '19m 57s',
+                data: [
+                    {
+                        title: 'Managing Projetc and Workspaces in Xcode',
+                        time: '19m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Building Xcode Project: Configuring Schemes and Targets',
+                time: '22m 38s',
+                data: [
+                    {
+                        title: 'Building Xcode Project: Configuring Schemes and Targets',
+                        time: '22m 38s'
+                    }
+                ]
+            },
+            {
+                detail: 'Navigating through Xcode: Finding Your Workflow',
+                time: '27m 57s',
+                data: [
+                    {
+                        title: 'Navigating through Xcode: Finding Your Workflow',
+                        time: '27m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Productivity in Xcode',
+                time: '27m 5s',
+                data: [
+                    {
+                        title: 'Productivity in Xcode',
+                        time: '27m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Making Sense of Closures',
+                time: '24m 29s',
+                data: [
+                    {
+                        title: 'Making Sense of Closures',
+                        time: '24m 29s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using Classes and Object in Swift',
+                time: '25m 27s',
+                data: [
+                    {
+                        title: 'Using Classes and Object in Swift',
+                        time: '25m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Protocols',
+                time: '25m 9s',
+                data: [
+                    {
+                        title: 'Introducing Protocols',
+                        time: '25m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 81,
+        title: 'IOS Collection Views: Getting Started',
+        author: 'Mark',
+        level: 'Intermediate',
+        released: 'Jun 13, 2019',
+        duration: '2h 27m',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Course Introduction',
+                time: '7m 57s',
+                data: [
+                    {
+                        title: 'Course Introduction',
+                        time: '7m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Your First Collection View',
+                time: '15m 38s',
+                data: [
+                    {
+                        title: 'Your First Collection View',
+                        time: '15m 38s'
+                    }
+                ]
+            },
+            {
+                detail: 'Custommizing Size and Spacing',
+                time: '21m 57s',
+                data: [
+                    {
+                        title: 'Custommizing Size and Spacing',
+                        time: '21m 57s'
+                    }
+                ]
+            },
+            {
+                detail: 'Supplementary Views (Section Header and Footer)',
+                time: '27m 5s',
+                data: [
+                    {
+                        title: 'Supplementary Views (Section Header and Footer)',
+                        time: '27m 5s'
+                    }
+                ]
+            },
+            {
+                detail: 'Customizing Collection View Cells',
+                time: '24m 29s',
+                data: [
+                    {
+                        title: 'Customizing Collection View Cells',
+                        time: '24m 29s'
+                    }
+                ]
+            },
+            {
+                detail: 'Using Classes and Object in Swift',
+                time: '25m 27s',
+                data: [
+                    {
+                        title: 'Using Classes and Object in Swift',
+                        time: '25m 27s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Protocols',
+                time: '25m 9s',
+                data: [
+                    {
+                        title: 'Introducing Protocols',
+                        time: '25m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 82,
+        title: 'Object - C for Swift Developers',
+        author: 'David',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '1h 23m',
+        content: [
+            {
+                detail: 'Object - C for Swift Developers',
+                time: '1h 2m',
+                data: [
+                    {
+                        title: 'Object - C for Swift Developers',
+                        time: '1h 2m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 83,
+        title: 'Computer Fundamentals: Hardware',
+        author: 'Daniel',
+        level: 'Intermediate',
+        released: 'Jan 14, 2019',
+        duration: '2h 43m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Hardware',
+                time: '2h 43m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Hardware',
+                        time: '2h 43m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 84,
+        title: 'Computer Fundamentals: Mobile Devices',
+        author: 'Glenn',
+        level: 'Intermediate',
+        released: 'Jan 14, 2019',
+        duration: '2h 33m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Mobile Devices',
+                time: '2h 33m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Mobile Devices',
+                        time: '2h 33m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 85,
+        title: 'Computer Fundamentals: Operating Systems',
+        author: 'Glenn',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '3h 55m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Operating Systems',
+                time: '3h 55m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Operating Systems',
+                        time: '3h 55m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 86,
+        title: 'Computer Fundamentals: Operational Procedures',
+        author: 'Denial',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '1h 55m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Operational Procedures',
+                time: '1h 55m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Operational Procedures',
+                        time: '1h 55m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 87,
+        title: 'Computer Fundamentals: Networking',
+        author: 'Vlad',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '2h 12m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Networking',
+                time: '2h 12m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Networking',
+                        time: '2h 12m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 88,
+        title: 'Practical Networking',
+        author: 'Ben Piper',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '3h 27m',
+        content: [
+            {
+                detail: 'Practical Networking',
+                time: '3h 27m',
+                data: [
+                    {
+                        title: 'Practical Networking',
+                        time: '3h 27m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 89,
+        title: 'Computer Fundamentals: Hardware',
+        author: 'Daniel',
+        level: 'Intermediate',
+        released: 'Jan 14, 2019',
+        duration: '2h 43m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Hardware',
+                time: '2h 43m',
+                data: [
+                    {
+                        title: 'omputer Fundamentals: Hardware',
+                        time: '2h 43m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 90,
+        title: 'Computer Fundamentals: Mobile Devices',
+        author: 'Glenn',
+        level: 'Intermediate',
+        released: 'Jan 14, 2019',
+        duration: '2h 33m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Mobile Devices',
+                time: '2h 33m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Mobile Devices',
+                        time: '2h 33m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 91,
+        title: 'Computer Fundamentals: Operating Systems',
+        author: 'Glenn',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '3h 55m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Operating Systems',
+                time: '3h 55m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Operating Systems',
+                        time: '3h 55m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 92,
+        title: 'Computer Fundamentals: Operational Procedures',
+        author: 'Denial',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '1h 55m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Operational Procedures',
+                time: '1h 55m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Operational Procedures',
+                        time: '1h 55m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 93,
+        title: 'Computer Fundamentals: Networking',
+        author: 'Vlad',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '2h 12m',
+        content: [
+            {
+                detail: 'Computer Fundamentals: Networking',
+                time: '2h 12m',
+                data: [
+                    {
+                        title: 'Computer Fundamentals: Networking',
+                        time: '2h 12m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 94,
+        title: 'Practical Networking',
+        author: 'Ben Piper',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '3h 27m',
+        content: [
+            {
+                detail: 'Practical Networking',
+                time: '3h 27m',
+                data: [
+                    {
+                        title: 'Practical Networking',
+                        time: '3h 27m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 95,
+        title: 'Managing and Responding to Microsoft Azure Security Alerts',
+        author: 'Ammar Hasayen',
+        level: 'Intermediate',
+        released: 'Jun 25, 2019',
+        duration: '57m 1s',
+        content: [
+            {
+                detail: 'Managing and Responding to Microsoft Azure Security Alerts',
+                time: '57m 1s',
+                data: [
+                    {
+                        title: 'Managing and Responding to Microsoft Azure Security Alerts',
+                        time: '57m 1s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 96,
+        title: 'Configuring Security Services and Polices in Microsoft Azure',
+        author: 'Ned Bellavance',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: '1h 52m',
+        content: [
+            {
+                detail: 'Configuring Security Services and Polices in Microsoft Azure',
+                time: '1h 52m',
+                data: [
+                    {
+                        title: 'Configuring Security Services and Polices in Microsoft Azure',
+                        time: '1h 52m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 97,
+        title: 'Indident Response and Remediation in Microsoft Azure',
+        author: 'Ammar Hasayen',
+        level: 'Intermediate',
+        released: 'Dec 13, 2019',
+        duration: '2h 11m',
+        content: [
+            {
+                detail: 'Indident Response and Remediation in Microsoft Azure',
+                time: '2h 11m',
+                data: [
+                    {
+                        title: 'Indident Response and Remediation in Microsoft Azure',
+                        time: '2h 11m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 98,
+        title: 'Microsoft Azure Stack Hub Development: Getting Started',
+        author: 'Jason Helmick',
+        level: 'Beginner',
+        released: 'Feb 29, 2020',
+        duration: '1h 13m',
+        content: [
+            {
+                detail: 'Microsoft Azure Stack Hub Development: Getting Started',
+                time: '1h 13m',
+                data: [
+                    {
+                        title: 'Microsoft Azure Stack Hub Development: Getting Started',
+                        time: '1h 13m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 99,
+        title: 'Creating Micro Azure Stack Development Enviroments',
+        author: 'Jason Helmick',
+        level: 'Beginner',
+        released: 'Feb 28, 2020',
+        duration: '1h 43m',
+        content: [
+            {
+                detail: 'Creating Micro Azure Stack Development Enviroments',
+                time: '1h 43m',
+                data: [
+                    {
+                        title: 'Creating Micro Azure Stack Development Enviroments',
+                        time: '1h 43m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 100,
+        title: 'Architecural Patterns for Azure Stack Solutions',
+        author: 'Tim Waner',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '1h 48m',
+        content: [
+            {
+                detail: 'Architecural Patterns for Azure Stack Solutions',
+                time: '1h 48m',
+                data: [
+                    {
+                        title: 'Architecural Patterns for Azure Stack Solutions',
+                        time: '1h 48m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 101,
+        title: 'Operating Azure stack Hub',
+        author: 'Ned Bellavance',
+        level: 'Intermediate',
+        released: 'Feb 29, 2020',
+        duration: '1h 31m',
+        content: [
+            {
+                detail: 'Operating Azure stack Hub',
+                time: '40m 9s',
+                data: [
+                    {
+                        title: 'Operating Azure stack Hub',
+                        time: '40m 9s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 102,
+        title: 'Introduction System Center 2016 - Operations Manager SCOM',
+        author: 'Greg Shield',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '1h 5m',
+        content: [
+            {
+                detail: 'Introduction System Center 2016 - Operations Manager SCOM',
+                time: '1h 5m',
+                data: [
+                    {
+                        title: 'Introduction System Center 2016 - Operations Manager SCOM',
+                        time: '1h 5m'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 103,
+        title: 'Installing and Configuring System Center 2016 - Operations Manager (SCOM)',
+        author: 'Greg Shield',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '59m 27s',
+        content: [
+            {
+                detail: 'Installing and Configuring System Center 2016 - Operations Manager (SCOM)',
+                time: '59m 27s',
+                data: [
+                    {
+                        title: 'Installing and Configuring System Center 2016 - Operations Manager (SCOM)',
+                        time: '59m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 104,
+        title: 'Monitoring Windows Server 2016 with System Center 2016 - Operations Manager (SCOM)',
+        author: 'Greg Shield',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '52m 16s',
+        content: [
+            {
+                detail: 'Monitoring Windows Server 2016 with System Center 2016 - Operations Manager (SCOM)',
+                time: '52m 16s',
+                data: [
+                    {
+                        title: 'Monitoring Windows Server 2016 with System Center 2016 - Operations Manager (SCOM)',
+                        time: '52m 16s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 105,
+        title: 'Monitor Azure Resources and Web Applications with System Center Operations Manager (SCOM)',
+        author: 'Greg Shield',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '48m 56s',
+        content: [
+            {
+                detail: 'Monitor Azure Resources and Web Applications with System Center Operations Manager (SCOM)',
+                time: '48m 56s',
+                data: [
+                    {
+                        title: 'Monitor Azure Resources and Web Applications with System Center Operations Manager (SCOM)',
+                        time: '48m 56s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 106,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Hieu Duong',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 107,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Hieu Duong',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 108,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Hieu Duong',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 109,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Hieu Duong',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 110,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Hieu Duong',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 111,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Hieu Duong',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 112,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Hieu Duong',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 113,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Hieu Duong',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Testing Your Code',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Building Type',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: 'OOP with C#',
+                        time: '55m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: 'Go Furhter with C#',
+                        time: '2m 30s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 114,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Hieu Duong',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: 'Importing from a Data Source Intro an array.',
+                        time: '25m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: 'Manipulating List Data',
+                        time: '26m 22s'
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 115,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Huy Nguyen',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 116,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Huy Nguyen',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 117,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Huy Nguyen',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 118,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Huy Nguyen',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 119,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Huy Nguyen',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 120,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Huy Nguyen',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 121,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Huy Nguyen',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 122,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Huy Nguyen',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: 'Introducing C# and .NET',
+                        time: '49m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Learning the C# Syntax',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: 'Working with Classes and Objects',
+                        time: '45m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Testing Your Code',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: 'Working with Reference Types and Value Types',
+                        time: '45m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: 'Controlling the Flow Execution',
+                        time: '45m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: 'Building Type',
+                        time: '35m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: 'OOP with C#',
+                        time: '55m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: 'Catching up with the Lastest in C#',
+                        time: '8m 7s'
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 123,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Huy Nguyen',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: 'Course Overview',
+                        time: '1m 36s'
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: 'Introducing Collections and Arrays',
+                        time: '29m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: 'Importing from a Data Source Intro an array',
+                        time: '25m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: 'Resizeing Collections with Lists',
+                        time: '25m 28s'
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: 'Storing keyed Data with Dictionaries',
+                        time: '15m 24s'
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: 'Manipulating List Data',
+                        time: '26m 22s'
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: 'Selecting Items Using LINQ',
+                        time: '27m 20s'
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: 'Creating Collections of Collections',
+                        time: '24m 23s'
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: 'Taking Collections Further',
+                        time: '16m 26s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 124,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Hai Pham',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 125,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Hai Pham',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 126,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Hai Pham',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 127,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Hai Pham',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: 'What you do not know about Zone.js',
+                        time: '10m 47s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 128,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Hai Pham',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 129,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Hai Pham',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                        time: '20m 36s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 130,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Hai Pham',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: 'Machine Learning in Angular with TensorFlow.js',
+                        time: '22m 4s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 131,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Hai Pham',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 132,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Hai Pham',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 133,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Bryan',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 134,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Bryan',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 135,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Bryan',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                        time: '22m 48s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 136,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Bryan',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 137,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Bryan',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: 'Intro to Bazel',
+                        time: '10m 6s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 138,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Bryan',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 139,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Bryan',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 140,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Bryan',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 141,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Bryan',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 142,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Shawn',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 143,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Shawn',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: 'Simplifying Front end State Management with Observable Store',
+                        time: '24m 28s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 144,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Shawn',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 145,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Shawn',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 146,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Shawn',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 147,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Shawn',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 148,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Shawn',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 149,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Shawn',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 150,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Shawn',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 151,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 152,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 153,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 154,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 155,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 156,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 157,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Barry',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 158,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Barry',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 159,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Barry',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 160,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Josh',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 161,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Josh',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 162,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 163,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Josh',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 164,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Josh',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 165,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Josh',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 166,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Josh',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 167,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Josh',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 168,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Josh',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 169,
+        title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '59m 27s',
+        author: 'Scott Allen',
+        image: '../../assets/asp-net-core.png',
+        content: [
+            {
+                detail: 'The State of .NET and Looking Ahead to 2020: DEVintersection 2019',
+                time: '59m 27s',
+                data: [
+                    {
+                        title: 'The State of .NET and Looking Ahead to 2020: DEVintersection 2019',
+                        time: '59m 27s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 170,
+        title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '52m 16s',
+        author: 'Scott Allen',
+        image: '../../assets/netcore.png',
+        content: [
+            {
+                detail: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+                time: '52m 16s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 171,
+        title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '48m 56s',
+        author: 'Scott Allen',
+        image: '../../assets/asp-net-core.png',
+        content: [
+            {
+                detail: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+                time: '48m 56s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 172,
+        title: 'What You Need to Know About .NET Core: DEVintersection 2019',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '1h 2m',
+        author: 'Scott Allen',
+        image: '../../assets/devintersection.png',
+        content: [
+            {
+                detail: 'What You Need to Know About .NET Core: DEVintersection 2019',
+                time: '1h 2m',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 173,
+        title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: '38m 6s',
+        author: 'Scott Allen',
+        image: '../../assets/devintersection.png',
+        content: [
+            {
+                detail: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+                time: '38m 6s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 174,
+        title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+        level: 'Intermediate',
+        released: 'Dec 10, 2019',
+        duration: ' 50m 11s',
+        author: 'Scott Allen',
+        image: '../../assets/devintersection.png',
+        content: [
+            {
+                detail: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+                time: '50m 11s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 175,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Scott Allen',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 176,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Scott Allen',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 177,
+        title: 'Angular Denver 2019: Keynote talk',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: '40m 42s',
+        author: 'Joe Eames',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Keynote talk',
+                time: '40m 42s',
+                data: [
+                    {
+                        title: 'Keynote talk',
+                        time: '40m 42s'
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 178,
+        title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 24m 28s',
+        author: 'Joe Eames',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Simplifying Front end State Management with Observable Store',
+                time: '24m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 179,
+        title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 48s',
+        author: 'Joe Eames',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                time: '22m 48s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 180,
+        title: 'Angular Denver 2019: What you do not know about Zone.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 47s',
+        author: 'Joe Eames',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'What you do not know about Zone.js',
+                time: '10m 47s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 181,
+        title: 'Angular Denver 2019: Intro to Bazel',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 10m 6s',
+        author: 'Joe Eames',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Intro to Bazel',
+                time: '10m 6s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 182,
+        title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 20m 36s',
+        author: 'Joe Eames',
+        image: '../../assets/Angular.png',
+        content: [
+            {
+                detail: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                time: '20m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 183,
+        title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
+        level: 'Intermediate',
+        released: 'Sep 11, 2019',
+        duration: ' 22m 4s',
+        author: 'Joe Eames',
+        image: '../../assets/angular-pwa-course.png',
+        content: [
+            {
+                detail: 'Machine Learning in Angular with TensorFlow.js',
+                time: '22m 4s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 184,
+        title: 'C# Fundamentals',
+        level: 'Beginner',
+        released: 'Apr 16, 2019',
+        duration: '6h 5m',
+        author: 'Joe Eames',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing C# and .NET',
+                time: '49m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Learning the C# Syntax',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Classes and Objects',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Testing Your Code',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Working with Reference Types and Value Types',
+                time: '45m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Controlling the Flow Execution',
+                time: '45m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Building Type',
+                time: '35m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'OOP with C#',
+                time: '55m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Catching up with the Lastest in C#',
+                time: '8m 7s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Go Furhter with C#',
+                time: '2m 30s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
+    },
+    {
+        id: 185,
+        title: 'Beginning C# Collections',
+        level: 'Beginner',
+        released: 'Mar 29, 2019',
+        duration: '3h 26m',
+        author: 'Joe Eames',
+        image: '../../assets/C#.jpeg',
+        content: [
+            {
+                detail: 'Course Overview',
+                time: '1m 36s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Introducing Collections and Arrays',
+                time: '29m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Importing from a Data Source Intro an array.',
+                time: '25m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Resizeing Collections with Lists',
+                time: '25m 28s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Storing keyed Data with Dictionaries',
+                time: '15m 24s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Manipulating List Data',
+                time: '26m 22s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Selecting Items Using LINQ',
+                time: '27m 20s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Creating Collections of Collections',
+                time: '24m 23s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            },
+            {
+                detail: 'Taking Collections Further',
+                time: '16m 26s',
+                data: [
+                    {
+                        title: '',
+                        time: ''
+                    }
+                ]
+            }
+        ],
+        star: 5,
+        islearning: 0,
+        isFavorite: 0,
+        isNew: 0,
+        isTrending: 0
     }
 ]
 
@@ -678,6 +7537,7 @@ const paths = [
         image: '../../assets/angular-pwa-course.png',
         listCourses: [
             {
+                id: 24,
                 title: 'Angular Denver 2019: Keynote talk',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -689,8 +7549,8 @@ const paths = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -702,6 +7562,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 25,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -713,8 +7574,8 @@ const paths = [
                         time: '24m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Simplifying Front end State Management with Observable Store',
+                                time: '24m 28s'
                             }
                         ]
                     }
@@ -726,6 +7587,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 26,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -737,8 +7599,8 @@ const paths = [
                         time: '22m 48s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                                time: '22m 48s'
                             }
                         ]
                     }
@@ -750,6 +7612,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 27,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -761,8 +7624,8 @@ const paths = [
                         time: '10m 47s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'What you do not know about Zone.js',
+                                time: '10m 47s'
                             }
                         ]
                     }
@@ -774,6 +7637,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 28,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -785,8 +7649,8 @@ const paths = [
                         time: '10m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Intro to Bazel',
+                                time: '10m 6s'
                             }
                         ]
                     }
@@ -798,6 +7662,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 29,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -809,8 +7674,8 @@ const paths = [
                         time: '20m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                                time: '20m 36s'
                             }
                         ]
                     }
@@ -822,6 +7687,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 30,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -833,8 +7699,8 @@ const paths = [
                         time: '22m 4s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Machine Learning in Angular with TensorFlow.js',
+                                time: '22m 4s'
                             }
                         ]
                     }
@@ -846,6 +7712,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 31,
                 title: 'Angular Denver 2019: Rendering Angular Applications in Terminal, Angular Platform',
                 author: 'Angular Denver',
                 level: 'Intermediate',
@@ -857,8 +7724,8 @@ const paths = [
                         time: '20m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Rendering Angular Applications in Terminal, Angular Platform',
+                                time: '20m 24s'
                             }
                         ]
                     }
@@ -880,6 +7747,7 @@ const paths = [
         image: '../../assets/Big-Data.jpg',
         listCourses: [
             {
+                id: 32,
                 title: 'The Database Is Only Half Done',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -891,8 +7759,8 @@ const paths = [
                         time: '30m 1s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'The Database Is Only Half Done',
+                                time: '30m 1s'
                             }
                         ]
                     }
@@ -904,6 +7772,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 33,
                 title: 'Your AI Is Wrong! Lessons from Decision-making with Imperfect AI',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -915,8 +7784,8 @@ const paths = [
                         time: '23m 8s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Your AI Is Wrong! Lessons from Decision-making with Imperfect AI',
+                                time: '23m 8s'
                             }
                         ]
                     }
@@ -928,6 +7797,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 34,
                 title: 'Multiparadigm Data Science: The Next Frontier in Decision Making',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -939,8 +7809,8 @@ const paths = [
                         time: '24m 53s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Multiparadigm Data Science: The Next Frontier in Decision Making',
+                                time: '24m 53s'
                             }
                         ]
                     }
@@ -952,6 +7822,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 35,
                 title: 'Achieving 100% Adoption of Analytics in the Enterprise',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -963,8 +7834,8 @@ const paths = [
                         time: '28m 33s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Achieving 100% Adoption of Analytics in the Enterprise',
+                                time: '28m 33s'
                             }
                         ]
                     }
@@ -976,6 +7847,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 36,
                 title: 'Data Skills: How Mondi Does Digital',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -987,8 +7859,8 @@ const paths = [
                         time: '19m 49s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Data Skills: How Mondi Does Digital',
+                                time: '19m 49s'
                             }
                         ]
                     }
@@ -1000,6 +7872,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 37,
                 title: 'Building a Modern Data Architecture for the Data Driven Enterprise',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -1011,8 +7884,8 @@ const paths = [
                         time: '30m 25s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building a Modern Data Architecture for the Data Driven Enterprise',
+                                time: '30m 25s'
                             }
                         ]
                     }
@@ -1024,6 +7897,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 38,
                 title: 'Harnessing the Power of Data to Improve Public Health',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -1035,8 +7909,8 @@ const paths = [
                         time: '23m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Harnessing the Power of Data to Improve Public Health',
+                                time: '23m 11s'
                             }
                         ]
                     }
@@ -1048,6 +7922,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 39,
                 title: 'Real-time Data Analytics at Scale Using Cloud Services',
                 author: 'Big Data LDN',
                 level: 'Intermediate',
@@ -1059,8 +7934,8 @@ const paths = [
                         time: '28m 23s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Real-time Data Analytics at Scale Using Cloud Services',
+                                time: '28m 23s'
                             }
                         ]
                     }
@@ -1082,6 +7957,7 @@ const paths = [
         image: '../../assets/bsides-huntsville.png',
         listCourses: [
             {
+                id: 40,
                 title: 'Sercurity 2030: The Next Decade',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1089,12 +7965,12 @@ const paths = [
                 duration: '39m 11s',
                 content: [
                     {
-                        detail: '',
+                        detail: 'Sercurity 2030: The Next Decade',
                         time: '39m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Sercurity 2030: The Next Decade',
+                                time: '39m 11s'
                             }
                         ]
                     }
@@ -1106,6 +7982,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 41,
                 title: 'Training the IT Security Staff on a Shoestring Budget',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1117,8 +7994,8 @@ const paths = [
                         time: '37m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Training the IT Security Staff on a Shoestring Budget',
+                                time: '37m 20s'
                             }
                         ]
                     }
@@ -1130,6 +8007,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 42,
                 title: 'How to Secure America',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1141,8 +8019,8 @@ const paths = [
                         time: '1h 11m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'How to Secure America',
+                                time: '1h 11m'
                             }
                         ]
                     }
@@ -1154,6 +8032,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 43,
                 title: 'Reversing the Gophe Spambot: Confronting COM Code and Surmouting STL Snags',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1165,8 +8044,8 @@ const paths = [
                         time: '40m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Reversing the Gophe Spambot: Confronting COM Code and Surmouting STL Snags',
+                                time: '40m 9s'
                             }
                         ]
                     }
@@ -1178,6 +8057,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 44,
                 title: 'Closing the Cybersecurity Talent Gap',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1189,8 +8069,8 @@ const paths = [
                         time: '1h 4m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Closing the Cybersecurity Talent Gap',
+                                time: '1h 4m'
                             }
                         ]
                     }
@@ -1202,6 +8082,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 45,
                 title: 'Cyber-Ninja Space Pirates',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1213,8 +8094,8 @@ const paths = [
                         time: '38m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Cyber-Ninja Space Pirates',
+                                time: '38m 6s'
                             }
                         ]
                     }
@@ -1226,6 +8107,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 46,
                 title: 'Hacking the Human',
                 author: 'BSides Huntsville',
                 level: 'Intermediate',
@@ -1237,8 +8119,8 @@ const paths = [
                         time: '50m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Hacking the Human',
+                                time: '50m 11s'
                             }
                         ]
                     }
@@ -1260,6 +8142,7 @@ const paths = [
         image: '../../assets/CodeMash.jpg',
         listCourses: [
             {
+                id: 47,
                 title: 'Event Processing without Breaking Production: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1271,8 +8154,8 @@ const paths = [
                         time: '39m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Event Processing without Breaking Production: CodeMash',
+                                time: '39m 11s'
                             }
                         ]
                     }
@@ -1284,6 +8167,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 48,
                 title: 'Bringing Order to Chaos: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1295,8 +8179,8 @@ const paths = [
                         time: '37m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Bringing Order to Chaos: CodeMash',
+                                time: '37m 20s'
                             }
                         ]
                     }
@@ -1308,6 +8192,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 49,
                 title: 'Finding Service Boundaries: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1319,8 +8204,8 @@ const paths = [
                         time: '1h 11m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Finding Service Boundaries: CodeMash',
+                                time: '1h 11m'
                             }
                         ]
                     }
@@ -1332,6 +8217,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 50,
                 title: 'API Gateways and Microservices: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1343,8 +8229,8 @@ const paths = [
                         time: '40m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'API Gateways and Microservices: CodeMash',
+                                time: '40m 9s'
                             }
                         ]
                     }
@@ -1356,6 +8242,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 51,
                 title: 'Vertical Slice Architecture: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1367,8 +8254,8 @@ const paths = [
                         time: '1h 4m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Vertical Slice Architecture: CodeMash',
+                                time: '1h 4m'
                             }
                         ]
                     }
@@ -1380,6 +8267,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 52,
                 title: 'Kiling REST and Adopting RPC: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1391,8 +8279,8 @@ const paths = [
                         time: '38m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Kiling REST and Adopting RPC: CodeMash',
+                                time: '38m 6s'
                             }
                         ]
                     }
@@ -1404,6 +8292,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 53,
                 title: '5 Ideas For Writing Better Cloud Native Microservice: CodeMash',
                 author: 'CodeMash',
                 level: 'Intermediate',
@@ -1415,8 +8304,8 @@ const paths = [
                         time: '50m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: '5 Ideas For Writing Better Cloud Native Microservice: CodeMash',
+                                time: '50m 11s'
                             }
                         ]
                     }
@@ -1438,6 +8327,7 @@ const paths = [
         image: '../../assets/devintersection.png',
         listCourses: [
             {
+                id: 54,
                 title: 'The History of .Net: DEVintersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1449,8 +8339,8 @@ const paths = [
                         time: '1h 5m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'The History of .Net: DEVintersection 2019',
+                                time: '1h 5m'
                             }
                         ]
                     }
@@ -1462,6 +8352,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 55,
                 title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1473,8 +8364,8 @@ const paths = [
                         time: '59m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
+                                time: '59m 27s'
                             }
                         ]
                     }
@@ -1486,6 +8377,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id:56,
                 title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1497,8 +8389,8 @@ const paths = [
                         time: '52m 16s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
+                                time: '52m 16s'
                             }
                         ]
                     }
@@ -1510,6 +8402,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 57,
                 title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1521,8 +8414,8 @@ const paths = [
                         time: '48m 56s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
+                                time: '48m 56s'
                             }
                         ]
                     }
@@ -1534,6 +8427,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 58,
                 title: 'What You Need to Know About .NET Core: DEVintersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1545,8 +8439,8 @@ const paths = [
                         time: '1h 2m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'What You Need to Know About .NET Core: DEVintersection 2019',
+                                time: '1h 2m'
                             }
                         ]
                     }
@@ -1558,6 +8452,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 59,
                 title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1569,8 +8464,8 @@ const paths = [
                         time: '38m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
+                                time: '38m 6s'
                             }
                         ]
                     }
@@ -1582,6 +8477,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 60,
                 title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
                 author: 'DEVintersection',
                 level: 'Intermediate',
@@ -1593,8 +8489,8 @@ const paths = [
                         time: '50m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
+                                time: '50m 11s'
                             }
                         ]
                     }
@@ -1616,6 +8512,7 @@ const paths = [
         image: '../../assets/aws.png',
         listCourses: [
             {
+                id: 61,
                 title: 'Coding in AWS Cloud9 IDE',
                 author: 'Jordan Yankovich',
                 level: 'Intermediate',
@@ -1627,8 +8524,8 @@ const paths = [
                         time: '1m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 27s'
                             }
                         ]
                     },
@@ -1637,8 +8534,8 @@ const paths = [
                         time: '22m 52s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using AWS Cloud9',
+                                time: '22m 52s'
                             }
                         ]
                     },
@@ -1647,8 +8544,8 @@ const paths = [
                         time: '17m 46s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Developing sofware with Cloud9',
+                                time: '17m 46s'
                             }
                         ]
                     },
@@ -1657,8 +8554,8 @@ const paths = [
                         time: '15m 16s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Collaborating with Teams Using Cloud9',
+                                time: '15m 16s'
                             }
                         ]
                     },
@@ -1667,8 +8564,8 @@ const paths = [
                         time: '18m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Integrating Cloud9 and Other AWS Service',
+                                time: '18m 29s'
                             }
                         ]
                     }
@@ -1680,6 +8577,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 62,
                 title: 'Developing Applications with AWS Lightsail',
                 author: 'Tom Compagno',
                 level: 'Intermediate',
@@ -1691,8 +8589,8 @@ const paths = [
                         time: '1m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 20s'
                             }
                         ]
                     },
@@ -1701,8 +8599,8 @@ const paths = [
                         time: '16m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'cretae and Connect to a Lightsail Server',
+                                time: '16m'
                             }
                         ]
                     },
@@ -1711,8 +8609,8 @@ const paths = [
                         time: '12m 37s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Create and Configure a Cloud9 Developmet Enviroment',
+                                time: '12m 37s'
                             }
                         ]
                     },
@@ -1721,8 +8619,8 @@ const paths = [
                         time: '9m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Prepare Your Lightsail for Production Scalability',
+                                time: '9m 42s'
                             }
                         ]
                     },
@@ -1731,8 +8629,8 @@ const paths = [
                         time: '26m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Scaling Lightsail to Hanle More Traffic',
+                                time: '26m 29s'
                             }
                         ]
                     },
@@ -1741,8 +8639,8 @@ const paths = [
                         time: '5m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Exploring Additional Lightsail Capabilities',
+                                time: '5m 6s'
                             }
                         ]
                     }
@@ -1754,6 +8652,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 63,
                 title: 'Performing Continuous Delivery with AWS CodeStar',
                 author: 'Armen Avanesi',
                 level: 'Intermediate',
@@ -1765,8 +8664,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -1775,8 +8674,8 @@ const paths = [
                         time: '23m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Creating Your First Continuos Delivery Pipeline',
+                                time: '23m 28s'
                             }
                         ]
                     },
@@ -1785,8 +8684,8 @@ const paths = [
                         time: '20m 17s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Monitoring and Managing a CodeStar Application',
+                                time: '20m 17s'
                             }
                         ]
                     },
@@ -1795,8 +8694,8 @@ const paths = [
                         time: '9m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Team Management with CodeStar',
+                                time: '9m 42s'
                             }
                         ]
                     }
@@ -1808,6 +8707,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 64,
                 title: 'Managing Source Control with AWS CodeCommit',
                 author: 'Saravanan',
                 level: 'Intermediate',
@@ -1819,8 +8719,8 @@ const paths = [
                         time: '2m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '2m 36s'
                             }
                         ]
                     },
@@ -1829,8 +8729,8 @@ const paths = [
                         time: '17m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Core Features of AWS CodeCommit',
+                                time: '17m 28s'
                             }
                         ]
                     },
@@ -1839,8 +8739,8 @@ const paths = [
                         time: '15m 51s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Integrate AWS CodeCommit with AWS Cloud9',
+                                time: '15m 51s'
                             }
                         ]
                     },
@@ -1849,8 +8749,8 @@ const paths = [
                         time: '14m 8s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Monitor and Troubleshoot AWS CodeCommit',
+                                time: '14m 8s'
                             }
                         ]
                     }
@@ -1862,6 +8762,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 65,
                 title: 'Deploying Code with AWS CodeDeploy',
                 author: 'Edwards',
                 level: 'Intermediate',
@@ -1873,8 +8774,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -1883,8 +8784,8 @@ const paths = [
                         time: '12m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Overview of AWS CodeDeploy',
+                                time: '12m 28s'
                             }
                         ]
                     },
@@ -1893,8 +8794,8 @@ const paths = [
                         time: '20m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using CodeDeploy with EC2',
+                                time: '20m 24s'
                             }
                         ]
                     },
@@ -1903,8 +8804,8 @@ const paths = [
                         time: '18m 11s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using CodeDeploy with ECS',
+                                time: '18m 11s'
                             }
                         ]
                     },
@@ -1913,8 +8814,8 @@ const paths = [
                         time: '18m 45s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using CodeDeploy with Lambda',
+                                time: '18m 45s'
                             }
                         ]
                     }
@@ -1926,6 +8827,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 66,
                 title: 'Practicing CI/CD with AWS CodePipeline',
                 author: 'Ryan Lewis',
                 level: 'Intermediate',
@@ -1937,8 +8839,8 @@ const paths = [
                         time: '1m 26s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 26s'
                             }
                         ]
                     },
@@ -1947,8 +8849,8 @@ const paths = [
                         time: '40m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building and Deploying code win CodePipeline',
+                                time: '40m 28s'
                             }
                         ]
                     },
@@ -1957,8 +8859,8 @@ const paths = [
                         time: '20m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Advanced CodePipeline Practices',
+                                time: '20m 24s'
                             }
                         ]
                     }
@@ -1970,6 +8872,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 67,
                 title: 'Implementing Pub/Sub Messageing with Amazon SNS',
                 author: 'Saravanan',
                 level: 'Beginner',
@@ -1981,8 +8884,8 @@ const paths = [
                         time: '1m 26s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 26s'
                             }
                         ]
                     },
@@ -1991,8 +8894,8 @@ const paths = [
                         time: '40m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Getting started with Amazon SNS',
+                                time: '40m 28s'
                             }
                         ]
                     },
@@ -2001,8 +8904,8 @@ const paths = [
                         time: '20m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Publishing Messages to SNS',
+                                time: '20m 24s'
                             }
                         ]
                     }
@@ -2014,6 +8917,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 68,
                 title: 'Implementing Message Brokering with Amazon MQ',
                 author: 'Michael',
                 level: 'Beginner',
@@ -2025,8 +8929,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2035,8 +8939,8 @@ const paths = [
                         time: '49m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Message with Amazon MQ',
+                                time: '49m 28s'
                             }
                         ]
                     },
@@ -2045,8 +8949,8 @@ const paths = [
                         time: '20m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Managing Amazon MQ',
+                                time: '20m 24s'
                             }
                         ]
                     }
@@ -2068,6 +8972,7 @@ const paths = [
         image: '../../assets/C#.jpeg',
         listCourses: [
             {
+                id: 69,
                 title: 'C# Fundamentals',
                 author: 'Scott Allen',
                 level: 'Beginner',
@@ -2079,8 +8984,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2089,8 +8994,8 @@ const paths = [
                         time: '49m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing C# and .NET',
+                                time: '49m 28s'
                             }
                         ]
                     },
@@ -2099,8 +9004,8 @@ const paths = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Learning the C# Syntax',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -2109,8 +9014,8 @@ const paths = [
                         time: '45m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Working with Classes and Objects',
+                                time: '45m 28s'
                             }
                         ]
                     },
@@ -2119,8 +9024,8 @@ const paths = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Testing Your Code',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -2129,8 +9034,8 @@ const paths = [
                         time: '45m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Working with Reference Types and Value Types',
+                                time: '45m 20s'
                             }
                         ]
                     },
@@ -2139,8 +9044,8 @@ const paths = [
                         time: '45m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Controlling the Flow Execution',
+                                time: '45m 28s'
                             }
                         ]
                     },
@@ -2149,8 +9054,8 @@ const paths = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building Type',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -2159,8 +9064,8 @@ const paths = [
                         time: '55m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'OOP with C#',
+                                time: '55m 20s'
                             }
                         ]
                     },
@@ -2169,8 +9074,8 @@ const paths = [
                         time: '8m 7s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Catching up with the Lastest in C#',
+                                time: '8m 7s'
                             }
                         ]
                     },
@@ -2179,8 +9084,8 @@ const paths = [
                         time: '2m 30s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Go Furhter with C#',
+                                time: '2m 30s'
                             }
                         ]
                     }
@@ -2192,6 +9097,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 70,
                 title: 'Beginning C# Collections',
                 author: 'Simon Robin',
                 level: 'Beginner',
@@ -2203,8 +9109,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2213,8 +9119,8 @@ const paths = [
                         time: '29m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Collections and Arrays',
+                                time: '29m 28s'
                             }
                         ]
                     },
@@ -2223,8 +9129,8 @@ const paths = [
                         time: '25m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Importing from a Data Source Intro an array.',
+                                time: '25m 24s'
                             }
                         ]
                     },
@@ -2233,8 +9139,8 @@ const paths = [
                         time: '25m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Resizeing Collections with Lists',
+                                time: '25m 28s'
                             }
                         ]
                     },
@@ -2243,8 +9149,8 @@ const paths = [
                         time: '15m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Storing keyed Data with Dictionaries',
+                                time: '15m 24s'
                             }
                         ]
                     },
@@ -2253,8 +9159,8 @@ const paths = [
                         time: '26m 22s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Manipulating List Data',
+                                time: '26m 22s'
                             }
                         ]
                     },
@@ -2263,8 +9169,8 @@ const paths = [
                         time: '27m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Selecting Items Using LINQ',
+                                time: '27m 20s'
                             }
                         ]
                     },
@@ -2273,8 +9179,8 @@ const paths = [
                         time: '24m 23s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Creating Collections of Collections',
+                                time: '24m 23s'
                             }
                         ]
                     },
@@ -2283,8 +9189,8 @@ const paths = [
                         time: '16m 26s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Taking Collections Further',
+                                time: '16m 26s'
                             }
                         ]
                     }
@@ -2306,6 +9212,7 @@ const paths = [
         image: '../../assets/Javadev.jpg',
         listCourses: [
             {
+                id: 71,
                 title: 'Setting up Java Development Enviroment',
                 author: 'Sander Mak',
                 level: 'Beginner',
@@ -2317,8 +9224,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2327,8 +9234,8 @@ const paths = [
                         time: '18m 59s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Installing and Running Java',
+                                time: '18m 59s'
                             }
                         ]
                     },
@@ -2337,8 +9244,8 @@ const paths = [
                         time: '19m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using IntelliJ for Java Development',
+                                time: '19m 24s'
                             }
                         ]
                     },
@@ -2347,8 +9254,8 @@ const paths = [
                         time: '25m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Packaging Java Applications',
+                                time: '25m 28s'
                             }
                         ]
                     }
@@ -2360,6 +9267,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 72,
                 title: 'Eclipse for Java Developers',
                 author: 'Jose Paumard',
                 level: 'Intermediate',
@@ -2371,8 +9279,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2381,8 +9289,8 @@ const paths = [
                         time: '52m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Setting up a JavaSE Developent Enviroment with Eclipse',
+                                time: '52m 57s'
                             }
                         ]
                     },
@@ -2391,8 +9299,8 @@ const paths = [
                         time: '41m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Setting up a Java Maven Development Enviroment with Eclipse',
+                                time: '41m 24s'
                             }
                         ]
                     },
@@ -2401,8 +9309,8 @@ const paths = [
                         time: '43m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using Git for Java Project in Eclipse',
+                                time: '43m 27s'
                             }
                         ]
                     },
@@ -2411,8 +9319,8 @@ const paths = [
                         time: '18m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Connecting Eclipse to a Database Server with MySQL',
+                                time: '18m 24s'
                             }
                         ]
                     },
@@ -2421,8 +9329,8 @@ const paths = [
                         time: '43m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Setting up a JavaEE Project in Eclipse with Tomcat',
+                                time: '43m 27s'
                             }
                         ]
                     }
@@ -2434,6 +9342,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 73,
                 title: 'Maven Fundamentals',
                 author: 'Bryan Hansen',
                 level: 'Intermediate',
@@ -2445,8 +9354,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2455,8 +9364,8 @@ const paths = [
                         time: '38m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introduction to Maven',
+                                time: '38m 57s'
                             }
                         ]
                     },
@@ -2465,8 +9374,8 @@ const paths = [
                         time: '41m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Structure',
+                                time: '41m 24s'
                             }
                         ]
                     },
@@ -2475,8 +9384,8 @@ const paths = [
                         time: '20m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Dependencies',
+                                time: '20m 57s'
                             }
                         ]
                     },
@@ -2485,8 +9394,8 @@ const paths = [
                         time: '17m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Repositories',
+                                time: '17m 5s'
                             }
                         ]
                     },
@@ -2495,8 +9404,8 @@ const paths = [
                         time: '19m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Plugins',
+                                time: '19m 27s'
                             }
                         ]
                     }
@@ -2518,6 +9427,7 @@ const paths = [
         image: '../../assets/asp-net-core.png',
         listCourses: [
             {
+                id: 74,
                 title: 'Designing RESTful Web APIs',
                 author: 'Shawn',
                 level: 'Beginner',
@@ -2529,8 +9439,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2539,8 +9449,8 @@ const paths = [
                         time: '28m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'What is REST?',
+                                time: '28m 57s'
                             }
                         ]
                     },
@@ -2549,8 +9459,8 @@ const paths = [
                         time: '41m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Designing a RESTful API',
+                                time: '41m 24s'
                             }
                         ]
                     },
@@ -2559,8 +9469,8 @@ const paths = [
                         time: '20m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Handling More Complex Scenarios in Your API',
+                                time: '20m 57s'
                             }
                         ]
                     },
@@ -2569,8 +9479,8 @@ const paths = [
                         time: '10m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Version Your API',
+                                time: '10m 5s'
                             }
                         ]
                     },
@@ -2579,8 +9489,8 @@ const paths = [
                         time: '19m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Locking Down Your API',
+                                time: '19m 27s'
                             }
                         ]
                     }
@@ -2592,6 +9502,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 75,
                 title: 'Building a RESTful API with ASP.NET Core 3',
                 author: 'Kevin Dockx',
                 level: 'Beginner',
@@ -2603,8 +9514,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2613,8 +9524,8 @@ const paths = [
                         time: '43m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Getting started with REST',
+                                time: '43m 57s'
                             }
                         ]
                     },
@@ -2623,8 +9534,8 @@ const paths = [
                         time: '49m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Structuring and Implementing the Outer Facing Contract',
+                                time: '49m 24s'
                             }
                         ]
                     },
@@ -2633,8 +9544,8 @@ const paths = [
                         time: '35m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Getting Resources',
+                                time: '35m 57s'
                             }
                         ]
                     },
@@ -2643,8 +9554,8 @@ const paths = [
                         time: '20m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Filltering and Searching',
+                                time: '20m 5s'
                             }
                         ]
                     },
@@ -2653,8 +9564,8 @@ const paths = [
                         time: '49m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Creating Resources',
+                                time: '49m 27s'
                             }
                         ]
                     },
@@ -2663,8 +9574,8 @@ const paths = [
                         time: '26m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Validating Data and Reporting validation Errors',
+                                time: '26m 27s'
                             }
                         ]
                     },
@@ -2673,8 +9584,8 @@ const paths = [
                         time: '1h 3m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Updating Resources',
+                                time: '1h 3m'
                             }
                         ]
                     },
@@ -2683,8 +9594,8 @@ const paths = [
                         time: '13m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Deleting Resources',
+                                time: '13m 27s'
                             }
                         ]
                     }
@@ -2696,6 +9607,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 76,
                 title: 'Implementing Advanced RESTful API Concerns with ASP.NET Core 3',
                 author: 'Kevin Dockx',
                 level: 'Intermediate',
@@ -2707,8 +9619,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2717,8 +9629,8 @@ const paths = [
                         time: '40m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Supporting Paging for Collection Resources',
+                                time: '40m 57s'
                             }
                         ]
                     },
@@ -2727,8 +9639,8 @@ const paths = [
                         time: '30m 38s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Sorting Resource Collections',
+                                time: '30m 38s'
                             }
                         ]
                     },
@@ -2737,8 +9649,8 @@ const paths = [
                         time: '20m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Shaping Data',
+                                time: '20m 57s'
                             }
                         ]
                     },
@@ -2747,8 +9659,8 @@ const paths = [
                         time: '30m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Learning and Implementing HATEOAS',
+                                time: '30m 5s'
                             }
                         ]
                     },
@@ -2757,8 +9669,8 @@ const paths = [
                         time: '42m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Improving Reliablitity with Advanced Content Negotiation',
+                                time: '42m 27s'
                             }
                         ]
                     },
@@ -2767,8 +9679,8 @@ const paths = [
                         time: '32m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Getting Started with Caching Resources',
+                                time: '32m 27s'
                             }
                         ]
                     },
@@ -2777,8 +9689,8 @@ const paths = [
                         time: '25m 17s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Supporting HTTP Cache for ASP.NET Core APIs',
+                                time: '25m 17s'
                             }
                         ]
                     },
@@ -2787,8 +9699,8 @@ const paths = [
                         time: '8m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Supporting Concurrency',
+                                time: '8m 27s'
                             }
                         ]
                     }
@@ -2800,6 +9712,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 77,
                 title: 'Documenting an ASP.Net Core API with OpenAPI/Swagger',
                 author: 'Kevin Dockx',
                 level: 'Intermediate',
@@ -2811,8 +9724,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -2821,8 +9734,8 @@ const paths = [
                         time: '13m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Getting Started with Open API/ Swagger',
+                                time: '13m 57s'
                             }
                         ]
                     },
@@ -2831,8 +9744,8 @@ const paths = [
                         time: '22m 38s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Documenting Your First API with OpenAPI/ Swagger',
+                                time: '22m 38s'
                             }
                         ]
                     },
@@ -2841,8 +9754,8 @@ const paths = [
                         time: '42m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using and Overriding Conventions for OpenAPI Generation',
+                                time: '42m 57s'
                             }
                         ]
                     },
@@ -2851,8 +9764,8 @@ const paths = [
                         time: '30m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Generating OpenAPI Specifications for Advenced input and Output Scenarios',
+                                time: '30m 5s'
                             }
                         ]
                     },
@@ -2861,8 +9774,8 @@ const paths = [
                         time: '34m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Dealing with Different Versions and Protecting the Documentation',
+                                time: '34m 29s'
                             }
                         ]
                     },
@@ -2871,8 +9784,8 @@ const paths = [
                         time: '18m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Improving Your Documentation with Advanced Customization',
+                                time: '18m 27s'
                             }
                         ]
                     }
@@ -2894,6 +9807,7 @@ const paths = [
         image: '../../assets/Ios.jpg',
         listCourses: [
             {
+                id: 78,
                 title: 'Swift Fundamentals',
                 author: 'Simmon',
                 level: 'Beginner',
@@ -2905,8 +9819,8 @@ const paths = [
                         time: '27m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'A Few More Reasons to Learn Swift',
+                                time: '27m 36s'
                             }
                         ]
                     },
@@ -2915,8 +9829,8 @@ const paths = [
                         time: '48m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Piece by piece: What Your Data Means',
+                                time: '48m 57s'
                             }
                         ]
                     },
@@ -2925,8 +9839,8 @@ const paths = [
                         time: '27m 38s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Shaping the Path: Controlling the Flow of Your Code',
+                                time: '27m 38s'
                             }
                         ]
                     },
@@ -2935,8 +9849,8 @@ const paths = [
                         time: '21m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Constructing Code: Who Does What? - Creating Functions',
+                                time: '21m 57s'
                             }
                         ]
                     },
@@ -2945,8 +9859,8 @@ const paths = [
                         time: '27m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Taking Data Types Further: when to Limit, Describe, and Collect',
+                                time: '27m 5s'
                             }
                         ]
                     },
@@ -2955,8 +9869,8 @@ const paths = [
                         time: '24m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Making Sense of Closures',
+                                time: '24m 29s'
                             }
                         ]
                     },
@@ -2965,8 +9879,8 @@ const paths = [
                         time: '25m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using Classes and Object in Swift',
+                                time: '25m 27s'
                             }
                         ]
                     },
@@ -2975,8 +9889,8 @@ const paths = [
                         time: '25m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Protocols',
+                                time: '25m 9s'
                             }
                         ]
                     }
@@ -2988,6 +9902,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 79,
                 title: 'IOS 11 Fundamentals',
                 author: 'Simon',
                 level: 'Beginner',
@@ -2999,8 +9914,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -3009,8 +9924,8 @@ const paths = [
                         time: '48m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Getting Started',
+                                time: '48m 57s'
                             }
                         ]
                     },
@@ -3019,8 +9934,8 @@ const paths = [
                         time: '45m 38s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building Single View Applications',
+                                time: '45m 38s'
                             }
                         ]
                     },
@@ -3029,8 +9944,8 @@ const paths = [
                         time: '21m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Constructing Code: Who Does What? - Creating Functions',
+                                time: '21m 57s'
                             }
                         ]
                     },
@@ -3039,8 +9954,8 @@ const paths = [
                         time: '27m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Taking Data Types Further: when to Limit, Describe, and Collect',
+                                time: '27m 5s'
                             }
                         ]
                     },
@@ -3049,8 +9964,8 @@ const paths = [
                         time: '24m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Making Sense of Closures',
+                                time: '24m 29s'
                             }
                         ]
                     },
@@ -3059,8 +9974,8 @@ const paths = [
                         time: '25m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using Classes and Object in Swift',
+                                time: '25m 27s'
                             }
                         ]
                     },
@@ -3069,8 +9984,8 @@ const paths = [
                         time: '25m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Protocols',
+                                time: '25m 9s'
                             }
                         ]
                     }
@@ -3082,6 +9997,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 80,
                 title: 'Becomming an Xcode Power User',
                 author: 'Jonathan Wong',
                 level: 'Beginner',
@@ -3093,8 +10009,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -3103,8 +10019,8 @@ const paths = [
                         time: '19m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Managing Projetc and Workspaces in Xcode',
+                                time: '19m 57s'
                             }
                         ]
                     },
@@ -3113,8 +10029,8 @@ const paths = [
                         time: '22m 38s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building Xcode Project: Configuring Schemes and Targets',
+                                time: '22m 38s'
                             }
                         ]
                     },
@@ -3123,8 +10039,8 @@ const paths = [
                         time: '27m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Navigating through Xcode: Finding Your Workflow',
+                                time: '27m 57s'
                             }
                         ]
                     },
@@ -3133,8 +10049,8 @@ const paths = [
                         time: '27m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Productivity in Xcode',
+                                time: '27m 5s'
                             }
                         ]
                     },
@@ -3143,8 +10059,8 @@ const paths = [
                         time: '24m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Making Sense of Closures',
+                                time: '24m 29s'
                             }
                         ]
                     },
@@ -3153,8 +10069,8 @@ const paths = [
                         time: '25m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using Classes and Object in Swift',
+                                time: '25m 27s'
                             }
                         ]
                     },
@@ -3163,8 +10079,8 @@ const paths = [
                         time: '25m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Protocols',
+                                time: '25m 9s'
                             }
                         ]
                     }
@@ -3176,6 +10092,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 81,
                 title: 'IOS Collection Views: Getting Started',
                 author: 'Mark',
                 level: 'Intermediate',
@@ -3187,8 +10104,8 @@ const paths = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -3197,8 +10114,8 @@ const paths = [
                         time: '7m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Introduction',
+                                time: '7m 57s'
                             }
                         ]
                     },
@@ -3207,8 +10124,8 @@ const paths = [
                         time: '15m 38s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Your First Collection View',
+                                time: '15m 38s'
                             }
                         ]
                     },
@@ -3217,8 +10134,8 @@ const paths = [
                         time: '21m 57s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Custommizing Size and Spacing',
+                                time: '21m 57s'
                             }
                         ]
                     },
@@ -3227,8 +10144,8 @@ const paths = [
                         time: '27m 5s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Supplementary Views (Section Header and Footer)',
+                                time: '27m 5s'
                             }
                         ]
                     },
@@ -3237,8 +10154,8 @@ const paths = [
                         time: '24m 29s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Customizing Collection View Cells',
+                                time: '24m 29s'
                             }
                         ]
                     },
@@ -3247,8 +10164,8 @@ const paths = [
                         time: '25m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Using Classes and Object in Swift',
+                                time: '25m 27s'
                             }
                         ]
                     },
@@ -3257,8 +10174,8 @@ const paths = [
                         time: '25m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Protocols',
+                                time: '25m 9s'
                             }
                         ]
                     }
@@ -3270,6 +10187,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 82,
                 title: 'Object - C for Swift Developers',
                 author: 'David',
                 level: 'Intermediate',
@@ -3281,8 +10199,8 @@ const paths = [
                         time: '1h 2m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Object - C for Swift Developers',
+                                time: '1h 2m'
                             }
                         ]
                     }
@@ -3304,6 +10222,7 @@ const paths = [
         image: '../../assets/ITOP.png',
         listCourses: [
             {
+                id: 83,
                 title: 'Computer Fundamentals: Hardware',
                 author: 'Daniel',
                 level: 'Intermediate',
@@ -3315,8 +10234,8 @@ const paths = [
                         time: '2h 43m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Hardware',
+                                time: '2h 43m'
                             }
                         ]
                     }
@@ -3328,6 +10247,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 84,
                 title: 'Computer Fundamentals: Mobile Devices',
                 author: 'Glenn',
                 level: 'Intermediate',
@@ -3339,8 +10259,8 @@ const paths = [
                         time: '2h 33m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Mobile Devices',
+                                time: '2h 33m'
                             }
                         ]
                     }
@@ -3352,6 +10272,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 85,
                 title: 'Computer Fundamentals: Operating Systems',
                 author: 'Glenn',
                 level: 'Intermediate',
@@ -3363,8 +10284,8 @@ const paths = [
                         time: '3h 55m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Operating Systems',
+                                time: '3h 55m'
                             }
                         ]
                     }
@@ -3376,6 +10297,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 86,
                 title: 'Computer Fundamentals: Operational Procedures',
                 author: 'Denial',
                 level: 'Intermediate',
@@ -3387,8 +10309,8 @@ const paths = [
                         time: '1h 55m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Operational Procedures',
+                                time: '1h 55m'
                             }
                         ]
                     }
@@ -3400,6 +10322,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 87,
                 title: 'Computer Fundamentals: Networking',
                 author: 'Vlad',
                 level: 'Intermediate',
@@ -3411,8 +10334,8 @@ const paths = [
                         time: '2h 12m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Networking',
+                                time: '2h 12m'
                             }
                         ]
                     }
@@ -3424,6 +10347,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 88,
                 title: 'Practical Networking',
                 author: 'Ben Piper',
                 level: 'Intermediate',
@@ -3435,8 +10359,8 @@ const paths = [
                         time: '3h 27m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Practical Networking',
+                                time: '3h 27m'
                             }
                         ]
                     }
@@ -3458,6 +10382,7 @@ const paths = [
         image: '../../assets/ITOP.png',
         listCourses: [
             {
+                id: 89,
                 title: 'Computer Fundamentals: Hardware',
                 author: 'Daniel',
                 level: 'Intermediate',
@@ -3469,8 +10394,8 @@ const paths = [
                         time: '2h 43m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'omputer Fundamentals: Hardware',
+                                time: '2h 43m'
                             }
                         ]
                     }
@@ -3482,6 +10407,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 90,
                 title: 'Computer Fundamentals: Mobile Devices',
                 author: 'Glenn',
                 level: 'Intermediate',
@@ -3493,8 +10419,8 @@ const paths = [
                         time: '2h 33m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Mobile Devices',
+                                time: '2h 33m'
                             }
                         ]
                     }
@@ -3506,6 +10432,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 91,
                 title: 'Computer Fundamentals: Operating Systems',
                 author: 'Glenn',
                 level: 'Intermediate',
@@ -3517,8 +10444,8 @@ const paths = [
                         time: '3h 55m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Operating Systems',
+                                time: '3h 55m'
                             }
                         ]
                     }
@@ -3530,6 +10457,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 92,
                 title: 'Computer Fundamentals: Operational Procedures',
                 author: 'Denial',
                 level: 'Intermediate',
@@ -3541,8 +10469,8 @@ const paths = [
                         time: '1h 55m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Operational Procedures',
+                                time: '1h 55m'
                             }
                         ]
                     }
@@ -3554,6 +10482,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 93,
                 title: 'Computer Fundamentals: Networking',
                 author: 'Vlad',
                 level: 'Intermediate',
@@ -3565,8 +10494,8 @@ const paths = [
                         time: '2h 12m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Computer Fundamentals: Networking',
+                                time: '2h 12m'
                             }
                         ]
                     }
@@ -3578,6 +10507,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 94,
                 title: 'Practical Networking',
                 author: 'Ben Piper',
                 level: 'Intermediate',
@@ -3589,8 +10519,8 @@ const paths = [
                         time: '3h 27m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Practical Networking',
+                                time: '3h 27m'
                             }
                         ]
                     }
@@ -3612,6 +10542,7 @@ const paths = [
         image: '../../assets/microsoft-azure-main.png',
         listCourses: [
             {
+                id: 95,
                 title: 'Managing and Responding to Microsoft Azure Security Alerts',
                 author: 'Ammar Hasayen',
                 level: 'Intermediate',
@@ -3623,8 +10554,8 @@ const paths = [
                         time: '57m 1s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Managing and Responding to Microsoft Azure Security Alerts',
+                                time: '57m 1s'
                             }
                         ]
                     }
@@ -3636,6 +10567,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 96,
                 title: 'Configuring Security Services and Polices in Microsoft Azure',
                 author: 'Ned Bellavance',
                 level: 'Intermediate',
@@ -3647,8 +10579,8 @@ const paths = [
                         time: '1h 52m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Configuring Security Services and Polices in Microsoft Azure',
+                                time: '1h 52m'
                             }
                         ]
                     }
@@ -3660,6 +10592,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 97,
                 title: 'Indident Response and Remediation in Microsoft Azure',
                 author: 'Ammar Hasayen',
                 level: 'Intermediate',
@@ -3671,8 +10604,8 @@ const paths = [
                         time: '2h 11m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Indident Response and Remediation in Microsoft Azure',
+                                time: '2h 11m'
                             }
                         ]
                     }
@@ -3694,6 +10627,7 @@ const paths = [
         image: '../../assets/microsoft-azure-main.png',
         listCourses: [
             {
+                id: 98,
                 title: 'Microsoft Azure Stack Hub Development: Getting Started',
                 author: 'Jason Helmick',
                 level: 'Beginner',
@@ -3705,8 +10639,8 @@ const paths = [
                         time: '1h 13m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Microsoft Azure Stack Hub Development: Getting Started',
+                                time: '1h 13m'
                             }
                         ]
                     }
@@ -3718,6 +10652,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 99,
                 title: 'Creating Micro Azure Stack Development Enviroments',
                 author: 'Jason Helmick',
                 level: 'Beginner',
@@ -3729,8 +10664,8 @@ const paths = [
                         time: '1h 43m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Creating Micro Azure Stack Development Enviroments',
+                                time: '1h 43m'
                             }
                         ]
                     }
@@ -3742,6 +10677,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 100,
                 title: 'Architecural Patterns for Azure Stack Solutions',
                 author: 'Tim Waner',
                 level: 'Intermediate',
@@ -3753,8 +10689,8 @@ const paths = [
                         time: '1h 48m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Architecural Patterns for Azure Stack Solutions',
+                                time: '1h 48m'
                             }
                         ]
                     }
@@ -3766,6 +10702,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 101,
                 title: 'Operating Azure stack Hub',
                 author: 'Ned Bellavance',
                 level: 'Intermediate',
@@ -3777,8 +10714,8 @@ const paths = [
                         time: '40m 9s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Operating Azure stack Hub',
+                                time: '40m 9s'
                             }
                         ]
                     }
@@ -3800,6 +10737,7 @@ const paths = [
         image: '../../assets/SCOM_Logo.jpg',
         listCourses: [
             {
+                id: 102,
                 title: 'Introduction System Center 2016 - Operations Manager SCOM',
                 author: 'Greg Shield',
                 level: 'Intermediate',
@@ -3811,8 +10749,8 @@ const paths = [
                         time: '1h 5m',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introduction System Center 2016 - Operations Manager SCOM',
+                                time: '1h 5m'
                             }
                         ]
                     }
@@ -3824,6 +10762,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 103,
                 title: 'Installing and Configuring System Center 2016 - Operations Manager (SCOM)',
                 author: 'Greg Shield',
                 level: 'Intermediate',
@@ -3835,8 +10774,8 @@ const paths = [
                         time: '59m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Installing and Configuring System Center 2016 - Operations Manager (SCOM)',
+                                time: '59m 27s'
                             }
                         ]
                     }
@@ -3848,6 +10787,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 104,
                 title: 'Monitoring Windows Server 2016 with System Center 2016 - Operations Manager (SCOM)',
                 author: 'Greg Shield',
                 level: 'Intermediate',
@@ -3859,8 +10799,8 @@ const paths = [
                         time: '52m 16s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Monitoring Windows Server 2016 with System Center 2016 - Operations Manager (SCOM)',
+                                time: '52m 16s'
                             }
                         ]
                     }
@@ -3872,6 +10812,7 @@ const paths = [
                 isTrending: 0
             },
             {
+                id: 105,
                 title: 'Monitor Azure Resources and Web Applications with System Center Operations Manager (SCOM)',
                 author: 'Greg Shield',
                 level: 'Intermediate',
@@ -3883,8 +10824,8 @@ const paths = [
                         time: '48m 56s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Monitor Azure Resources and Web Applications with System Center Operations Manager (SCOM)',
+                                time: '48m 56s'
                             }
                         ]
                     }
@@ -3911,6 +10852,7 @@ const authors = [
         description: 'Hieu Duong is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 106,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -3923,8 +10865,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -3936,6 +10878,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 107,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -3948,8 +10891,8 @@ const authors = [
                         time: '24m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Simplifying Front end State Management with Observable Store',
+                                time: '24m 28s'
                             }
                         ]
                     }
@@ -3961,6 +10904,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 108,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -3973,8 +10917,8 @@ const authors = [
                         time: '22m 48s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                                time: '22m 48s'
                             }
                         ]
                     }
@@ -3986,6 +10930,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 109,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -3998,8 +10943,8 @@ const authors = [
                         time: '10m 47s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'What you do not know about Zone.js',
+                                time: '10m 47s'
                             }
                         ]
                     }
@@ -4011,6 +10956,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 110,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4023,8 +10969,8 @@ const authors = [
                         time: '10m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Intro to Bazel',
+                                time: '10m 6s'
                             }
                         ]
                     }
@@ -4036,6 +10982,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 111,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4048,8 +10995,8 @@ const authors = [
                         time: '20m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                                time: '20m 36s'
                             }
                         ]
                     }
@@ -4061,6 +11008,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 112,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4073,8 +11021,8 @@ const authors = [
                         time: '22m 4s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Machine Learning in Angular with TensorFlow.js',
+                                time: '22m 4s'
                             }
                         ]
                     }
@@ -4086,6 +11034,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 113,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -4098,8 +11047,8 @@ const authors = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -4108,8 +11057,8 @@ const authors = [
                         time: '49m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing C# and .NET',
+                                time: '49m 28s'
                             }
                         ]
                     },
@@ -4118,8 +11067,8 @@ const authors = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Learning the C# Syntax',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -4128,8 +11077,8 @@ const authors = [
                         time: '45m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Working with Classes and Objects',
+                                time: '45m 28s'
                             }
                         ]
                     },
@@ -4138,8 +11087,8 @@ const authors = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Testing Your Code',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -4148,8 +11097,8 @@ const authors = [
                         time: '45m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Working with Reference Types and Value Types',
+                                time: '45m 20s'
                             }
                         ]
                     },
@@ -4158,8 +11107,8 @@ const authors = [
                         time: '45m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Controlling the Flow Execution',
+                                time: '45m 28s'
                             }
                         ]
                     },
@@ -4168,8 +11117,8 @@ const authors = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building Type',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -4178,8 +11127,8 @@ const authors = [
                         time: '55m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'OOP with C#',
+                                time: '55m 20s'
                             }
                         ]
                     },
@@ -4188,8 +11137,8 @@ const authors = [
                         time: '8m 7s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Catching up with the Lastest in C#',
+                                time: '8m 7s'
                             }
                         ]
                     },
@@ -4198,8 +11147,8 @@ const authors = [
                         time: '2m 30s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Go Furhter with C#',
+                                time: '2m 30s'
                             }
                         ]
                     }
@@ -4211,6 +11160,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 114,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -4223,8 +11173,8 @@ const authors = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -4233,8 +11183,8 @@ const authors = [
                         time: '29m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Collections and Arrays',
+                                time: '29m 28s'
                             }
                         ]
                     },
@@ -4243,8 +11193,8 @@ const authors = [
                         time: '25m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Importing from a Data Source Intro an array.',
+                                time: '25m 24s'
                             }
                         ]
                     },
@@ -4253,8 +11203,8 @@ const authors = [
                         time: '25m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Resizeing Collections with Lists',
+                                time: '25m 28s'
                             }
                         ]
                     },
@@ -4263,8 +11213,8 @@ const authors = [
                         time: '15m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Storing keyed Data with Dictionaries',
+                                time: '15m 24s'
                             }
                         ]
                     },
@@ -4273,8 +11223,8 @@ const authors = [
                         time: '26m 22s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Manipulating List Data',
+                                time: '26m 22s'
                             }
                         ]
                     },
@@ -4283,8 +11233,8 @@ const authors = [
                         time: '27m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Selecting Items Using LINQ',
+                                time: '27m 20s'
                             }
                         ]
                     },
@@ -4293,8 +11243,8 @@ const authors = [
                         time: '24m 23s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Creating Collections of Collections',
+                                time: '24m 23s'
                             }
                         ]
                     },
@@ -4303,8 +11253,8 @@ const authors = [
                         time: '16m 26s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Taking Collections Further',
+                                time: '16m 26s'
                             }
                         ]
                     }
@@ -4324,6 +11274,7 @@ const authors = [
         description: 'Huy Nguyen is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 115,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4336,8 +11287,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -4349,6 +11300,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 116,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4361,8 +11313,8 @@ const authors = [
                         time: '24m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Simplifying Front end State Management with Observable Store',
+                                time: '24m 28s'
                             }
                         ]
                     }
@@ -4374,6 +11326,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 117,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4386,8 +11339,8 @@ const authors = [
                         time: '22m 48s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                                time: '22m 48s'
                             }
                         ]
                     }
@@ -4399,6 +11352,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 118,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4411,8 +11365,8 @@ const authors = [
                         time: '10m 47s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'What you do not know about Zone.js',
+                                time: '10m 47s'
                             }
                         ]
                     }
@@ -4424,6 +11378,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 119,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4436,8 +11391,8 @@ const authors = [
                         time: '10m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Intro to Bazel',
+                                time: '10m 6s'
                             }
                         ]
                     }
@@ -4449,6 +11404,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 120,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4461,8 +11417,8 @@ const authors = [
                         time: '20m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                                time: '20m 36s'
                             }
                         ]
                     }
@@ -4474,6 +11430,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 121,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4486,8 +11443,8 @@ const authors = [
                         time: '22m 4s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Machine Learning in Angular with TensorFlow.js',
+                                time: '22m 4s'
                             }
                         ]
                     }
@@ -4499,6 +11456,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 122,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -4511,8 +11469,8 @@ const authors = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -4521,8 +11479,8 @@ const authors = [
                         time: '49m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing C# and .NET',
+                                time: '49m 28s'
                             }
                         ]
                     },
@@ -4531,8 +11489,8 @@ const authors = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Learning the C# Syntax',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -4541,8 +11499,8 @@ const authors = [
                         time: '45m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Working with Classes and Objects',
+                                time: '45m 28s'
                             }
                         ]
                     },
@@ -4551,8 +11509,8 @@ const authors = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Testing Your Code',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -4561,8 +11519,8 @@ const authors = [
                         time: '45m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Working with Reference Types and Value Types',
+                                time: '45m 20s'
                             }
                         ]
                     },
@@ -4571,8 +11529,8 @@ const authors = [
                         time: '45m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Controlling the Flow Execution',
+                                time: '45m 28s'
                             }
                         ]
                     },
@@ -4581,8 +11539,8 @@ const authors = [
                         time: '35m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Building Type',
+                                time: '35m 24s'
                             }
                         ]
                     },
@@ -4591,8 +11549,8 @@ const authors = [
                         time: '55m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'OOP with C#',
+                                time: '55m 20s'
                             }
                         ]
                     },
@@ -4601,8 +11559,8 @@ const authors = [
                         time: '8m 7s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Catching up with the Lastest in C#',
+                                time: '8m 7s'
                             }
                         ]
                     },
@@ -4624,6 +11582,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 123,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -4636,8 +11595,8 @@ const authors = [
                         time: '1m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Course Overview',
+                                time: '1m 36s'
                             }
                         ]
                     },
@@ -4646,8 +11605,8 @@ const authors = [
                         time: '29m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Introducing Collections and Arrays',
+                                time: '29m 28s'
                             }
                         ]
                     },
@@ -4656,8 +11615,8 @@ const authors = [
                         time: '25m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Importing from a Data Source Intro an array',
+                                time: '25m 24s'
                             }
                         ]
                     },
@@ -4666,8 +11625,8 @@ const authors = [
                         time: '25m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Resizeing Collections with Lists',
+                                time: '25m 28s'
                             }
                         ]
                     },
@@ -4676,8 +11635,8 @@ const authors = [
                         time: '15m 24s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Storing keyed Data with Dictionaries',
+                                time: '15m 24s'
                             }
                         ]
                     },
@@ -4686,8 +11645,8 @@ const authors = [
                         time: '26m 22s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Manipulating List Data',
+                                time: '26m 22s'
                             }
                         ]
                     },
@@ -4696,8 +11655,8 @@ const authors = [
                         time: '27m 20s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Selecting Items Using LINQ',
+                                time: '27m 20s'
                             }
                         ]
                     },
@@ -4706,8 +11665,8 @@ const authors = [
                         time: '24m 23s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Creating Collections of Collections',
+                                time: '24m 23s'
                             }
                         ]
                     },
@@ -4716,8 +11675,8 @@ const authors = [
                         time: '16m 26s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Taking Collections Further',
+                                time: '16m 26s'
                             }
                         ]
                     }
@@ -4737,6 +11696,7 @@ const authors = [
         description: 'Hai Pham is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 124,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4749,8 +11709,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -4762,6 +11722,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 125,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4774,8 +11735,8 @@ const authors = [
                         time: '24m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Simplifying Front end State Management with Observable Store',
+                                time: '24m 28s'
                             }
                         ]
                     }
@@ -4787,6 +11748,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 126,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4799,8 +11761,8 @@ const authors = [
                         time: '22m 48s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                                time: '22m 48s'
                             }
                         ]
                     }
@@ -4812,6 +11774,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 127,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4824,8 +11787,8 @@ const authors = [
                         time: '10m 47s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'What you do not know about Zone.js',
+                                time: '10m 47s'
                             }
                         ]
                     }
@@ -4837,6 +11800,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 128,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4849,8 +11813,8 @@ const authors = [
                         time: '10m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Intro to Bazel',
+                                time: '10m 6s'
                             }
                         ]
                     }
@@ -4862,6 +11826,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 129,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4874,8 +11839,8 @@ const authors = [
                         time: '20m 36s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
+                                time: '20m 36s'
                             }
                         ]
                     }
@@ -4887,6 +11852,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 130,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -4899,8 +11865,8 @@ const authors = [
                         time: '22m 4s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Machine Learning in Angular with TensorFlow.js',
+                                time: '22m 4s'
                             }
                         ]
                     }
@@ -4912,6 +11878,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 131,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -5037,6 +12004,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 132,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -5150,6 +12118,7 @@ const authors = [
         description: 'Bryan is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 133,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5162,8 +12131,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42'
                             }
                         ]
                     }
@@ -5175,6 +12144,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 134,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5187,8 +12157,8 @@ const authors = [
                         time: '24m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Simplifying Front end State Management with Observable Store',
+                                time: '24m 28s'
                             }
                         ]
                     }
@@ -5200,6 +12170,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 135,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5212,8 +12183,8 @@ const authors = [
                         time: '22m 48s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
+                                time: '22m 48s'
                             }
                         ]
                     }
@@ -5225,6 +12196,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 136,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5250,6 +12222,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 137,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5262,8 +12235,8 @@ const authors = [
                         time: '10m 6s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Intro to Bazel',
+                                time: '10m 6s'
                             }
                         ]
                     }
@@ -5275,6 +12248,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 138,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5300,6 +12274,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 139,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5325,6 +12300,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 140,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -5450,6 +12426,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 141,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -5563,6 +12540,7 @@ const authors = [
         description: 'Shawn is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 142,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5575,8 +12553,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -5588,6 +12566,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 143,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5600,8 +12579,8 @@ const authors = [
                         time: '24m 28s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Simplifying Front end State Management with Observable Store',
+                                time: '24m 28s'
                             }
                         ]
                     }
@@ -5613,6 +12592,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 144,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5638,6 +12618,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 145,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5663,6 +12644,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 146,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5688,6 +12670,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 147,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5713,6 +12696,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 148,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5738,6 +12722,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 149,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -5863,6 +12848,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 150,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -5976,6 +12962,7 @@ const authors = [
         description: 'Barry is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 151,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -5988,8 +12975,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -6001,6 +12988,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 152,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6026,6 +13014,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 153,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6051,6 +13040,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 154,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6076,6 +13066,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 155,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6101,6 +13092,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 156,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6126,6 +13118,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 157,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6151,6 +13144,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 158,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -6276,6 +13270,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 159,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -6389,6 +13384,7 @@ const authors = [
         description: 'Josh is a sofware developer, consultant, conference speaker, and Elearning.io Author. Him Courses include: Angular, OOP Fundamentals in C#. For him work in support of sofware developers, she has been recognized with the Microsoft Most valuable Professional (MVP) award, and is a Google Developer Expert (GDE).',
         course: [
             {
+                id: 160,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6401,8 +13397,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -6414,6 +13410,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 161,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6439,6 +13436,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 162,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6463,6 +13461,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 163,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6488,6 +13487,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 164,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6513,6 +13513,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 165,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6538,6 +13539,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 166,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -6563,6 +13565,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 167,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -6688,6 +13691,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 168,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -6801,6 +13805,7 @@ const authors = [
         description: 'Scott Allen has worked on every thing from 8-bit embedded devices to large scale web sites. During his 15+ years in commercial sofware development. Since 2001, Scott has focused on server-side and web technologies, like ASP.NET, ASP.NET AJAX, Windows Workflow, Silverlight, and LNQ.',
         course: [
             {
+                id: 169,
                 title: 'The State of .Net and Looking Ahead to 2020: DEVintersection 2019',
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
@@ -6813,8 +13818,8 @@ const authors = [
                         time: '59m 27s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'The State of .NET and Looking Ahead to 2020: DEVintersection 2019',
+                                time: '59m 27s'
                             }
                         ]
                     }
@@ -6826,6 +13831,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 170,
                 title: 'Building Modern .NET Desktop Apps with .NET core and Windows 10: DEVitersection 2019',
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
@@ -6851,6 +13857,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 171,
                 title: 'Building the Best Web App with lastest Updates to ASP.NET Core for 2020: DEVintersection 2019',
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
@@ -6876,6 +13883,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 172,
                 title: 'What You Need to Know About .NET Core: DEVintersection 2019',
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
@@ -6901,6 +13909,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 173,
                 title: 'Blazor for the Web Forms Developer: DEVintersection 2019',
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
@@ -6926,6 +13935,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 174,
                 title: 'SignalR: Real-time for All the Things: DEVintersection 2019',
                 level: 'Intermediate',
                 released: 'Dec 10, 2019',
@@ -6951,6 +13961,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 175,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -7076,6 +14087,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 176,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',
@@ -7189,6 +14201,7 @@ const authors = [
         description: 'Joe began hos love of programming on an Apple III in BASIC. Although his preferred language is JavaScript, he was worked professionally with just about every major Microsoft language. He is currently a consultant and full time author for Elearning.io. Joe has always had a strong interest in education, had worked both full and part time as a technical teacher for over ten years.',
         course: [
             {
+                id: 177,
                 title: 'Angular Denver 2019: Keynote talk',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7201,8 +14214,8 @@ const authors = [
                         time: '40m 42s',
                         data: [
                             {
-                                title: '',
-                                time: ''
+                                title: 'Keynote talk',
+                                time: '40m 42s'
                             }
                         ]
                     }
@@ -7214,6 +14227,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 178,
                 title: 'Angular Denver 2019: Simplifying Front end State Management with Observable Store',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7239,6 +14253,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 179,
                 title: 'Angular Denver 2019: Supercharge Your Angular Test with Jest',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7264,6 +14279,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 180,
                 title: 'Angular Denver 2019: What you do not know about Zone.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7289,6 +14305,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 181,
                 title: 'Angular Denver 2019: Intro to Bazel',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7314,6 +14331,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 182,
                 title: 'Angular Denver 2019: Bridging Parallel Universes: Upgrading Huge Apps with Angular Elements',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7339,6 +14357,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 183,
                 title: 'Angular Denver 2019: Machine Learning in Angular with TensorFlow.js',
                 level: 'Intermediate',
                 released: 'Sep 11, 2019',
@@ -7364,6 +14383,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 184,
                 title: 'C# Fundamentals',
                 level: 'Beginner',
                 released: 'Apr 16, 2019',
@@ -7489,6 +14509,7 @@ const authors = [
                 isTrending: 0
             },
             {
+                id: 185,
                 title: 'Beginning C# Collections',
                 level: 'Beginner',
                 released: 'Mar 29, 2019',

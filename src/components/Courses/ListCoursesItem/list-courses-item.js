@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
+import { CoursesContext } from '../../../provider/courses-provider'
 
 const ListCoursesItem = (props) => {
+    const courseContext = useContext(CoursesContext)
     const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
     Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
     return (
         <ScreenContainer>
             <TouchableOpacity style={styles.item}
                 onPress={() => {
+                    courseContext.addLearningCourse(props.item.id)
                     props.navigation.navigate("CourseDetail", {item: props.item})
                 }}
             >
