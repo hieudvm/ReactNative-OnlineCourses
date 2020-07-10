@@ -33,6 +33,10 @@ import { CoursesProvider } from './src/provider/courses-provider';
 import { AuthorProvider } from './src/provider/author-provider';
 import { PathsProvider } from './src/provider/paths-provider';
 import { FavouritesProvider } from './src/provider/favourites-provider';
+import SearchAll from './src/components/Main/Search/All/search-all';
+import SearchCourses from './src/components/Main/Search/Courses/search-courses';
+import SearchAuthors from './src/components/Main/Search/Authors/search-authors';
+import SearchPaths from './src/components/Main/Search/Paths/search-paths';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -125,7 +129,13 @@ const BrowseStackScreen = () => {
 const SearchStackScreen = () => {
   return (
     <SearchStack.Navigator>
-      <SearchStack.Screen name="Search" component={Search} />
+      <SearchStack.Screen name="Search" component={Search} options={{ title: "Search" }} />
+      <SearchStack.Screen name="SearchAll" component={SearchAll} options={{ title: "Search" }} />
+      <SearchStack.Screen name="SearchCourses" component={SearchCourses} options={{ title: "Search" }} />
+      <SearchStack.Screen name="SearchAuthors" component={SearchAuthors} options={{ title: "Search" }} />
+      <SearchStack.Screen name="SearchPaths" component={SearchPaths} options={{ title: "Search" }} />
+      <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
+      <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Path Detail" }} />
       <SearchStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
     </SearchStack.Navigator>
   )
