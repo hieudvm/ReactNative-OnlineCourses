@@ -16,11 +16,9 @@ const Login = (props) => {
 
     useEffect(() => {
         if (auth.status && auth.status === 200) {
-            setLoginText('Login successed!')
             props.navigation.navigate("MainTab")
             setUserName('')
             setPassword('')
-            setLoginText('')
         }
     }, [authContext])
 
@@ -29,7 +27,7 @@ const Login = (props) => {
         if (!status) {
             return <View />
         } else if (status.status === 200) {
-            return (<Text>{loginText}</Text>)
+            return (<Text>Login successed!</Text>)
         } else {
             return (<Text>{status.errorString}</Text>)
         }

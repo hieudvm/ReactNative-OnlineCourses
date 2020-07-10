@@ -8,15 +8,17 @@ import SectionAuthorsItem from '../../Browse/SectionAuthorsItem/section-authors-
 const SearchAuthors = (props) => {
     return (
         <ScreenContainer>
-            <View>
-                <ThemedText style={{margin: 6}}>Authors</ThemedText>
-                <FlatList
-                    horizontal={true}
-                    data={props.authorIds}
-                    renderItem={({ item }) => <SectionAuthorsItem navigation={props.navigation} item={item} />}
-                />
-            </View>
-    </ScreenContainer>
+            <ScrollView>
+                <View>
+                    <ThemedText style={{ margin: 6 }}>Authors</ThemedText>
+                    <FlatList
+                        horizontal={true}
+                        data={props.authorIds}
+                        renderItem={({ item }) => <SectionAuthorsItem navigation={props.navigation} item={item} />}
+                    />
+                </View>
+            </ScrollView>
+        </ScreenContainer>
     )
 }
 
