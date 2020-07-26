@@ -22,3 +22,8 @@ Deadline 2: Xây dựng ứng dụng offline cho toàn bộ ứng dụng
   - Video demo: https://youtu.be/FlQmwK_K360
 
 ======================================================================
+Deadline 3: Xây dựng ứng dụng đầy đủ các luồng chạy online
+  - Commit ID: 
+  - Video demo: 
+
+======================================================================
