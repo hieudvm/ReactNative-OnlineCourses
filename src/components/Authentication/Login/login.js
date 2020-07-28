@@ -8,28 +8,24 @@ import ScreenContainer from '../../Common/screen-container'
 const Login = (props) => {
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
-    const [loginText, setLoginText] = useState('')
-
     const authContext = useContext(AuthenticationContext)
 
-    const auth = authContext.authentication
-
     useEffect(() => {
-        if (auth.status && auth.status === 200) {
+        if (authContext.state.isAuthenticated) {
             props.navigation.navigate("MainTab")
             setUserName('')
             setPassword('')
         }
-    }, [authContext])
+    }, [authContext.state.isAuthenticated])
 
     const renderLoginStatus = (status) => {
         console.log('status', status)
         if (!status) {
             return <View />
-        } else if (status.status === 200) {
+        } else if (status) {
             return (<Text>Login successed!</Text>)
         } else {
-            return (<Text>{status.errorString}</Text>)
+            return (<Text>Login failed!</Text>)
         }
     }
 
@@ -51,12 +47,12 @@ const Login = (props) => {
                     defaultValue={password}
                 />
                 <View>
-                    {renderLoginStatus(authContext.authentication)}
+                    {renderLoginStatus(authContext.state.isAuthenticated)}
                 </View>
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        authContext.login1(userName, password)
+                        authContext.login(userName, password)
                     }}
                 >
                     <Text style={styles.text}>Login</Text>

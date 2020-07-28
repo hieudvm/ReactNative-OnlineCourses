@@ -197,9 +197,7 @@ export default function App() {
     <ThemeContext.Provider
       value={{ theme, setTheme }}
     >
-      <AuthenticationContext.Provider
-        value={{ login1, authentication, setAuthentication }}
-      >
+      <AuthenticationProvider>
         <CoursesProvider>
           <AuthorProvider>
             <PathsProvider>
@@ -214,7 +212,7 @@ export default function App() {
             </PathsProvider>
           </AuthorProvider>
         </CoursesProvider>
-      </AuthenticationContext.Provider>
+      </AuthenticationProvider>
     </ThemeContext.Provider>
   );
 }

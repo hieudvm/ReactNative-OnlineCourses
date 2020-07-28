@@ -5,8 +5,11 @@ import { ScrollView, Switch } from 'react-native-gesture-handler'
 import { ThemeContext, themes } from '../../../provider/themes-provider'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
+import { AuthenticationContext } from '../../../provider/authentication-provider'
 
 const Wishlist = (props) => {
+    
+    const authContext = useContext(AuthenticationContext)
 
     const data = [
         {

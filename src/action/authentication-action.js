@@ -10,7 +10,7 @@ export const login = (dispatch) => (userName, password) => {
         password: 'duonghieu1'
     }).then((Response) => {
         if (Response.status === 200) {
-            dispatch({ type: "LOGIN_SUCESSED", data: Response.data })
+            dispatch({ type: "LOGIN_SUCCESSED", data: Response.data })
         } else {
             dispatch({type: "LOGIN_FAILED"})
         }
