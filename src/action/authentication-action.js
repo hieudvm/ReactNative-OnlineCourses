@@ -11,10 +11,12 @@ export const login = (dispatch) => (userName, password) => {
     }).then((Response) => {
         if (Response.status === 200) {
             dispatch({ type: "LOGIN_SUCCESSED", data: Response.data })
+            console.log("dsadjaskdhasj", Response.data)
         } else {
             dispatch({type: "LOGIN_FAILED"})
         }
     }).catch((Error) => {
         dispatch({type: "LOGIN_FAILED"})
     })
+
 }

@@ -28,9 +28,9 @@ const Home = (props) => {
           </ImageBackground>
         </View>
         <SectionCourses navigation={props.navigation} title='Countinue learning' />
-        <SectionCourses navigation={props.navigation} title='Software development' />
-        <SectionCourses navigation={props.navigation} title='IT operations' />
-        <SectionCourses navigation={props.navigation} title='Data professional' />
+        <SectionCourses navigation={props.navigation} title='Top Selling' />
+        <SectionCourses navigation={props.navigation} title='Top New Courses' />
+        <SectionCourses navigation={props.navigation} title='Top Rating' />
         <View style={styles.icon}>
           <View>
             <Text>My paths</Text>

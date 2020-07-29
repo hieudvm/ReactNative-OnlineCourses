@@ -1,20 +1,22 @@
-import React, { useState } from 'react'
-import {coursesData, newCourses, recommendedCourses} from '../resourceContext/resource-context'
+import React, { useState, useEffect } from 'react'
+import API from '../../api'
 
 const CoursesContext = React.createContext()
 
 const CoursesProvider = (props) => {
+    
+    const newCourses = []
+    const topRatingCourses = []
+    const topSellingCourses = []
 
-    const [courses, setCourses] = useState(coursesData)
-
-    const [courseIds, setCourseIds] = useState(courses.id)
+    const [isLoading, setIsLoading] = useState(true)
 
     const [learningCourseIds, setLearningCourseIds] = useState(new Set())
 
-    const [newReleaseCourseIds, setNewReleaseCourseIds] = useState(newCourses)
+    const [topNewCourseIds, setTopnNewCourseIds] = useState(newCourses)
 
-    const [recommendedCourseIds, setRecommendedCourseIds] = useState(recommendedCourses)
-
+    const [topRateCourseIds, setTopRateCourseIds] = useState(topRatingCourses)
+    const [topSellingCourseIds, setTopSellingCourseIds] = useState(topSellingCourses)
     function addLearningCourse(courseId) {
         console.log('addLearningCourse', courseId, learningCourseIds)
         var newData = new Set(learningCourseIds.add(courseId))
@@ -25,16 +27,17 @@ const CoursesProvider = (props) => {
     return (
         <CoursesContext.Provider
             value={{
-                courses,
-                setCourses,
                 learningCourseIds,
                 setLearningCourseIds,
-                newReleaseCourseIds,
-                setNewReleaseCourseIds,
-                recommendedCourseIds,
-                setRecommendedCourseIds,
+                topNewCourseIds,
+                setTopnNewCourseIds,
+                topRateCourseIds,
+                setTopRateCourseIds,
+                topSellingCourseIds,
                 addLearningCourse,
-                courseIds,
+                setTopSellingCourseIds,
+                isLoading,
+                setIsLoading
             }}>
             {props.children}
         </CoursesContext.Provider>
