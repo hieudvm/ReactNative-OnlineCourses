@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native'
 import SectionCoursesItem from '../SectionCoursesItem/section-courses-item'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../../Common/themed-text';
 import { CoursesContext } from '../../../../provider/courses-provider';
-import { isloading } from '../../../../action/courses-action';
+import API from '../../../../../api'
 
 const SectionCourses = (props) => {
     const courseContext = useContext(CoursesContext)
@@ -16,7 +16,7 @@ const SectionCourses = (props) => {
         getTopSellCourses()
         getTopNewCourses()
         getTopRateCourses()
-    })
+    }, [true])
 
     const getTopSellCourses = () => {
         API.post('/course/top-sell', {
@@ -93,8 +93,8 @@ const SectionCourses = (props) => {
 
     return (
         <View>
-            {isloading && <ActivityIndicator size = "large" color = "red" />}
             <View>
+            {courseContext.isLoading && <ActivityIndicator size = "large" color = "red" />}
                 <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
                     <ThemedText style={{ margin: 6, flex: 1 }}>
                         {props.title}
