@@ -1,31 +1,39 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, ActivityIndicator } from 'react-native'
 import SectionCoursesItem from '../SectionCoursesItem/section-courses-item'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../../Common/themed-text';
 import { CoursesContext } from '../../../../provider/courses-provider';
 import API from '../../../../../api'
+import axios from 'axios';
 
 const SectionCourses = (props) => {
     const courseContext = useContext(CoursesContext)
+    const [topSellCourses, setTopSellCourses] = useState([]);
+    // TODO: TopNew + TopRate
     const renderListItem = (courses) => {
         return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
     }
 
     useEffect(() => {
         getTopSellCourses()
-        getTopNewCourses()
-        getTopRateCourses()
-    }, [true])
+        //getTopNewCourses()
+        //getTopRateCourses()
+        console.log('reload')
+        axios.get('/user/me').then((Response) => {
+            console.log(Response);
+        })
+    }, [])
 
     const getTopSellCourses = () => {
-        API.post('/course/top-sell', {
+        axios.post('/course/top-sell', {
             "limit": 10,
             "page": 1
         }).then((Response) => {
             if (Response.status === 200) {
                 courseContext.setIsLoading(false)
-                courseContext.setTopSellingCourseIds(Response.data.payload)
+                //courseContext.setTopSellingCourseIds(Response.data.payload)
+                setTopSellCourses(Response.data.payload);
             } else {
                 return new Array()
             }
@@ -35,7 +43,7 @@ const SectionCourses = (props) => {
     }
 
     const getTopNewCourses = () => {
-        API.post('/course/top-new', {
+        axios.post('/course/top-new', {
             "limit": 10,
             "page": 1
         }).then((Response) => {
@@ -51,7 +59,7 @@ const SectionCourses = (props) => {
     }
 
     const getTopRateCourses = () => {
-        API.post('/course/top-rate', {
+        axios.post('/course/top-rate', {
             "limit": 10,
             "page": 1
         }).then((Response) => {
@@ -69,26 +77,25 @@ const SectionCourses = (props) => {
     const renderListItemCondition = () => {
         if (props.title === 'Top Rating') {
             const courses1 = courseContext.topRateCourseIds
-            console.log("top rate", courses1)
             return renderListItem(courses1)
         } else if (props.title === 'Top Selling') {
-            const course2 = courseContext.topSellingCourseIds
-            return renderListItem(course2)
+            return renderListItem(topSellCourses)
         } else if (props.title === 'Top New Courses') {
             const course3 = courseContext.topNewCourseIds
             return renderListItem(course3)
-        }  else if (props.title === 'Countinue learning') {
-            const courseTemp = []
-            const course4 = Array.from(courseContext.learningCourseIds)
-            for(const x of courseContext.learningCourseIds) {
-                courseTemp.push(courseContext.courses[x-1])
-            }
-            if (course4.length === 0) {
-                return
-            } else {
-                return renderListItem(courseTemp)
-            }
         }
+        // }  else if (props.title === 'Countinue learning') {
+        //     const courseTemp = []
+        //     const course4 = Array.from(courseContext.learningCourseIds)
+        //     for(const x of courseContext.learningCourseIds) {
+        //         courseTemp.push(courseContext.courses[x-1])
+        //     }
+        //     if (course4.length === 0) {
+        //         return
+        //     } else {
+        //         return renderListItem(courseTemp)
+        //     }
+        // }
     }
 
     return (

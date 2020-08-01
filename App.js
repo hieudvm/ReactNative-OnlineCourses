@@ -37,6 +37,7 @@ import SearchAll from './src/components/Main/Search/All/search-all';
 import SearchCourses from './src/components/Main/Search/Courses/search-courses';
 import SearchAuthors from './src/components/Main/Search/Authors/search-authors';
 import SearchPaths from './src/components/Main/Search/Paths/search-paths';
+import './interceptors';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
