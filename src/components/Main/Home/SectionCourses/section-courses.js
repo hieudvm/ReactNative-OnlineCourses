@@ -10,6 +10,8 @@ import axios from 'axios';
 const SectionCourses = (props) => {
     const courseContext = useContext(CoursesContext)
     const [topSellCourses, setTopSellCourses] = useState([]);
+    const [topRateCourses, setTopRateCourses] = useState([]);
+    const [topNewCourses, setTopNewCourses] = useState([]);
     // TODO: TopNew + TopRate
     const renderListItem = (courses) => {
         return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
@@ -17,8 +19,8 @@ const SectionCourses = (props) => {
 
     useEffect(() => {
         getTopSellCourses()
-        //getTopNewCourses()
-        //getTopRateCourses()
+        getTopNewCourses()
+        getTopRateCourses()
         console.log('reload')
         axios.get('/user/me').then((Response) => {
             console.log(Response);
@@ -32,7 +34,6 @@ const SectionCourses = (props) => {
         }).then((Response) => {
             if (Response.status === 200) {
                 courseContext.setIsLoading(false)
-                //courseContext.setTopSellingCourseIds(Response.data.payload)
                 setTopSellCourses(Response.data.payload);
             } else {
                 return new Array()
@@ -49,7 +50,7 @@ const SectionCourses = (props) => {
         }).then((Response) => {
             if (Response.status === 200) {
                 courseContext.setIsLoading(false)
-                courseContext.setTopnNewCourseIds(Response.data.payload)
+                setTopNewCourses(Response.data.payload);
             } else {
                 return new Array()
             }
@@ -65,7 +66,7 @@ const SectionCourses = (props) => {
         }).then((Response) => {
             if (Response.status === 200) {
                 courseContext.setIsLoading(false)
-                courseContext.setTopRateCourseIds(Response.data.payload)
+                setTopRateCourses(Response.data.payload);
             } else {
                 return new Array()
             }
