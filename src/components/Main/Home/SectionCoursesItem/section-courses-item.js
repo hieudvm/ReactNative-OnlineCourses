@@ -4,25 +4,29 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 import { CoursesContext } from '../../../../provider/courses-provider'
+import { Rating, AirbnbRating } from 'react-native-elements';
 
 const SectionCoursesItem = (props) => {
     const courseContext = useContext(CoursesContext)
-    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    const Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
-
+    const Image_Http_URL = { uri: props.item.imageUrl }
+    const author = 'instructor.user.name'
+    const data = {
+        author: props.item.author
+    }
     return (
         <TouchableOpacity
             onPress={() => {
                 courseContext.addLearningCourse(props.item.id)
-                props.navigation.push("CourseDetail", {item: props.item})
+                props.navigation.push("CourseDetail", { item: props.item.id })
             }}
         >
             <ScreenContainer style={styles.item}>
                 <Image source={Image_Http_URL} style={styles.image} />
-                <View style={{ margin: 5}}>
+                <View style={{ margin: 5 }}>
                     <ThemedText>{props.item.title}</ThemedText>
-                    <ThemedText>{props.item.author}</ThemedText>
-                    <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
+                    <ThemedText>{props.item["instructor.user.name"]}</ThemedText>
+                    <Text style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </Text>
+                    <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                 </View>
             </ScreenContainer>
         </TouchableOpacity>

@@ -5,15 +5,14 @@ const CoursesContext = React.createContext()
 
 const CoursesProvider = (props) => {
     
-    const newCourses = []
+    const topNewCourses = []
     const topRatingCourses = []
     const topSellingCourses = []
 
     const [isLoading, setIsLoading] = useState(true)
-
     const [learningCourseIds, setLearningCourseIds] = useState(new Set())
 
-    const [topNewCourseIds, setTopnNewCourseIds] = useState(newCourses)
+    const [topNewCourseIds, setTopnNewCourseIds] = useState(topNewCourses)
 
     const [topRateCourseIds, setTopRateCourseIds] = useState(topRatingCourses)
     const [topSellingCourseIds, setTopSellingCourseIds] = useState(topSellingCourses)

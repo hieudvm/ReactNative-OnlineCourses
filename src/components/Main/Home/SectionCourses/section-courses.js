@@ -12,7 +12,7 @@ const SectionCourses = (props) => {
     const [topSellCourses, setTopSellCourses] = useState([]);
     const [topRateCourses, setTopRateCourses] = useState([]);
     const [topNewCourses, setTopNewCourses] = useState([]);
-    // TODO: TopNew + TopRate
+    const [courseIsLearning, setCourseIsLearning] = useState([]);
     const renderListItem = (courses) => {
         return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
     }
@@ -21,10 +21,7 @@ const SectionCourses = (props) => {
         getTopSellCourses()
         getTopNewCourses()
         getTopRateCourses()
-        console.log('reload')
-        axios.get('/user/me').then((Response) => {
-            console.log(Response);
-        })
+        getProcessCourses()
     }, [])
 
     const getTopSellCourses = () => {
@@ -75,34 +72,36 @@ const SectionCourses = (props) => {
         })
     }
 
+    const getProcessCourses = () => {
+        axios.get('/user/get-process-courses')
+            .then((Response) => {
+                if (Response.status === 200) {
+                    courseContext.setIsLoading(false)
+                    setCourseIsLearning(Response.data.payload);
+                } else {
+                    return new Array()
+                }
+            }).catch((Error) => {
+                return new Array()
+            })
+    }
+
     const renderListItemCondition = () => {
         if (props.title === 'Top Rating') {
-            const courses1 = courseContext.topRateCourseIds
-            return renderListItem(courses1)
+            return renderListItem(topRateCourses)
         } else if (props.title === 'Top Selling') {
             return renderListItem(topSellCourses)
         } else if (props.title === 'Top New Courses') {
-            const course3 = courseContext.topNewCourseIds
-            return renderListItem(course3)
+            return renderListItem(topNewCourses)
+        } else if (props.title === 'Countinue learning') {
+            return renderListItem(courseIsLearning)
         }
-        // }  else if (props.title === 'Countinue learning') {
-        //     const courseTemp = []
-        //     const course4 = Array.from(courseContext.learningCourseIds)
-        //     for(const x of courseContext.learningCourseIds) {
-        //         courseTemp.push(courseContext.courses[x-1])
-        //     }
-        //     if (course4.length === 0) {
-        //         return
-        //     } else {
-        //         return renderListItem(courseTemp)
-        //     }
-        // }
     }
 
     return (
         <View>
             <View>
-            {courseContext.isLoading && <ActivityIndicator size = "large" color = "red" />}
+                {courseContext.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
                     <ThemedText style={{ margin: 6, flex: 1 }}>
                         {props.title}
@@ -110,7 +109,7 @@ const SectionCourses = (props) => {
                     <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
                         <TouchableOpacity
                             onPress={() => {
-                                props.navigation.navigate("AllCourses", {item: courseContext.courses})
+                                props.navigation.navigate("AllCourses", { item: courseContext.courses })
                             }}
                             style={{ flexDirection: 'row', alignItems: 'center' }}
                         >
