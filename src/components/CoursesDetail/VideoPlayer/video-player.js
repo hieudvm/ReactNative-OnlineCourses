@@ -5,7 +5,6 @@ import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 
 const VideoPlayer = (props) => {
-    // console.log(props)
     return (
         <ScreenContainer>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />

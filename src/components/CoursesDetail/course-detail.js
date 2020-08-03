@@ -15,7 +15,6 @@ const CourseDetail = (props) => {
     const [favorite, setFavorite] = useState('Favorite')
 
     const item = props.route.params.item
-    // console.log(item)
     return (
         <ScreenContainer>
             <View style={{ flex: 2.5 }}>
