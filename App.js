@@ -185,15 +185,6 @@ const Authen = () => {
 export default function App() {
   const [theme, setTheme] = useState(themes.light);
 
-  const login1 = (username, password) => {
-    setAuthentication(login(username, password))
-  }
-
-  const [authentication, setAuthentication] = useState({
-    status: 0,
-    data: {}
-  })
-
   return (
     <ThemeContext.Provider
       value={{ theme, setTheme }}

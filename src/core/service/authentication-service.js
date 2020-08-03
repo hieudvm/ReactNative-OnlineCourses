@@ -1,6 +1,4 @@
 export const login = (userName, passowrd) => {
-    console.log('userName', userName)
-    console.log('password', passowrd)
     if(userName === 'admin') {
         if(passowrd === '123456') {
             return {status: 200}

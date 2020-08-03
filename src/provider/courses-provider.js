@@ -1,42 +1,28 @@
-import React, { useState, useEffect } from 'react'
-import API from '../../api'
+import React, { useState, useReducer } from 'react'
+import { reducer } from '../reducer/courses-reducer'
+import { getTopSellCourses, getTopNewCourses, getTopRateCourses, getProcessCourses } from '../action/courses-action'
 
 const CoursesContext = React.createContext()
 
+const initialState = {
+    isLoading: true,
+    topSell: [],
+    topNew: [],
+    topRate: [],
+    process: []
+}
+
 const CoursesProvider = (props) => {
-    
-    const topNewCourses = []
-    const topRatingCourses = []
-    const topSellingCourses = []
-
-    const [isLoading, setIsLoading] = useState(true)
-    const [learningCourseIds, setLearningCourseIds] = useState(new Set())
-
-    const [topNewCourseIds, setTopnNewCourseIds] = useState(topNewCourses)
-
-    const [topRateCourseIds, setTopRateCourseIds] = useState(topRatingCourses)
-    const [topSellingCourseIds, setTopSellingCourseIds] = useState(topSellingCourses)
-    function addLearningCourse(courseId) {
-        console.log('addLearningCourse', courseId, learningCourseIds)
-        var newData = new Set(learningCourseIds.add(courseId))
-        console.log('newData', newData)
-        setLearningCourseIds(newData)
-    }
+    const [state, dispatch] = useReducer(reducer, initialState)
 
     return (
         <CoursesContext.Provider
             value={{
-                learningCourseIds,
-                setLearningCourseIds,
-                topNewCourseIds,
-                setTopnNewCourseIds,
-                topRateCourseIds,
-                setTopRateCourseIds,
-                topSellingCourseIds,
-                addLearningCourse,
-                setTopSellingCourseIds,
-                isLoading,
-                setIsLoading
+                state,
+                getTopSellCourses: getTopSellCourses(dispatch),
+                getTopNewCourses: getTopNewCourses(dispatch),
+                getTopRateCourses: getTopRateCourses(dispatch),
+                getProcessCourses: getProcessCourses(dispatch)
             }}>
             {props.children}
         </CoursesContext.Provider>

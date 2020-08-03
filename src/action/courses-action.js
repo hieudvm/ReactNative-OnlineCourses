@@ -1,55 +1,62 @@
-import API from '../../api'
-import { resume } from 'expo/build/AR'
+import axios from 'axios';
 
-const isloading = true
-
-const data = []
-
-export const getTopSellCourses = () => {
-    API.post('/course/top-sell', {
+const getTopSellCourses = (dispatch) => () => {
+    axios.post('/course/top-sell', {
         "limit": 10,
         "page": 1
     }).then((Response) => {
         if (Response.status === 200) {
-            isloading = false
-            data = Response.payload
-            return data
+            dispatch({ type: "GET_TOP_SELL_COURSES_SUCCESS", data: Response.data.payload })
         } else {
-            return new Array()
+            dispatch({ type: "GET_COURSES_FAIL" })
         }
     }).catch((Error) => {
-        return new Array()
+        dispatch({ type: "GET_COURSES_FAIL" })
     })
 }
 
-export const getTopNewCourses = () => {
-    API.post('/course/top-new', {
+const getTopNewCourses = (dispatch) => () => {
+    axios.post('/course/top-new', {
         "limit": 10,
         "page": 1
     }).then((Response) => {
         if (Response.status === 200) {
-            isloading = false
-            data = Response.payload
-            return data
+            dispatch({ type: "GET_TOP_NEW_COURSES_SUCCESS", data: Response.data.payload })
         } else {
-            return new Array()
+            dispatch({ type: "GET_COURSES_FAIL" })
         }
     }).catch((Error) => {
-        return new Array()
+        dispatch({ type: "GET_COURSES_FAIL" })
     })
 }
 
-export const getTopRateCourses = () => {
-    API.post('/course/top-rate', {
+const getTopRateCourses = (dispatch) => () => {
+    axios.post('/course/top-rate', {
         "limit": 10,
         "page": 1
     }).then((Response) => {
-        isloading = false
-        data = Response.payload
-        return data
+        if (Response.status === 200) {
+            dispatch({ type: "GET_TOP_RATE_COURSES_SUCCESS", data: Response.data.payload })
+        } else {
+            dispatch({ type: "GET_COURSES_FAIL" })
+        }
     }).catch((Error) => {
-        return new Array()
+        dispatch({ type: "GET_COURSES_FAIL" })
     })
 }
 
-export {isloading}
+const getProcessCourses = (dispatch) => () => {
+    axios.get('/user/get-process-courses')
+        .then((Response) => {
+            if (Response.status === 200) {
+                dispatch({ type: "GET_PROCESS_COURSES_SUCCESS", data: Response.data.payload })
+            } else {
+                dispatch({ type: "GET_COURSES_FAIL" })
+            }
+        }).catch((Error) => {
+            dispatch({ type: "GET_COURSES_FAIL" })
+        })
+}
+
+export { getProcessCourses, getTopNewCourses, getTopRateCourses, getTopSellCourses }
+

@@ -9,14 +9,9 @@ import { Rating, AirbnbRating } from 'react-native-elements';
 const SectionCoursesItem = (props) => {
     const courseContext = useContext(CoursesContext)
     const Image_Http_URL = { uri: props.item.imageUrl }
-    const author = 'instructor.user.name'
-    const data = {
-        author: props.item.author
-    }
     return (
         <TouchableOpacity
             onPress={() => {
-                courseContext.addLearningCourse(props.item.id)
                 props.navigation.push("CourseDetail", { item: props.item.id })
             }}
         >

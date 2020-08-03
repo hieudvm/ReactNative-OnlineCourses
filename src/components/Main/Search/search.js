@@ -51,22 +51,18 @@ const Search = (props) => {
 
         coursesContext.courses.forEach((value, key) => {
             if (value.title.toLowerCase().trim().search(lKeyword) >= 0) {
-                console.log("key", key)
-
                 resultCourseIds.push(coursesTemp[key])
             }
         })
 
         pathsContext.path.forEach((value, key) => {
             if (value.title.toLowerCase().search(lKeyword) >= 0) {
-                 console.log("key", key)
                  resultPathIds.push(pathsTemp[key])
             }
         })
 
         authorsConText.author.forEach((value, key) => {
             if (value.name.toLowerCase().search(lKeyword) >= 0) {
-                console.log("key", key)
                 resultAuthorIds.push(authorsTemp[key])
             }
         })
@@ -142,7 +138,6 @@ const Search = (props) => {
                     }}
                 />
                 <Button onPress={() => {
-                    console.log("search")
                     onPressDone()
                 }} title='Search' style={{ width: 60, height: 40 }} />
             </View>

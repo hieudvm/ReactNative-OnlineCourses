@@ -19,7 +19,7 @@ const Login = (props) => {
     }, [authContext.state.isAuthenticated])
 
     const renderLoginStatus = (status) => {
-        console.log('status', status)
+        // console.log('status', status)
         if (!status) {
             return <View />
         } else if (status) {
