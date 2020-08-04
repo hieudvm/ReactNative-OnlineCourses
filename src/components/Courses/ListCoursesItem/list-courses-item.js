@@ -3,25 +3,26 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 import { CoursesContext } from '../../../provider/courses-provider'
+import { Rating } from 'react-native-elements'
 
 const ListCoursesItem = (props) => {
-    const courseContext = useContext(CoursesContext)
-    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
+    // const courseContext = useContext(CoursesContext)
+    // const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
+    Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <ScreenContainer>
             <TouchableOpacity style={styles.item}
                 onPress={() => {
-                    courseContext.addLearningCourse(props.item.id)
-                    props.navigation.navigate("CourseDetail", {item: props.item})
+                    props.navigation.navigate("CourseDetail", { item: props.item })
                 }}
             >
                 <Image source={Image_Http_URL} style={styles.image} />
                 <ScreenContainer>
-                    <View style={{margin: 6}}>
+                    <View style={{ margin: 6 }}>
                         <ThemedText>{props.item.title}</ThemedText>
-                        <ThemedText>{props.item.author}</ThemedText>
-                        <ThemedText style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</ThemedText>
+                        <ThemedText>{props.item["instructor.user.name"]}</ThemedText>
+                        <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
+                        <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                     </View>
                 </ScreenContainer>
             </TouchableOpacity>

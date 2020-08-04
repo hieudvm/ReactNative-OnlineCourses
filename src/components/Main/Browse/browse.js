@@ -17,7 +17,7 @@ const Browse = (props) => {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              props.navigation.navigate("AllCourses", {item: courseContext.newReleaseCourseIds})
+              props.navigation.navigate("AllCourses", {item: courseContext.state.topNew})
             }}
           >
             <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
@@ -29,7 +29,7 @@ const Browse = (props) => {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              props.navigation.navigate("AllCourses", {item: courseContext.recommendedCourseIds})
+              props.navigation.navigate("AllCourses", {item: courseContext.state.topRate})
             }}
           >
             <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>

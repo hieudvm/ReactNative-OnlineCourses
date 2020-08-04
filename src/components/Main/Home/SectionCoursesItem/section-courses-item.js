@@ -20,7 +20,7 @@ const SectionCoursesItem = (props) => {
                 <View style={{ margin: 5 }}>
                     <ThemedText>{props.item.title}</ThemedText>
                     <ThemedText>{props.item["instructor.user.name"]}</ThemedText>
-                    <Text style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </Text>
+                    <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
                     <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                 </View>
             </ScreenContainer>
