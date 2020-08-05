@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, Text, View, Button, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableOpacity, ScrollView, FlatList } from 'react-native-gesture-handler';
@@ -6,10 +6,16 @@ import AllCourses from '../../../Courses/AllCourses/all-courses';
 import ScreenContainer from '../../../Common/screen-container';
 import ThemedText from '../../../Common/themed-text';
 import ListCoursesItem from '../../../Courses/ListCoursesItem/list-courses-item';
+import { AuthorContext } from '../../../../provider/author-provider';
 
 const AuthorDetail = (props) => {
 
     const item = props.route.params.item
+    const authorContext = useContext(AuthorContext)
+
+    useEffect(() => {
+      authorContext.getInstructorById(item.id)
+    }, [])
 
     return (
         <ScreenContainer>
@@ -18,7 +24,7 @@ const AuthorDetail = (props) => {
                     <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
                         <ThemedText h5>
-                            {item.name}
+                            {item["user.name"]}
                         </ThemedText>
                         <ThemedText>
                             E-Learning.io Author
@@ -30,7 +36,6 @@ const AuthorDetail = (props) => {
                         onPress={props.onPress}
                         title="Follow"
                         color="#841584"
-                    // accessibilityLabel="Follow to be notified when new courses are published."
                     />
                 </View>
                 <View style={{alignItems: 'center'}}>
@@ -39,7 +44,7 @@ const AuthorDetail = (props) => {
                     </ThemedText>
                 </View>
                 <ThemedText style={{ margin: 6 }}>
-                    {item.description}
+                    {item.intro}
                     </ThemedText>
                 <View style={styles.icon}>
                     <TouchableOpacity>
@@ -64,7 +69,7 @@ const AuthorDetail = (props) => {
                 <ScreenContainer>
             <View>
                 <FlatList
-                    data={item.course}
+                    data={authorContext.state.instructor.courses}
                     renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
                 />
             </View>

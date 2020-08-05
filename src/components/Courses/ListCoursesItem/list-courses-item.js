@@ -6,8 +6,6 @@ import { CoursesContext } from '../../../provider/courses-provider'
 import { Rating } from 'react-native-elements'
 
 const ListCoursesItem = (props) => {
-    // const courseContext = useContext(CoursesContext)
-    // const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
     Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <ScreenContainer>

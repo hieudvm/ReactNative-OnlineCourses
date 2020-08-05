@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, View, ScrollView } from 'react-native'
 import SectionAuthorsItem from '../SectionAuthorsItem/section-authors-item'
 import { Text } from 'react-native-elements'
@@ -14,6 +14,10 @@ const SectionAuthors = (props) => {
     const renderListItem = (skills) => {
         return skills.map(item => <SectionAuthorsItem navigation={props.navigation} item={item} />);
     }
+
+    useEffect(() => {
+        authorContext.getAllInstructor()
+    }, [])
     
     return (
         <ScreenContainer>
@@ -23,7 +27,7 @@ const SectionAuthors = (props) => {
                 </ThemedText>
             </View>
            <ScrollView horizontal={true}>
-                {renderListItem(authorContext.author)}
+                {renderListItem(authorContext.state.allInstructor)}
             </ScrollView>
         </ScreenContainer>
     )

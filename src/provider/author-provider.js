@@ -1,15 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useReducer } from 'react'
 import { authors } from '../resourceContext/resource-context'
+import { reducer } from '../reducer/authors-reducer'
+import { getAllInstructor, getInstructorById } from '../action/authors-action'
 
 const AuthorContext = React.createContext()
 
+const initialState = {
+    isLoading: true,
+    allInstructor: [],
+    instructor: {}
+}
+
 const AuthorProvider = (props) => {
 
-    const [author, setAuthor] = useState(authors)
-
+    const [state, dispatch] = useReducer(reducer, initialState)
+    
     return (
         <AuthorContext.Provider
-            value={{author,setAuthor}}
+            value={{
+                state,
+                getAllInstructor: getAllInstructor(dispatch),
+                getInstructorById: getInstructorById(dispatch)
+            }}
         >
             {props.children}
         </AuthorContext.Provider>

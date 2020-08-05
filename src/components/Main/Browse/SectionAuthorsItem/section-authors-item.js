@@ -6,6 +6,7 @@ import ThemedText from '../../../Common/themed-text'
 
 
 const SectionAuthorsItem = (props) => {
+    const Image_Http_URL = { uri: props.item["user.avatar"] }
     return (
         <ScreenContainer>
             <TouchableOpacity
@@ -14,10 +15,10 @@ const SectionAuthorsItem = (props) => {
                     props.navigation.navigate("AuthorDetail", {item: props.item})
                 }}
             >
-                <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
+                <Image style={styles.image} source={Image_Http_URL} />
                 <View style={styles.text}>
                 <ThemedText h5>
-                    {props.item.name}
+                    {props.item["user.name"]}
                 </ThemedText>
                 </View>
             </TouchableOpacity>
