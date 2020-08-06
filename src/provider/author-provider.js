@@ -1,5 +1,4 @@
 import React, { useState, useReducer } from 'react'
-import { authors } from '../resourceContext/resource-context'
 import { reducer } from '../reducer/authors-reducer'
 import { getAllInstructor, getInstructorById } from '../action/authors-action'
 
