@@ -6,8 +6,8 @@ import { AsyncStorage } from 'react-native';
 
 export const login = (dispatch) => (userName, password) => {
     API.post('/user/login', {
-        email: 'duonghieu7233@gmail.com',
-        password: 'duonghieu1'
+        email: userName,
+        password: password
     }).then(async (Response) => {
         if (Response.status === 200) {
             await AsyncStorage.setItem(

@@ -38,6 +38,8 @@ import SearchCourses from './src/components/Main/Search/Courses/search-courses';
 import SearchAuthors from './src/components/Main/Search/Authors/search-authors';
 import SearchPaths from './src/components/Main/Search/Paths/search-paths';
 import './interceptors';
+import { CourseDetailProvider } from './src/provider/courseDetail-provider';
+import { RegisterProvider } from './src/provider/register-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -192,16 +194,20 @@ export default function App() {
       <AuthenticationProvider>
         <CoursesProvider>
           <AuthorProvider>
-            <PathsProvider>
-              <FavouritesProvider>
-                <NavigationContainer>
-                  <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-                    <Stack.Screen name="MainTab" component={MainTab} />
-                    <Stack.Screen name="AuthenStack" component={Authen} />
-                  </Stack.Navigator>
-                </NavigationContainer>
-              </FavouritesProvider>
-            </PathsProvider>
+            <CourseDetailProvider>
+              <RegisterProvider>
+                <PathsProvider>
+                  <FavouritesProvider>
+                    <NavigationContainer>
+                      <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                        <Stack.Screen name="MainTab" component={MainTab} />
+                        <Stack.Screen name="AuthenStack" component={Authen} />
+                      </Stack.Navigator>
+                    </NavigationContainer>
+                  </FavouritesProvider>
+                </PathsProvider>
+              </RegisterProvider>
+            </CourseDetailProvider>
           </AuthorProvider>
         </CoursesProvider>
       </AuthenticationProvider>
