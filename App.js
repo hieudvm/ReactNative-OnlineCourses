@@ -7,7 +7,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, HeaderStyleInterpolators } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import CourseDetail from './src/components/CoursesDetail/course-detail';
-import ListLessons from './src/components/CoursesDetail/ListLessons/list-lessons';
 import Download from './src/components/Main/Download/download';
 import Search from './src/components/Main/Search/search';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -24,11 +23,8 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Wishlist from './src/components/Main/Wishlist/wishlist';
 import User from './src/components/Others/User/user';
-import courses from './src/resourceContext/resource-context'
-import { ThemeProvider } from 'react-native-elements';
 import { AuthenticationProvider, AuthenticationContext } from './src/provider/authentication-provider';
 import { ThemeContext, themes } from './src/provider/themes-provider';
-import { login } from './src/core/service/authentication-service';
 import { CoursesProvider } from './src/provider/courses-provider';
 import { AuthorProvider } from './src/provider/author-provider';
 import { PathsProvider } from './src/provider/paths-provider';
@@ -40,6 +36,8 @@ import SearchPaths from './src/components/Main/Search/Paths/search-paths';
 import './interceptors';
 import { CourseDetailProvider } from './src/provider/courseDetail-provider';
 import { RegisterProvider } from './src/provider/register-provider';
+import welcome from './src/components/Authentication/welcome';
+import Register from './src/components/Authentication/Register/register';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -178,8 +176,10 @@ const MainTab = () => {
 
 const Authen = () => {
   return (
-    <AuthenStack.Navigator headerMode='none'>
+    <AuthenStack.Navigator headerMode='none' initialRouteName="Welcome">
       <AuthenStack.Screen name="Login" component={Login} />
+      <AuthenStack.Screen name="Register" component={Register} />
+      <AuthenStack.Screen name="Welcome" component={welcome} />
     </AuthenStack.Navigator>
   )
 }

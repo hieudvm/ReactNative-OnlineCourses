@@ -1,12 +1,13 @@
 import React, { useReducer } from 'react'
-import {reducer} from '../../src/reducer/authentication-reducer'
+import {reducer} from '../../src/reducer/register-reducer'
 import { sendActiveEmail, register } from '../action/register-action';
 
 const RegisterContext = React.createContext();
 
 const initialState = {
-    isAuthenticated: false,
-    message: ""
+    isLoading: true,
+    messageRegister: "",
+    messageEmail: ""
 }
 
 const RegisterProvider = (props) => {

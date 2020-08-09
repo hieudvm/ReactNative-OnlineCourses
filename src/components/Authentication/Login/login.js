@@ -56,6 +56,22 @@ const Login = (props) => {
                 >
                     <Text style={styles.text}>Login</Text>
                 </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        props.navigation.navigate("Welcome")
+                    }}
+                >
+                    <Text style={styles.text}>Forgot password</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        props.navigation.navigate("Welcome")
+                    }}
+                >
+                    <Text style={styles.text}>Back to Home page</Text>
+                </TouchableOpacity>
             </View>
         </ScreenContainer>
     )
@@ -92,7 +108,8 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         borderWidth: 3,
         borderRadius: 20,
-        backgroundColor: 'darkgray'
+        backgroundColor: 'darkgray',
+        marginBottom: 10
     },
     text: {
         color: 'white',

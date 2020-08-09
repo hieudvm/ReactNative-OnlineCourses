@@ -10,6 +10,7 @@ export const login = (dispatch) => (userName, password) => {
         password: password
     }).then(async (Response) => {
         if (Response.status === 200) {
+            console.log("success")
             await AsyncStorage.setItem(
                 'access_token',
                 Response.data.token
@@ -17,6 +18,7 @@ export const login = (dispatch) => (userName, password) => {
             dispatch({ type: "LOGIN_SUCCESSED", data: Response.data })
             
         } else {
+            console.log("fail")
             dispatch({type: "LOGIN_FAILED"})
         }
     }).catch((Error) => {

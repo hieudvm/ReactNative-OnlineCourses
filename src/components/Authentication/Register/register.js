@@ -1,20 +1,43 @@
-import React from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { ScreenContainer } from 'react-native-screens'
 import { Image } from 'react-native'
-import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
+import { TextInput, TouchableOpacity, ScrollView } from 'react-native-gesture-handler'
+import { RegisterContext } from '../../../provider/register-provider'
 
-const register = () => {
+const Register = (props) => {
+
+    const registerContext = useContext(RegisterContext)
 
     const [fullName, setFullName] = useState('')
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
     const [rePassword, setRePassword] = useState('')
-    const [phoneNumber, setRePassword] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
+
+    useEffect(() => {
+        if (!registerContext.state.isLoading) {
+            props.navigation.navigate("MainTab")
+            setFullName('')
+            setUserName('')
+            setPassword('')
+            setRePassword('')
+            setPhoneNumber('')
+        }
+    }, [])
+
+    const renderRegisterStatus = (status) => {
+        if (status) {
+            return <View />
+        } else if (!status) {
+            return (<Text>{registerContext.state.messageRegister}</Text>)
+        } else {
+            return (<Text>{registerContext.state.messageRegister}</Text>)
+        }
+    }
 
     return (
-        <ScreenContainer>
-            <View style={styles.container}>
+        <ScrollView>
+             <View style={styles.container}>
                 <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
                 <TextInput
                     style={styles.textInput}
@@ -49,24 +72,30 @@ const register = () => {
                     defaultValue={phoneNumber}
                 />
                 <View>
-                    {renderLoginStatus(authContext.state.isAuthenticated)}
+                    {renderRegisterStatus(registerContext.state.isLoading)}
                 </View>
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        authContext.login(userName, password)
+                        registerContext.register(fullName, userName, phoneNumber, password)
                     }}
                 >
-                    <Text style={styles.text}>Login</Text>
+                    <Text style={styles.text}>Register</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => {
+                        props.navigation.navigate("Welcome")
+                    }}
+                >
+                    <Text style={styles.text}>Back to Home page</Text>
                 </TouchableOpacity>
             </View>
-        </ScreenContainer>
-    )
-}
+        </ScrollView>
     )
 }
 
-export default register
+export default Register
 
 const styles = StyleSheet.create({
     container: {
@@ -97,7 +126,8 @@ const styles = StyleSheet.create({
         borderColor: 'black',
         borderWidth: 3,
         borderRadius: 20,
-        backgroundColor: 'darkgray'
+        backgroundColor: 'darkgray',
+        marginBottom: 10
     },
     text: {
         color: 'white',
