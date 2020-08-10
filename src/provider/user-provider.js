@@ -1,10 +1,14 @@
-import React, { useState, useReducer } from 'react'
+import React, { useReducer } from 'react'
+import { getUserInformation, changePassword, updateUserProfile } from '../action/user-action'
+import { reducer } from '../reducer/user-reducer'
 
 const UserContext = React.createContext()
 
 const initialState = {
     isLoading: true,
-    
+    userInformation: {},
+    messageChange: "",
+    messageUpdate: ""
 }
 
 const UserProvider = (props) => {
@@ -14,7 +18,9 @@ const UserProvider = (props) => {
         <UserContext.Provider
             value={{
                 state,
-               
+                getUserInformation: getUserInformation(dispatch),
+                changePassword: changePassword(dispatch),
+                updateUserProfile: updateUserProfile(dispatch)
             }}>
             {props.children}
         </UserContext.Provider>

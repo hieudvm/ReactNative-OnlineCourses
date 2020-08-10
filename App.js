@@ -38,6 +38,7 @@ import { CourseDetailProvider } from './src/provider/courseDetail-provider';
 import { RegisterProvider } from './src/provider/register-provider';
 import welcome from './src/components/Authentication/welcome';
 import Register from './src/components/Authentication/Register/register';
+import { UserProvider } from './src/provider/user-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -196,16 +197,18 @@ export default function App() {
           <AuthorProvider>
             <CourseDetailProvider>
               <RegisterProvider>
-                <PathsProvider>
-                  <FavouritesProvider>
-                    <NavigationContainer>
-                      <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-                        <Stack.Screen name="MainTab" component={MainTab} />
-                        <Stack.Screen name="AuthenStack" component={Authen} />
-                      </Stack.Navigator>
-                    </NavigationContainer>
-                  </FavouritesProvider>
-                </PathsProvider>
+                <UserProvider>
+                  <PathsProvider>
+                    <FavouritesProvider>
+                      <NavigationContainer>
+                        <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                          <Stack.Screen name="MainTab" component={MainTab} />
+                          <Stack.Screen name="AuthenStack" component={Authen} />
+                        </Stack.Navigator>
+                      </NavigationContainer>
+                    </FavouritesProvider>
+                  </PathsProvider>
+                </UserProvider>
               </RegisterProvider>
             </CourseDetailProvider>
           </AuthorProvider>
