@@ -1,24 +1,28 @@
 import React, { useReducer, useState } from 'react'
-import {reducer} from '../../src/reducer/authentication-reducer'
-import {login} from '../../src/action/authentication-action'
+import { reducer } from '../../src/reducer/authentication-reducer'
+import { login, logout, resetPassword } from '../../src/action/authentication-action'
 
 const AuthenticationContext = React.createContext();
 
 const initialState = {
     isAuthenticated: false,
+    isSent: false,
     message: "",
     userInfo: null,
     token: null
 }
 
 const AuthenticationProvider = (props) => {
-    const [loginStatus, setLoginStatus] = useState('')
-
     const [state, dispatch] = useReducer(reducer, initialState)
-   
+
     return (
         <AuthenticationContext.Provider
-            value={{ loginStatus, setLoginStatus, state, login: login(dispatch)}}
+            value={{
+                state,
+                login: login(dispatch),
+                logout: logout(dispatch),
+                resetPassword: resetPassword(dispatch)
+            }}
         >
             {props.children}
         </AuthenticationContext.Provider>

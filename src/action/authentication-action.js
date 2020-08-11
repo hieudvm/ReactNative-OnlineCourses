@@ -10,19 +10,46 @@ export const login = (dispatch) => (userName, password) => {
         password: password
     }).then(async (Response) => {
         if (Response.status === 200) {
-            console.log("success")
             await AsyncStorage.setItem(
                 'access_token',
                 Response.data.token
             );
-            dispatch({ type: "LOGIN_SUCCESSED", data: Response.data })
+            await AsyncStorage.setItem(
+                'userInfo',
+                Response.data.userInfo
+            );
+            dispatch({ type: "LOGIN_SUCCESSED", data: Response.data, message: "Login success!" })
             
         } else {
-            console.log("fail")
-            dispatch({type: "LOGIN_FAILED"})
+            dispatch({type: "LOGIN_FAILED", message: "Login fail!"})
         }
     }).catch((Error) => {
-        dispatch({type: "LOGIN_FAILED"})
+        dispatch({type: "LOGIN_FAILED", message: "Login fail!"})
+    })
+
+}
+
+export const logout = (dispatch) => async () => {
+    await AsyncStorage.removeItem("access_token");
+    await AsyncStorage.removeItem("userInfo");
+    dispatch({
+        type: "LOGOUT",
+        message: ""
+    })
+}
+
+export const resetPassword = (dispatch) => (userName) => {
+    API.post('/user/forget-pass/send-email', {
+        email: userName,
+    }).then(async (Response) => {
+        if (Response.status === 200) {
+            dispatch({ type: "RESET_PASSWORD_SUCCESSED", data: Response.data, message: "Email is sent!" })
+            
+        } else {
+            dispatch({type: "RESET_PASSWORD_FAILED", message: "Invalid email!"})
+        }
+    }).catch((Error) => {
+        dispatch({type: "RESET_PASSWORD_FAILED", message: "Invalid email!"})
     })
 
 }

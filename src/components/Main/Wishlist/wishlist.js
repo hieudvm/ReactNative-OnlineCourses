@@ -49,7 +49,7 @@ const themeContext = useContext(ThemeContext)
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => {
-                            authContext.setLoginStatus('')
+                            authContext.logout()
                             props.navigation.navigate("Login")
                         }}
                     >

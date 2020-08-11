@@ -39,6 +39,7 @@ import { RegisterProvider } from './src/provider/register-provider';
 import welcome from './src/components/Authentication/welcome';
 import Register from './src/components/Authentication/Register/register';
 import { UserProvider } from './src/provider/user-provider';
+import ForgetPassword from './src/components/Authentication/ForgetPassword/forget-password';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -178,6 +179,7 @@ const MainTab = () => {
 const Authen = () => {
   return (
     <AuthenStack.Navigator headerMode='none' initialRouteName="Welcome">
+       <AuthenStack.Screen name="ForgotPassword" component={ForgetPassword} />
       <AuthenStack.Screen name="Login" component={Login} />
       <AuthenStack.Screen name="Register" component={Register} />
       <AuthenStack.Screen name="Welcome" component={welcome} />

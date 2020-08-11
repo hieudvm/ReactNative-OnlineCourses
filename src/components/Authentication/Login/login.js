@@ -12,6 +12,7 @@ const Login = (props) => {
 
     useEffect(() => {
         if (authContext.state.isAuthenticated) {
+            console.log("login success")
             props.navigation.navigate("MainTab")
             setUserName('')
             setPassword('')
@@ -22,9 +23,9 @@ const Login = (props) => {
         if (!status) {
             return <View />
         } else if (status) {
-            return (<Text>Login successed!</Text>)
+        return (<Text>{authContext.state.message}</Text>)
         } else {
-            return (<Text>Login failed!</Text>)
+            return (<Text>{authContext.state.message}</Text>)
         }
     }
 
@@ -59,7 +60,7 @@ const Login = (props) => {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        props.navigation.navigate("Welcome")
+                        props.navigation.navigate("ForgotPassword")
                     }}
                 >
                     <Text style={styles.text}>Forgot password</Text>
