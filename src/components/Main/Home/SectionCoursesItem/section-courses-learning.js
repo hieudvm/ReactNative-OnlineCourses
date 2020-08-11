@@ -1,13 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
-import { CoursesContext } from '../../../../provider/courses-provider'
-import { Rating, AirbnbRating } from 'react-native-elements';
 
-const SectionCoursesItem = (props) => {
-    const Image_Http_URL = { uri: props.item.imageUrl }
+const SectionCoursesLearning = (props) => {
+    const Image_Http_URL = { uri: props.item.courseImage }
+    console.log("course learning", props.item)
     return (
         <TouchableOpacity
             onPress={() => {
@@ -17,17 +16,16 @@ const SectionCoursesItem = (props) => {
             <ScreenContainer style={styles.item}>
                 <Image source={Image_Http_URL} style={styles.image} />
                 <View style={{ margin: 5 }}>
-                    <ThemedText>{props.item.title}</ThemedText>
-                    <ThemedText>{props.item["instructor.user.name"]}</ThemedText>
-                    <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
-                    <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
+                    <ThemedText>{props.item.courseTitle}</ThemedText>
+                    <ThemedText>{props.item.instructorName}</ThemedText>
+                    <ThemedText style={styles.darkText}>{props.item.latestLearnTime} </ThemedText>
                 </View>
             </ScreenContainer>
         </TouchableOpacity>
     )
 }
 
-export default SectionCoursesItem
+export default SectionCoursesLearning
 
 const styles = StyleSheet.create({
     item: {

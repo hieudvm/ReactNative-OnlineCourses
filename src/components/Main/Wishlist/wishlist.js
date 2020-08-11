@@ -49,7 +49,8 @@ const themeContext = useContext(ThemeContext)
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => {
-                            props.navigation.navigate("Login", {status : 0})
+                            authContext.setLoginStatus('')
+                            props.navigation.navigate("Login")
                         }}
                     >
                         <Text style={styles.text}>Sign out</Text>

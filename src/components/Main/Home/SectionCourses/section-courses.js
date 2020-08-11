@@ -4,13 +4,18 @@ import SectionCoursesItem from '../SectionCoursesItem/section-courses-item'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../../Common/themed-text';
 import { CoursesContext } from '../../../../provider/courses-provider';
+import SectionCoursesLearning from '../SectionCoursesItem/section-courses-learning';
 
 const SectionCourses = (props) => {
     const courseContext = useContext(CoursesContext)
     var item = []
 
-    const renderListItem = (courses) => {
-        return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
+    const renderListItem = (courses, title) => {
+        if (title === 'Countinue learning') {
+            return courses.map(item => <SectionCoursesLearning navigation={props.navigation} item={item} />);
+        } else {
+            return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
+        }
     }
 
     // High-ordered function: là function trả về 1 function khác
@@ -25,16 +30,17 @@ const SectionCourses = (props) => {
     const renderListItemCondition = () => {
         if (props.title === 'Top Rating') {
             item = courseContext.state.topRate
-            return renderListItem(courseContext.state.topRate)
+            return renderListItem(courseContext.state.topRate, props.title)
         } else if (props.title === 'Top Selling') {
             item = courseContext.state.topSell
-            return renderListItem(courseContext.state.topSell)
+            return renderListItem(courseContext.state.topSell, props.title)
         } else if (props.title === 'Top New Courses') {
             item = courseContext.state.topNew
-            return renderListItem(courseContext.state.topNew)
-        } else if (props.title === 'Countinue learning') {
+            return renderListItem(courseContext.state.topNew, props.title)
+        } 
+        else if (props.title === 'Countinue learning') {
             item = courseContext.state.process
-            return renderListItem(courseContext.state.process)
+            return renderListItem(item, props.title)
         }
     }
 

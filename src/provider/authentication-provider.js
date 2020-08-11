@@ -12,12 +12,13 @@ const initialState = {
 }
 
 const AuthenticationProvider = (props) => {
+    const [loginStatus, setLoginStatus] = useState('')
 
     const [state, dispatch] = useReducer(reducer, initialState)
    
     return (
         <AuthenticationContext.Provider
-            value={{ state, login: login(dispatch)}}
+            value={{ loginStatus, setLoginStatus, state, login: login(dispatch)}}
         >
             {props.children}
         </AuthenticationContext.Provider>

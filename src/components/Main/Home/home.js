@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container';
 import { CoursesContext } from '../../../provider/courses-provider';
+import SectionCoursesLearning from './SectionCoursesItem/section-courses-learning';
 
 const Home = (props) => {
   const courseContext = useContext(CoursesContext)

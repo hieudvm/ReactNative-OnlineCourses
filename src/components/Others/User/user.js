@@ -3,6 +3,7 @@ import { StyleSheet, Image, View, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../Common/themed-text'
 import { UserContext } from '../../../provider/user-provider';
+import ScreenContainer from '../../Common/screen-container';
 
 const User = (props) => {
     const userContext = useContext(UserContext)
@@ -13,21 +14,21 @@ const User = (props) => {
     }, [])
 
     return (
-        <View style={styles.container}>
-            <Image style={styles.image} source={require('../../../../assets/User.jpg')} />
-            <View style={styles.layout}>
-                <Icon style={styles.icon} name='envelope-open' size={20} />
-                <Text style={styles.text}>{userContext.state.userInformation.email}</Text>
-            </View>
-            <View style={styles.layout}>
-                <Icon style={styles.icon} name='address-book' size={20} />
-                <Text style={styles.text}>{userContext.state.userInformation.name}</Text>
-            </View>
-            <View style={styles.layout}>
-                <Icon style={styles.icon} name='phone' size={20} />
-                <Text style={styles.text}>{userContext.state.userInformation.phone}</Text>
-            </View>
-        </View>
+            <ScreenContainer style={styles.container}>
+                <Image style={styles.image} source={require('../../../../assets/User.jpg')} />
+                <View style={styles.layout}>
+                    <Icon style={styles.icon} name='envelope-open' size={20} />
+                    <Text style={styles.text}>{userContext.state.userInformation.email}</Text>
+                </View>
+                <View style={styles.layout}>
+                    <Icon style={styles.icon} name='address-book' size={20} />
+                    <Text style={styles.text}>{userContext.state.userInformation.name}</Text>
+                </View>
+                <View style={styles.layout}>
+                    <Icon style={styles.icon} name='phone' size={20} />
+                    <Text style={styles.text}>{userContext.state.userInformation.phone}</Text>
+                </View>
+            </ScreenContainer>
     )
 }
 
@@ -54,7 +55,6 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: 'gray',
         alignItems: 'center',
-        justifyContent: 'center',
         flexDirection: 'row'
     },
     text: {
