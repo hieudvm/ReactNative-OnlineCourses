@@ -4,8 +4,8 @@ import { AsyncStorage } from 'react-native';
 
 
 
-export const login = (dispatch) => (userName, password) => {
-    API.post('/user/login', {
+export const login = (dispatch) => async (userName, password) => {
+    await API.post('/user/login', {
         email: userName,
         password: password
     }).then(async (Response) => {

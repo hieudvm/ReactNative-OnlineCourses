@@ -10,14 +10,15 @@ import { CourseDetailContext } from '../../../../provider/courseDetail-provider'
 const SectionCoursesItem = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
 
-    useEffect(() => {
-        courseDetailContext.getCourseDetailWithLession(props.item.id)
-    }, [])
+    // useEffect(() => {
+    //     courseDetailContext.getCourseDetailWithLession(props.item.id)
+    // }, [])
 
     const Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <TouchableOpacity
             onPress={() => {
+                courseDetailContext.getCourseDetailWithLession(props.item.id)
                 props.navigation.push("CourseDetail", { item: props.item })
             }}
         >

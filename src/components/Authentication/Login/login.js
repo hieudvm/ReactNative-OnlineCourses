@@ -12,7 +12,7 @@ const Login = (props) => {
 
     useEffect(() => {
         if (authContext.state.isAuthenticated) {
-            props.navigation.navigate("MainTab")
+            // props.navigation.navigate("MainTab")
             setUserName('')
             setPassword('')
         }
@@ -49,7 +49,9 @@ const Login = (props) => {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        authContext.login(userName, password)
+                        authContext.login(userName, password).then(() => {
+                            props.navigation.navigate("MainTab");
+                        })
                     }}
                 >
                     <Text style={styles.text}>Login</Text>

@@ -10,11 +10,6 @@ import { FavouritesContext } from '../../provider/favourites-provider';
 import { CourseDetailContext } from '../../../src/provider/courseDetail-provider'
 
 const CourseDetail = (props) => {
-
-    const courseDetailContext = useContext(CourseDetailContext)
-
-    const courseLesson = courseDetailContext.state.sectionLesson.section
-   
     const favoriteContext = useContext(FavouritesContext)
 
     const [favorite, setFavorite] = useState('Favorite')
@@ -66,7 +61,7 @@ const CourseDetail = (props) => {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 1 }}>
-                    <ListLessons item={courseLesson} />
+                    <ListLessons />
                 </View>
             </ScrollView>
         </ScreenContainer>
