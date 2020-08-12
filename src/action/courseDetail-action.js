@@ -6,10 +6,10 @@ const getCourseDetailWithLession = (dispatch) => (courseId) => {
         if (Response.status === 200) {
             dispatch({ type: "GET_COURSE_DETAIL_WITH_LESSION_SUCCESS", data: Response.data.payload })
         } else {
-            dispatch({ type: "GET_COURSE_DETAIL_WITH_LESSION_FAIL" })
+            dispatch({ type: "GET_COURSE_DETAIL_WITH_LESSION_FAIL", message: "Cannot get Course Detail!" })
         }
     }).catch((Error) => {
-        dispatch({ type: "GET_COURSE_DETAIL_WITH_LESSION_FAIL" })
+        dispatch({ type: "GET_COURSE_DETAIL_WITH_LESSION_FAIL" , messagge: "Has error!"})
     })
 }
 

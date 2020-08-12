@@ -12,7 +12,6 @@ const Login = (props) => {
 
     useEffect(() => {
         if (authContext.state.isAuthenticated) {
-            console.log("login success")
             props.navigation.navigate("MainTab")
             setUserName('')
             setPassword('')
@@ -20,9 +19,7 @@ const Login = (props) => {
     }, [authContext.state.isAuthenticated])
 
     const renderLoginStatus = (status) => {
-        if (!status) {
-            return <View />
-        } else if (status) {
+       if (status) {
         return (<Text>{authContext.state.message}</Text>)
         } else {
             return (<Text>{authContext.state.message}</Text>)

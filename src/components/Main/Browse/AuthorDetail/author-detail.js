@@ -12,19 +12,20 @@ const AuthorDetail = (props) => {
 
     const item = props.route.params.item
     const authorContext = useContext(AuthorContext)
+    const Image_Http_URL = { uri: authorContext.state.instructor.avatar }
 
     useEffect(() => {
-      authorContext.getInstructorById(item.id)
+      authorContext.getInstructorById(item)
     }, [])
 
     return (
         <ScreenContainer>
             <ScrollView>
                 <View style={styles.touch}>
-                    <Image style={styles.image} source={require('../../../../../assets/senior-woman-avatar.jpg')} />
+                    <Image style={styles.image} source={Image_Http_URL} />
                     <View style={styles.text}>
                         <ThemedText h5>
-                            {item["user.name"]}
+                            {authorContext.state.instructor.name}
                         </ThemedText>
                         <ThemedText>
                             E-Learning.io Author
@@ -44,7 +45,7 @@ const AuthorDetail = (props) => {
                     </ThemedText>
                 </View>
                 <ThemedText style={{ margin: 6 }}>
-                    {item.intro}
+                    {authorContext.state.instructor.intro}
                     </ThemedText>
                 <View style={styles.icon}>
                     <TouchableOpacity>

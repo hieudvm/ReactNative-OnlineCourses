@@ -6,7 +6,6 @@ import ThemedText from '../../../Common/themed-text'
 
 const SectionCoursesLearning = (props) => {
     const Image_Http_URL = { uri: props.item.courseImage }
-    console.log("course learning", props.item)
     return (
         <TouchableOpacity
             onPress={() => {

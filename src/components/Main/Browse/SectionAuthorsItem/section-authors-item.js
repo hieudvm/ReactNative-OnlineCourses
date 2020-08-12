@@ -12,7 +12,7 @@ const SectionAuthorsItem = (props) => {
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() =>{
-                    props.navigation.navigate("AuthorDetail", {item: props.item})
+                    props.navigation.navigate("AuthorDetail", {item: props.item.userId})
                 }}
             >
                 <Image style={styles.image} source={Image_Http_URL} />

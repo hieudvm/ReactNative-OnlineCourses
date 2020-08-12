@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { Icon } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
+import { AuthorContext } from '../../../provider/author-provider'
 
 const VideoPlayer = (props) => {
+    const authorContext = useContext(AuthorContext)
+    const authorId = props.item["instructor.user.id"]
     return (
         <ScreenContainer>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
@@ -12,16 +15,18 @@ const VideoPlayer = (props) => {
                 <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.item.title}</ThemedText>
                 <TouchableOpacity
                     style={styles.touch}
-                    onPress={props.onPress}
+                    onPress={() => {
+                        props.navigation.push("AuthorDetail", { item: authorId })
+                    }}
                 >
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
                         <ThemedText>
-                            {props.item.author}
+                            {props.item["instructor.user.name"]}
                         </ThemedText>
                     </View>
                 </TouchableOpacity>
-                <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
+                <Text style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </Text>
             </View>
         </ScreenContainer>
     )

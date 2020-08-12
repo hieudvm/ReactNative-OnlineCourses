@@ -7,7 +7,7 @@ const ListLessons = (props) => {
     return (
         <View>
             <SectionList
-                    sections={props.item.content}
+                    sections={props.item}
                     renderItem={({ item }) => <ListLessonsItem item={item} />}
                     renderSectionHeader={({ section: { detail } }) => <View style={{ backgroundColor: '#0099CC', margin: 6 }}><Text>{detail}</Text></View>}
                 />

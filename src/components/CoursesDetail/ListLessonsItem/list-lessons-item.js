@@ -12,8 +12,8 @@ const ListLessonsItem = (props) => {
             <Image source={require('../../../../assets/reactNative.png')} style={styles.image} />
             <ScreenContainer>
                 <View style={{ margin: 10 }}>
-                    <ThemedText>{props.item.title}</ThemedText>
-                    <ThemedText style={styles.darkText}>{`${props.item.time}`}</ThemedText>
+                    <ThemedText>{props.item.name}</ThemedText>
+                    <ThemedText style={styles.darkText}>{`${props.item.hours}`}</ThemedText>
                 </View>
             </ScreenContainer>
         </TouchableOpacity>

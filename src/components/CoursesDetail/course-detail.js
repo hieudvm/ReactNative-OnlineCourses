@@ -7,9 +7,14 @@ import ListLessons from './ListLessons/list-lessons';
 import ScreenContainer from '../Common/screen-container';
 import ThemedText from '../Common/themed-text';
 import { FavouritesContext } from '../../provider/favourites-provider';
+import { CourseDetailContext } from '../../../src/provider/courseDetail-provider'
 
 const CourseDetail = (props) => {
 
+    const courseDetailContext = useContext(CourseDetailContext)
+
+    const courseLesson = courseDetailContext.state.sectionLesson.section
+   
     const favoriteContext = useContext(FavouritesContext)
 
     const [favorite, setFavorite] = useState('Favorite')
@@ -18,7 +23,7 @@ const CourseDetail = (props) => {
     return (
         <ScreenContainer>
             <View style={{ flex: 2.5 }}>
-                <VideoPlayer item={item} />
+                <VideoPlayer navigation={props.navigation} item={item} />
             </View>
             <ScrollView style={{ flex: 2 }}>
                 <View style={styles.icon}>
@@ -61,7 +66,7 @@ const CourseDetail = (props) => {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 1 }}>
-                    <ListLessons item={item} />
+                    <ListLessons item={courseLesson} />
                 </View>
             </ScrollView>
         </ScreenContainer>

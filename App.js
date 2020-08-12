@@ -92,6 +92,7 @@ const HomeStackScreen = (props) => {
       <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Home" }} />
       <HomeStack.Screen name="User" component={User} options={{ title: "Home" }} />
       <HomeStack.Screen name="UserThread" component={UserThread} />
+      <HomeStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author Detail" }} />
     </HomeStack.Navigator>
   )
 };

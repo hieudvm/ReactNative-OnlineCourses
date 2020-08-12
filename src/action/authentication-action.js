@@ -14,14 +14,14 @@ export const login = (dispatch) => (userName, password) => {
                 'access_token',
                 Response.data.token
             );
-            await AsyncStorage.setItem(
-                'userInfo',
-                Response.data.userInfo
-            );
+            // await AsyncStorage.setItem(
+            //     'userInfo',
+            //     Response.data.userInfo
+            // );
             dispatch({ type: "LOGIN_SUCCESSED", data: Response.data, message: "Login success!" })
             
         } else {
-            dispatch({type: "LOGIN_FAILED", message: "Login fail!"})
+            dispatch({type: "LOGIN_FAILED", message: "Invalid user name or password!"})
         }
     }).catch((Error) => {
         dispatch({type: "LOGIN_FAILED", message: "Login fail!"})
@@ -31,7 +31,7 @@ export const login = (dispatch) => (userName, password) => {
 
 export const logout = (dispatch) => async () => {
     await AsyncStorage.removeItem("access_token");
-    await AsyncStorage.removeItem("userInfo");
+    // await AsyncStorage.removeItem("userInfo");
     dispatch({
         type: "LOGOUT",
         message: ""
