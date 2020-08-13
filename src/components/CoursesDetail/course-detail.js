@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import VideoPlayer from './VideoPlayer/video-player'
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -7,29 +7,51 @@ import ListLessons from './ListLessons/list-lessons';
 import ScreenContainer from '../Common/screen-container';
 import ThemedText from '../Common/themed-text';
 import { FavouritesContext } from '../../provider/favourites-provider';
-import { CourseDetailContext } from '../../../src/provider/courseDetail-provider'
+import { AuthorContext } from '../../provider/author-provider';
+import { CoursesContext } from '../../provider/courses-provider';
+import { useFocusEffect } from '@react-navigation/native';
 
 const CourseDetail = (props) => {
+    const authorContext = useContext(AuthorContext)
     const favoriteContext = useContext(FavouritesContext)
+    const coursesContext = useContext(CoursesContext)
 
-    const [favorite, setFavorite] = useState('Favorite')
+    const [favorite, setFavorite] = useState('')
 
     const item = props.route.params.item
+
+    const [course, setCourse] = useState({})
+
+    useEffect(() => {
+        favoriteContext.getCourseLikeStatus(item.id)
+        console.log(favoriteContext.state.likeStatus)
+        if (favoriteContext.state.likeStatus) {
+            setFavorite('Liked')
+        } else {
+            setFavorite('like')
+        }
+        if (coursesContext.state.course) {
+            setCourse(coursesContext.state.course)
+        }
+    }, [course])
+
     return (
         <ScreenContainer>
             <View style={{ flex: 2.5 }}>
-                <VideoPlayer navigation={props.navigation} item={item} />
+                <VideoPlayer navigation={props.navigation} author = {authorContext.state.instructor.name} item={course} />
             </View>
             <ScrollView style={{ flex: 2 }}>
                 <View style={styles.icon}>
                     <TouchableOpacity
                         onPress={() => {
-                            if (favoriteContext.favouriteCourses.has(item.id)) {
-                                setFavorite('Favorite')
-                                favoriteContext.removeFavouriteCourse(item.id)
+                            if (favoriteContext.state.likeStatus) {
+                                setFavorite('Like')
+                                favoriteContext.likeCourse(item.id)
+                                favoriteContext.getFavoriteCourses()
                             } else {
-                                setFavorite('Not Favorite')
-                                favoriteContext.addFavouriteCourse(item.id)
+                                setFavorite('Liked')
+                                favoriteContext.likeCourse(item.id)
+                                favoriteContext.getFavoriteCourses()
                             }
                         }}
                     >

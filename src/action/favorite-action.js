@@ -27,3 +27,19 @@ const getCourseLikeStatus = (dispatch) => (courseId) => {
         dispatch({ type: "GET_COURSE_LIKE_STATUS_FAIL"})
     })
 }
+
+const getFavoriteCourses = (dispatch) => () => {
+    axios.get(`/user/get-favorite-courses`)
+    .then((Response) => {
+        if (Response.status === 200) {
+            console.log("success")
+            dispatch({ type: "GET_FAVORITE_COURSES_SUCCESS", data: Response.data.payload })
+        } else {
+            dispatch({ type: "GET_FAVORITE_COURSES_FAIL"})
+        }
+    }).catch((Error) => {
+        dispatch({ type: "GET_FAVORITE_COURSES_FAIL"})
+    })
+}
+
+export {getCourseLikeStatus, likeCourse, getFavoriteCourses}

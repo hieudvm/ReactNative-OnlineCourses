@@ -1,11 +1,19 @@
-import React, { PureComponent, useState } from 'react'
+import React, { PureComponent, useState, useReducer } from 'react'
+import { reducer } from '../reducer/favorite-reducer'
+import { likeCourse, getCourseLikeStatus, getFavoriteCourses } from '../action/favorite-action'
 
 const FavouritesContext = React.createContext()
 
+const initialState = {
+    isLoading: true,
+    message: "",
+    data: [],
+    likeStatus: false
+}
 
 const FavouritesProvider = (props) => {
 
-    const [favouriteCourses, setFavouriteCourses] = useState(new Set())
+    const [state, dispatch] = useReducer(reducer, initialState)
 
     const addFavouriteCourse = (courseId) => {
         var newSet = new Set(favouriteCourses.add(courseId))
@@ -21,10 +29,10 @@ const FavouritesProvider = (props) => {
     return (
         <FavouritesContext.Provider
             value={{
-                favouriteCourses,
-                setFavouriteCourses,
-                addFavouriteCourse,
-                removeFavouriteCourse
+                state,
+                likeCourse: likeCourse(dispatch),
+                getCourseLikeStatus: getCourseLikeStatus(dispatch),
+                getFavoriteCourses: getFavoriteCourses(dispatch)
             }}>
             {props.children}
         </FavouritesContext.Provider>

@@ -4,8 +4,10 @@ import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 import { CoursesContext } from '../../../provider/courses-provider'
 import { Rating } from 'react-native-elements'
+import { AuthorContext } from '../../../provider/author-provider'
 
 const ListCoursesItem = (props) => {
+    
     Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <ScreenContainer>
@@ -18,7 +20,7 @@ const ListCoursesItem = (props) => {
                 <ScreenContainer>
                     <View style={{ margin: 6 }}>
                         <ThemedText>{props.item.title}</ThemedText>
-                        <ThemedText>{props.item["instructor.user.name"]}</ThemedText>
+                        {/* <ThemedText>{props.item["instructor.user.name"]}</ThemedText> */}
                         <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
                         <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                     </View>

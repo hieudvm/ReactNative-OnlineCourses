@@ -8,6 +8,8 @@ export const reducer = (prevState, action) => {
             return { ...prevState, isLoading: false, topRate: action.data }
         case "GET_PROCESS_COURSES_SUCCESS":
             return { ...prevState, isLoading: false, process: action.data }
+        case "GET_COURSE_INFORMAION_SUCCESS":
+            return { ...prevState, isLoading: false, course: action.data }
         case "GET_COURSES_FAIL":
             return { ...prevState, isLoading: true }
         default:

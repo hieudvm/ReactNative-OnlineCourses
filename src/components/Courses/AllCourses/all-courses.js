@@ -9,10 +9,7 @@ const AllCourses = (props) => {
     return (
         <ScreenContainer>
             <View>
-                <FlatList
-                    data={item}
-                    renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
-                />
+                <FlatList data={item} renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}/>
             </View>
         </ScreenContainer>
     )

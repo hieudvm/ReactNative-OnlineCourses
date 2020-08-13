@@ -58,5 +58,21 @@ const getProcessCourses = (dispatch) => () => {
         })
 }
 
-export { getProcessCourses, getTopNewCourses, getTopRateCourses, getTopSellCourses }
+const getCourseInformation = (dispatch) => (id) => {
+    axios.get('/course/get-course-info', {
+        params: {
+          id: id
+        }})
+        .then((Response) => {
+            if (Response.status === 200) {
+                dispatch({ type: "GET_COURSE_INFORMAION_SUCCESS", data: Response.data.payload })
+            } else {
+                dispatch({ type: "GET_COURSES_FAIL" })
+            }
+        }).catch((Error) => {
+            dispatch({ type: "GET_COURSES_FAIL" })
+        })
+}
+
+export { getProcessCourses, getTopNewCourses, getTopRateCourses, getTopSellCourses, getCourseInformation }
 

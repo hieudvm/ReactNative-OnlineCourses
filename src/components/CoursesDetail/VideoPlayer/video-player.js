@@ -3,11 +3,9 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import { Icon } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
-import { AuthorContext } from '../../../provider/author-provider'
 
 const VideoPlayer = (props) => {
-    const authorContext = useContext(AuthorContext)
-    const authorId = props.item["instructor.user.id"]
+    const authorId = props.item.instructorId
     return (
         <ScreenContainer>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
@@ -22,7 +20,7 @@ const VideoPlayer = (props) => {
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
                         <ThemedText>
-                            {props.item["instructor.user.name"]}
+                            {props.author}
                         </ThemedText>
                     </View>
                 </TouchableOpacity>

@@ -1,6 +1,6 @@
 import React, { useState, useReducer } from 'react'
 import { reducer } from '../reducer/courses-reducer'
-import { getTopSellCourses, getTopNewCourses, getTopRateCourses, getProcessCourses } from '../action/courses-action'
+import { getTopSellCourses, getTopNewCourses, getTopRateCourses, getProcessCourses, getCourseInformation } from '../action/courses-action'
 
 const CoursesContext = React.createContext()
 
@@ -9,7 +9,8 @@ const initialState = {
     topSell: [],
     topNew: [],
     topRate: [],
-    process: []
+    process: [],
+    course: {}
 }
 
 const CoursesProvider = (props) => {
@@ -22,7 +23,8 @@ const CoursesProvider = (props) => {
                 getTopSellCourses: getTopSellCourses(dispatch),
                 getTopNewCourses: getTopNewCourses(dispatch),
                 getTopRateCourses: getTopRateCourses(dispatch),
-                getProcessCourses: getProcessCourses(dispatch)
+                getProcessCourses: getProcessCourses(dispatch),
+                getCourseInformation: getCourseInformation(dispatch)
             }}>
             {props.children}
         </CoursesContext.Provider>

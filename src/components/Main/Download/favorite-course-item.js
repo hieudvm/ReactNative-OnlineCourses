@@ -6,26 +6,34 @@ import ScreenContainer from '../../Common/screen-container'
 import { CoursesContext } from '../../../provider/courses-provider'
 
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { Rating } from 'react-native-elements'
+import { AuthorContext } from '../../../provider/author-provider'
+import { CourseDetailContext } from '../../../provider/courseDetail-provider'
 
 const FavoriteCourseItem = (props) => {
-    const courseContext = useContext(CoursesContext)
+    const coursesContext = useContext(CoursesContext)
+    const authorContext = useContext(AuthorContext)
+    const courseDetailContext = useContext(CourseDetailContext)
     
-    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
+    Image_Http_URL = { uri: props.item.courseImage }
 
     return (
         <TouchableOpacity
             onPress={() => {
-                courseContext.addLearningCourse(props.item.id)
+                // courseContext.addLearningCourse(props.item.id)
+                authorContext.getInstructorById(props.item.instructorId)
+                coursesContext.getCourseInformation(props.item.id)
+                courseDetailContext.getCourseDetailWithLession(props.item.id)
                 props.navigation.push("CourseDetail", {item: props.item})
             }}
         >
             <ScreenContainer style={styles.item}>
                 <Image source={Image_Http_URL} style={styles.image} />
                 <View style={{ margin: 5}}>
-                    <ThemedText>{props.item.title}</ThemedText>
-                    <ThemedText>{props.item.author}</ThemedText>
-                    <Text style={styles.darkText}>{`${props.item.level} . ${props.item.released} . ${props.item.duration}`}</Text>
+                    <ThemedText>{props.item.courseTitle}</ThemedText>
+                    <ThemedText>{props.item.instructorName}</ThemedText>
+                    <ThemedText style={styles.darkText}>{props.item.coursePrice} VND </ThemedText>
+                    <Rating imageSize={20} fractions="{1}" startingValue={props.item.courseContentPoint} />
                 </View>
             </ScreenContainer>
         </TouchableOpacity>

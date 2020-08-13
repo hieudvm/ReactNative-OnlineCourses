@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../Common/themed-text';
@@ -7,24 +7,24 @@ import { CoursesContext } from '../../../provider/courses-provider';
 import { FavouritesContext } from '../../../provider/favourites-provider';
 import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
 import FavoriteCourseItem from './favorite-course-item';
+import { useFocusEffect } from '@react-navigation/native';
 
 const Download = (props) => {
-    const courseContext = useContext(CoursesContext)
     const favoriteContext = useContext(FavouritesContext)
+    const [courses, setCourses] = useState([])
+    
+    useFocusEffect(
+        React.useCallback(() => {
+            favoriteContext.getFavoriteCourses()
+            setCourses(favoriteContext.state.data)
+        }, [favoriteContext.state.data])
+      );
+    // useFocusEffect(() => {
+    //     favoriteContext.getFavoriteCourses()
+    //     setCourses(favoriteContext.state.data)
+    // }, [])
 
-    const renderListItem = (courses) => {
-        return courses.map(item => <FavoriteCourseItem navigation={props.navigation} item={item} />);
-    }
-
-    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
-
-    const courseTemp = []
-    const course = Array.from(favoriteContext.favouriteCourses)
-    for (const x of favoriteContext.favouriteCourses) {
-        courseTemp.push(courseContext.courses[x - 1])
-    }
-    if (course.length === 0) {
+    if (courses.length === 0) {
         return (
             <ScreenContainer style={styles.iconItem}>
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -38,7 +38,7 @@ const Download = (props) => {
         return (
             <ScreenContainer>
                 <FlatList
-                    data={courseTemp}
+                    data={courses}
                     renderItem={({ item }) => <FavoriteCourseItem navigation={props.navigation} item={item} />}
                 />
             </ScreenContainer>

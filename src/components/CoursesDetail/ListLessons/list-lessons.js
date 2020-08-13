@@ -28,8 +28,6 @@ const ListLessons = (props) => {
         }
     ]
 
-    console.log("course Detail", sections)
-
     if (sections === []) {
         return (
             <View>
