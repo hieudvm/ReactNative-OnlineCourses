@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, ActivityIndicator } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../Common/themed-text';
 import ScreenContainer from '../../Common/screen-container';
@@ -27,6 +27,7 @@ const Download = (props) => {
     if (courses.length === 0) {
         return (
             <ScreenContainer style={styles.iconItem}>
+                {favoriteContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                     <Icon
                         name='bookmark' size={60} color='darkgray' />

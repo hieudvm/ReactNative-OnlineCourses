@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, ActivityIndicator } from 'react-native'
 import VideoPlayer from './VideoPlayer/video-player'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
@@ -22,23 +22,38 @@ const CourseDetail = (props) => {
 
     const [course, setCourse] = useState({})
 
-    useEffect(() => {
-        favoriteContext.getCourseLikeStatus(item.id)
-        console.log(favoriteContext.state.likeStatus)
-        if (favoriteContext.state.likeStatus) {
-            setFavorite('Liked')
-        } else {
-            setFavorite('like')
-        }
-        if (coursesContext.state.course) {
-            setCourse(coursesContext.state.course)
-        }
-    }, [course])
+    useFocusEffect(
+        React.useCallback(() => {
+            favoriteContext.getCourseLikeStatus(item.id)
+            console.log(favoriteContext.state.likeStatus)
+            if (favoriteContext.state.likeStatus) {
+                setFavorite('Liked')
+            } else {
+                setFavorite('like')
+            }
+            if (coursesContext.state.course) {
+                setCourse(coursesContext.state.course)
+            }
+        }, [coursesContext.state.course])
+    );
+
+    // useEffect(() => {
+    //     favoriteContext.getCourseLikeStatus(item.id)
+    //     console.log(favoriteContext.state.likeStatus)
+    //     if (favoriteContext.state.likeStatus) {
+    //         setFavorite('Liked')
+    //     } else {
+    //         setFavorite('like')
+    //     }
+    //     if (coursesContext.state.course) {
+    //         setCourse(coursesContext.state.course)
+    //     }
+    // }, [course])
 
     return (
         <ScreenContainer>
             <View style={{ flex: 2.5 }}>
-                <VideoPlayer navigation={props.navigation} author = {authorContext.state.instructor.name} item={course} />
+                <VideoPlayer navigation={props.navigation} author={authorContext.state.instructor.name} item={course} />
             </View>
             <ScrollView style={{ flex: 2 }}>
                 <View style={styles.icon}>

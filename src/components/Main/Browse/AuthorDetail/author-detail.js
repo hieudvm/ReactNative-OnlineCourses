@@ -24,6 +24,7 @@ const AuthorDetail = (props) => {
                 <View style={styles.touch}>
                     <Image style={styles.image} source={Image_Http_URL} />
                     <View style={styles.text}>
+                    {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                         <ThemedText h5>
                             {authorContext.state.instructor.name}
                         </ThemedText>
@@ -69,6 +70,7 @@ const AuthorDetail = (props) => {
                 </View>
                 <ScreenContainer>
             <View>
+            {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <FlatList
                     data={authorContext.state.instructor.courses}
                     renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}

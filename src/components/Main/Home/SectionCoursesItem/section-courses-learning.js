@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
+import { CourseDetailContext } from '../../../../provider/courseDetail-provider'
+import { CoursesContext } from '../../../../provider/courses-provider'
+import { AuthorContext } from '../../../../provider/author-provider'
 
 const SectionCoursesLearning = (props) => {
+    const courseDetailContext = useContext(CourseDetailContext)
+    const coursesContext = useContext(CoursesContext)
+    const authorContext = useContext(AuthorContext)
+    
     const Image_Http_URL = { uri: props.item.courseImage }
     return (
         <TouchableOpacity
             onPress={() => {
-                props.navigation.push("CourseDetail", { item: props.item.id })
+                authorContext.getInstructorById(props.item.instructorId)
+                coursesContext.getCourseInformation(props.item.id)
+                courseDetailContext.getCourseDetailWithLession(props.item.id)
+                props.navigation.push("CourseDetail", { item: props.item })
             }}
         >
             <ScreenContainer style={styles.item}>

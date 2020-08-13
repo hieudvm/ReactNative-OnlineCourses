@@ -22,6 +22,7 @@ const SectionAuthors = (props) => {
     return (
         <ScreenContainer>
             <View>
+            {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <ThemedText style={{margin: 5}}>
                     {props.title}
                 </ThemedText>

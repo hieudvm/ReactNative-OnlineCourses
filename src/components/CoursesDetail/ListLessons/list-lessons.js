@@ -1,19 +1,28 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { StyleSheet, Text, View, SectionList } from 'react-native'
+import { StyleSheet, Text, View, SectionList, ActivityIndicator } from 'react-native'
 import ListLessonsItem from '../ListLessonsItem/list-lessons-item'
 import { CourseDetailContext } from '../../../provider/courseDetail-provider'
 import { FlatList } from 'react-native-gesture-handler'
+import { useFocusEffect } from '@react-navigation/native'
 
 const ListLessons = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
 
     const [sections, setSections] = useState([])
 
-    useEffect(() => {
-        if (courseDetailContext.state.sectionLesson.section) {
-            setSections(courseDetailContext.state.sectionLesson.section)
-        }
-    }, [courseDetailContext.state.sectionLesson])
+    useFocusEffect(
+        React.useCallback(() => {
+            if (courseDetailContext.state.sectionLesson.section) {
+                setSections(courseDetailContext.state.sectionLesson.section)
+            }
+        }, [courseDetailContext.state.sectionLesson])
+    );
+
+    // useEffect(() => {
+    //     if (courseDetailContext.state.sectionLesson.section) {
+    //         setSections(courseDetailContext.state.sectionLesson.section)
+    //     }
+    // }, [courseDetailContext.state.sectionLesson])
 
     const item = [
         {
@@ -28,7 +37,7 @@ const ListLessons = (props) => {
         }
     ]
 
-    if (sections === []) {
+    if (courseDetailContext.state.isLoading) {
         return (
             <View>
                 <SectionList
@@ -41,6 +50,7 @@ const ListLessons = (props) => {
     } else {
         return (
             <View>
+                {courseDetailContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <SectionList
                     sections={[{data: sections }]}
                     renderItem={({ item }) => <FlatList data={item.lesson} renderItem={({ item }) => <ListLessonsItem navigation={props.navigation} item={item} />}/>}
