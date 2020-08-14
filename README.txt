@@ -23,6 +23,11 @@ Deadline 2: Xây dựng ứng dụng offline cho toàn bộ ứng dụng
 
 ======================================================================
 Deadline 3: Xây dựng ứng dụng đầy đủ các luồng chạy online
+  - Commit ID: b7ae6df
+  - Video demo: 
+
+======================================================================
+Deadline 4: Final project
   - Commit ID: 
   - Video demo: 
 
