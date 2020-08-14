@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
@@ -6,7 +6,6 @@ import { CoursesContext } from '../../../provider/courses-provider'
 import { Rating } from 'react-native-elements'
 import { AuthorContext } from '../../../provider/author-provider'
 import { CourseDetailContext } from '../../../provider/courseDetail-provider'
-import { useFocusEffect } from '@react-navigation/native'
 
 const ListCoursesItem = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
@@ -15,15 +14,13 @@ const ListCoursesItem = (props) => {
 
     const [course, setCourse] = useState("")
 
-    useFocusEffect(
-        React.useCallback(() => {
+    useEffect(
+        () => {
             coursesContext.getCourseInformation(props.item.id)
             if (coursesContext.state.course) {
                 setCourse(coursesContext.state.course)
             }
-            console.log(course)
         }, [])
-    );
     
     const Image_Http_URL = { uri: props.item.imageUrl }
     return (

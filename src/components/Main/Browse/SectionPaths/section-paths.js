@@ -7,13 +7,12 @@ import ScreenContainer from '../../../Common/screen-container';
 import ThemedText from '../../../Common/themed-text';
 import { PathsContext } from '../../../../provider/paths-provider';
 
+const renderListItem = (skills, props) => {
+    return skills.map(item => <SectionPathsItem navigation={props.navigation} item={item} />);
+}
 const SectionPaths = (props) => {
-
-    const PathContext = useContext(PathsContext)
-
-    const renderListItem = (skills) => {
-        return skills.map(item => <SectionPathsItem navigation={props.navigation} item={item} />);
-    }
+    const pathContext = useContext(PathsContext)
+    
     return (
         <ScreenContainer>
             <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
@@ -23,7 +22,7 @@ const SectionPaths = (props) => {
                 <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}
                         onPress={() => {
-                            props.navigation.navigate("AllPaths", {item: PathContext.path})
+                            props.navigation.navigate("AllPaths", {item: pathContext.path})
                         }}
                     >
                         <Text style={{ marginRight: 6 }}>
@@ -34,7 +33,7 @@ const SectionPaths = (props) => {
                 </View>
             </View>
             <ScrollView horizontal={true}>
-                {renderListItem(PathContext.path)}
+                {renderListItem(pathContext.path, props)}
             </ScrollView>
         </ScreenContainer>
     )

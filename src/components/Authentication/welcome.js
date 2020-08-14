@@ -2,14 +2,12 @@ import React, { useContext } from 'react'
 import { StyleSheet, View, Image } from 'react-native'
 import { Text } from 'react-native-elements'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-import ScreenContainer from '../Common/screen-container'
-import { AuthenticationContext } from '../../provider/authentication-provider'
 
 const Welcome = (props) => {
     return (
             <View style={styles.container}>
                 <Image style={styles.image} source={require('../../../assets/Logo.jpg')} />
-                <Text h3 >Welcome to E-learning.IO</Text>
+                <Text h4 >Welcome to E-learning.IO</Text>
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {

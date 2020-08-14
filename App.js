@@ -190,6 +190,7 @@ const Authen = () => {
 }
 
 export default function App() {
+  console.disableYellowBox = true;
   const [theme, setTheme] = useState(themes.light);
 
   return (

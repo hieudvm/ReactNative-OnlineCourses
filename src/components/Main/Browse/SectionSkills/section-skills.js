@@ -6,26 +6,25 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 
+const skills = ["CONFERENCES", "<Software> \r\n Development", "IT", "Information \r\n AND \r\n CYBER SECURITY", "DATA Professional"]
+
+const skills2 = ["BUSSINESS \r\n Professtional", "Creative \r\n PROFESSIONAL", "MANUALFACTURING \r\n AND \r\n Design", "ARCHITECTURE \r\n AND Contrucstion", "CERTIFICATIONS"]
+
+const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
+
+const renderListItem = (skills, props) => {
+    return skills.map(item => <ImageButtonItem navigation={props.navigation} item={item} />);
+}
+
+const renderListSkill = (skills, props) => {
+    return skills.map(item => <TouchableOpacity
+        onPress={() => {
+            props.navigation.navigate("SkillDetail")
+        }}
+    ><ThemedText h5 style={styles.text}>{item}</ThemedText></TouchableOpacity>);
+}
+
 const SectionSkills = (props) => {
-
-    const skills = ["CONFERENCES", "<Software> \r\n Development", "IT", "Information \r\n AND \r\n CYBER SECURITY", "DATA Professional"]
-
-    const skills2 = ["BUSSINESS \r\n Professtional", "Creative \r\n PROFESSIONAL", "MANUALFACTURING \r\n AND \r\n Design", "ARCHITECTURE \r\n AND Contrucstion", "CERTIFICATIONS"]
-
-    const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
-
-    const renderListItem = (skills) => {
-        return skills.map(item => <ImageButtonItem navigation={props.navigation} item={item} />);
-    }
-
-    const renderListSkill = (skills) => {
-        return skills.map(item => <TouchableOpacity 
-            onPress={() =>{
-                props.navigation.navigate("SkillDetail")
-            }}
-            ><ThemedText h5 style={styles.text}>{item}</ThemedText></TouchableOpacity>);
-    }
-
     return (
         <ScreenContainer>
             <View>
@@ -34,13 +33,13 @@ const SectionSkills = (props) => {
                 </Text>
             </View>
             <ScrollView horizontal={true}>
-                {renderListSkill(listSkills)}
+                {renderListSkill(listSkills, props)}
             </ScrollView>
             <ScrollView horizontal={true}>
-                {renderListItem(skills)}
+                {renderListItem(skills, props)}
             </ScrollView>
             <ScrollView horizontal={true}>
-                {renderListItem(skills2)}
+                {renderListItem(skills2, props)}
             </ScrollView>
         </ScreenContainer>
     )

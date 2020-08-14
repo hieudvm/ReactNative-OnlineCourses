@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from 'react'
 import { StyleSheet, Text, View, Button, Image, ActivityIndicator } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { TouchableOpacity, ScrollView, FlatList } from 'react-native-gesture-handler';
-import AllCourses from '../../../Courses/AllCourses/all-courses';
 import ScreenContainer from '../../../Common/screen-container';
 import ThemedText from '../../../Common/themed-text';
 import ListCoursesItem from '../../../Courses/ListCoursesItem/list-courses-item';
@@ -15,7 +14,7 @@ const AuthorDetail = (props) => {
     const Image_Http_URL = { uri: authorContext.state.instructor.avatar }
 
     useEffect(() => {
-      authorContext.getInstructorById(item)
+        authorContext.getInstructorById(item)
     }, [])
 
     return (
@@ -24,7 +23,7 @@ const AuthorDetail = (props) => {
                 <View style={styles.touch}>
                     <Image style={styles.image} source={Image_Http_URL} />
                     <View style={styles.text}>
-                    {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
+                        {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                         <ThemedText h5>
                             {authorContext.state.instructor.name}
                         </ThemedText>
@@ -40,14 +39,14 @@ const AuthorDetail = (props) => {
                         color="#841584"
                     />
                 </View>
-                <View style={{alignItems: 'center'}}>
+                <View style={{ alignItems: 'center' }}>
                     <ThemedText style={{ margin: 6 }}>
                         Follow to be notified when new courses are published.
                     </ThemedText>
                 </View>
                 <ThemedText style={{ margin: 6 }}>
                     {authorContext.state.instructor.intro}
-                    </ThemedText>
+                </ThemedText>
                 <View style={styles.icon}>
                     <TouchableOpacity>
                         <View style={styles.iconItem}>
@@ -69,14 +68,14 @@ const AuthorDetail = (props) => {
                     </TouchableOpacity>
                 </View>
                 <ScreenContainer>
-            <View>
-            {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                <FlatList
-                    data={authorContext.state.instructor.courses}
-                    renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
-                />
-            </View>
-        </ScreenContainer>
+                    <View>
+                        {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
+                        <FlatList
+                            data={authorContext.state.instructor.courses}
+                            renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
+                        />
+                    </View>
+                </ScreenContainer>
             </ScrollView>
         </ScreenContainer>
     )

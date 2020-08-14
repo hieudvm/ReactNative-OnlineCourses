@@ -8,6 +8,10 @@ import axios from 'axios';
 import { PathsContext } from '../../../../provider/paths-provider';
 import SectionCategoryItem from '../SectionPathsItem/section-category-item';
 
+
+const renderListItem = (skills, props) => {
+    return skills.map(item => <SectionCategoryItem navigation={props.navigation} item={item} />);
+}
 const SectionCategory = (props) => {
     const [category, setCategory] = useState([])
     const [isLoading, setIsLoading] = useState(true)
@@ -27,10 +31,6 @@ const SectionCategory = (props) => {
             })
     }, [])
 
-
-    const renderListItem = (skills) => {
-        return skills.map(item => <SectionCategoryItem navigation={props.navigation} item={item} />);
-    }
     return (
         <ScreenContainer>
             {isLoading && <ActivityIndicator size="small" color="gray" />}
@@ -52,7 +52,7 @@ const SectionCategory = (props) => {
                 </View>
             </View>
             <ScrollView horizontal={true}>
-                {renderListItem(category)}
+                {renderListItem(category, props)}
             </ScrollView>
         </ScreenContainer>
     )

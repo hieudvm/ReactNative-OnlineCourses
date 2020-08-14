@@ -3,20 +3,19 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import { AuthenticationContext } from '../../../provider/authentication-provider'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 
+const renderSendStatus = (status, message) => {
+    if (!status) {
+        return <View />
+    } else if (status) {
+    return (<Text>{message}</Text>)
+    } else {
+        return (<Text>{message}</Text>)
+    }
+}
 const ForgetPassword = (props) => {
     const authContext = useContext(AuthenticationContext)
     const [userName, setUserName] = useState('')
-
-    const renderSendStatus = (status) => {
-        if (!status) {
-            return <View />
-        } else if (status) {
-        return (<Text>{authContext.state.message}</Text>)
-        } else {
-            return (<Text>{authContext.state.message}</Text>)
-        }
-    }
-
+    
     return (
         <View style={styles.container}>
                 <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
@@ -27,7 +26,7 @@ const ForgetPassword = (props) => {
                     defaultValue={userName}
                 />
                 <View>
-                    {renderSendStatus(authContext.state.isSent)}
+                    {renderSendStatus(authContext.state.isSent, authContext.state.message)}
                 </View>
                 <TouchableOpacity
                     style={styles.button}

@@ -4,6 +4,16 @@ import { Image } from 'react-native'
 import { TextInput, TouchableOpacity, ScrollView } from 'react-native-gesture-handler'
 import { RegisterContext } from '../../../provider/register-provider'
 
+const renderRegisterStatus = (status, message) => {
+    if (status) {
+        return <View />
+    } else if (!status) {
+        return (<Text>{message}</Text>)
+    } else {
+        return (<Text>{message}</Text>)
+    }
+}
+
 const Register = (props) => {
 
     const registerContext = useContext(RegisterContext)
@@ -25,16 +35,7 @@ const Register = (props) => {
         }
     }, [])
 
-    const renderRegisterStatus = (status) => {
-        if (status) {
-            return <View />
-        } else if (!status) {
-            return (<Text>{registerContext.state.messageRegister}</Text>)
-        } else {
-            return (<Text>{registerContext.state.messageRegister}</Text>)
-        }
-    }
-
+   
     return (
         <ScrollView>
              <View style={styles.container}>
@@ -72,7 +73,7 @@ const Register = (props) => {
                     defaultValue={phoneNumber}
                 />
                 <View>
-                    {renderRegisterStatus(registerContext.state.isLoading)}
+                    {renderRegisterStatus(registerContext.state.isLoading, registerContext.state.messageRegister)}
                 </View>
                 <TouchableOpacity
                     style={styles.button}

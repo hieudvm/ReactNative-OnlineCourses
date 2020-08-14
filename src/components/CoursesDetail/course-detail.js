@@ -17,10 +17,9 @@ const CourseDetail = (props) => {
     const coursesContext = useContext(CoursesContext)
 
     const [favorite, setFavorite] = useState('')
+    const [course, setCourse] = useState({})
 
     const item = props.route.params.item
-
-    const [course, setCourse] = useState({})
 
     useFocusEffect(
         React.useCallback(() => {

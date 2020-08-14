@@ -4,7 +4,7 @@ import { Text } from 'react-native-elements'
 
 const ImageButtonItem = (props) => {
     const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
+    const Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
 
     return (
         <TouchableOpacity

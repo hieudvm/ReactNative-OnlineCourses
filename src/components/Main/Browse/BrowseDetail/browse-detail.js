@@ -1,19 +1,18 @@
 import React from 'react'
 import { StyleSheet, View, ScrollView, ImageBackground, TouchableOpacity } from 'react-native'
-import SectionSkills from '../SectionSkills/section-skills'
 import SectionPaths from '../SectionPaths/section-paths'
 import SectionAuthors from '../SectionAuthors/section-authors'
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 
+const renderListSkill = (skills, props) => {
+    return skills.map(item => <TouchableOpacity onPress={props.onPress}><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
+}
+
+const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
+
 const BrowseDetail = (props) => {
-    const listSkills = ["Angular", "Javascript", "C#", "Java", "DataAnalysis", "ASP.NET", "NodeJs", "Design Patterns"]
-
-    const renderListSkill = (skills) => {
-        return skills.map(item => <TouchableOpacity onPress={props.onPress}><Text h5 style={styles.text}>{item}</Text></TouchableOpacity>);
-    }
-
     const item = props.route.params.item
 
     return (
@@ -30,7 +29,7 @@ const BrowseDetail = (props) => {
                     </ThemedText>
                 </View>
                 <ScrollView horizontal={true}>
-                    {renderListSkill(listSkills)}
+                    {renderListSkill(listSkills, props)}
                 </ScrollView>
                 <SectionPaths navigation={props.navigation} title='Paths' />
                 <SectionPaths navigation={props.navigation} title='New' />

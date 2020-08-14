@@ -3,7 +3,6 @@ import { StyleSheet, Text, View } from 'react-native'
 import { ScreenContainer } from 'react-native-screens'
 import { ScrollView, FlatList } from 'react-native-gesture-handler'
 import ThemedText from '../../../Common/themed-text'
-import SectionAuthorsItem from '../../Browse/SectionAuthorsItem/section-authors-item'
 import SectionAuthorsItemForSearch from '../../Browse/SectionAuthorsItem/section-authors-item-for-search'
 
 const SearchAuthors = (props) => {

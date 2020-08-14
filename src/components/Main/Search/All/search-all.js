@@ -4,7 +4,6 @@ import { ScreenContainer } from 'react-native-screens'
 import ThemedText from '../../../Common/themed-text'
 import { ScrollView } from 'react-native-gesture-handler'
 import ListCoursesItem from '../../../Courses/ListCoursesItem/list-courses-item'
-import SectionAuthorsItem from '../../Browse/SectionAuthorsItem/section-authors-item'
 import SectionPathsItem from '../../Browse/SectionPathsItem/section-paths-item'
 import SectionAuthorsItemForSearch from '../../Browse/SectionAuthorsItem/section-authors-item-for-search'
 

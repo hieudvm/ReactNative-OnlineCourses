@@ -18,13 +18,15 @@ export const login = (dispatch) => async (userName, password) => {
             //     'userInfo',
             //     Response.data.userInfo
             // );
+            console.log("success")
             dispatch({ type: "LOGIN_SUCCESSED", data: Response.data, message: "Login success!" })
             
         } else {
             dispatch({type: "LOGIN_FAILED", message: "Invalid user name or password!"})
         }
     }).catch((Error) => {
-        dispatch({type: "LOGIN_FAILED", message: "Login fail!"})
+        console.log("error")
+        dispatch({type: "LOGIN_FAILED", message: "Invalid user name or password!"})
     })
 
 }

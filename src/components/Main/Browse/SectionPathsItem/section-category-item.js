@@ -1,13 +1,12 @@
 import React from 'react'
 import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
-import { Text } from 'react-native-elements'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 
+const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
+const Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
 
 const SectionCategoryItem = (props) => {
-    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
     return (
         <ScreenContainer>
             <TouchableOpacity
@@ -17,9 +16,9 @@ const SectionCategoryItem = (props) => {
             >
                 <Image style={styles.image} source={Image_Http_URL} />
                 <View style={styles.text}>
-                <ThemedText h5>
-                    {props.item.name}
-                </ThemedText>
+                    <ThemedText h5>
+                        {props.item.name}
+                    </ThemedText>
                 </View>
             </TouchableOpacity>
 

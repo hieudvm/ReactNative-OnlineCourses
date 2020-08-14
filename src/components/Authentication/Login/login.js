@@ -5,6 +5,13 @@ import { useEffect } from 'react'
 import { AuthenticationContext } from '../../../provider/authentication-provider'
 import ScreenContainer from '../../Common/screen-container'
 
+const renderLoginStatus = (status, message) => {
+    if (status) {
+     return (<Text>{message}</Text>)
+     } else {
+         return (<Text>{message}</Text>)
+     }
+ }
 const Login = (props) => {
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
@@ -17,14 +24,6 @@ const Login = (props) => {
             setPassword('')
         }
     }, [authContext.state.isAuthenticated])
-
-    const renderLoginStatus = (status) => {
-       if (status) {
-        return (<Text>{authContext.state.message}</Text>)
-        } else {
-            return (<Text>{authContext.state.message}</Text>)
-        }
-    }
 
     return (
         <ScreenContainer>
@@ -44,7 +43,7 @@ const Login = (props) => {
                     defaultValue={password}
                 />
                 <View>
-                    {renderLoginStatus(authContext.state.isAuthenticated)}
+                    {renderLoginStatus(authContext.state.isAuthenticated, authContext.state.message)}
                 </View>
                 <TouchableOpacity
                     style={styles.button}

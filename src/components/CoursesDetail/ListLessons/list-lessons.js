@@ -5,9 +5,20 @@ import { CourseDetailContext } from '../../../provider/courseDetail-provider'
 import { FlatList } from 'react-native-gesture-handler'
 import { useFocusEffect } from '@react-navigation/native'
 
+const item = [
+    {
+        detail: '',
+        time: '',
+        data: [
+            {
+                name: '',
+                hours: ''
+            }
+        ]
+    }
+]
 const ListLessons = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
-
     const [sections, setSections] = useState([])
 
     useFocusEffect(
@@ -17,25 +28,6 @@ const ListLessons = (props) => {
             }
         }, [courseDetailContext.state.sectionLesson])
     );
-
-    // useEffect(() => {
-    //     if (courseDetailContext.state.sectionLesson.section) {
-    //         setSections(courseDetailContext.state.sectionLesson.section)
-    //     }
-    // }, [courseDetailContext.state.sectionLesson])
-
-    const item = [
-        {
-            detail: '',
-            time: '',
-            data: [
-                {
-                    name: '',
-                    hours: ''
-                }
-            ]
-        }
-    ]
 
     if (courseDetailContext.state.isLoading) {
         return (

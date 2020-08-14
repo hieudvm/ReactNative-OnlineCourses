@@ -3,9 +3,8 @@ import { StyleSheet, Text, View, Image, ActivityIndicator } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../Common/themed-text';
 import ScreenContainer from '../../Common/screen-container';
-import { CoursesContext } from '../../../provider/courses-provider';
 import { FavouritesContext } from '../../../provider/favourites-provider';
-import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
+import { FlatList } from 'react-native-gesture-handler';
 import FavoriteCourseItem from './favorite-course-item';
 import { useFocusEffect } from '@react-navigation/native';
 
@@ -19,10 +18,6 @@ const Download = (props) => {
             setCourses(favoriteContext.state.data)
         }, [favoriteContext.state.data])
       );
-    // useFocusEffect(() => {
-    //     favoriteContext.getFavoriteCourses()
-    //     setCourses(favoriteContext.state.data)
-    // }, [])
 
     if (courses.length === 0) {
         return (
