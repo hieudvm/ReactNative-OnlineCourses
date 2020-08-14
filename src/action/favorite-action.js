@@ -32,7 +32,6 @@ const getFavoriteCourses = (dispatch) => () => {
     axios.get(`/user/get-favorite-courses`)
     .then((Response) => {
         if (Response.status === 200) {
-            console.log("success")
             dispatch({ type: "GET_FAVORITE_COURSES_SUCCESS", data: Response.data.payload })
         } else {
             dispatch({ type: "GET_FAVORITE_COURSES_FAIL"})

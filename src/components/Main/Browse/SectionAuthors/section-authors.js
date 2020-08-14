@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { StyleSheet, View, ScrollView } from 'react-native'
+import { StyleSheet, View, ScrollView, ActivityIndicator } from 'react-native'
 import SectionAuthorsItem from '../SectionAuthorsItem/section-authors-item'
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../../Common/screen-container'

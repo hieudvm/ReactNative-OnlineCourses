@@ -6,6 +6,7 @@ import SectionAuthors from './SectionAuthors/section-authors'
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container'
 import { CoursesContext } from '../../../provider/courses-provider'
+import SectionCategory from './SectionPaths/section-category'
 
 const Browse = (props) => {
   const courseContext = useContext(CoursesContext)
@@ -39,6 +40,7 @@ const Browse = (props) => {
         </ImageBackground>
         <SectionSkills navigation={props.navigation} title='Popular skills' />
         <SectionPaths navigation={props.navigation} title='Paths' />
+        <SectionCategory navigation={props.navigation} title='Category' />
         <SectionAuthors navigation={props.navigation} title='Top Author' />
       </ScrollView>
     </ScreenContainer>

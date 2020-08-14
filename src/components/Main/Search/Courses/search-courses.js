@@ -12,7 +12,7 @@ const SearchCourses = (props) => {
                 <View >
                     <ThemedText style={{margin: 6}}>Courses</ThemedText>
                     <FlatList
-                        data={props.courseIds}
+                        data={props.course}
                         renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
                     />
                 </View>

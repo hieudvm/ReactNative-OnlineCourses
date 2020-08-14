@@ -5,6 +5,7 @@ import ScreenContainer from '../../../../Common/screen-container'
 import ThemedText from '../../../../Common/themed-text'
 import { FlatList } from 'react-native-gesture-handler'
 import ListCoursesItem from '../../../../Courses/ListCoursesItem/list-courses-item'
+import ListCoursesItemForPath from '../../../../Courses/ListCoursesItem/list-courses-item-for-path'
 
 const PathDetail = (props) => {
     const item = props.route.params.item
@@ -29,7 +30,7 @@ const PathDetail = (props) => {
                     <View>
                         <FlatList
                             data={item.listCourses}
-                            renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
+                            renderItem={({ item }) => <ListCoursesItemForPath navigation={props.navigation} item={item} />}
                         />
                     </View>
                 </ScreenContainer>

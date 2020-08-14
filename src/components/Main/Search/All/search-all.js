@@ -6,6 +6,7 @@ import { ScrollView } from 'react-native-gesture-handler'
 import ListCoursesItem from '../../../Courses/ListCoursesItem/list-courses-item'
 import SectionAuthorsItem from '../../Browse/SectionAuthorsItem/section-authors-item'
 import SectionPathsItem from '../../Browse/SectionPathsItem/section-paths-item'
+import SectionAuthorsItemForSearch from '../../Browse/SectionAuthorsItem/section-authors-item-for-search'
 
 const SearchAll = (props) => {
     return (
@@ -14,7 +15,7 @@ const SearchAll = (props) => {
                 <View >
                     <ThemedText style={{margin: 6}}>Courses</ThemedText>
                     <FlatList
-                        data={props.courseIds}
+                        data={props.course}
                         renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
                     />
                 </View>
@@ -22,15 +23,15 @@ const SearchAll = (props) => {
                     <ThemedText style={{margin: 6}}>Authors</ThemedText>
                     <FlatList
                         horizontal={true}
-                        data={props.authorIds}
-                        renderItem={({ item }) => <SectionAuthorsItem navigation={props.navigation} item={item} />}
+                        data={props.author}
+                        renderItem={({ item }) => <SectionAuthorsItemForSearch navigation={props.navigation} item={item} />}
                     />
                 </View>
                 <View>
                     <ThemedText style={{margin: 6}}>Paths</ThemedText>
                     <FlatList
                         horizontal={true}
-                        data={props.pathIds}
+                        data={props.path}
                         renderItem={({ item }) => <SectionPathsItem navigation={props.navigation} item={item} />}
                     />
                 </View>

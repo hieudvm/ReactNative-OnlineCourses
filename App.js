@@ -40,6 +40,7 @@ import welcome from './src/components/Authentication/welcome';
 import Register from './src/components/Authentication/Register/register';
 import { UserProvider } from './src/provider/user-provider';
 import ForgetPassword from './src/components/Authentication/ForgetPassword/forget-password';
+import { SearchProvider } from './src/provider/search-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -180,7 +181,7 @@ const MainTab = () => {
 const Authen = () => {
   return (
     <AuthenStack.Navigator headerMode='none' initialRouteName="Welcome">
-       <AuthenStack.Screen name="ForgotPassword" component={ForgetPassword} />
+      <AuthenStack.Screen name="ForgotPassword" component={ForgetPassword} />
       <AuthenStack.Screen name="Login" component={Login} />
       <AuthenStack.Screen name="Register" component={Register} />
       <AuthenStack.Screen name="Welcome" component={welcome} />
@@ -202,14 +203,16 @@ export default function App() {
               <RegisterProvider>
                 <UserProvider>
                   <PathsProvider>
-                    <FavouritesProvider>
-                      <NavigationContainer>
-                        <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-                          <Stack.Screen name="MainTab" component={MainTab} />
-                          <Stack.Screen name="AuthenStack" component={Authen} />
-                        </Stack.Navigator>
-                      </NavigationContainer>
-                    </FavouritesProvider>
+                    <SearchProvider>
+                      <FavouritesProvider>
+                        <NavigationContainer>
+                          <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                            <Stack.Screen name="MainTab" component={MainTab} />
+                            <Stack.Screen name="AuthenStack" component={Authen} />
+                          </Stack.Navigator>
+                        </NavigationContainer>
+                      </FavouritesProvider>
+                    </SearchProvider>
                   </PathsProvider>
                 </UserProvider>
               </RegisterProvider>

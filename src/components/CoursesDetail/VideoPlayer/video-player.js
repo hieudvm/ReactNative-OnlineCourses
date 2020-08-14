@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 'auto',
-        height: 250,
+        height: 200,
     },
     button: {
         height: 20,

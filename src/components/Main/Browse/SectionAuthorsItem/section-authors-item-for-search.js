@@ -1,42 +1,40 @@
 import React from 'react'
-import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { Text } from 'react-native-elements'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 
 
-const SectionPathsItem = (props) => {
-    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
-    const Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
+const SectionAuthorsItemForSearch = (props) => {
+    const Image_Http_URL = { uri: props.item.avatar }
     return (
         <ScreenContainer>
             <TouchableOpacity
                 style={styles.touch}
-                onPress={() => {
-                    props.navigation.navigate("PathDetail", {item: props.item})
+                onPress={() =>{
+                    props.navigation.navigate("AuthorDetail", {item: props.item.id})
                 }}
             >
                 <Image style={styles.image} source={Image_Http_URL} />
                 <View style={styles.text}>
                 <ThemedText h5>
-                    {props.item.title}
+                    {props.item.name}
                 </ThemedText>
                 </View>
             </TouchableOpacity>
-
         </ScreenContainer>
     )
 }
 
-export default SectionPathsItem
+export default SectionAuthorsItemForSearch
 
 const styles = StyleSheet.create({
     image: {
-        height: 100,
-        width: 250,
-        margin: 6,
-        marginBottom: 0,
-        flex: -3
+        height: 90,
+        width: 90,
+        margin: 5,
+        flex: 2,
+        borderRadius: 50
     },
     touch: {
         flex: 1,
@@ -45,16 +43,11 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        width: 250,
-        flex: 3,
-        color: 'white',
-        fontWeight: 'bold',
-        backgroundColor: 'gray',
-        justifyContent: 'center',
-        alignContent: 'center',
+        flex: 2,
+        color: 'black',
+        textAlign: 'center',
         margin: 6,
         marginTop: 0,
-        padding: 10,
-        paddingHorizontal: 20
+        paddingHorizontal: 10
     }
 })

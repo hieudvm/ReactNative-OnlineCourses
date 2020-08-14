@@ -13,7 +13,7 @@ const SearchPaths = (props) => {
                     <ThemedText style={{margin: 6}}>Paths</ThemedText>
                     <FlatList
                         horizontal={true}
-                        data={props.pathIds}
+                        data={props.path}
                         renderItem={({ item }) => <SectionPathsItem navigation={props.navigation} item={item} />}
                     />
                 </View>

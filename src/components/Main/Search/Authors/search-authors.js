@@ -4,6 +4,7 @@ import { ScreenContainer } from 'react-native-screens'
 import { ScrollView, FlatList } from 'react-native-gesture-handler'
 import ThemedText from '../../../Common/themed-text'
 import SectionAuthorsItem from '../../Browse/SectionAuthorsItem/section-authors-item'
+import SectionAuthorsItemForSearch from '../../Browse/SectionAuthorsItem/section-authors-item-for-search'
 
 const SearchAuthors = (props) => {
     return (
@@ -13,8 +14,8 @@ const SearchAuthors = (props) => {
                     <ThemedText style={{ margin: 6 }}>Authors</ThemedText>
                     <FlatList
                         horizontal={true}
-                        data={props.authorIds}
-                        renderItem={({ item }) => <SectionAuthorsItem navigation={props.navigation} item={item} />}
+                        data={props.author}
+                        renderItem={({ item }) => <SectionAuthorsItemForSearch navigation={props.navigation} item={item} />}
                     />
                 </View>
             </ScrollView>

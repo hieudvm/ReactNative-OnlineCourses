@@ -1,7 +1,7 @@
 const paths = [
     {
         id: 1,
-        title: 'Angular Denver 2019',
+        title: 'Web developer: Angular Denver 2019',
         countCourses: '44 Courses',
         duration: '15 hours',
         description: 'Angular Denver is the coolest Angular conference east of the Continental Dide! Angular developers come from all over to spend two days learning, connecting, and having fun.',

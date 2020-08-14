@@ -1,59 +1,40 @@
 import React, { useContext, useState } from 'react'
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native'
-import ListCourses from '../../Courses/ListCourses/list-courses'
 import ScreenContainer from '../../Common/screen-container'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { CoursesContext } from '../../../provider/courses-provider';
 import { PathsContext } from '../../../provider/paths-provider';
-import { AuthorContext } from '../../../provider/author-provider';
 import SearchAll from './All/search-all';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../Common/themed-text';
 import SearchCourses from './Courses/search-courses';
 import SearchAuthors from './Authors/search-authors';
 import SearchPaths from './Paths/search-paths';
+import { SearchContext } from '../../../provider/search-provider';
 
 const Tab = createMaterialTopTabNavigator();
 const Search = (props) => {
-
-    const coursesContext = useContext(CoursesContext)
-
-    const coursesTemp = Array.from(coursesContext.courses)
-
     const pathsContext = useContext(PathsContext)
+    const searchContext = useContext(SearchContext)
+    const [keyword, setKeyword] = useState('')
 
     const pathsTemp = Array.from(pathsContext.path)
 
-    const authorsConText = useContext(AuthorContext)
+    const [course, setCourse] = useState([])
 
-    const authorsTemp = Array.from(authorsConText.author)
+    const [path, setPath] = useState([])
 
-    const [courseIds, setCourseIds] = useState([])
-
-    const [pathIds, setPathIds] = useState([])
-
-    const [authorIds, setAuthorIds] = useState([])
+    const [author, setAuthor] = useState([])
 
     const [searching, setSearching] = useState(false)
 
     const search = (keyword) => {
-        setCourseIds([])
-        setPathIds([])
-        setAuthorIds([])
+        setCourse([])
+        setPath([])
+        setAuthor([])
 
         const lKeyword = keyword.toLowerCase().trim()
-
-        const resultCourseIds = []
-
         const resultPathIds = []
 
-        const resultAuthorIds = []
-
-        coursesContext.courses.forEach((value, key) => {
-            if (value.title.toLowerCase().trim().search(lKeyword) >= 0) {
-                resultCourseIds.push(coursesTemp[key])
-            }
-        })
+        searchContext.search(keyword)
 
         pathsContext.path.forEach((value, key) => {
             if (value.title.toLowerCase().search(lKeyword) >= 0) {
@@ -61,15 +42,9 @@ const Search = (props) => {
             }
         })
 
-        authorsConText.author.forEach((value, key) => {
-            if (value.name.toLowerCase().search(lKeyword) >= 0) {
-                resultAuthorIds.push(authorsTemp[key])
-            }
-        })
-
-        setCourseIds(resultCourseIds)
-        setPathIds(resultPathIds)
-        setAuthorIds(resultAuthorIds)
+        setCourse(searchContext.state.courses)
+        setPath(resultPathIds)
+        setAuthor(searchContext.state.instructors)
     }
 
     const onPressDone = () => {
@@ -90,16 +65,16 @@ const Search = (props) => {
                 <Tab.Screen name="searchAll" options={{ title: "All" }}>
                     {
                         () => <SearchAll navigation={props.navigation}
-                            courseIds={courseIds}
-                            pathIds={pathIds}
-                            authorIds={authorIds}
+                            course={course}
+                            path={path}
+                            author={author}
                         ></SearchAll>
                     }
                 </Tab.Screen>
                 <Tab.Screen name="searchCourses" options={{ title: "Courses" }}>
                     {
                         () => <SearchCourses navigation={props.navigation}
-                            courseIds={courseIds}
+                            course={course}
                         >
                         </SearchCourses>
                     }
@@ -107,7 +82,7 @@ const Search = (props) => {
                 <Tab.Screen name="searchAuthors" options={{ title: "Authors" }}>
                     {
                         () => <SearchAuthors navigation={props.navigation}
-                            authorIds={authorIds}
+                            author={author}
                         >
                         </SearchAuthors>
                     }
@@ -115,7 +90,7 @@ const Search = (props) => {
                 <Tab.Screen name="searchPaths" options={{ title: "Paths" }}>
                     {
                         () => <SearchPaths navigation={props.navigation}
-                            pathIds={pathIds}
+                            path={path}
                         >
                         </SearchPaths>
                     }
@@ -129,6 +104,7 @@ const Search = (props) => {
             <View style={{ flexDirection: 'row', margin: 6, flex: -1 }}>
                 <TextInput style={{ flex: 1, borderColor: 'gray', borderWidth: 1, padding: 5 }} placeholder='Search text'
                     onChangeText={(value) => {
+                        setKeyword(value)
                         if (value === '') {
                             setSearching(false)
                         } else {
@@ -139,6 +115,7 @@ const Search = (props) => {
                 />
                 <Button onPress={() => {
                     onPressDone()
+                    search(keyword)
                 }} title='Search' style={{ width: 60, height: 40 }} />
             </View>
             {searching == false ? resultPlaceDefault() : resultSearch()}

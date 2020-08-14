@@ -1,38 +1,18 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 import { CoursesContext } from '../../../provider/courses-provider'
 import { Rating } from 'react-native-elements'
 import { AuthorContext } from '../../../provider/author-provider'
-import { CourseDetailContext } from '../../../provider/courseDetail-provider'
-import { useFocusEffect } from '@react-navigation/native'
 
-const ListCoursesItem = (props) => {
-    const courseDetailContext = useContext(CourseDetailContext)
-    const coursesContext = useContext(CoursesContext)
-    const authorContext = useContext(AuthorContext)
-
-    const [course, setCourse] = useState("")
-
-    useFocusEffect(
-        React.useCallback(() => {
-            coursesContext.getCourseInformation(props.item.id)
-            if (coursesContext.state.course) {
-                setCourse(coursesContext.state.course)
-            }
-            console.log(course)
-        }, [])
-    );
-    
-    const Image_Http_URL = { uri: props.item.imageUrl }
+const ListCoursesItemForPath = (props) => {
+    const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
+    Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
     return (
         <ScreenContainer>
             <TouchableOpacity style={styles.item}
                 onPress={() => {
-                    authorContext.getInstructorById(course.instructorId)
-                    coursesContext.getCourseInformation(props.item.id)
-                    courseDetailContext.getCourseDetailWithLession(props.item.id)
                     props.navigation.navigate("CourseDetail", { item: props.item })
                 }}
             >
@@ -40,7 +20,7 @@ const ListCoursesItem = (props) => {
                 <ScreenContainer>
                     <View style={{ margin: 6 }}>
                         <ThemedText>{props.item.title}</ThemedText>
-                        <ThemedText>{props.item.name ? props.item.name  : null }</ThemedText>
+                        {/* <ThemedText>{props.item["instructor.user.name"]}</ThemedText> */}
                         <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
                         <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                     </View>
@@ -50,7 +30,7 @@ const ListCoursesItem = (props) => {
     )
 }
 
-export default ListCoursesItem
+export default ListCoursesItemForPath
 
 const styles = StyleSheet.create({
     item: {

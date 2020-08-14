@@ -25,7 +25,6 @@ const CourseDetail = (props) => {
     useFocusEffect(
         React.useCallback(() => {
             favoriteContext.getCourseLikeStatus(item.id)
-            console.log(favoriteContext.state.likeStatus)
             if (favoriteContext.state.likeStatus) {
                 setFavorite('Liked')
             } else {
@@ -37,25 +36,10 @@ const CourseDetail = (props) => {
         }, [coursesContext.state.course])
     );
 
-    // useEffect(() => {
-    //     favoriteContext.getCourseLikeStatus(item.id)
-    //     console.log(favoriteContext.state.likeStatus)
-    //     if (favoriteContext.state.likeStatus) {
-    //         setFavorite('Liked')
-    //     } else {
-    //         setFavorite('like')
-    //     }
-    //     if (coursesContext.state.course) {
-    //         setCourse(coursesContext.state.course)
-    //     }
-    // }, [course])
-
     return (
         <ScreenContainer>
-            <View style={{ flex: 2.5 }}>
+            <View style={{ flex: 5 }}>
                 <VideoPlayer navigation={props.navigation} author={authorContext.state.instructor.name} item={course} />
-            </View>
-            <ScrollView style={{ flex: 2 }}>
                 <View style={styles.icon}>
                     <TouchableOpacity
                         onPress={() => {
@@ -97,6 +81,8 @@ const CourseDetail = (props) => {
                         </View>
                     </TouchableOpacity>
                 </View>
+            </View>
+            <ScrollView style={{ flex: 2 }}>
                 <View style={{ flex: 1 }}>
                     <ListLessons />
                 </View>
