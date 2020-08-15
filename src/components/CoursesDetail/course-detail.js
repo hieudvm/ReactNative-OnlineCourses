@@ -17,7 +17,7 @@ const CourseDetail = (props) => {
     const coursesContext = useContext(CoursesContext)
 
     const [favorite, setFavorite] = useState('')
-    const [course, setCourse] = useState({})
+    // const [course, setCourse] = useState({})
 
     const item = props.route.params.item
 
@@ -29,16 +29,16 @@ const CourseDetail = (props) => {
             } else {
                 setFavorite('like')
             }
-            if (coursesContext.state.course) {
-                setCourse(coursesContext.state.course)
-            }
-        }, [coursesContext.state.course])
+            // if (coursesContext.state.course) {
+            //     setCourse(coursesContext.state.course)
+            // }
+        }, [])
     );
 
     return (
         <ScreenContainer>
-            <View style={{ flex: 5 }}>
-                <VideoPlayer navigation={props.navigation} author={authorContext.state.instructor.name} item={course} />
+            <View style={{ flex: 1.5 }}>
+                <VideoPlayer navigation={props.navigation} item={item} />
                 <View style={styles.icon}>
                     <TouchableOpacity
                         onPress={() => {
@@ -81,10 +81,8 @@ const CourseDetail = (props) => {
                     </TouchableOpacity>
                 </View>
             </View>
-            <ScrollView style={{ flex: 2 }}>
-                <View style={{ flex: 1 }}>
-                    <ListLessons />
-                </View>
+            <ScrollView style={{ flex: 3 }}>
+                <ListLessons />
             </ScrollView>
         </ScreenContainer>
 

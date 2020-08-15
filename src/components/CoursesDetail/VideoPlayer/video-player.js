@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator } from 'react-native'
-import { Icon } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 import { AuthorContext } from '../../../provider/author-provider'
@@ -10,29 +9,32 @@ const VideoPlayer = (props) => {
     const authorContext = useContext(AuthorContext)
     const coursesContext = useContext(CoursesContext)
 
-    const authorId = props.item.instructorId
+    useEffect(() => {
+        authorContext.getInstructorById(props.item.instructorId)
+        coursesContext.getCourseInformation(props.item.id)
+    }, [])
     return (
         <ScreenContainer>
             <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
             <View>
-            {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.item.title}</ThemedText>
+                {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
+                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{coursesContext.state.course.title}</ThemedText>
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={() => {
-                        props.navigation.push("AuthorDetail", { item: authorId })
+                        props.navigation.push("AuthorDetail", { item: authorContext.state.instructor.id })
                     }}
                 >
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
-                    {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
+                        {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                         <ThemedText>
-                            {props.author}
+                            {authorContext.state.instructor.name}
                         </ThemedText>
                     </View>
                 </TouchableOpacity>
                 {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                <Text style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </Text>
+                <Text style={styles.darkText}>{coursesContext.state.course.price} VND . {coursesContext.state.course.videoNumber} video . {coursesContext.state.course.totalHours} hours </Text>
             </View>
         </ScreenContainer>
     )

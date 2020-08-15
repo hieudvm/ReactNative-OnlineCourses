@@ -13,9 +13,27 @@ const renderListItem = (courses, title, props) => {
         return courses.map(item => <SectionCoursesItem navigation={props.navigation} item={item} />);
     }
 }
+
+var item = []
+
+const renderListItemCondition = (courseContext, props) => {
+    if (props.title === 'Top Rating') {
+        item = courseContext.state.topRate
+        return renderListItem(courseContext.state.topRate, props.title, props)
+    } else if (props.title === 'Top Selling') {
+        item = courseContext.state.topSell
+        return renderListItem(courseContext.state.topSell, props.title, props)
+    } else if (props.title === 'Top New Courses') {
+        item = courseContext.state.topNew
+        return renderListItem(courseContext.state.topNew, props.title, props)
+    } 
+    else if (props.title === 'Countinue learning') {
+        item = courseContext.state.process
+        return renderListItem(item, props.title, props)
+    }
+}
 const SectionCourses = (props) => {
     const courseContext = useContext(CoursesContext)
-    var item = []
 
     // High-ordered function: là function trả về 1 function khác
     // Closure: luu giá trị ngoài scope hiện tại vào scope của function
@@ -26,22 +44,7 @@ const SectionCourses = (props) => {
         courseContext.getProcessCourses()
     }, [])
 
-    const renderListItemCondition = () => {
-        if (props.title === 'Top Rating') {
-            item = courseContext.state.topRate
-            return renderListItem(courseContext.state.topRate, props.title, props)
-        } else if (props.title === 'Top Selling') {
-            item = courseContext.state.topSell
-            return renderListItem(courseContext.state.topSell, props.title, props)
-        } else if (props.title === 'Top New Courses') {
-            item = courseContext.state.topNew
-            return renderListItem(courseContext.state.topNew, props.title, props)
-        } 
-        else if (props.title === 'Countinue learning') {
-            item = courseContext.state.process
-            return renderListItem(item, props.title, props)
-        }
-    }
+    
 
     return (
         <View>
@@ -67,7 +70,7 @@ const SectionCourses = (props) => {
                 </View>
             </View>
             <ScrollView horizontal={true}>
-                {renderListItemCondition()}
+                {renderListItemCondition(courseContext, props)}
             </ScrollView>
         </View>
     )

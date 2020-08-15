@@ -25,7 +25,7 @@ export const login = (dispatch) => async (userName, password) => {
             dispatch({type: "LOGIN_FAILED", message: "Invalid user name or password!"})
         }
     }).catch((Error) => {
-        console.log("error")
+        console.log("error", Error)
         dispatch({type: "LOGIN_FAILED", message: "Invalid user name or password!"})
     })
 

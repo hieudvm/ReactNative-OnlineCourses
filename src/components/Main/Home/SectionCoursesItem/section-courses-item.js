@@ -17,9 +17,9 @@ const SectionCoursesItem = (props) => {
     return (
         <TouchableOpacity
             onPress={() => {
-                authorContext.getInstructorById(props.item.instructorId)
-                coursesContext.getCourseInformation(props.item.id)
-                courseDetailContext.getCourseDetailWithLession(props.item.id)
+                // authorContext.getInstructorById(props.item.instructorId)
+                // coursesContext.getCourseInformation(props.item.id)
+                // courseDetailContext.getCourseDetailWithLession(props.item.id)
                 props.navigation.push("CourseDetail", { item: props.item })
             }}
         >
