@@ -13,8 +13,8 @@ const PaymentStatus = (props) => {
                     Subscribe success!
                 </Text>
             </View>
-            <View>
-                <Text>
+            <View style={{justifyContent: 'center', alignItems: 'center', paddingHorizontal: 10, paddingVertical : 10}}>
+                <Text style={{ margin: 6}}>
                     Thank you very much for supporting E-learning.IO service.
                     You can access the course using the link below or via the email we sent you
                 </Text>

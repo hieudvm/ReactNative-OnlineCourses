@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getTopSellCourses = (dispatch) => () => {
     axios.post('/course/top-sell', {
-        "limit": 10,
+        "limit": 15,
         "page": 1
     }).then((Response) => {
         if (Response.status === 200) {
@@ -17,7 +17,7 @@ const getTopSellCourses = (dispatch) => () => {
 
 const getTopNewCourses = (dispatch) => () => {
     axios.post('/course/top-new', {
-        "limit": 10,
+        "limit": 15,
         "page": 1
     }).then((Response) => {
         if (Response.status === 200) {
@@ -32,7 +32,7 @@ const getTopNewCourses = (dispatch) => () => {
 
 const getTopRateCourses = (dispatch) => () => {
     axios.post('/course/top-rate', {
-        "limit": 10,
+        "limit": 15,
         "page": 1
     }).then((Response) => {
         if (Response.status === 200) {

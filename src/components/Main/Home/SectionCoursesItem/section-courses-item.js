@@ -7,6 +7,7 @@ import { CoursesContext } from '../../../../provider/courses-provider'
 import { Rating, AirbnbRating } from 'react-native-elements';
 import { CourseDetailContext } from '../../../../provider/courseDetail-provider'
 import { AuthorContext } from '../../../../provider/author-provider'
+import { UserContext } from '../../../../provider/user-provider'
 
 const SectionCoursesItem = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
@@ -19,7 +20,7 @@ const SectionCoursesItem = (props) => {
             onPress={() => {
                 // authorContext.getInstructorById(props.item.instructorId)
                 // coursesContext.getCourseInformation(props.item.id)
-                // courseDetailContext.getCourseDetailWithLession(props.item.id)
+                courseDetailContext.getCourseDetailWithLession(props.item.id)
                 props.navigation.push("CourseDescriptions", { item: props.item })
             }}
         >

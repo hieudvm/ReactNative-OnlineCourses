@@ -1,12 +1,14 @@
 import React, { useReducer } from 'react'
 import { reducer } from '../reducer/courseDetail-reducer'
-import { getCourseDetailWithLession } from '../action/courseDetail-action'
+import { getCourseDetailWithLession, getCourseDetailByCourseIdAndUserId } from '../action/courseDetail-action'
 
 const CourseDetailContext = React.createContext()
 
 const initialState = {
     isLoading: true,
-    sectionLesson: []
+    subscribe: true,
+    sectionLesson: [],
+    descritions: []
 }
 
 const CourseDetailProvider = (props) => {
@@ -17,7 +19,8 @@ const CourseDetailProvider = (props) => {
         <CourseDetailContext.Provider
             value={{
                 state,
-                getCourseDetailWithLession: getCourseDetailWithLession(dispatch)
+                getCourseDetailWithLession: getCourseDetailWithLession(dispatch),
+                getCourseDetailByCourseIdAndUserId: getCourseDetailByCourseIdAndUserId(dispatch)
             }}
         >
             {props.children}
