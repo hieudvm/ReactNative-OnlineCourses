@@ -20,7 +20,7 @@ const SectionCoursesItem = (props) => {
                 // authorContext.getInstructorById(props.item.instructorId)
                 // coursesContext.getCourseInformation(props.item.id)
                 // courseDetailContext.getCourseDetailWithLession(props.item.id)
-                props.navigation.push("CourseDetail", { item: props.item })
+                props.navigation.push("CourseDescriptions", { item: props.item })
             }}
         >
             <ScreenContainer style={styles.item}>

@@ -41,6 +41,8 @@ import Register from './src/components/Authentication/Register/register';
 import { UserProvider } from './src/provider/user-provider';
 import ForgetPassword from './src/components/Authentication/ForgetPassword/forget-password';
 import { SearchProvider } from './src/provider/search-provider';
+import CourseDescriptions from './src/components/CoursesDetail/course-descriptions';
+import PaymentStatus from './src/components/Common/payment-status';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -89,6 +91,8 @@ const HomeStackScreen = (props) => {
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
         }} />
       <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
+      <HomeStack.Screen name="PaymentStatus" component={PaymentStatus} options={{ title: "Subscribed" }} />
+      <HomeStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
       <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
       <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Home" }} />
       <HomeStack.Screen name="User" component={User} options={{ title: "Home" }} />
