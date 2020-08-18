@@ -6,7 +6,6 @@ import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import ListItem from "../Common/list-item";
 import axios from 'axios';
 import { CourseDetailContext } from "../../provider/courseDetail-provider";
-import { UserContext } from "../../provider/user-provider";
 import { CoursesContext } from "../../provider/courses-provider";
 
 
@@ -68,7 +67,7 @@ const CourseDescriptions = (props) => {
       console.log("load", courseDetailContext.state.subscribe)
       setSubscribeStatus("Subscribed")
     }
-  }, [])
+  }, [courseDetailContext.state.subscribe])
 
   return (
     <ScreenContainer>

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, View, ScrollView, TouchableOpacity, ImageBackground } from 'react-native'
 import SectionCourses from './SectionCourses/section-courses'
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -7,6 +7,13 @@ import ScreenContainer from '../../Common/screen-container';
 import { CoursesContext } from '../../../provider/courses-provider';
 
 const Home = (props) => {
+  // const courseContext = useContext(CoursesContext)
+  // useEffect(() => {
+  //   courseContext.getTopSellCourses()
+  //   courseContext.getTopNewCourses()
+  //   courseContext.getTopRateCourses()
+  //   courseContext.getProcessCourses()
+  // }, [])
   return (
     <ScreenContainer >
       <ScrollView>

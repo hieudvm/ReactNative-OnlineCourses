@@ -9,35 +9,22 @@ import { CourseDetailContext } from '../../../provider/courseDetail-provider'
 
 const ListCoursesItem = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
-    const coursesContext = useContext(CoursesContext)
-    const authorContext = useContext(AuthorContext)
-
-    const [course, setCourse] = useState("")
-
-    useEffect(
-        () => {
-            coursesContext.getCourseInformation(props.item.id)
-            if (coursesContext.state.course) {
-                setCourse(coursesContext.state.course)
-            }
-        }, [])
-    
     const Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <ScreenContainer>
             <TouchableOpacity style={styles.item}
                 onPress={() => {
-                    authorContext.getInstructorById(course.instructorId)
-                    coursesContext.getCourseInformation(props.item.id)
+                    // authorContext.getInstructorById(course.instructorId)
+                    // coursesContext.getCourseInformation(props.item.id)
                     courseDetailContext.getCourseDetailWithLession(props.item.id)
-                    props.navigation.navigate("CourseDetail", { item: props.item })
+                    props.navigation.navigate("CourseDescriptions", { item: props.item })
                 }}
             >
                 <Image source={Image_Http_URL} style={styles.image} />
                 <ScreenContainer>
                     <View style={{ margin: 6 }}>
                         <ThemedText>{props.item.title}</ThemedText>
-                        <ThemedText>{props.item.name ? props.item.name  : null }</ThemedText>
+                        <ThemedText>{props.item.name ? props.item.name  : props.item["instructor.user.name"] }</ThemedText>
                         <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
                         <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                     </View>

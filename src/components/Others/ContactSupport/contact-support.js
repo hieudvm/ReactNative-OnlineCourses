@@ -1,50 +1,25 @@
 import React, { useContext, useEffect } from 'react'
 import { StyleSheet, Image, View, Text } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
-import ThemedText from '../../Common/themed-text'
-import { UserContext } from '../../../provider/user-provider';
 import ScreenContainer from '../../Common/screen-container';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const User = (props) => {
-    const userContext = useContext(UserContext)
-    const Image_Http_URL = { uri: userContext.state.userInformation.avatar }
-
-    useEffect(() => {
-        userContext.getUserInformation()
-    }, [])
-
+const ContactSupport = (props) => {
     return (
         <ScreenContainer style={styles.container}>
-            <Image style={styles.image} source={Image_Http_URL} />
+            <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
             <View style={styles.layout}>
                 <Icon style={styles.icon} name='envelope-open' size={20} />
-                <Text style={styles.text}>{userContext.state.userInformation.email}</Text>
+                <Text style={styles.text}>duonghieu121097@gmail.com</Text>
             </View>
             <View style={styles.layout}>
                 <Icon style={styles.icon} name='address-book' size={20} />
-                <Text style={styles.text}>{userContext.state.userInformation.name}</Text>
+                <Text style={styles.text}>Dương Văn Minh Hiếu</Text>
             </View>
             <View style={styles.layout}>
                 <Icon style={styles.icon} name='phone' size={20} />
-                <Text style={styles.text}>{userContext.state.userInformation.phone}</Text>
+                <Text style={styles.text}>0382817233</Text>
             </View>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => {
-                    props.navigation.navigate("ChangePassword")
-                }}
-            >
-                <Text style={styles.text}>Change password</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => {
-                    props.navigation.navigate("UpdateProfile", { email: userContext.state.userInformation.email })
-                }}
-            >
-                <Text style={styles.text}>Update your profile</Text>
-            </TouchableOpacity>
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
@@ -57,7 +32,7 @@ const User = (props) => {
     )
 }
 
-export default User
+export default ContactSupport
 
 const styles = StyleSheet.create({
     container: {

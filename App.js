@@ -43,6 +43,10 @@ import ForgetPassword from './src/components/Authentication/ForgetPassword/forge
 import { SearchProvider } from './src/provider/search-provider';
 import CourseDescriptions from './src/components/CoursesDetail/course-descriptions';
 import PaymentStatus from './src/components/Common/payment-status';
+import ChangePassword from './src/components/Others/User/change-password';
+import UpdateProfile from './src/components/Others/User/update-profile';
+import Feedback from './src/components/Others/FeedBack/feed-back';
+import ContactSupport from './src/components/Others/ContactSupport/contact-support';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -95,7 +99,11 @@ const HomeStackScreen = (props) => {
       <HomeStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
       <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
       <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Home" }} />
-      <HomeStack.Screen name="User" component={User} options={{ title: "Home" }} />
+      <HomeStack.Screen name="User" component={User} options={{ title: "User" }} />
+      <HomeStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
+      <HomeStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
+      <HomeStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
+      <HomeStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
       <HomeStack.Screen name="UserThread" component={UserThread} />
       <HomeStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author Detail" }} />
     </HomeStack.Navigator>
@@ -130,7 +138,8 @@ const BrowseStackScreen = () => {
       <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{ title: "Courses" }} />
-      <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
+      <BrowseStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
+      <BrowseStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
     </BrowseStack.Navigator>
   )
 };

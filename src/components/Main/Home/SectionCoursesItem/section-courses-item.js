@@ -3,23 +3,16 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
-import { CoursesContext } from '../../../../provider/courses-provider'
 import { Rating, AirbnbRating } from 'react-native-elements';
 import { CourseDetailContext } from '../../../../provider/courseDetail-provider'
-import { AuthorContext } from '../../../../provider/author-provider'
-import { UserContext } from '../../../../provider/user-provider'
 
 const SectionCoursesItem = (props) => {
     const courseDetailContext = useContext(CourseDetailContext)
-    const coursesContext = useContext(CoursesContext)
-    const authorContext = useContext(AuthorContext)
 
     const Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <TouchableOpacity
             onPress={() => {
-                // authorContext.getInstructorById(props.item.instructorId)
-                // coursesContext.getCourseInformation(props.item.id)
                 courseDetailContext.getCourseDetailWithLession(props.item.id)
                 props.navigation.push("CourseDescriptions", { item: props.item })
             }}

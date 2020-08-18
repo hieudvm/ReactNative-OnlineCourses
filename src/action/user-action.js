@@ -20,11 +20,13 @@ const changePassword = (dispatch) => (userId, oldPass, newPass) => {
         "newPass": newPass
     }).then((Response) => {
         if (Response.status === 200) {
+            console.log("success")
             dispatch({ type: "CHANGE_PASSWORD_SUCCESS", messageChange: "Password is changed!" })
         } else {
             dispatch({ type: "CHANGE_PASSWORD_FAIL", messageChange: "Has Error!" })
         }
     }).catch((Error) => {
+        console.log("fail")
         dispatch({ type: "CHANGE_PASSWORD_FAIL", messageChange: "Has Error!" })
     })
 }

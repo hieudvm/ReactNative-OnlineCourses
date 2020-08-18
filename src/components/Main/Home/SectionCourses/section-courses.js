@@ -44,8 +44,6 @@ const SectionCourses = (props) => {
         courseContext.getProcessCourses()
     }, [])
 
-    
-
     return (
         <View>
             <View>

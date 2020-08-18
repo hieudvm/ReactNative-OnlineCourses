@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
+import { AuthorContext } from '../../../../provider/author-provider'
 
 
 const SectionAuthorsItemForSearch = (props) => {
+    const authorContext = useContext(AuthorContext)
     const Image_Http_URL = { uri: props.item.avatar }
     return (
         <ScreenContainer>
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() =>{
-                    props.navigation.navigate("AuthorDetail", {item: props.item.id})
+                    authorContext.getInstructorById(props.item.id)
+                    props.navigation.navigate("AuthorDetail")
                 }}
             >
                 <Image style={styles.image} source={Image_Http_URL} />

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StyleSheet, FlatList, Text, View, TouchableOpacity } from 'react-native'
-import WishlistItem from './wishlist-item'
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { ScrollView, Switch } from 'react-native-gesture-handler'
 import { ThemeContext, themes } from '../../../provider/themes-provider'
 import ScreenContainer from '../../Common/screen-container'
@@ -8,44 +8,75 @@ import ThemedText from '../../Common/themed-text'
 import { AuthenticationContext } from '../../../provider/authentication-provider'
 
 const Wishlist = (props) => {
-    
     const authContext = useContext(AuthenticationContext)
-
-    const data = [
-        {
-            id: 1,
-            title: 'Account',
-        },
-        {
-            id: 3,
-            title: 'Send feedback',
-        },
-        {
-            id: 4,
-            title: 'Contact support',
-        },
-        {
-            id: 5,
-            title: 'App Version',
-        }
-    ]
-const themeContext = useContext(ThemeContext)
+    const themeContext = useContext(ThemeContext)
     return (
         <ScreenContainer>
             <ScrollView>
-                <View style={{flexDirection: 'row',  alignItems: 'center', alignSelf: 'stretch' }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
                     <ThemedText style={{ margin: 6, flex: 1 }}>Darktheme</ThemedText>
                     <Switch
-                    value={themeContext.theme == themes.dark}
-                    onValueChange={(switched) => themeContext.setTheme(switched ? themes.dark : themes.light)}></Switch>
+                        value={themeContext.theme == themes.dark}
+                        onValueChange={(switched) => themeContext.setTheme(switched ? themes.dark : themes.light)}></Switch>
                 </View>
-                <View>
-                    <FlatList
-                        data={data}
-                        renderItem={({ item }) => <WishlistItem navigation={props.navigation} item={item} />}
-                    />
+                <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            props.navigation.navigate("User")
+                        }}
+                        style={{ flexDirection: 'row', alignItems: 'center' }}
+                    >
+                        <ThemedText style={{ margin: 6, flex: 1 }}>
+                            Account
+                        </ThemedText>
+                        <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
+
+                            <Icon name="angle-right" />
+                        </View>
+                    </TouchableOpacity>
                 </View>
-                <View style={{alignItems: 'center', marginTop: 10}}>
+                <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            props.navigation.navigate("Feedback")
+                        }}
+                        style={{ flexDirection: 'row', alignItems: 'center' }}
+                    >
+                        <ThemedText style={{ margin: 6, flex: 1 }}>
+                            Send feedback
+                        </ThemedText>
+                        <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
+
+                            <Icon name="angle-right" />
+                        </View>
+                    </TouchableOpacity>
+                </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            props.navigation.navigate("ContactSupport")
+                        }}
+                        style={{ flexDirection: 'row', alignItems: 'center' }}
+                    >
+                        <ThemedText style={{ margin: 6, flex: 1 }}>
+                            Contact support
+                        </ThemedText>
+                        <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
+
+                            <Icon name="angle-right" />
+                        </View>
+                    </TouchableOpacity>
+                </View>
+                <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'stretch' }}>
+                    <ThemedText style={{ margin: 6, flex: 1 }}>
+                        App Version
+                        </ThemedText>
+                    <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
+
+                        <ThemedText> V 1.0.0</ThemedText>
+                    </View>
+                </View>
+                <View style={{ alignItems: 'center', marginTop: 10 }}>
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => {

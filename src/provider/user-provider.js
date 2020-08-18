@@ -6,6 +6,7 @@ const UserContext = React.createContext()
 
 const initialState = {
     isLoading: true,
+    isChanged: false,
     userInformation: {},
     messageChange: "",
     messageUpdate: ""

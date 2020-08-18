@@ -9,13 +9,13 @@ import { AuthorContext } from '../../../../provider/author-provider';
 
 const AuthorDetail = (props) => {
 
-    const item = props.route.params.item
+    // const item = props.route.params.item
     const authorContext = useContext(AuthorContext)
     const Image_Http_URL = { uri: authorContext.state.instructor.avatar }
 
-    useEffect(() => {
-        authorContext.getInstructorById(item)
-    }, [])
+    // useEffect(() => {
+    //     authorContext.getInstructorById(item)
+    // }, [])
 
     return (
         <ScreenContainer>
