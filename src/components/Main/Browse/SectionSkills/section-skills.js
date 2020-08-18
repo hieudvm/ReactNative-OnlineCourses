@@ -38,9 +38,6 @@ const SectionSkills = (props) => {
             <ScrollView horizontal={true}>
                 {renderListItem(skills, props)}
             </ScrollView>
-            <ScrollView horizontal={true}>
-                {renderListItem(skills2, props)}
-            </ScrollView>
         </ScreenContainer>
     )
 }

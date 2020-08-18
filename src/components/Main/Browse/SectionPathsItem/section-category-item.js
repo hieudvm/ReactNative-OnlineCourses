@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
+import axios from 'axios';
 
 const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
 const Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
@@ -12,6 +13,25 @@ const SectionCategoryItem = (props) => {
             <TouchableOpacity
                 style={styles.touch}
                 onPress={() => {
+                    axios.post('/course/search', {
+                        "keyword": "",
+                        "opt": {
+                          "sort": {
+                            "attribute": "price",
+                            "rule": "ASC"
+                          },
+                          "category": [
+                            props.item.id
+                          ],
+                        "limit": 10,
+                        "offset": 1
+                      }
+                    }).then((Response) => {
+                        if (Response.status === 200) {
+                            props.navigation.navigate("AllCourses", { item: Response.data.payload.rows })
+                        }
+                    }).catch((Error) => {
+                    })
                 }}
             >
                 <Image style={styles.image} source={Image_Http_URL} />

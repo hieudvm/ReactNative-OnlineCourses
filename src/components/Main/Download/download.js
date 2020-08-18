@@ -12,12 +12,10 @@ const Download = (props) => {
     const favoriteContext = useContext(FavouritesContext)
     const [courses, setCourses] = useState([])
     
-    useFocusEffect(
-        React.useCallback(() => {
-            favoriteContext.getFavoriteCourses()
+    useEffect(() => {
+            // favoriteContext.getFavoriteCourses()
             setCourses(favoriteContext.state.data)
         }, [favoriteContext.state.data])
-      );
 
     if (courses.length === 0) {
         return (

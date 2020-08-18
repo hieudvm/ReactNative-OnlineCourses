@@ -34,7 +34,6 @@ const renderListItemCondition = (courseContext, props) => {
 }
 const SectionCourses = (props) => {
     const courseContext = useContext(CoursesContext)
-
     // High-ordered function: là function trả về 1 function khác
     // Closure: luu giá trị ngoài scope hiện tại vào scope của function
     useEffect(() => {

@@ -7,6 +7,7 @@ import ListItem from "../Common/list-item";
 import axios from 'axios';
 import { CourseDetailContext } from "../../provider/courseDetail-provider";
 import { CoursesContext } from "../../provider/courses-provider";
+import { FavouritesContext } from "../../provider/favourites-provider";
 
 
 
@@ -19,10 +20,11 @@ const renderPaymentStatus = (status, message) => {
   }
 }
 
-const buttonNavigate = (props, item) => {
+const buttonNavigate = (props, item, favoriteContext) => {
   return (
     <TouchableOpacity style={styles.button}
       onPress={() => {
+        favoriteContext.getCourseLikeStatus(item.id)
         props.navigation.navigate("CourseDetail", { item: item })
       }}
     >
@@ -32,6 +34,7 @@ const buttonNavigate = (props, item) => {
 }
 
 const CourseDescriptions = (props) => {
+  const favoriteContext = useContext(FavouritesContext)
   const courseDetailContext = useContext(CourseDetailContext)
   const courseContext = useContext(CoursesContext)
 
@@ -41,30 +44,12 @@ const CourseDescriptions = (props) => {
   const [messagePayment, setMessagePayment] = useState("")
   const [subscribeStatus, setSubscribeStatus] = useState("")
 
-  const Image_Http_URL = { uri: item.imageUrl }
-
-  const paymentCourse = (courseId) => {
-    console.log(courseId)
-    axios.post(`/payment/get-free-courses`, {
-      courseId: courseId
-    }).then((Response) => {
-      const res = Response.status
-      if (res === 200) {
-        setStatus(true)
-      } else {
-        setStatus(false)
-      }
-    }).catch((Error) => {
-      setStatus(false)
-    })
-  }
+  const Image_Http_URL = { uri: item.imageUrl ? item.imageUrl : item.courseImage }
 
   useEffect(() => {
     if (courseDetailContext.state.subscribe) {
-      console.log("load", courseDetailContext.state.subscribe)
       setSubscribeStatus("Subscribe")
     } else {
-      console.log("load", courseDetailContext.state.subscribe)
       setSubscribeStatus("Subscribed")
     }
   }, [courseDetailContext.state.subscribe])
@@ -74,11 +59,10 @@ const CourseDescriptions = (props) => {
       <ScreenContainer style={styles.item}>
         <Image source={Image_Http_URL} style={styles.image} />
         <View style={{ margin: 10, marginTop: 0 }}>
-          <ThemedText>{item.title}</ThemedText>
-          <ThemedText>{item["instructor.user.name"]}</ThemedText>
-          <ThemedText
-            style={styles.darkThemedText}
-          >{`${item.videoNumber} . ${item.totalHours}`}</ThemedText>
+          <ThemedText>{item.title ? item.title : item.courseTitle}</ThemedText>
+          {item.name ? <ThemedText>{item.name ? item.name : item["instructor.user.name"]}</ThemedText> : <ThemedText>{item["instructor.user.name"] ? item["instructor.user.name"] : item.instructorName}</ThemedText>}
+          {/* <ThemedText>{item["instructor.user.name"] ? item["instructor.user.name"] : item.instructorName}</ThemedText> */}
+          {item.videoNumber ? <ThemedText style={styles.darkThemedText}>{`${item.videoNumber} video . ${item.totalHours} hours`}</ThemedText> : <ThemedText style={styles.darkThemedText}>{`${item.coursePrice} VND . sold ${item.courseSoldNumber}`}</ThemedText>}
         </View>
       </ScreenContainer>
       <View style={{ margin: 6, flex: 8 }}>
@@ -105,6 +89,20 @@ const CourseDescriptions = (props) => {
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
+              axios.get(`/course/get-course-detail/${item.id}/null`).then((Response) => {
+                if (Response.status === 200) {
+                  props.navigation.navigate("RatingCourse", { item: Response.data.payload })
+                } else {
+                }
+              }).catch((Error) => {
+              })
+            }}
+          >
+            <Text style={styles.text}>Show student reviews</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => {
               if (courseDetailContext.state.subscribe) {
                 axios.post(`/payment/get-free-courses`, {
                   courseId: item.id
@@ -120,7 +118,6 @@ const CourseDescriptions = (props) => {
                 }).catch((Error) => {
                   setMessagePayment("Has error!")
                 })
-                console.log(status)
               } else {
                 setMessagePayment("Course is subscribed!")
               }
@@ -132,7 +129,7 @@ const CourseDescriptions = (props) => {
           <View>
             {renderPaymentStatus(status, messagePayment)}
           </View>
-          {!courseDetailContext.state.subscribe ? buttonNavigate(props, item) : <View></View>}
+          {!courseDetailContext.state.subscribe ? buttonNavigate(props, item, favoriteContext) : <View></View>}
         </View>
       </View>
     </ScreenContainer>

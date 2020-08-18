@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Home from './src/components/Main/Home/home';
 import Browse from './src/components/Main/Browse/browse';
@@ -28,7 +28,7 @@ import { ThemeContext, themes } from './src/provider/themes-provider';
 import { CoursesProvider } from './src/provider/courses-provider';
 import { AuthorProvider } from './src/provider/author-provider';
 import { PathsProvider } from './src/provider/paths-provider';
-import { FavouritesProvider } from './src/provider/favourites-provider';
+import { FavouritesProvider, FavouritesContext } from './src/provider/favourites-provider';
 import SearchAll from './src/components/Main/Search/All/search-all';
 import SearchCourses from './src/components/Main/Search/Courses/search-courses';
 import SearchAuthors from './src/components/Main/Search/Authors/search-authors';
@@ -47,6 +47,8 @@ import ChangePassword from './src/components/Others/User/change-password';
 import UpdateProfile from './src/components/Others/User/update-profile';
 import Feedback from './src/components/Others/FeedBack/feed-back';
 import ContactSupport from './src/components/Others/ContactSupport/contact-support';
+import AllCategory from './src/components/Main/Browse/Paths/AllCategory/all-category';
+import RatingCourse from './src/components/Others/Rating/rating-course';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -56,18 +58,6 @@ const Stack = createStackNavigator();
 const DownloadStack = createStackNavigator();
 const BrowseStack = createStackNavigator();
 const SearchStack = createStackNavigator();
-const HomeDrawer = createDrawerNavigator();
-
-const HomeDrawerScreen = () => {
-  return (
-    <HomeDrawer.Navigator initialRouteName="Home">
-      <HomeDrawer.Screen name="Home" component={HomeStackScreen} />
-      <HomeDrawer.Screen name="Download" component={DownloadStackScreen} />
-      <HomeDrawer.Screen name="Browse" component={BrowseStackScreen} />
-      <HomeDrawer.Screen name="Search" component={SearchStackScreen} />
-    </HomeDrawer.Navigator>
-  )
-}
 
 const HomeStackScreen = (props) => {
   return (
@@ -94,16 +84,17 @@ const HomeStackScreen = (props) => {
           ),
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
         }} />
-      <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
-      <HomeStack.Screen name="PaymentStatus" component={PaymentStatus} options={{ title: "Subscribed" }} />
-      <HomeStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
-      <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
       <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Home" }} />
       <HomeStack.Screen name="User" component={User} options={{ title: "User" }} />
       <HomeStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
       <HomeStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
       <HomeStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
       <HomeStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
+      <HomeStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
+      <HomeStack.Screen name="PaymentStatus" component={PaymentStatus} options={{ title: "Subscribed" }} />
+      <HomeStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
+      <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
+      <HomeStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <HomeStack.Screen name="UserThread" component={UserThread} />
       <HomeStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author Detail" }} />
     </HomeStack.Navigator>
@@ -118,48 +109,140 @@ const UserThread = () => {
   )
 }
 
-const DownloadStackScreen = () => {
+const DownloadStackScreen = (props) => {
+
   return (
     <DownloadStack.Navigator>
-      <DownloadStack.Screen name="Favorite" component={Download} />
+      <DownloadStack.Screen name="Favorite" component={Download}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                props.navigation.navigate("Wishlist")
+              }
+            >
+              <Icon style={{ marginLeft: 6 }} size={20} name="th-list" />
+            </TouchableOpacity>
+          ),
+          headerRight: () => (
+            <TouchableOpacity
+              onPress={() =>
+                props.navigation.navigate("User")
+              }
+            >
+              <Icon style={{ marginRight: 6 }} size={20} name="user" />
+            </TouchableOpacity>
+          ),
+          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
+        }} />
+      <DownloadStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Favorite" }} />
+      <DownloadStack.Screen name="User" component={User} options={{ title: "User" }} />
+      <DownloadStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
+      <DownloadStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
+      <DownloadStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
+      <DownloadStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
+      <DownloadStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
+      <DownloadStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <DownloadStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
+      <DownloadStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
     </DownloadStack.Navigator>
   )
 };
 
-const BrowseStackScreen = () => {
+const BrowseStackScreen = (props) => {
   return (
     <BrowseStack.Navigator>
-      <BrowseStack.Screen name="Browse" component={Browse} />
+      <BrowseStack.Screen name="Browse" component={Browse}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                props.navigation.navigate("Wishlist")
+              }
+            >
+              <Icon style={{ marginLeft: 6 }} size={20} name="th-list" />
+            </TouchableOpacity>
+          ),
+          headerRight: () => (
+            <TouchableOpacity
+              onPress={() =>
+                props.navigation.navigate("User")
+              }
+            >
+              <Icon style={{ marginRight: 6 }} size={20} name="user" />
+            </TouchableOpacity>
+          ),
+          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
+        }} />
+      <BrowseStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Browse" }} />
+      <BrowseStack.Screen name="User" component={User} options={{ title: "User" }} />
+      <BrowseStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
+      <BrowseStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
+      <BrowseStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
+      <BrowseStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
       <BrowseStack.Screen name="BrowseDetail" component={BrowseDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="SkillDetail" component={SkillDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="Paths" component={ListPaths} options={{ title: "Paths" }} />
       <BrowseStack.Screen name="AllPaths" component={AllPathsItem} options={{ title: "Paths" }} />
       <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
+      <BrowseStack.Screen name="AllCategory" component={AllCategory} options={{ title: "All Category" }} />
       <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{ title: "Courses" }} />
+      <BrowseStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <BrowseStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
       <BrowseStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
     </BrowseStack.Navigator>
   )
 };
 
-const SearchStackScreen = () => {
+const SearchStackScreen = (props) => {
   return (
     <SearchStack.Navigator>
-      <SearchStack.Screen name="Search" component={Search} options={{ title: "Search" }} />
+      <SearchStack.Screen name="Search" component={Search}
+        options={{
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() =>
+                props.navigation.navigate("Wishlist")
+              }
+            >
+              <Icon style={{ marginLeft: 6 }} size={20} name="th-list" />
+            </TouchableOpacity>
+          ),
+          headerRight: () => (
+            <TouchableOpacity
+              onPress={() =>
+                props.navigation.navigate("User")
+              }
+            >
+              <Icon style={{ marginRight: 6 }} size={20} name="user" />
+            </TouchableOpacity>
+          ),
+          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
+        }} />
+      <SearchStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Search" }} />
+      <SearchStack.Screen name="User" component={User} options={{ title: "User" }} />
+      <SearchStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
+      <SearchStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
+      <SearchStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
+      <SearchStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
       <SearchStack.Screen name="SearchAll" component={SearchAll} options={{ title: "Search" }} />
       <SearchStack.Screen name="SearchCourses" component={SearchCourses} options={{ title: "Search" }} />
       <SearchStack.Screen name="SearchAuthors" component={SearchAuthors} options={{ title: "Search" }} />
       <SearchStack.Screen name="SearchPaths" component={SearchPaths} options={{ title: "Search" }} />
-      <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
-      <BrowseStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Path Detail" }} />
+      <SearchStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
+      <SearchStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Path Detail" }} />
+      <SearchStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <SearchStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
     </SearchStack.Navigator>
   )
 };
 
 const MainTab = () => {
+  const favoriteContext = useContext(FavouritesContext)
+  useEffect(() => {
+    favoriteContext.getFavoriteCourses()
+  }, [])
   return (
     <Tabs.Navigator initialRouteName="Home">
       <Tabs.Screen name="Home" component={HomeStackScreen} options={{
@@ -203,6 +286,7 @@ const Authen = () => {
 }
 
 export default function App() {
+  
   console.disableYellowBox = true;
   const [theme, setTheme] = useState(themes.light);
 

@@ -73,7 +73,7 @@ const Wishlist = (props) => {
                         </ThemedText>
                     <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
 
-                        <ThemedText> V 1.0.0</ThemedText>
+                        <Text> V 1.0.0</Text>
                     </View>
                 </View>
                 <View style={{ alignItems: 'center', marginTop: 10 }}>

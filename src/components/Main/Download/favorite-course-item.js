@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import ThemedText from '../../Common/themed-text'
@@ -6,19 +6,26 @@ import ScreenContainer from '../../Common/screen-container'
 import { CoursesContext } from '../../../provider/courses-provider'
 import { Rating } from 'react-native-elements'
 import { CourseDetailContext } from '../../../provider/courseDetail-provider'
+import { FavouritesContext } from '../../../provider/favourites-provider'
 
 const FavoriteCourseItem = (props) => {
+    const favoriteContext = useContext(FavouritesContext)
     const coursesContext = useContext(CoursesContext)
     const courseDetailContext = useContext(CourseDetailContext)
     
     const Image_Http_URL = { uri: props.item.courseImage }
 
+    // useEffect(() => {
+    //     coursesContext.getCourseInformation(props.item.id)
+    // }, [])
+
     return (
         <TouchableOpacity
             onPress={() => {
-                coursesContext.getCourseInformation(props.item.id)
+                // coursesContext.getCourseInformation(props.item.id)
+                favoriteContext.getCourseLikeStatus(props.item.id)
                 courseDetailContext.getCourseDetailWithLession(props.item.id)
-                props.navigation.push("CourseDetail", {item: props.item})
+                props.navigation.push("CourseDescriptions", {item: props.item})
             }}
         >
             <ScreenContainer style={styles.item}>

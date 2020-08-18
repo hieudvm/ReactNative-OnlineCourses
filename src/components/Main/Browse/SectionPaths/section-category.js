@@ -5,8 +5,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import ScreenContainer from '../../../Common/screen-container';
 import ThemedText from '../../../Common/themed-text';
 import axios from 'axios';
-import { PathsContext } from '../../../../provider/paths-provider';
 import SectionCategoryItem from '../SectionPathsItem/section-category-item';
+import { UserContext } from '../../../../provider/user-provider';
 
 
 const renderListItem = (skills, props) => {
@@ -15,7 +15,6 @@ const renderListItem = (skills, props) => {
 const SectionCategory = (props) => {
     const [category, setCategory] = useState([])
     const [isLoading, setIsLoading] = useState(true)
-    const PathContext = useContext(PathsContext)
 
     useEffect(() => {
         axios.get('/category/all')
@@ -41,7 +40,7 @@ const SectionCategory = (props) => {
                 <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}
                         onPress={() => {
-                            props.navigation.navigate("AllPaths", {item: PathContext.path})
+                            props.navigation.navigate("AllCategory", {item: category})
                         }}
                     >
                         <Text style={{ marginRight: 6 }}>

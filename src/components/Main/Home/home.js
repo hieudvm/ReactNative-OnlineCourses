@@ -7,13 +7,6 @@ import ScreenContainer from '../../Common/screen-container';
 import { CoursesContext } from '../../../provider/courses-provider';
 
 const Home = (props) => {
-  // const courseContext = useContext(CoursesContext)
-  // useEffect(() => {
-  //   courseContext.getTopSellCourses()
-  //   courseContext.getTopNewCourses()
-  //   courseContext.getTopRateCourses()
-  //   courseContext.getProcessCourses()
-  // }, [])
   return (
     <ScreenContainer >
       <ScrollView>

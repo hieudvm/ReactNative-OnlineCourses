@@ -6,16 +6,20 @@ import { CoursesContext } from '../../../provider/courses-provider'
 import { Rating } from 'react-native-elements'
 import { AuthorContext } from '../../../provider/author-provider'
 import { CourseDetailContext } from '../../../provider/courseDetail-provider'
+import { FavouritesContext } from '../../../provider/favourites-provider'
 
 const ListCoursesItem = (props) => {
+    const favoriteContext = useContext(FavouritesContext)
     const courseDetailContext = useContext(CourseDetailContext)
     const Image_Http_URL = { uri: props.item.imageUrl }
+
     return (
         <ScreenContainer>
             <TouchableOpacity style={styles.item}
                 onPress={() => {
                     // authorContext.getInstructorById(course.instructorId)
                     // coursesContext.getCourseInformation(props.item.id)
+                    favoriteContext.getCourseLikeStatus(props.item.id)
                     courseDetailContext.getCourseDetailWithLession(props.item.id)
                     props.navigation.navigate("CourseDescriptions", { item: props.item })
                 }}

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { StyleSheet, View, ScrollView, ImageBackground, TouchableOpacity } from 'react-native'
 import SectionSkills from './SectionSkills/section-skills'
 import SectionPaths from './SectionPaths/section-paths'
@@ -7,10 +7,17 @@ import { Text } from 'react-native-elements'
 import ScreenContainer from '../../Common/screen-container'
 import { CoursesContext } from '../../../provider/courses-provider'
 import SectionCategory from './SectionPaths/section-category'
+import axios from 'axios';
+import { UserContext } from '../../../provider/user-provider'
+
 
 const Browse = (props) => {
+  const userContext = useContext(UserContext)
   const courseContext = useContext(CoursesContext)
 
+  useEffect(() => {
+    userContext.getUserInformation()
+  }, [])
   return (
     <ScreenContainer>
       <ScrollView>
@@ -18,7 +25,7 @@ const Browse = (props) => {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              props.navigation.navigate("AllCourses", {item: courseContext.state.topNew})
+              props.navigation.navigate("AllCourses", { item: courseContext.state.topNew })
             }}
           >
             <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>
@@ -30,7 +37,13 @@ const Browse = (props) => {
           <TouchableOpacity
             style={styles.touch}
             onPress={() => {
-              props.navigation.navigate("AllCourses", {item: courseContext.state.topRate})
+              axios.get(`/user/recommend-course/${userContext.state.userInformation.id}/10/1`)
+                .then((Response) => {
+                  if (Response.status === 200) {
+                    props.navigation.navigate("AllCourses", { item: Response.data.payload})
+                  }
+                }).catch((Error) => {
+                })
             }}
           >
             <Text h4 style={{ textAlign: 'center', color: 'white', marginHorizontal: 65 }}>

@@ -5,14 +5,17 @@ import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 import { Rating, AirbnbRating } from 'react-native-elements';
 import { CourseDetailContext } from '../../../../provider/courseDetail-provider'
+import { FavouritesContext } from '../../../../provider/favourites-provider'
 
 const SectionCoursesItem = (props) => {
+    const favoriteContext = useContext(FavouritesContext)
     const courseDetailContext = useContext(CourseDetailContext)
 
     const Image_Http_URL = { uri: props.item.imageUrl }
     return (
         <TouchableOpacity
             onPress={() => {
+                favoriteContext.getCourseLikeStatus(props.item.id)
                 courseDetailContext.getCourseDetailWithLession(props.item.id)
                 props.navigation.push("CourseDescriptions", { item: props.item })
             }}

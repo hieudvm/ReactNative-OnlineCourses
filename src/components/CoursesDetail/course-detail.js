@@ -7,33 +7,20 @@ import ListLessons from './ListLessons/list-lessons';
 import ScreenContainer from '../Common/screen-container';
 import ThemedText from '../Common/themed-text';
 import { FavouritesContext } from '../../provider/favourites-provider';
-import { AuthorContext } from '../../provider/author-provider';
-import { CoursesContext } from '../../provider/courses-provider';
 import { useFocusEffect } from '@react-navigation/native';
 
 const CourseDetail = (props) => {
-    const authorContext = useContext(AuthorContext)
     const favoriteContext = useContext(FavouritesContext)
-    const coursesContext = useContext(CoursesContext)
-
     const [favorite, setFavorite] = useState('')
-    // const [course, setCourse] = useState({})
-
     const item = props.route.params.item
 
-    useFocusEffect(
-        React.useCallback(() => {
-            favoriteContext.getCourseLikeStatus(item.id)
-            if (favoriteContext.state.likeStatus) {
-                setFavorite('Liked')
-            } else {
-                setFavorite('like')
-            }
-            // if (coursesContext.state.course) {
-            //     setCourse(coursesContext.state.course)
-            // }
-        }, [])
-    );
+    useEffect(() => {
+        if (favoriteContext.state.likeStatus) {
+            setFavorite('Liked')
+        } else {
+            setFavorite('like')
+        }
+    }, [])
 
     return (
         <ScreenContainer>
