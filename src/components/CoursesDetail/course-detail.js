@@ -18,7 +18,7 @@ const CourseDetail = (props) => {
                 <VideoPlayer navigation={props.navigation} item={item} />
             </View>
             <ScrollView style={{ flex: 2.5 }}>
-                <ListLessons />
+                <ListLessons navigation={props.navigation}/>
             </ScrollView>
         </ScreenContainer>
 

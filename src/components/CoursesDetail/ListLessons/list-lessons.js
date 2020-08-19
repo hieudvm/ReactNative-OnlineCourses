@@ -45,7 +45,7 @@ const ListLessons = (props) => {
                 {courseDetailContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <SectionList
                     sections={[{data: sections }]}
-                    renderItem={({ item }) => <FlatList data={item.lesson} renderItem={({ item }) => <ListLessonsItem navigation={props.navigation} item={item} />}/>}
+                    renderItem={({ item }) => <FlatList data={item.lesson} renderItem={({ item }) => <ListLessonsItem navigation={props.navigation} item={item} course={courseDetailContext.state.sectionLesson} />}/>}
                     // renderSectionHeader={({ section }) => <View style={{ backgroundColor: '#0099CC', margin: 6 }}><Text>{section.data[0].name}</Text></View>}
                 />
             </View> 

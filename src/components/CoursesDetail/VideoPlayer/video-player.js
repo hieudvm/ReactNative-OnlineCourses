@@ -7,12 +7,16 @@ import { CoursesContext } from '../../../provider/courses-provider'
 import { Video } from 'expo-av'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { FavouritesContext } from '../../../provider/favourites-provider'
+import { VideoContext } from '../../../provider/video-provider'
+import { CourseDetailContext } from '../../../provider/courseDetail-provider'
 
 const { width, height } = Dimensions.get('window')
 const VideoPlayer = (props) => {
+    const videoContext = useContext(VideoContext)
     const authorContext = useContext(AuthorContext)
     const coursesContext = useContext(CoursesContext)
     const favoriteContext = useContext(FavouritesContext)
+
     const [favorite, setFavorite] = useState('')
     const [url, setUrl] = useState(props.item.promoVidUrl)
 
@@ -25,11 +29,18 @@ const VideoPlayer = (props) => {
             setFavorite('like')
         }
     }, [])
+    
+    useEffect(() => {
+        console.log("set")
+        if (videoContext.videoUrl) {
+            setUrl(videoContext.videoUrl)
+        }
+    }, [videoContext.videoUrl])
 
     return (
         <ScreenContainer>
             <Video
-                source={{ uri: 'https://storage.googleapis.com/itedu-bucket/Courses/24b1856a-953c-419b-84c5-a9ef44bc139e/promo/9a1c3c44-c7e3-4080-965b-ca9650f8b92d.mp4' }}
+                source={{ uri: url }}
                 rate={1.0}
                 volume={1.0}
                 isMuted={false}
@@ -77,22 +88,17 @@ const VideoPlayer = (props) => {
                             <ThemedText>{favorite}</ThemedText>
                         </View>
                     </TouchableOpacity>
-                    <TouchableOpacity>
+                    <TouchableOpacity
+                        onPress={() => {
+                            props.navigation.push("Rating", { item: props.item })
+                        }}
+                    >
                         <View style={styles.iconItem}>
                             <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
                                 <Icon
                                     name='podcast' size={30} />
                             </View>
                             <ThemedText>Rating</ThemedText>
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='file-word-o' size={30} />
-                            </View>
-                            <ThemedText>Excercise</ThemedText>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity>

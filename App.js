@@ -49,6 +49,9 @@ import Feedback from './src/components/Others/FeedBack/feed-back';
 import ContactSupport from './src/components/Others/ContactSupport/contact-support';
 import AllCategory from './src/components/Main/Browse/Paths/AllCategory/all-category';
 import RatingCourse from './src/components/Others/Rating/rating-course';
+import CourseExcercise from './src/components/CoursesDetail/Excercise/course-excercise';
+import { VideoProvider } from './src/provider/video-provider';
+import Rating from './src/components/CoursesDetail/Rating/rating';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -94,7 +97,9 @@ const HomeStackScreen = (props) => {
       <HomeStack.Screen name="PaymentStatus" component={PaymentStatus} options={{ title: "Subscribed" }} />
       <HomeStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
       <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
+      <HomeStack.Screen name="CourseExcercise" component={CourseExcercise} options={{ title: "Course Excercise" }} />
       <HomeStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
+      <HomeStack.Screen name="Rating" component={Rating} options={{ title: "Rating Course" }} />
       <HomeStack.Screen name="UserThread" component={UserThread} />
       <HomeStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author Detail" }} />
     </HomeStack.Navigator>
@@ -113,34 +118,8 @@ const DownloadStackScreen = (props) => {
 
   return (
     <DownloadStack.Navigator>
-      <DownloadStack.Screen name="Favorite" component={Download}
-        options={{
-          headerLeft: () => (
-            <TouchableOpacity
-              onPress={() =>
-                props.navigation.navigate("Wishlist")
-              }
-            >
-              <Icon style={{ marginLeft: 6 }} size={20} name="th-list" />
-            </TouchableOpacity>
-          ),
-          headerRight: () => (
-            <TouchableOpacity
-              onPress={() =>
-                props.navigation.navigate("User")
-              }
-            >
-              <Icon style={{ marginRight: 6 }} size={20} name="user" />
-            </TouchableOpacity>
-          ),
-          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
-        }} />
-      <DownloadStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
-      <DownloadStack.Screen name="User" component={User} options={{ title: "User" }} />
-      <DownloadStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
-      <DownloadStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
-      <DownloadStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
-      <DownloadStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
+      <DownloadStack.Screen name="Favorite" component={Download} />
+      <DownloadStack.Screen name="CourseExcercise" component={CourseExcercise} options={{ title: "Course Excercise" }} />
       <DownloadStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
       <DownloadStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <DownloadStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
@@ -152,34 +131,7 @@ const DownloadStackScreen = (props) => {
 const BrowseStackScreen = (props) => {
   return (
     <BrowseStack.Navigator>
-      <BrowseStack.Screen name="Browse" component={Browse}
-        options={{
-          headerLeft: () => (
-            <TouchableOpacity
-              onPress={() =>
-                props.navigation.navigate("Wishlist")
-              }
-            >
-              <Icon style={{ marginLeft: 6 }} size={20} name="th-list" />
-            </TouchableOpacity>
-          ),
-          headerRight: () => (
-            <TouchableOpacity
-              onPress={() =>
-                props.navigation.navigate("User")
-              }
-            >
-              <Icon style={{ marginRight: 6 }} size={20} name="user" />
-            </TouchableOpacity>
-          ),
-          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
-        }} />
-      <BrowseStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
-      <BrowseStack.Screen name="User" component={User} options={{ title: "User" }} />
-      <BrowseStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
-      <BrowseStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
-      <BrowseStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
-      <BrowseStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
+      <BrowseStack.Screen name="Browse" component={Browse} />
       <BrowseStack.Screen name="BrowseDetail" component={BrowseDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="SkillDetail" component={SkillDetail} options={{ title: "Browse" }} />
       <BrowseStack.Screen name="Paths" component={ListPaths} options={{ title: "Paths" }} />
@@ -188,6 +140,7 @@ const BrowseStackScreen = (props) => {
       <BrowseStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <BrowseStack.Screen name="AllCategory" component={AllCategory} options={{ title: "All Category" }} />
       <BrowseStack.Screen name="AllCourses" component={AllCourses} options={{ title: "Courses" }} />
+      <BrowseStack.Screen name="CourseExcercise" component={CourseExcercise} options={{ title: "Course Excercise" }} />
       <BrowseStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <BrowseStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
       <BrowseStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
@@ -198,40 +151,14 @@ const BrowseStackScreen = (props) => {
 const SearchStackScreen = (props) => {
   return (
     <SearchStack.Navigator>
-      <SearchStack.Screen name="Search" component={Search}
-        options={{
-          headerLeft: () => (
-            <TouchableOpacity
-              onPress={() =>
-                props.navigation.navigate("Wishlist")
-              }
-            >
-              <Icon style={{ marginLeft: 6 }} size={20} name="th-list" />
-            </TouchableOpacity>
-          ),
-          headerRight: () => (
-            <TouchableOpacity
-              onPress={() =>
-                props.navigation.navigate("User")
-              }
-            >
-              <Icon style={{ marginRight: 6 }} size={20} name="user" />
-            </TouchableOpacity>
-          ),
-          headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
-        }} />
-      <SearchStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
-      <SearchStack.Screen name="User" component={User} options={{ title: "User" }} />
-      <SearchStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
-      <SearchStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
-      <SearchStack.Screen name="ChangePassword" component={ChangePassword} options={{ title: "Change Password" }} />
-      <SearchStack.Screen name="UpdateProfile" component={UpdateProfile} options={{ title: "Update Profile" }} />
+      <SearchStack.Screen name="Search" component={Search} />
       <SearchStack.Screen name="SearchAll" component={SearchAll} options={{ title: "Search" }} />
       <SearchStack.Screen name="SearchCourses" component={SearchCourses} options={{ title: "Search" }} />
       <SearchStack.Screen name="SearchAuthors" component={SearchAuthors} options={{ title: "Search" }} />
       <SearchStack.Screen name="SearchPaths" component={SearchPaths} options={{ title: "Search" }} />
       <SearchStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <SearchStack.Screen name="PathDetail" component={PathDetail} options={{ title: "Path Detail" }} />
+      <SearchStack.Screen name="CourseExcercise" component={CourseExcercise} options={{ title: "Course Excercise" }} />
       <SearchStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <SearchStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
     </SearchStack.Navigator>
@@ -286,7 +213,7 @@ const Authen = () => {
 }
 
 export default function App() {
-  
+
   console.disableYellowBox = true;
   const [theme, setTheme] = useState(themes.light);
 
@@ -303,12 +230,14 @@ export default function App() {
                   <PathsProvider>
                     <SearchProvider>
                       <FavouritesProvider>
-                        <NavigationContainer>
-                          <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-                            <Stack.Screen name="MainTab" component={MainTab} />
-                            <Stack.Screen name="AuthenStack" component={Authen} />
-                          </Stack.Navigator>
-                        </NavigationContainer>
+                        <VideoProvider>
+                          <NavigationContainer>
+                            <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                              <Stack.Screen name="MainTab" component={MainTab} />
+                              <Stack.Screen name="AuthenStack" component={Authen} />
+                            </Stack.Navigator>
+                          </NavigationContainer>
+                        </VideoProvider>
                       </FavouritesProvider>
                     </SearchProvider>
                   </PathsProvider>
