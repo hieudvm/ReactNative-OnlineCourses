@@ -41,7 +41,7 @@ const ListLessons = (props) => {
         )
     } else {
         return (
-            <View>
+            <View style={{marginTop: 10}}>
                 {courseDetailContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <SectionList
                     sections={[{data: sections }]}

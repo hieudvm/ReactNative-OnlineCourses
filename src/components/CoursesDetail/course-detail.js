@@ -10,65 +10,14 @@ import { FavouritesContext } from '../../provider/favourites-provider';
 import { useFocusEffect } from '@react-navigation/native';
 
 const CourseDetail = (props) => {
-    const favoriteContext = useContext(FavouritesContext)
-    const [favorite, setFavorite] = useState('')
     const item = props.route.params.item
-
-    useEffect(() => {
-        if (favoriteContext.state.likeStatus) {
-            setFavorite('Liked')
-        } else {
-            setFavorite('like')
-        }
-    }, [])
 
     return (
         <ScreenContainer>
-            <View style={{ flex: 1.5 }}>
+            <View style={{ flex: 1.8  }}>
                 <VideoPlayer navigation={props.navigation} item={item} />
-                <View style={styles.icon}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            if (favoriteContext.state.likeStatus) {
-                                setFavorite('Like')
-                                favoriteContext.likeCourse(item.id)
-                                favoriteContext.getFavoriteCourses()
-                            } else {
-                                setFavorite('Liked')
-                                favoriteContext.likeCourse(item.id)
-                                favoriteContext.getFavoriteCourses()
-                            }
-                        }}
-                    >
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='bookmark' size={30} />
-                            </View>
-                            <ThemedText>{favorite}</ThemedText>
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='podcast' size={30} />
-                            </View>
-                            <ThemedText>Add to chanel</ThemedText>
-                        </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='download' size={30} />
-                            </View>
-                            <ThemedText>Download</ThemedText>
-                        </View>
-                    </TouchableOpacity>
-                </View>
             </View>
-            <ScrollView style={{ flex: 3 }}>
+            <ScrollView style={{ flex: 2.5 }}>
                 <ListLessons />
             </ScrollView>
         </ScreenContainer>

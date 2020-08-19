@@ -1,24 +1,47 @@
-import React, { useContext, useEffect } from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator } from 'react-native'
+import React, { useContext, useEffect, useState } from 'react'
+import { StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator, Dimensions } from 'react-native'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
 import { AuthorContext } from '../../../provider/author-provider'
 import { CoursesContext } from '../../../provider/courses-provider'
+import { Video } from 'expo-av'
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { FavouritesContext } from '../../../provider/favourites-provider'
 
+const { width, height } = Dimensions.get('window')
 const VideoPlayer = (props) => {
     const authorContext = useContext(AuthorContext)
     const coursesContext = useContext(CoursesContext)
+    const favoriteContext = useContext(FavouritesContext)
+    const [favorite, setFavorite] = useState('')
+    const [url, setUrl] = useState(props.item.promoVidUrl)
 
     useEffect(() => {
         authorContext.getInstructorById(props.item.instructorId)
         coursesContext.getCourseInformation(props.item.id)
+        if (favoriteContext.state.likeStatus) {
+            setFavorite('Liked')
+        } else {
+            setFavorite('like')
+        }
     }, [])
+
     return (
         <ScreenContainer>
-            <Image source={require('../../../../assets/video.jpg')} style={styles.image} />
+            <Video
+                source={{ uri: 'https://storage.googleapis.com/itedu-bucket/Courses/24b1856a-953c-419b-84c5-a9ef44bc139e/promo/9a1c3c44-c7e3-4080-965b-ca9650f8b92d.mp4' }}
+                rate={1.0}
+                volume={1.0}
+                isMuted={false}
+                resizeMode="cover"
+                shouldPlay={false}
+                isLooping={false}
+                useNativeControls
+                style={styles.video}
+            />
             <View>
                 {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{coursesContext.state.course.title}</ThemedText>
+                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.item.title ? props.item.title : props.item.courseTitle}</ThemedText>
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={() => {
@@ -27,15 +50,61 @@ const VideoPlayer = (props) => {
                 >
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
                     <View style={styles.text}>
-                        {authorContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                        <ThemedText>
-                            {authorContext.state.instructor.name}
-                        </ThemedText>
+                        {props.item.name ? <ThemedText>{props.item.name ? props.item.name : props.item["instructor.user.name"]}</ThemedText> : <ThemedText>{props.item["instructor.user.name"] ? props.item["instructor.user.name"] : props.item.instructorName}</ThemedText>}
                     </View>
                 </TouchableOpacity>
-                {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                <Text style={styles.darkText}>{coursesContext.state.course.price} VND . {coursesContext.state.course.videoNumber} video . {coursesContext.state.course.totalHours} hours </Text>
+                {props.item.videoNumber ? <ThemedText style={styles.darkText}>{`${props.item.videoNumber} video . ${props.item.totalHours} hours`}</ThemedText> : <ThemedText style={styles.darkText}>{`${props.item.coursePrice} VND . sold ${props.item.courseSoldNumber}`}</ThemedText>}
             </View>
+            <View style={styles.icon}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            if (favoriteContext.state.likeStatus) {
+                                setFavorite('Like')
+                                favoriteContext.likeCourse(props.item.id)
+                                favoriteContext.getFavoriteCourses()
+                            } else {
+                                setFavorite('Liked')
+                                favoriteContext.likeCourse(props.item.id)
+                                favoriteContext.getFavoriteCourses()
+                            }
+                        }}
+                    >
+                        <View style={styles.iconItem}>
+                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                                <Icon
+                                    name='bookmark' size={30} />
+                            </View>
+                            <ThemedText>{favorite}</ThemedText>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.iconItem}>
+                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                                <Icon
+                                    name='podcast' size={30} />
+                            </View>
+                            <ThemedText>Rating</ThemedText>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.iconItem}>
+                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                                <Icon
+                                    name='file-word-o' size={30} />
+                            </View>
+                            <ThemedText>Excercise</ThemedText>
+                        </View>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <View style={styles.iconItem}>
+                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                                <Icon
+                                    name='download' size={30} />
+                            </View>
+                            <ThemedText>Download</ThemedText>
+                        </View>
+                    </TouchableOpacity>
+                </View>
         </ScreenContainer>
     )
 }
@@ -51,9 +120,9 @@ const styles = StyleSheet.create({
         borderBottomColor: 'gray',
         borderBottomWidth: 1
     },
-    image: {
-        width: 'auto',
-        height: 200,
+    video: {
+        width: width,
+        height: height / 3,
     },
     button: {
         height: 20,
@@ -79,5 +148,14 @@ const styles = StyleSheet.create({
         marginLeft: 6,
         paddingLeft: 28,
         color: 'darkgray'
+    },
+    icon: {
+        margin: 6,
+        flexDirection: 'row',
+        justifyContent: 'space-around'
+    },
+    iconItem: {
+        alignItems: 'center',
+        margin: 6
     }
 })

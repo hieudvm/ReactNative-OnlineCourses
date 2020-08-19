@@ -84,7 +84,7 @@ const HomeStackScreen = (props) => {
           ),
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
         }} />
-      <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Home" }} />
+      <HomeStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
       <HomeStack.Screen name="User" component={User} options={{ title: "User" }} />
       <HomeStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
       <HomeStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
@@ -135,7 +135,7 @@ const DownloadStackScreen = (props) => {
           ),
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
         }} />
-      <DownloadStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Favorite" }} />
+      <DownloadStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
       <DownloadStack.Screen name="User" component={User} options={{ title: "User" }} />
       <DownloadStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
       <DownloadStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
@@ -174,7 +174,7 @@ const BrowseStackScreen = (props) => {
           ),
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
         }} />
-      <BrowseStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Browse" }} />
+      <BrowseStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
       <BrowseStack.Screen name="User" component={User} options={{ title: "User" }} />
       <BrowseStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
       <BrowseStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />
@@ -220,7 +220,7 @@ const SearchStackScreen = (props) => {
           ),
           headerStyleInterpolator: HeaderStyleInterpolators.forUIKit
         }} />
-      <SearchStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Search" }} />
+      <SearchStack.Screen name="Wishlist" component={Wishlist} options={{ title: "Setting" }} />
       <SearchStack.Screen name="User" component={User} options={{ title: "User" }} />
       <SearchStack.Screen name="Feedback" component={Feedback} options={{ title: "Feedback" }} />
       <SearchStack.Screen name="ContactSupport" component={ContactSupport} options={{ title: "Contact Support" }} />

@@ -28,7 +28,7 @@ const ListCoursesItem = (props) => {
                 <ScreenContainer>
                     <View style={{ margin: 6 }}>
                         <ThemedText>{props.item.title}</ThemedText>
-                        <ThemedText>{props.item.name ? props.item.name  : props.item["instructor.user.name"] }</ThemedText>
+                        {props.item.name ? <ThemedText>{props.item.name ? props.item.name : props.item["instructor.user.name"]}</ThemedText> : <ThemedText>{props.item["instructor.user.name"] ? props.item["instructor.user.name"] : props.item.instructorName}</ThemedText>}
                         <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
                         <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
                     </View>
