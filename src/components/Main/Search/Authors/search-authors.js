@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { ScreenContainer } from 'react-native-screens'
+import ScreenContainer from '../../../Common/screen-container'
 import { ScrollView, FlatList } from 'react-native-gesture-handler'
 import ThemedText from '../../../Common/themed-text'
 import SectionAuthorsItemForSearch from '../../Browse/SectionAuthorsItem/section-authors-item-for-search'

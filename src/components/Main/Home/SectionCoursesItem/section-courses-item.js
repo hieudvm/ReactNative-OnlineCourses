@@ -17,7 +17,7 @@ const SectionCoursesItem = (props) => {
             onPress={() => {
                 favoriteContext.getCourseLikeStatus(props.item.id)
                 courseDetailContext.getCourseDetailWithLession(props.item.id)
-                props.navigation.push("CourseDescriptions", { item: props.item })
+                props.navigation.navigate("CourseDescriptions", { item: props.item })
             }}
         >
             <ScreenContainer style={styles.item}>
@@ -26,7 +26,7 @@ const SectionCoursesItem = (props) => {
                     <ThemedText>{props.item.title}</ThemedText>
                     <ThemedText>{props.item["instructor.user.name"]}</ThemedText>
                     <ThemedText style={styles.darkText}>{props.item.price} VND . {props.item.videoNumber} video . {props.item.totalHours} hours </ThemedText>
-                    <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} />
+                    <Rating imageSize={20} fractions="{1}" startingValue={props.item.ratedNumber} readonly={true}/>
                 </View>
             </ScreenContainer>
         </TouchableOpacity>

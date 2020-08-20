@@ -13,7 +13,7 @@ const SectionCoursesLearning = (props) => {
         <TouchableOpacity
             onPress={() => {
                 courseDetailContext.getCourseDetailWithLession(props.item.id)
-                props.navigation.push("CourseDetail", { item: props.item })
+                props.navigation.navigate("CourseDetail", { item: props.item })
             }}
         >
             <ScreenContainer style={styles.item}>

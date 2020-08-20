@@ -14,6 +14,11 @@ const renderRegisterStatus = (status, message) => {
     }
 }
 
+function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 const Register = (props) => {
 
     const registerContext = useContext(RegisterContext)
@@ -23,6 +28,9 @@ const Register = (props) => {
     const [password, setPassword] = useState('')
     const [rePassword, setRePassword] = useState('')
     const [phoneNumber, setPhoneNumber] = useState('')
+
+    const [passwordStatus, setPasswordStatus] = useState("")
+    const [userNameStatus, setUserNameStatus] = useState("")
 
     useEffect(() => {
         if (!registerContext.state.isLoading) {
@@ -35,10 +43,10 @@ const Register = (props) => {
         }
     }, [])
 
-   
+
     return (
         <ScrollView>
-             <View style={styles.container}>
+            <View style={styles.container}>
                 <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
                 <TextInput
                     style={styles.textInput}
@@ -48,10 +56,18 @@ const Register = (props) => {
                 />
                 <TextInput
                     style={styles.textInput}
-                    onChangeText={text => setUserName(text)}
+                    onChangeText={(text) => {
+                        if (validateEmail(text)) {
+                            setUserNameStatus("Email is valid!")
+                            setUserName(text)
+                        } else {
+                            setUserNameStatus("Email is not valid!")
+                        }
+                    }}
                     placeholder='User Name'
                     defaultValue={userName}
                 />
+                <Text>{userNameStatus}</Text>
                 <TextInput
                     style={styles.textInput}
                     onChangeText={text => setPassword(text)}
@@ -61,11 +77,19 @@ const Register = (props) => {
                 />
                 <TextInput
                     style={styles.textInput}
-                    onChangeText={text => setRePassword(text)}
+                    onChangeText={(text) => {
+                        if (text === password) {
+                            setPasswordStatus("Password is matched!")
+                            setRePassword(text)
+                        } else {
+                            setPasswordStatus("Password does not matched!")
+                        }
+                    }}
                     placeholder='Re - Password'
                     secureTextEntry
                     defaultValue={rePassword}
                 />
+                <Text>{passwordStatus}</Text>
                 <TextInput
                     style={styles.textInput}
                     onChangeText={text => setPhoneNumber(text)}
@@ -78,7 +102,11 @@ const Register = (props) => {
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        registerContext.register(fullName, userName, phoneNumber, password)
+                        if (validateEmail(userName)) {
+                            if (rePassword === password) {
+                                registerContext.register(fullName, userName, phoneNumber, password)
+                            }
+                        }
                     }}
                 >
                     <Text style={styles.text}>Register</Text>

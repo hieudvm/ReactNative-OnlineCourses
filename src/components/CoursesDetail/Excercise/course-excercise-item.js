@@ -8,8 +8,6 @@ import { FlatList } from 'react-native-gesture-handler';
 import CourseExcerciseItemDetail from './course-excercise-item-detail';
 
 const CourseExcerciseItem = (props) => {
-    console.log("lessonId", props.item.lesson)
-
     return (
         <FlatList
             data={props.item.lesson}

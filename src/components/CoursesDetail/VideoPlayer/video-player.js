@@ -9,6 +9,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { FavouritesContext } from '../../../provider/favourites-provider'
 import { VideoContext } from '../../../provider/video-provider'
 import { CourseDetailContext } from '../../../provider/courseDetail-provider'
+import axios from 'axios';
 
 const { width, height } = Dimensions.get('window')
 const VideoPlayer = (props) => {
@@ -16,6 +17,8 @@ const VideoPlayer = (props) => {
     const authorContext = useContext(AuthorContext)
     const coursesContext = useContext(CoursesContext)
     const favoriteContext = useContext(FavouritesContext)
+
+    const [lessonId, setLessonId] = useState(videoContext.lessonId)
 
     const [favorite, setFavorite] = useState('')
     const [url, setUrl] = useState(props.item.promoVidUrl)
@@ -29,13 +32,17 @@ const VideoPlayer = (props) => {
             setFavorite('like')
         }
     }, [])
-    
+
     useEffect(() => {
-        console.log("set")
         if (videoContext.videoUrl) {
             setUrl(videoContext.videoUrl)
         }
-    }, [videoContext.videoUrl])
+        if (videoContext.lessonId) {
+            setLessonId(videoContext.lessonId)
+            console.log("set", lessonId)
+        }
+
+    }, [videoContext.videoUrl, videoContext.lessonId])
 
     return (
         <ScreenContainer>
@@ -56,7 +63,7 @@ const VideoPlayer = (props) => {
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={() => {
-                        props.navigation.push("AuthorDetail", { item: authorContext.state.instructor.id })
+                        props.navigation.navigate("AuthorDetail", { item: authorContext.state.instructor.id })
                     }}
                 >
                     <Image style={styles.button} source={require('../../../../assets/senior-woman-avatar.jpg')} />
@@ -64,53 +71,76 @@ const VideoPlayer = (props) => {
                         {props.item.name ? <ThemedText>{props.item.name ? props.item.name : props.item["instructor.user.name"]}</ThemedText> : <ThemedText>{props.item["instructor.user.name"] ? props.item["instructor.user.name"] : props.item.instructorName}</ThemedText>}
                     </View>
                 </TouchableOpacity>
-                {props.item.videoNumber ? <ThemedText style={styles.darkText}>{`${props.item.videoNumber} video . ${props.item.totalHours} hours`}</ThemedText> : <ThemedText style={styles.darkText}>{`${props.item.coursePrice} VND . sold ${props.item.courseSoldNumber}`}</ThemedText>}
+                {props.item.videoNumber ? <ThemedText style={styles.darkText}>{`${props.item.videoNumber} video . ${props.item.totalHours} hours`}</ThemedText> : props.item.coursePrice ? <ThemedText style={styles.darkText}>{`${props.item.coursePrice} VND . sold ${props.item.courseSoldNumber}`}</ThemedText> : <ThemedText></ThemedText>}
             </View>
             <View style={styles.icon}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            if (favoriteContext.state.likeStatus) {
-                                setFavorite('Like')
-                                favoriteContext.likeCourse(props.item.id)
-                                favoriteContext.getFavoriteCourses()
-                            } else {
-                                setFavorite('Liked')
-                                favoriteContext.likeCourse(props.item.id)
-                                favoriteContext.getFavoriteCourses()
-                            }
-                        }}
-                    >
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='bookmark' size={30} />
-                            </View>
-                            <ThemedText>{favorite}</ThemedText>
+                <TouchableOpacity
+                    onPress={() => {
+                        if (favoriteContext.state.likeStatus) {
+                            setFavorite('Like')
+                            favoriteContext.likeCourse(props.item.id)
+                            favoriteContext.getFavoriteCourses()
+                        } else {
+                            setFavorite('Liked')
+                            favoriteContext.likeCourse(props.item.id)
+                            favoriteContext.getFavoriteCourses()
+                        }
+                    }}
+                >
+                    <View style={styles.iconItem}>
+                        <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                            <Icon
+                                name='bookmark' size={30} />
                         </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        onPress={() => {
-                            props.navigation.push("Rating", { item: props.item })
-                        }}
-                    >
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='podcast' size={30} />
-                            </View>
-                            <ThemedText>Rating</ThemedText>
+                        <ThemedText>{favorite}</ThemedText>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => {
+                        axios.get(`/lesson/detail/${props.item.id}/${lessonId}`)
+                            .then((Response) => {
+                                if (Response.status === 200) {
+                                    console.log("success", props.item.id, lessonId)
+                                    // setLessonLearning(Response.data.payload.name)
+                                    props.navigation.navigate("CourseDescriptions", { item: props.item })
+                                }
+                            }).catch((Error) => {
+                                console.log("false")
+                            })
+                    }}
+                >
+                    <View style={styles.iconItem}>
+                        <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                            <Icon
+                                name='check-square-o' size={30} />
                         </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity>
-                        <View style={styles.iconItem}>
-                            <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
-                                <Icon
-                                    name='download' size={30} />
-                            </View>
-                            <ThemedText>Download</ThemedText>
+                        <ThemedText>Learning check</ThemedText>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    onPress={() => {
+                        props.navigation.navigate("Rating", { item: props.item })
+                    }}
+                >
+                    <View style={styles.iconItem}>
+                        <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                            <Icon
+                                name='podcast' size={30} />
                         </View>
-                    </TouchableOpacity>
-                </View>
+                        <ThemedText>Rating</ThemedText>
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.iconItem}>
+                        <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
+                            <Icon
+                                name='download' size={30} />
+                        </View>
+                        <ThemedText>Download</ThemedText>
+                    </View>
+                </TouchableOpacity>
+            </View>
+
         </ScreenContainer>
     )
 }

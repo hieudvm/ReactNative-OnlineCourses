@@ -2,8 +2,12 @@ import React, { useState, useContext } from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { FavouritesContext } from '../../provider/favourites-provider';
+import { CourseDetailContext } from '../../provider/courseDetail-provider';
 
 const PaymentStatus = (props) => {
+    const favoriteContext = useContext(FavouritesContext)
+    const courseDetailContext = useContext(CourseDetailContext)
     const item = props.route.params.item;
     return (
         <View style={styles.container}>
@@ -22,6 +26,8 @@ const PaymentStatus = (props) => {
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
+                    favoriteContext.getCourseLikeStatus(item.id)
+                    courseDetailContext.getCourseDetailWithLession(item.id)
                     props.navigation.navigate("CourseDetail", { item: item })
                 }}
             >

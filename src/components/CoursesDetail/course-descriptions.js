@@ -2,12 +2,13 @@ import React, { useState, useEffect, useContext } from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import ScreenContainer from "../../components/Common/screen-container";
 import ThemedText from "../../components/Common/themed-text";
-import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
+import { FlatList, TouchableOpacity, ScrollView } from "react-native-gesture-handler";
 import ListItem from "../Common/list-item";
 import axios from 'axios';
 import { CourseDetailContext } from "../../provider/courseDetail-provider";
 import { CoursesContext } from "../../provider/courses-provider";
 import { FavouritesContext } from "../../provider/favourites-provider";
+import { VideoContext } from "../../provider/video-provider";
 
 
 
@@ -34,6 +35,7 @@ const buttonNavigate = (props, item, favoriteContext) => {
 }
 
 const CourseDescriptions = (props) => {
+  const videoContext = useContext(VideoContext)
   const favoriteContext = useContext(FavouritesContext)
   const courseDetailContext = useContext(CourseDetailContext)
   const courseContext = useContext(CoursesContext)
@@ -43,6 +45,9 @@ const CourseDescriptions = (props) => {
   const [status, setStatus] = useState(false)
   const [messagePayment, setMessagePayment] = useState("")
   const [subscribeStatus, setSubscribeStatus] = useState("")
+  const [learned, setLearned] = useState(0)
+  const [lessonLearning, setLessonLearning] = useState("")
+  const [lessonId, setLessonId] = useState("")
 
   const Image_Http_URL = { uri: item.imageUrl ? item.imageUrl : item.courseImage }
 
@@ -53,6 +58,48 @@ const CourseDescriptions = (props) => {
       setSubscribeStatus("Subscribed")
     }
   }, [courseDetailContext.state.subscribe])
+
+  useEffect(() => {
+    if (item.id) {
+      axios.get(`/course/last-watched-lesson/${item.id}`) 
+        .then((Response) => {
+          if (Response.status === 200) {
+            setLessonId(Response.data.payload.lessonId)
+            setLearned(Response.data.payload.currentTime)
+          } else {
+            setLearned(0)
+          }
+        }).catch((Error) => {
+          setLearned(0)
+        })
+    }
+  }, [item.id])
+
+  useEffect(() => {
+    if (lessonId && videoContext.lessonId) {
+      axios.get(`/lesson/detail/${item.id}/${lessonId}`)
+        .then((Response) => {
+          if (Response.status === 200) {
+            setLessonLearning(Response.data.payload.name)
+          } else {
+          }
+        }).catch((Error) => {
+        })
+    }
+  }, [lessonId, videoContext.lessonId])
+
+  useEffect(() => {
+    if (videoContext.lessonId) {
+      axios.get(`/lesson/detail/${item.id}/${videoContext.lessonId}`)
+        .then((Response) => {
+          if (Response.status === 200) {
+            setLessonLearning(Response.data.payload.name)
+          } else {
+          }
+        }).catch((Error) => {
+        })
+    }
+  }, [videoContext.lessonId])
 
   return (
     <ScreenContainer>
@@ -66,13 +113,15 @@ const CourseDescriptions = (props) => {
         </View>
       </ScreenContainer>
       <View style={{ margin: 6, flex: 8 }}>
-        <View style={{ margin: 6, flex: 2, borderBottomColor: "gray", borderBottomWidth: 1, }}>
-          <ThemedText>{item.description}</ThemedText>
+        <View style={{ margin: 6, flex: 2, borderBottomColor: "gray", borderBottomWidth: 1, paddingBottom: 6 }}>
+          <ScrollView>
+            <ThemedText>{item.description}</ThemedText>
+          </ScrollView>
         </View>
-        <View style={{ flex: 2 }}>
+        <View style={{ flex: 2, borderBottomColor: "gray", borderBottomWidth: 1, paddingBottom: 6 }}>
           <ThemedText style={{ margin: 6 }}>Learn What</ThemedText>
           <ScreenContainer>
-            <View>
+            <ScrollView>
               <FlatList
                 data={item.learnWhat}
                 renderItem={({ item }) => (
@@ -82,10 +131,17 @@ const CourseDescriptions = (props) => {
                   />
                 )}
               />
-            </View>
+            </ScrollView>
           </ScreenContainer>
         </View>
-        <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center', }}>
+        <View style={{ flex: 6, justifyContent: 'center', alignItems: 'center', }}>
+
+          {!courseDetailContext.state.subscribe ?
+            <View style={styles.layout}>
+              <Text style={styles.text}>Learning status</Text>
+              <Text style={styles.text}>{`Learned: ${Math.ceil(learned/60)} min / ${item.totalHours} hours`}</Text>
+              <Text style={styles.text}>{`Lesson is learning: ${lessonLearning}`}</Text>
+            </View> : <View></View>}
           <TouchableOpacity
             style={styles.button}
             onPress={() => {
@@ -168,5 +224,16 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'white',
+  },
+  layout: {
+    width: 350,
+    height: 100,
+    borderRadius: 20,
+    borderColor: 'black',
+    borderWidth: 3,
+    margin: 10,
+    padding: 10,
+    backgroundColor: 'gray',
+    alignItems: 'center',
   }
 });

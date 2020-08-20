@@ -29,17 +29,6 @@ const ListLessons = (props) => {
         }, [courseDetailContext.state.sectionLesson])
     );
 
-    if (courseDetailContext.state.isLoading) {
-        return (
-            <View>
-                <SectionList
-                    sections={item}
-                    renderItem={({ item }) => <ListLessonsItem navigation={props.navigation} item={item} />}
-                    renderSectionHeader={({ section : {detail} }) => <View style={{ backgroundColor: '#0099CC', margin: 6 }}><Text>{detail}</Text></View>}
-                />
-            </View> 
-        )
-    } else {
         return (
             <View style={{marginTop: 10}}>
                 {courseDetailContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
@@ -52,8 +41,6 @@ const ListLessons = (props) => {
         )
     }
 
-    
-}
 
 export default ListLessons
 

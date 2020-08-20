@@ -12,19 +12,34 @@ const renderSendStatus = (status, message) => {
         return (<Text>{message}</Text>)
     }
 }
+
+function validateEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
 const ForgetPassword = (props) => {
     const authContext = useContext(AuthenticationContext)
     const [userName, setUserName] = useState('')
+    const [userNameStatus, setUserNameStatus] = useState("")
     
     return (
         <View style={styles.container}>
                 <Image style={styles.image} source={require('../../../../assets/Logo.jpg')} />
                 <TextInput
                     style={styles.textInput}
-                    onChangeText={text => setUserName(text)}
+                    onChangeText={(text) => {
+                        if (validateEmail(text)) {
+                            setUserNameStatus("Email is valid!")
+                            setUserName(text)
+                        } else {
+                            setUserNameStatus("Email is not valid!")
+                        }
+                    }}
                     placeholder='Please type your email!'
                     defaultValue={userName}
                 />
+                <Text>{userNameStatus}</Text>
                 <View>
                     {renderSendStatus(authContext.state.isSent, authContext.state.message)}
                 </View>

@@ -52,7 +52,6 @@ const Browse = (props) => {
           </TouchableOpacity>
         </ImageBackground>
         <SectionSkills navigation={props.navigation} title='Popular skills' />
-        <SectionPaths navigation={props.navigation} title='Paths' />
         <SectionCategory navigation={props.navigation} title='Category' />
         <SectionAuthors navigation={props.navigation} title='Top Author' />
       </ScrollView>

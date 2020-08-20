@@ -52,6 +52,7 @@ import RatingCourse from './src/components/Others/Rating/rating-course';
 import CourseExcercise from './src/components/CoursesDetail/Excercise/course-excercise';
 import { VideoProvider } from './src/provider/video-provider';
 import Rating from './src/components/CoursesDetail/Rating/rating';
+import { CategoryProvider } from './src/provider/category-provider';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -231,12 +232,14 @@ export default function App() {
                     <SearchProvider>
                       <FavouritesProvider>
                         <VideoProvider>
-                          <NavigationContainer>
-                            <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
-                              <Stack.Screen name="MainTab" component={MainTab} />
-                              <Stack.Screen name="AuthenStack" component={Authen} />
-                            </Stack.Navigator>
-                          </NavigationContainer>
+                          <CategoryProvider>
+                            <NavigationContainer>
+                              <Stack.Navigator headerMode='none' initialRouteName="AuthenStack">
+                                <Stack.Screen name="MainTab" component={MainTab} />
+                                <Stack.Screen name="AuthenStack" component={Authen} />
+                              </Stack.Navigator>
+                            </NavigationContainer>
+                          </CategoryProvider>
                         </VideoProvider>
                       </FavouritesProvider>
                     </SearchProvider>

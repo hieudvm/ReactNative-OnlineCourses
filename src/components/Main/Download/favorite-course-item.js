@@ -25,7 +25,7 @@ const FavoriteCourseItem = (props) => {
                 // coursesContext.getCourseInformation(props.item.id)
                 favoriteContext.getCourseLikeStatus(props.item.id)
                 courseDetailContext.getCourseDetailWithLession(props.item.id)
-                props.navigation.push("CourseDescriptions", {item: props.item})
+                props.navigation.navigate("CourseDescriptions", {item: props.item})
             }}
         >
             <ScreenContainer style={styles.item}>

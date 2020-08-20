@@ -3,18 +3,18 @@ import { StyleSheet, Text, View } from 'react-native'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 import { ScrollView, FlatList } from 'react-native-gesture-handler'
-import SectionPathsItem from '../../Browse/SectionPathsItem/section-paths-item'
+import SectionCategoryItemForSearch from '../../Browse/SectionPathsItem/section-category-item-for-search'
 
 const SearchPaths = (props) => {
     return (
         <ScreenContainer>
             <ScrollView >
                 <View>
-                    <ThemedText style={{margin: 6}}>Paths</ThemedText>
+                    <ThemedText style={{margin: 6}}>Category</ThemedText>
                     <FlatList
                         horizontal={true}
                         data={props.path}
-                        renderItem={({ item }) => <SectionPathsItem navigation={props.navigation} item={item} />}
+                        renderItem={({ item }) => <SectionCategoryItemForSearch navigation={props.navigation} item={item} />}
                     />
                 </View>
             </ScrollView>

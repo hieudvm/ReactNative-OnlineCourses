@@ -11,6 +11,7 @@ const ChangePassword = (props) => {
     const [oldPassword, setOldPassword] = useState('')
     const [rePassword, setRePassword] = useState('')
     const [changeStatus, setChangeStatus] = useState("")
+    const [passwordStatus, setPasswordStatus] = useState("")
     const Image_Http_URL = { uri: userContext.state.userInformation.avatar }
 
     return (
@@ -33,30 +34,40 @@ const ChangePassword = (props) => {
                 />
                 <TextInput
                     style={styles.textInput}
-                    onChangeText={text => setRePassword(text)}
+                    onChangeText={(text) => {
+                        if (text === newPassword) {
+                            setPasswordStatus("Password is matched!")
+                            setRePassword(text)
+                        } else {
+                            setPasswordStatus("Password does not matched!")
+                        }
+                    }}
                     placeholder='re - Password'
                     secureTextEntry
                     defaultValue={rePassword}
                 />
+                <Text>{passwordStatus}</Text>
                 <View>
                     <Text>{changeStatus}</Text>
                 </View>
                 <TouchableOpacity
                     style={styles.button}
                     onPress={() => {
-                        axios.post('/user/change-password', {
-                            "id": userContext.state.userInformation.id,
-                            "oldPass": oldPassword,
-                            "newPass": newPassword
-                        }).then((Response) => {
-                            if (Response.status === 200) {
-                                setChangeStatus("Password is changed!")
-                            } else {
+                        if (rePassword === newPassword) {
+                            axios.post('/user/change-password', {
+                                "id": userContext.state.userInformation.id,
+                                "oldPass": oldPassword,
+                                "newPass": newPassword
+                            }).then((Response) => {
+                                if (Response.status === 200) {
+                                    setChangeStatus("Password is changed!")
+                                } else {
+                                    setChangeStatus("Has Error!")
+                                }
+                            }).catch((Error) => {
                                 setChangeStatus("Has Error!")
-                            }
-                        }).catch((Error) => {
-                            setChangeStatus("Has Error!")
-                        })
+                            })
+                        }
                     }}
                 >
                     <Text style={styles.text}>Change Password</Text>

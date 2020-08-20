@@ -9,9 +9,10 @@ import SearchCourses from './Courses/search-courses';
 import SearchAuthors from './Authors/search-authors';
 import SearchPaths from './Paths/search-paths';
 import { SearchContext } from '../../../provider/search-provider';
+import { CategoryContext } from '../../../provider/category-provider';
 
 const Tab = createMaterialTopTabNavigator();
-const search = (keyword, setCourse, setPath, setAuthor, searchContext, pathsContext, pathsTemp) => {
+const search = (keyword, setCourse, setPath, setAuthor, searchContext, categoryContext, categoryTemp) => {
     setCourse([])
     setPath([])
     setAuthor([])
@@ -21,9 +22,9 @@ const search = (keyword, setCourse, setPath, setAuthor, searchContext, pathsCont
 
     searchContext.search(keyword)
 
-    pathsContext.path.forEach((value, key) => {
-        if (value.title.toLowerCase().search(lKeyword) >= 0) {
-            resultPathIds.push(pathsTemp[key])
+    categoryContext.category.forEach((value, key) => {
+        if (value.name.toLowerCase().search(lKeyword) >= 0) {
+            resultPathIds.push(categoryTemp[key])
         }
     })
 
@@ -72,7 +73,7 @@ const resultSearch = (props, course, path, author) => {
                     </SearchAuthors>
                 }
             </Tab.Screen>
-            <Tab.Screen name="searchPaths" options={{ title: "Paths" }}>
+            <Tab.Screen name="searchPaths" options={{ title: "Category" }}>
                 {
                     () => <SearchPaths navigation={props.navigation}
                         path={path}
@@ -84,8 +85,8 @@ const resultSearch = (props, course, path, author) => {
     )
 }
 const Search = (props) => {
-    const pathsContext = useContext(PathsContext)
-    const pathsTemp = Array.from(pathsContext.path)
+    const categoryContext = useContext(CategoryContext)
+    const categoryTemp = Array.from(categoryContext.category)
     const searchContext = useContext(SearchContext)
 
     const [keyword, setKeyword] = useState('')
@@ -104,13 +105,13 @@ const Search = (props) => {
                             setSearching(false)
                         } else {
                             setSearching(true)
-                            search(value, setCourse, setPath, setAuthor, searchContext, pathsContext, pathsTemp)
+                            search(value, setCourse, setPath, setAuthor, searchContext, categoryContext, categoryTemp)
                         }
                     }}
                 />
                 <Button onPress={() => {
                     onPressDone(setSearching)
-                    search(keyword, setCourse, setPath, setAuthor, searchContext, pathsContext, pathsTemp)
+                    search(keyword, setCourse, setPath, setAuthor, searchContext, categoryContext, categoryTemp)
                 }} title='Search' style={{ width: 60, height: 40 }} />
             </View>
             {searching == false ? resultPlaceDefault() : resultSearch(props, course, path, author)}

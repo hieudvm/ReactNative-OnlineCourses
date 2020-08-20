@@ -24,7 +24,7 @@ const RatingCourse = (props) => {
                 <ThemedText>Rating</ThemedText>
                 <ScrollView>
                     <FlatList
-                        data={item.ratings.ratingList}
+                        data={item.ratings.ratingList.reverse()}
                         renderItem={({ item }) => <RatingCourseItem navigation={props.navigation} item={item} />}
                     />
                 </ScrollView>
