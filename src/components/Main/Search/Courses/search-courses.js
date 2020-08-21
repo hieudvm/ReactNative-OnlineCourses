@@ -10,7 +10,10 @@ const SearchCourses = (props) => {
         <ScreenContainer>
             <ScrollView>
                 <View >
-                    <ThemedText style={{ margin: 6 }}>Courses</ThemedText>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <ThemedText style={{ margin: 6 }}>Courses</ThemedText>
+                        <ThemedText style={{ margin: 6 }}>{props.courseTotal} results</ThemedText>
+                    </View>
                     <FlatList
                         data={props.course}
                         renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}

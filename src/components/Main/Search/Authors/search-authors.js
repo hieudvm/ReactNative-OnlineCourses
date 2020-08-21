@@ -10,7 +10,10 @@ const SearchAuthors = (props) => {
         <ScreenContainer>
             <ScrollView>
                 <View>
-                    <ThemedText style={{ margin: 6 }}>Authors</ThemedText>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <ThemedText style={{ margin: 6 }}>Authors</ThemedText>
+                        <ThemedText style={{ margin: 6 }}>{props.authorTotal} results</ThemedText>
+                    </View>
                     <FlatList
                         horizontal={true}
                         data={props.author}

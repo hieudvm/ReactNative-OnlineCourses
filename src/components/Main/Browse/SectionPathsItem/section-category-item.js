@@ -1,12 +1,12 @@
 import React from 'react'
-import { StyleSheet, View, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, View, TouchableOpacity, Image, Dimensions } from 'react-native'
 import ScreenContainer from '../../../Common/screen-container'
 import ThemedText from '../../../Common/themed-text'
 import axios from 'axios';
 
 const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
 const Image_Http_URL = { uri: `https://picsum.photos/${randomnumber}` }
-
+const { width, height } = Dimensions.get('window')
 const SectionCategoryItem = (props) => {
     return (
         <ScreenContainer>
@@ -50,11 +50,11 @@ export default SectionCategoryItem
 
 const styles = StyleSheet.create({
     image: {
-        height: 100,
-        width: 250,
+        width: width / 1.5,
+        height: height / 6,
         margin: 6,
         marginBottom: 0,
-        flex: -3
+        flex: -3,
     },
     touch: {
         flex: 1,
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
 
     },
     text: {
-        width: 250,
+        width: width / 1.5,
         flex: 3,
         color: 'white',
         fontWeight: 'bold',

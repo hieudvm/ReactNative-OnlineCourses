@@ -26,7 +26,7 @@ const renderListItemCondition = (courseContext, props) => {
     } else if (props.title === 'Top New Courses') {
         item = courseContext.state.topNew
         return renderListItem(courseContext.state.topNew, props.title, props)
-    } 
+    }
     else if (props.title === 'Countinue learning') {
         item = courseContext.state.process
         return renderListItem(item, props.title, props)
@@ -52,9 +52,9 @@ const SectionCourses = (props) => {
                         {props.title}
                     </ThemedText>
                     <View style={{ backgroundColor: 'lightgray', marginRight: 6, paddingHorizontal: 10, borderRadius: 10 }}>
-                        <TouchableOpacity
+                        {props.title === "Countinue learning" ? <View></View> : <TouchableOpacity
                             onPress={() => {
-                                props.navigation.navigate("AllCourses", { item: item })
+                                props.navigation.navigate("SeeAllCourse")
                             }}
                             style={{ flexDirection: 'row', alignItems: 'center' }}
                         >
@@ -62,7 +62,8 @@ const SectionCourses = (props) => {
                                 See all
                     </Text>
                             <Icon name="angle-right" />
-                        </TouchableOpacity>
+                        </TouchableOpacity>}
+
                     </View>
                 </View>
             </View>

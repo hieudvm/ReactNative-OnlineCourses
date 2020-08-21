@@ -8,6 +8,8 @@ const initialState = {
     message: "",
     courses: [],
     instructors: [],
+    totalCourse: 0,
+    totalInstructor: 0
 }
 
 const SearchProvider = (props) => {

@@ -53,6 +53,7 @@ import CourseExcercise from './src/components/CoursesDetail/Excercise/course-exc
 import { VideoProvider } from './src/provider/video-provider';
 import Rating from './src/components/CoursesDetail/Rating/rating';
 import { CategoryProvider } from './src/provider/category-provider';
+import SeeAllCourse from './src/components/Courses/SeeAllCourse/see-all-course';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -98,6 +99,7 @@ const HomeStackScreen = (props) => {
       <HomeStack.Screen name="PaymentStatus" component={PaymentStatus} options={{ title: "Subscribed" }} />
       <HomeStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
       <HomeStack.Screen name="AllCourses" component={AllCourses} options={{ title: "All Courses" }} />
+      <HomeStack.Screen name="SeeAllCourse" component={SeeAllCourse} options={{ title: "All Category" }} />
       <HomeStack.Screen name="CourseExcercise" component={CourseExcercise} options={{ title: "Course Excercise" }} />
       <HomeStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <HomeStack.Screen name="Rating" component={Rating} options={{ title: "Rating Course" }} />

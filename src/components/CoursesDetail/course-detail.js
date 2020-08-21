@@ -14,7 +14,7 @@ const CourseDetail = (props) => {
 
     return (
         <ScreenContainer>
-            <View style={{ flex: 1.9  }}>
+            <View style={{ flex: 2.0  }}>
                 <VideoPlayer navigation={props.navigation} item={item} />
             </View>
             <ScrollView style={{ flex: 2.5 }}>

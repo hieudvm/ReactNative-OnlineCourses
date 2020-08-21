@@ -19,6 +19,7 @@ const VideoPlayer = (props) => {
     const favoriteContext = useContext(FavouritesContext)
 
     const [lessonId, setLessonId] = useState(videoContext.lessonId)
+    const [lessonName, setLessonName] = useState(props.item.title ? props.item.title : props.item.courseTitle)
 
     const [favorite, setFavorite] = useState('')
     const [url, setUrl] = useState(props.item.promoVidUrl)
@@ -39,10 +40,12 @@ const VideoPlayer = (props) => {
         }
         if (videoContext.lessonId) {
             setLessonId(videoContext.lessonId)
-            console.log("set", lessonId)
+        }
+        if (props.item.id === videoContext.courseId) {
+            setLessonName(videoContext.lessonName)
         }
 
-    }, [videoContext.videoUrl, videoContext.lessonId])
+    }, [videoContext.videoUrl, videoContext.lessonId, videoContext.lessonName])
 
     return (
         <ScreenContainer>
@@ -59,7 +62,7 @@ const VideoPlayer = (props) => {
             />
             <View>
                 {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
-                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{props.item.title ? props.item.title : props.item.courseTitle}</ThemedText>
+                <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{lessonName}</ThemedText>
                 <TouchableOpacity
                     style={styles.touch}
                     onPress={() => {
@@ -100,12 +103,9 @@ const VideoPlayer = (props) => {
                         axios.get(`/lesson/detail/${props.item.id}/${lessonId}`)
                             .then((Response) => {
                                 if (Response.status === 200) {
-                                    console.log("success", props.item.id, lessonId)
-                                    // setLessonLearning(Response.data.payload.name)
                                     props.navigation.navigate("CourseDescriptions", { item: props.item })
                                 }
                             }).catch((Error) => {
-                                console.log("false")
                             })
                     }}
                 >

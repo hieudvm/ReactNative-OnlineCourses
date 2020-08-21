@@ -12,15 +12,21 @@ const SearchAll = (props) => {
     return (
         <ScreenContainer>
             <ScrollView>
-                <View >
-                    <ThemedText style={{ margin: 6 }}>Courses</ThemedText>
+                <View>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <ThemedText style={{ margin: 6 }}>Courses</ThemedText>
+                        <ThemedText style={{ margin: 6 }}>{props.courseTotal} results</ThemedText>
+                    </View>
                     <FlatList
                         data={props.course}
                         renderItem={({ item }) => <ListCoursesItem navigation={props.navigation} item={item} />}
                     />
                 </View>
                 <View>
-                    <ThemedText style={{ margin: 6 }}>Authors</ThemedText>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <ThemedText style={{ margin: 6 }}>Authors</ThemedText>
+                        <ThemedText style={{ margin: 6 }}>{props.authorTotal} results</ThemedText>
+                    </View>
                     <FlatList
                         horizontal={true}
                         data={props.author}
@@ -28,7 +34,10 @@ const SearchAll = (props) => {
                     />
                 </View>
                 <View>
-                    <ThemedText style={{ margin: 6 }}>Category</ThemedText>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between'  }}>
+                        <ThemedText style={{ margin: 6 }}>Category</ThemedText>
+                        <ThemedText style={{ margin: 6 }}>{props.pathTotal} results</ThemedText>
+                    </View>
                     <FlatList
                         horizontal={true}
                         data={props.path}

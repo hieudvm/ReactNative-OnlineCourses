@@ -10,7 +10,10 @@ const SearchPaths = (props) => {
         <ScreenContainer>
             <ScrollView >
                 <View>
-                    <ThemedText style={{margin: 6}}>Category</ThemedText>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <ThemedText style={{ margin: 6 }}>Category</ThemedText>
+                        <ThemedText style={{ margin: 6 }}>{props.pathTotal} results</ThemedText>
+                    </View>
                     <FlatList
                         horizontal={true}
                         data={props.path}
