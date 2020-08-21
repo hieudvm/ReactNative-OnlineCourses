@@ -1,11 +1,11 @@
 import React, { useState, useContext, useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Dimensions } from 'react-native'
 import { Image } from 'react-native'
 import { TextInput, TouchableOpacity, ScrollView } from 'react-native-gesture-handler'
 import axios from 'axios';
 import { UserContext } from '../../../provider/user-provider';
 
-
+const { width, height } = Dimensions.get('window')
 const UpdateProfile = (props) => {
     const userContext = useContext(UserContext)
     const Image_Http_URL = { uri: userContext.state.userInformation.avatar }
@@ -99,8 +99,9 @@ const styles = StyleSheet.create({
         padding: 10
     },
     image: {
-        width: 200,
-        height: 200
+        width: width/5,
+        height: height/5,
+        marginBottom: 10
     },
     button: {
         justifyContent: 'center',

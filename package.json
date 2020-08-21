@@ -27,16 +27,14 @@
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
     "react-native-tab-view": "^2.14.4",
-    "react-native-vector-icons": "^6.6.0",
-    "react-native-video": "^4.4.5",
-    "react-native-video-player": "^0.10.0",
     "react-native-web": "~0.11.7",
-    "react-native-webview": "^10.7.0",
+    "react-native-webview": "8.1.1",
+    "react-native-youtube": "^2.0.1",
     "react-native-youtube-iframe": "^1.2.4"
   },
   "devDependencies": {
-    "babel-preset-expo": "~8.1.0",
-    "@babel/core": "^7.8.6"
+    "@babel/core": "^7.8.6",
+    "babel-preset-expo": "~8.1.0"
   },
   "private": true
 }

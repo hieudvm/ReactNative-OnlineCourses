@@ -76,7 +76,7 @@ const CourseDescriptions = (props) => {
   }, [item.id])
 
   useEffect(() => {
-    if (lessonId && videoContext.lessonId) {
+    if (lessonId) {
       axios.get(`/lesson/detail/${item.id}/${lessonId}`)
         .then((Response) => {
           if (Response.status === 200) {
@@ -86,7 +86,7 @@ const CourseDescriptions = (props) => {
         }).catch((Error) => {
         })
     }
-  }, [lessonId, videoContext.lessonId])
+  }, [lessonId])
 
   useEffect(() => {
     if (videoContext.lessonId) {
@@ -112,14 +112,14 @@ const CourseDescriptions = (props) => {
           {item.videoNumber ? <ThemedText style={styles.darkThemedText}>{`${item.videoNumber} video . ${item.totalHours} hours`}</ThemedText> : <ThemedText style={styles.darkThemedText}>{`${item.coursePrice} VND . sold ${item.courseSoldNumber}`}</ThemedText>}
         </View>
       </ScreenContainer>
-      <View style={{ margin: 6, flex: 8 }}>
-        <View style={{ margin: 6, flex: 2, borderBottomColor: "gray", borderBottomWidth: 1, paddingBottom: 6 }}>
+      <View style={{ marginLeft: 6, flex:6 }}>
+        <View style={{ marginLeft: 6, flex: 1.5, borderBottomColor: "gray", borderBottomWidth: 1, paddingBottom: 6 }}>
           <ScrollView>
             <ThemedText>{item.description}</ThemedText>
           </ScrollView>
         </View>
-        <View style={{ flex: 2, borderBottomColor: "gray", borderBottomWidth: 1, paddingBottom: 6 }}>
-          <ThemedText style={{ margin: 6 }}>Learn What</ThemedText>
+        <View style={{ flex: 1.5, borderBottomColor: "gray", borderBottomWidth: 1, paddingBottom: 6 }}>
+          <ThemedText style={{ marginLeft: 6 }}>Learn What</ThemedText>
           <ScreenContainer>
             <ScrollView>
               <FlatList
@@ -134,7 +134,7 @@ const CourseDescriptions = (props) => {
             </ScrollView>
           </ScreenContainer>
         </View>
-        <View style={{ flex: 6, justifyContent: 'center', alignItems: 'center', }}>
+        <View style={{ flex: 7, justifyContent: 'center', alignItems: 'center', }}>
 
           {!courseDetailContext.state.subscribe ?
             <View style={styles.layout}>
@@ -201,7 +201,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     borderBottomColor: "gray",
     borderBottomWidth: 1,
-    flex: 1
   },
   image: {
     width: 50,

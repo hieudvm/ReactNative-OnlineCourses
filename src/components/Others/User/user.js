@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from 'react'
-import { StyleSheet, Image, View, Text } from 'react-native'
+import { StyleSheet, Image, View, Text, Dimensions } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ThemedText from '../../Common/themed-text'
 import { UserContext } from '../../../provider/user-provider';
 import ScreenContainer from '../../Common/screen-container';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
+const { width, height } = Dimensions.get('window')
 const User = (props) => {
     const userContext = useContext(UserContext)
     const Image_Http_URL = { uri: userContext.state.userInformation.avatar }
@@ -67,9 +68,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     image: {
-        width: 200,
-        height: 200,
-        marginBottom: 20
+        width: width/5,
+        height: height/5,
+        marginBottom: 10
     },
     layout: {
         width: 350,

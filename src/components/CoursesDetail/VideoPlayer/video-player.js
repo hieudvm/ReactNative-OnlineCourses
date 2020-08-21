@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState, useRef } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity, ActivityIndicator, Dimensions } from 'react-native'
 import ScreenContainer from '../../Common/screen-container'
 import ThemedText from '../../Common/themed-text'
@@ -8,8 +8,9 @@ import { Video } from 'expo-av'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { FavouritesContext } from '../../../provider/favourites-provider'
 import { VideoContext } from '../../../provider/video-provider'
-import { CourseDetailContext } from '../../../provider/courseDetail-provider'
 import axios from 'axios';
+import YoutubePlayer from 'react-native-youtube-iframe';
+import { useFocusEffect } from '@react-navigation/native'
 
 const { width, height } = Dimensions.get('window')
 const VideoPlayer = (props) => {
@@ -18,11 +19,15 @@ const VideoPlayer = (props) => {
     const coursesContext = useContext(CoursesContext)
     const favoriteContext = useContext(FavouritesContext)
 
+    const playerRef = useRef(null);
+    const [playing, setPlaying] = useState(true);
+
     const [lessonId, setLessonId] = useState(videoContext.lessonId)
     const [lessonName, setLessonName] = useState(props.item.title ? props.item.title : props.item.courseTitle)
 
     const [favorite, setFavorite] = useState('')
     const [url, setUrl] = useState(props.item.promoVidUrl)
+    const [videoId, setVideoId] = useState("")
 
     useEffect(() => {
         authorContext.getInstructorById(props.item.instructorId)
@@ -34,32 +39,90 @@ const VideoPlayer = (props) => {
         }
     }, [])
 
+    useFocusEffect(
+        React.useCallback(() => {
+            if (videoContext.videoUrl && videoContext.courseId === props.item.id) {
+                console.log("video Url", url)
+                setUrl(videoContext.videoUrl)
+                var regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+                var match = url.match(regExp);
+                if (match && match[2].length == 11) {
+                    setVideoId(match[2])
+                }
+                console.log("videoId", videoId)
+            }
+        }, [videoContext.videoUrl, url])
+    );
+
     useEffect(() => {
-        if (videoContext.videoUrl) {
-            setUrl(videoContext.videoUrl)
-        }
         if (videoContext.lessonId) {
             setLessonId(videoContext.lessonId)
         }
         if (props.item.id === videoContext.courseId) {
             setLessonName(videoContext.lessonName)
         }
+    }, [videoContext.lessonId, videoContext.lessonName])
 
-    }, [videoContext.videoUrl, videoContext.lessonId, videoContext.lessonName])
+    // useEffect(() => {
+    //     if (url === null) {
+    //         setUrl("http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4")
+    //     }
+    // }, [])
 
     return (
         <ScreenContainer>
-            <Video
+
+            {String(url).includes('https://youtube.com/') ?
+                <YoutubePlayer
+                    ref={playerRef}
+                    height={height / 3}
+                    width={width}
+                    videoId={videoId}
+                    // videoUrl={url}
+                    play={playing}
+                    onChangeState={event => console.log(event)}
+                    onReady={() => console.log("ready")}
+                    onError={e => console.log(e)}
+                    onPlaybackQualityChange={q => console.log(q)}
+                    volume={50}
+                    playbackRate={1}
+                /> :
+                <Video
+                    source={{ uri: url }}
+                    rate={1.0}
+                    volume={1.0}
+                    isMuted={false}
+                    resizeMode="cover"
+                    shouldPlay={true}
+                    isLooping={false}
+                    useNativeControls
+                    style={styles.video}
+                />}
+            {/* <Video
                 source={{ uri: url }}
                 rate={1.0}
                 volume={1.0}
                 isMuted={false}
                 resizeMode="cover"
-                shouldPlay={false}
+                shouldPlay={true}
                 isLooping={false}
                 useNativeControls
                 style={styles.video}
-            />
+            /> */}
+
+            {/* <YoutubePlayer
+                ref={playerRef}
+                height={height / 3}
+                width={width}
+                videoUrl={url}
+                play={playing}
+                onChangeState={event => console.log(event)}
+                onReady={() => console.log("ready")}
+                onError={e => console.log(e)}
+                onPlaybackQualityChange={q => console.log(q)}
+                volume={50}
+                playbackRate={1}
+            /> */}
             <View>
                 {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{lessonName}</ThemedText>

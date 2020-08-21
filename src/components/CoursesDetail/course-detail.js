@@ -14,10 +14,10 @@ const CourseDetail = (props) => {
 
     return (
         <ScreenContainer>
-            <View style={{ flex: 2.0  }}>
+            <View style={{ flex: 2.2  }}>
                 <VideoPlayer navigation={props.navigation} item={item} />
             </View>
-            <ScrollView style={{ flex: 2.5 }}>
+            <ScrollView style={{ flex: 2.0 }}>
                 <ListLessons navigation={props.navigation}/>
             </ScrollView>
         </ScreenContainer>

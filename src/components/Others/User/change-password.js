@@ -1,10 +1,11 @@
 import React, { useState, useContext } from 'react'
-import { StyleSheet, Text, View, Image, ActivityIndicator } from 'react-native'
+import { StyleSheet, Text, View, Image, ActivityIndicator, Dimensions } from 'react-native'
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler'
 import ScreenContainer from '../../Common/screen-container'
 import { UserContext } from '../../../provider/user-provider';
 import axios from 'axios';
 
+const { width, height } = Dimensions.get('window')
 const ChangePassword = (props) => {
     const userContext = useContext(UserContext)
     const [newPassword, setNewPassword] = useState('')
@@ -105,9 +106,9 @@ const styles = StyleSheet.create({
         padding: 10
     },
     image: {
-        width: 200,
-        height: 200,
-        marginBottom: 20
+        width: width/5,
+        height: height/5,
+        marginBottom: 10
     },
     button: {
         justifyContent: 'center',
