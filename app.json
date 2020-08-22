@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "1512158_OnlineCourses",
-    "slug": "1512158_OnlineCourses",
+    "name": "Elearning.IO",
+    "slug": "ElearningIO",
     "platforms": [
       "ios",
       "android",
@@ -9,9 +9,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "splash": {
-      "image": "./assets/Logo.jpg",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,7 +22,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.hcmus.elearningIO",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.hcmus.elearningIO",
+      "versionCode": 1
     }
   }
 }

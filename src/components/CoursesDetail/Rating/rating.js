@@ -176,7 +176,7 @@ const Rating = (props) => {
                         }} title='5' style={{ width: 100, height: 40 }} color={presentationPoint5} />
                     </View>
                 </View>
-                <View style={{ padding: 15, borderColor: 'gray', borderWidth: 1, marginTop: 10, height: 200 }}>
+                <View style={{ padding: 15, borderColor: 'gray', borderWidth: 1, marginTop: 10, height: 100 }}>
                     <TextInput
                         multiline
                         onChangeText={text => setComment(text)}
