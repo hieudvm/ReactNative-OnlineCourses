@@ -1,6 +1,8 @@
 import React from 'react'
-import { StyleSheet, View, ImageBackground, TouchableOpacity } from 'react-native'
+import { StyleSheet, View, ImageBackground, TouchableOpacity, Dimensions } from 'react-native'
 import { Text } from 'react-native-elements'
+
+const { width, height } = Dimensions.get('window');
 
 const ImageButtonItem = (props) => {
     const randomnumber = Math.floor(Math.random() * (700 - 200 + 1)) + 200
@@ -27,9 +29,9 @@ export default ImageButtonItem
 
 const styles = StyleSheet.create({
     button: {
-        height: 100,
-        width: 250,
-        margin: 5,
+        width: width / 1.5,
+        height: height / 6,
+        margin: 6,
         borderRadius: 50,
         justifyContent: 'center',
         alignItems: 'center'

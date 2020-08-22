@@ -48,7 +48,6 @@ const ListLessonsItem = (props) => {
     return (
         <TouchableOpacity style={styles.item}
             onPress={() => {
-                console.log("video url", props.item.videoUrl)
                 videoContext.setCourseId(props.course.id)
                 videoContext.setLessonName(props.item.name)
                 videoContext.setLessonId(props.item.id)

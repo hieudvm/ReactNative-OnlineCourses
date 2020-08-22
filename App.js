@@ -54,6 +54,7 @@ import { VideoProvider } from './src/provider/video-provider';
 import Rating from './src/components/CoursesDetail/Rating/rating';
 import { CategoryProvider } from './src/provider/category-provider';
 import SeeAllCourse from './src/components/Courses/SeeAllCourse/see-all-course';
+import DownloadVideo from './src/components/CoursesDetail/DownloadVideo/download-video';
 
 const Tabs = createBottomTabNavigator();
 const HomeStack = createStackNavigator();
@@ -104,6 +105,7 @@ const HomeStackScreen = (props) => {
       <HomeStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <HomeStack.Screen name="Rating" component={Rating} options={{ title: "Rating Course" }} />
       <HomeStack.Screen name="UserThread" component={UserThread} />
+      <HomeStack.Screen name="DownloadVideo" component={DownloadVideo} options={{ title: "Download Video" }} />
       <HomeStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author Detail" }} />
     </HomeStack.Navigator>
   )
@@ -127,6 +129,7 @@ const DownloadStackScreen = (props) => {
       <DownloadStack.Screen name="AuthorDetail" component={AuthorDetail} options={{ title: "Author" }} />
       <DownloadStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
       <DownloadStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
+      <DownloadStack.Screen name="DownloadVideo" component={DownloadVideo} options={{ title: "Download Video" }} />
     </DownloadStack.Navigator>
   )
 };
@@ -147,6 +150,7 @@ const BrowseStackScreen = (props) => {
       <BrowseStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <BrowseStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
       <BrowseStack.Screen name="CourseDescriptions" component={CourseDescriptions} options={{ title: "Course Detail" }} />
+      <BrowseStack.Screen name="DownloadVideo" component={DownloadVideo} options={{ title: "Download Video" }} />
     </BrowseStack.Navigator>
   )
 };
@@ -164,6 +168,7 @@ const SearchStackScreen = (props) => {
       <SearchStack.Screen name="CourseExcercise" component={CourseExcercise} options={{ title: "Course Excercise" }} />
       <SearchStack.Screen name="RatingCourse" component={RatingCourse} options={{ title: "Rating Course" }} />
       <SearchStack.Screen name="CourseDetail" component={CourseDetail} options={{ title: "Course Detail" }} />
+      <SearchStack.Screen name="DownloadVideo" component={DownloadVideo} options={{ title: "Download Video" }} />
     </SearchStack.Navigator>
   )
 };

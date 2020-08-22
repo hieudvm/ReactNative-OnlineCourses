@@ -28,7 +28,7 @@ const CategoryItem = (props) => {
                       }
                     }).then((Response) => {
                         if (Response.status === 200) {
-                            props.navigation.navigate("AllCourses", { item: Response.data.payload.row })
+                            props.navigation.navigate("AllCourses", { item: Response.data.payload.rows })
                         }
                     }).catch((Error) => {
                         

@@ -5,7 +5,6 @@ import ScreenContainer from '../../Common/screen-container'
 
 const AllCourses = (props) => {
     const item = props.route.params.item
-
     return (
         <ScreenContainer>
             <View>

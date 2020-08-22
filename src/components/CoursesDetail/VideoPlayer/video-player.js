@@ -42,14 +42,14 @@ const VideoPlayer = (props) => {
     useFocusEffect(
         React.useCallback(() => {
             if (videoContext.videoUrl && videoContext.courseId === props.item.id) {
-                console.log("video Url", url)
                 setUrl(videoContext.videoUrl)
-                var regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-                var match = url.match(regExp);
-                if (match && match[2].length == 11) {
-                    setVideoId(match[2])
+                if (url) {
+                    var regExp = /^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+                    var match = url.match(regExp);
+                    if (match && match[2].length == 11) {
+                        setVideoId(match[2])
+                    }
                 }
-                console.log("videoId", videoId)
             }
         }, [videoContext.videoUrl, url])
     );
@@ -63,11 +63,11 @@ const VideoPlayer = (props) => {
         }
     }, [videoContext.lessonId, videoContext.lessonName])
 
-    // useEffect(() => {
-    //     if (url === null) {
-    //         setUrl("http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4")
-    //     }
-    // }, [])
+    useEffect(() => {
+        if (url === null) {
+            setUrl("http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4")
+        }
+    }, [url])
 
     return (
         <ScreenContainer>
@@ -98,31 +98,6 @@ const VideoPlayer = (props) => {
                     useNativeControls
                     style={styles.video}
                 />}
-            {/* <Video
-                source={{ uri: url }}
-                rate={1.0}
-                volume={1.0}
-                isMuted={false}
-                resizeMode="cover"
-                shouldPlay={true}
-                isLooping={false}
-                useNativeControls
-                style={styles.video}
-            /> */}
-
-            {/* <YoutubePlayer
-                ref={playerRef}
-                height={height / 3}
-                width={width}
-                videoUrl={url}
-                play={playing}
-                onChangeState={event => console.log(event)}
-                onReady={() => console.log("ready")}
-                onError={e => console.log(e)}
-                onPlaybackQualityChange={q => console.log(q)}
-                volume={50}
-                playbackRate={1}
-            /> */}
             <View>
                 {coursesContext.state.isLoading && <ActivityIndicator size="small" color="gray" />}
                 <ThemedText style={{ fontSize: 20, marginLeft: 6 }}>{lessonName}</ThemedText>
@@ -193,7 +168,12 @@ const VideoPlayer = (props) => {
                         <ThemedText>Rating</ThemedText>
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity
+                    disabled={String(url).includes('https://youtube.com/')}
+                    onPress={() => {
+                        props.navigation.navigate("DownloadVideo", { item: props.item, videoUrl: url, lessonName: lessonName })
+                    }}
+                >
                     <View style={styles.iconItem}>
                         <View style={{ backgroundColor: 'gray', width: 50, height: 50, alignItems: 'center', justifyContent: 'center', borderRadius: 50 }}>
                             <Icon
