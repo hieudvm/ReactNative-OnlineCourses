@@ -1,5 +1,4 @@
 import API from '../../api'
-import { resume } from 'expo/build/AR'
 import { AsyncStorage } from 'react-native';
 
 

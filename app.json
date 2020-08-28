@@ -23,11 +23,11 @@
     ],
     "ios": {
       "bundleIdentifier": "com.hcmus.elearningIO",
-      "buildNumber": "1.0.0"
+      "buildNumber": "2.0.0"
     },
     "android": {
       "package": "com.hcmus.elearningIO",
-      "versionCode": 1
+      "versionCode": 2
     }
   }
 }

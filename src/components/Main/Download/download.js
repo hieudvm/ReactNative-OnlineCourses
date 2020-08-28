@@ -11,11 +11,23 @@ import { useFocusEffect } from '@react-navigation/native';
 const Download = (props) => {
     const favoriteContext = useContext(FavouritesContext)
     const [courses, setCourses] = useState([])
-    
+
+    // useFocusEffect(
+    //     React.useCallback(() => {
+    //         favoriteContext.getFavoriteCourses()
+    //         if (favoriteContext.state.data) {
+    //         setCourses(favoriteContext.state.data)
+    //         }
+    //     }, [favoriteContext.state.data])
+    // );
+
     useEffect(() => {
-            // favoriteContext.getFavoriteCourses()
-            setCourses(favoriteContext.state.data)
-        }, [favoriteContext.state.data])
+        favoriteContext.getFavoriteCourses()
+        if (favoriteContext.state.data) {
+        setCourses(favoriteContext.state.data)
+        }
+    },[favoriteContext.state.data])
+    
 
     if (courses.length === 0) {
         return (
