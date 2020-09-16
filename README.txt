@@ -29,6 +29,6 @@ Deadline 3: Xây dựng ứng dụng đầy đủ các luồng chạy online
 ======================================================================
 Deadline 4: Final project
   - Commit ID: 2dae054
-  - Video demo: 
+  - Video demo: https://youtu.be/VsbtdVaON7k
 
 ======================================================================
